@@ -1,0 +1,3243 @@
+[
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD034244",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD034244/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD034244/pipeline_info/PXD034244.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD034244/diannconvert/PXD034244.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD034244/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD034244",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD034244"
+		},
+		"title": {
+			"title": "Transcriptome and proteome profiling of activated cardiac fibroblasts supports target prioritization in cardiac fibrosis",
+			"pubmedId": []
+		},
+		"samples": 9,
+		"msruns": 27,
+		"proteins": 5215,
+		"peptides": 39415
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004143",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004143/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004143/pipeline_info/PXD004143.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004143/proteomicslfq/PXD004143.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004143/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD004143",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004143"
+		},
+		"title": {
+			"title": "Allele-Specific Protein Abundance in Human Brain",
+			"pubmedId": [
+				{
+					"id": "28691493",
+					"path": "https://europepmc.org/article/MED/28691493"
+				}
+			]
+		},
+		"samples": 2,
+		"msruns": 4,
+		"proteins": 3518,
+		"peptides": 19282
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD012131",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012131/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012131/pipeline_info/PXD012131.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012131/proteomicslfq/PXD012131.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012131/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD012131",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD012131"
+		},
+		"title": {
+			"title": "Proteomic Atlas of the Human Brain in Alzheimer’s Disease",
+			"pubmedId": [
+				{
+					"id": "30735395",
+					"path": "https://europepmc.org/article/MED/30735395"
+				}
+			]
+		},
+		"samples": 26,
+		"msruns": 312,
+		"proteins": 10231,
+		"peptides": 166338
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD009219",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009219/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009219/pipeline_info/PXD009219.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009219/proteomicslfq/PXD009219.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009219/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD009219",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD009219"
+		},
+		"title": {
+			"title": "The difference in serum proteomes in schizophrenia and bipolar disorder",
+			"pubmedId": [
+				{
+					"id": "31291891",
+					"path": "https://europepmc.org/article/MED/31291891"
+				}
+			]
+		},
+		"samples": 30,
+		"msruns": 127,
+		"proteins": 121,
+		"peptides": 1254
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD009737.3",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.3/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.3/pipeline_info/PXD009737-LysC.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.3/proteomicslfq/PXD009737-LysC.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.3/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD009737",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD009737"
+		},
+		"title": {
+			"title": "Human testis off-line LC-MS/MS",
+			"pubmedId": [
+				{
+					"id": "30280576",
+					"path": "https://europepmc.org/article/MED/30280576"
+				}
+			]
+		},
+		"samples": 1,
+		"msruns": 36,
+		"proteins": 8439,
+		"peptides": 91533
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008467",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008467/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008467/pipeline_info/PXD008467.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008467/msstatsconverter/PXD008467.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008467/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD008467",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD008467"
+		},
+		"title": {
+			"title": "Plasma proteomics reveals the confounding effect of heparin administration on the analysis of candidate cardiovascular biomarkers - Cohort1",
+			"pubmedId": []
+		},
+		"samples": 100,
+		"msruns": 304,
+		"proteins": 580,
+		"peptides": 5693
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD024364.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.2/pipeline_info/PXD024364-Asp-N.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.2/proteomicslfq/PXD024364-Asp-N.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 14,
+		"msruns": 366,
+		"proteins": 10466,
+		"peptides": 143556
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD036609",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/pipeline_info/PXD036609.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/diannconvert/PXD036609.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD036609",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD036609"
+		},
+		"title": {
+			"title": "Human serum LC-MS/MS for long-term persistent COVID-19 patients",
+			"pubmedId": []
+		},
+		"samples": 27,
+		"msruns": 27,
+		"proteins": 944,
+		"peptides": 8919
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD038669.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.1/pipeline_info/PXD038669-DDA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.1/proteomicslfq/PXD038669-DDA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD038669",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD038669"
+		},
+		"title": {
+			"title": "Method development for simplified High-Throughput Plasma Proteomics",
+			"pubmedId": [
+				{
+					"id": "36975161",
+					"path": "https://europepmc.org/article/MED/36975161"
+				}
+			]
+		},
+		"samples": 1,
+		"msruns": 9,
+		"proteins": 189,
+		"peptides": 1961
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD018678.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.1/pipeline_info/PXD018678-dia.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.1/diannconvert/PXD018678-dia.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD018678",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD018678"
+		},
+		"title": {
+			"title": "Proteomic analysis of ischemic and dilated cardiomyopathy pre-mortem human hearts",
+			"pubmedId": []
+		},
+		"samples": 1,
+		"msruns": 12,
+		"proteins": 5930,
+		"peptides": 67611
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD030304",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030304/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030304/pipeline_info/PXD030304.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": ""
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030304/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD030304",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD030304"
+		},
+		"title": {
+			"title": "Pan-cancer proteomic map of 949 human cell lines (ProCan-DepMapSanger)",
+			"pubmedId": [
+				{
+					"id": "35839778",
+					"path": "https://europepmc.org/article/MED/35839778"
+				}
+			]
+		},
+		"samples": 2013,
+		"msruns": 6862,
+		"proteins": 8941,
+		"peptides": 118322
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD009737.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.2/pipeline_info/PXD009737-glutamyl-endopeptidase.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.2/proteomicslfq/PXD009737-glutamyl-endopeptidase.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD009737",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD009737"
+		},
+		"title": {
+			"title": "Human testis off-line LC-MS/MS",
+			"pubmedId": [
+				{
+					"id": "30280576",
+					"path": "https://europepmc.org/article/MED/30280576"
+				}
+			]
+		},
+		"samples": 1,
+		"msruns": 36,
+		"proteins": 7839,
+		"peptides": 98641
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD029009",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD029009/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD029009/pipeline_info/PXD029009.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD029009/diannconvert/PXD029009.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD029009/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD029009",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD029009"
+		},
+		"title": {
+			"title": "A proteomic survival predictor for COVID-19 patients in intensive care",
+			"pubmedId": []
+		},
+		"samples": 366,
+		"msruns": 366,
+		"proteins": 196,
+		"peptides": 1927
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD020192",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020192/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020192/pipeline_info/PXD020192.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020192/proteomicslfq/PXD020192.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020192/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD020192",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD020192"
+		},
+		"title": {
+			"title": "Proteomic Profiling of the Human Tissue and Biological Fluid Proteome",
+			"pubmedId": [
+				{
+					"id": "33107741",
+					"path": "https://europepmc.org/article/MED/33107741"
+				}
+			]
+		},
+		"samples": 46,
+		"msruns": 92,
+		"proteins": 6187,
+		"peptides": 74749
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD017834.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.1/pipeline_info/PXD017834-LFQ.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.1/proteomicslfq/PXD017834-LFQ.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD017834",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD017834"
+		},
+		"title": {
+			"title": "An Integrated Quantitative Proteomics Workflow for Biomarker Discovery and Validation in Plasma",
+			"pubmedId": []
+		},
+		"samples": 3,
+		"msruns": 9,
+		"proteins": 172,
+		"peptides": 2716
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD039023",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD039023/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD039023/pipeline_info/PXD039023.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD039023/diannconvert/PXD039023.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD039023/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD039023",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD039023"
+		},
+		"title": {
+			"title": "Ely study plasma proteomics analysis",
+			"pubmedId": []
+		},
+		"samples": 879,
+		"msruns": 879,
+		"proteins": 214,
+		"peptides": 2620
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD009348.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009348.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009348.1/pipeline_info/PXD009348-DDA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009348.1/proteomicslfq/PXD009348-DDA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009348.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD009348",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD009348"
+		},
+		"title": {
+			"title": "Plasma proteome profiling reveals global and specific changes of inflammatory and lipid homeostasis markers after bariatric surgery",
+			"pubmedId": [
+				{
+					"id": "30528273",
+					"path": "https://europepmc.org/article/MED/30528273"
+				}
+			]
+		},
+		"samples": 7,
+		"msruns": 168,
+		"proteins": 1707,
+		"peptides": 19466
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD019817",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019817/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019817/pipeline_info/PXD019817.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019817/proteomicslfq/PXD019817.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019817/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD019817",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD019817"
+		},
+		"title": {
+			"title": "Plasma proteome changes during the first week of human life in two independent cohorts",
+			"pubmedId": [
+				{
+					"id": "30862783",
+					"path": "https://europepmc.org/article/MED/30862783"
+				}
+			]
+		},
+		"samples": 98,
+		"msruns": 98,
+		"proteins": 242,
+		"peptides": 3469
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD022469",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022469/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022469/pipeline_info/PXD022469.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022469/proteomicslfq/PXD022469.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022469/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD022469",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD022469"
+		},
+		"title": {
+			"title": "Proteome-wide evaluation of plasma depletion methods vis-à-vis fractionation techniques",
+			"pubmedId": [
+				{
+					"id": "33471535",
+					"path": "https://europepmc.org/article/MED/33471535"
+				}
+			]
+		},
+		"samples": 16,
+		"msruns": 384,
+		"proteins": 924,
+		"peptides": 18239
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008333",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008333/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008333/pipeline_info/PXD008333.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008333/proteomicslfq/PXD008333.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008333/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD008333",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD008333"
+		},
+		"title": {
+			"title": "Identification of a damaging variant rs35033974 associated with idiopathic male infertility through degradation of TEX101 protein and its transient interactome",
+			"pubmedId": []
+		},
+		"samples": 8,
+		"msruns": 201,
+		"proteins": 8144,
+		"peptides": 98165
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD010154",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010154/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010154/pipeline_info/PXD010154.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010154/proteomicslfq/PXD010154.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010154/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD010154",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD010154"
+		},
+		"title": {
+			"title": "A deep proteome and transcriptome abundance atlas of 29 healthy human tissues",
+			"pubmedId": [
+				{
+					"id": "30777892",
+					"path": "https://europepmc.org/article/MED/30777892"
+				}
+			]
+		},
+		"samples": 38,
+		"msruns": 1367,
+		"proteins": 14602,
+		"peptides": 344215
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008722",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008722/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008722/pipeline_info/PXD008722.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008722/proteomicslfq/PXD008722.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008722/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD008722",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD008722"
+		},
+		"title": {
+			"title": "Quantitative proteomics of human heart samples collected in vivo reveal the remodeled protein landscape of dilated left atrium without atrial fibrillation.",
+			"pubmedId": [
+				{
+					"id": "32291283",
+					"path": "https://europepmc.org/article/MED/32291283"
+				}
+			]
+		},
+		"samples": 21,
+		"msruns": 252,
+		"proteins": 6851,
+		"peptides": 134566
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD013231.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.1/pipeline_info/PXD013231-DDA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.1/proteomicslfq/PXD013231-DDA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD013231",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD013231"
+		},
+		"title": {
+			"title": "Analysis of 1,508 plasma samples of the DiOGenes study - Robust, single shot capillary flow data-independent acquisition to decipher proteomic profiles of weight loss and maintenance",
+			"pubmedId": [
+				{
+					"id": "30948622",
+					"path": "https://europepmc.org/article/MED/30948622"
+				}
+			]
+		},
+		"samples": 7,
+		"msruns": 105,
+		"proteins": 552,
+		"peptides": 8874
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD005445",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445/pipeline_info/PXD005445-combined.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445/proteomicslfq/PXD005445-combined.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD005445",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD005445"
+		},
+		"title": {
+			"title": "CEGS Proteomics -  A multiregional proteomic survey of the postnatal human brain",
+			"pubmedId": [
+				{
+					"id": "29184206",
+					"path": "https://europepmc.org/article/MED/29184206"
+				}
+			]
+		},
+		"samples": 7,
+		"msruns": 105,
+		"proteins": 9220,
+		"peptides": 66690
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD005445.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445.1/pipeline_info/PXD005445.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445.1/proteomicslfq/PXD005445.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD005445",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD005445"
+		},
+		"title": {
+			"title": "CEGS Proteomics -  A multiregional proteomic survey of the postnatal human brain",
+			"pubmedId": [
+				{
+					"id": "29184206",
+					"path": "https://europepmc.org/article/MED/29184206"
+				}
+			]
+		},
+		"samples": 77,
+		"msruns": 77,
+		"proteins": 5205,
+		"peptides": 151812
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD003947",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD003947/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD003947/pipeline_info/PXD003947.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD003947/proteomicslfq/PXD003947.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD003947/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD003947",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD003947"
+		},
+		"title": {
+			"title": "Quest for missing proteins in the human spermatozoa: an update",
+			"pubmedId": [
+				{
+					"id": "27444420",
+					"path": "https://europepmc.org/article/MED/27444420"
+				}
+			]
+		},
+		"samples": 10,
+		"msruns": 108,
+		"proteins": 5087,
+		"peptides": 84584
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD037340.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.1/pipeline_info/PXD037340-DDA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.1/proteomicslfq/PXD037340-DDA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD037340",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD037340"
+		},
+		"title": {
+			"title": "Deep plasma proteome profiling by enrichment of extracellular vesicles",
+			"pubmedId": []
+		},
+		"samples": 6,
+		"msruns": 18,
+		"proteins": 1465,
+		"peptides": 13874
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD000612",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000612/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000612/pipeline_info/PXD000612.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000612/proteomicslfq/PXD000612.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000612/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD000612",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD000612"
+		},
+		"title": {
+			"title": "Ultra-deep human phosphoproteome reveals different regulatory nature of Tyr and Ser/Thr-based signaling",
+			"pubmedId": [
+				{
+					"id": "25159151",
+					"path": "https://europepmc.org/article/MED/25159151"
+				}
+			]
+		},
+		"samples": 11,
+		"msruns": 231,
+		"proteins": 8814,
+		"peptides": 144138
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD037682",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037682/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037682/pipeline_info/PXD037682.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037682/diannconvert/PXD037682.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037682/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD037682",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD037682"
+		},
+		"title": {
+			"title": "ALSPAC human inflammation plasma proteomics",
+			"pubmedId": []
+		},
+		"samples": 60,
+		"msruns": 60,
+		"proteins": 203,
+		"peptides": 2123
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD005736",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005736/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005736/pipeline_info/PXD005736.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005736/proteomicslfq/PXD005736.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005736/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD005736",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD005736"
+		},
+		"title": {
+			"title": "Proteomic Analysis of Human Cardiac Organoids",
+			"pubmedId": [
+				{
+					"id": "28916735",
+					"path": "https://europepmc.org/article/MED/28916735"
+				}
+			]
+		},
+		"samples": 2,
+		"msruns": 24,
+		"proteins": 8518,
+		"peptides": 123784
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD009737.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.1/pipeline_info/PXD009737-Trypsin.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.1/proteomicslfq/PXD009737-Trypsin.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD009737",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD009737"
+		},
+		"title": {
+			"title": "Human testis off-line LC-MS/MS",
+			"pubmedId": [
+				{
+					"id": "30280576",
+					"path": "https://europepmc.org/article/MED/30280576"
+				}
+			]
+		},
+		"samples": 1,
+		"msruns": 36,
+		"proteins": 10477,
+		"peptides": 153489
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000087095.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.1/pipeline_info/MSV000087095-DIA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.1/diannconvert/MSV000087095-DIA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 50,
+		"msruns": 50,
+		"proteins": 2912,
+		"peptides": 25230
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD000865",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000865/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000865/pipeline_info/PXD000865.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000865/proteomicslfq/PXD000865.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000865/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD000865",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD000865"
+		},
+		"title": {
+			"title": "Mass spectrometry based draft of the human proteome",
+			"pubmedId": [
+				{
+					"id": "24870543",
+					"path": "https://europepmc.org/article/MED/24870543"
+				}
+			]
+		},
+		"samples": 34,
+		"msruns": 1055,
+		"proteins": 8974,
+		"peptides": 171870
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD006559",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006559/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006559/pipeline_info/PXD006559.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006559/msstatsconverter/PXD006559.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006559/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD006559",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD006559"
+		},
+		"title": {
+			"title": "Proteogenomics of ex vivo-activated platelets.",
+			"pubmedId": [
+				{
+					"id": "29323256",
+					"path": "https://europepmc.org/article/MED/29323256"
+				}
+			]
+		},
+		"samples": 10,
+		"msruns": 72,
+		"proteins": 5187,
+		"peptides": 66287
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD012755",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012755/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012755/pipeline_info/PXD012755.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012755/proteomicslfq/PXD012755.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012755/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD012755",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD012755"
+		},
+		"title": {
+			"title": "Proteomic Explorations of Autism Brain - Part 1",
+			"pubmedId": [
+				{
+					"id": "31511657",
+					"path": "https://europepmc.org/article/MED/31511657"
+				}
+			]
+		},
+		"samples": 32,
+		"msruns": 32,
+		"proteins": 2325,
+		"peptides": 20519
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD010271",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010271/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010271/pipeline_info/PXD010271.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010271/proteomicslfq/PXD010271.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010271/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD010271",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD010271"
+		},
+		"title": {
+			"title": "Individual variability of protein expression in human tissues",
+			"pubmedId": [
+				{
+					"id": "30300549",
+					"path": "https://europepmc.org/article/MED/30300549"
+				}
+			]
+		},
+		"samples": 117,
+		"msruns": 118,
+		"proteins": 5442,
+		"peptides": 69667
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000079033.3",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.3/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.3/pipeline_info/MSV000079033-Blood-Plasma-iTRAQ.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.3/msstatsconverter/MSV000079033-Blood-Plasma-iTRAQ.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.3/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 4,
+		"msruns": 30,
+		"proteins": 1654,
+		"peptides": 21125
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008468",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008468/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008468/pipeline_info/PXD008468.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008468/msstatsconverter/PXD008468.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008468/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD008468",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD008468"
+		},
+		"title": {
+			"title": "Plasma proteomics reveals the confounding effect of heparin administration on the analysis of candidate cardiovascular biomarkers - Cohort2",
+			"pubmedId": []
+		},
+		"samples": 710,
+		"msruns": 709,
+		"proteins": 581,
+		"peptides": 6069
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD019909.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909.1/pipeline_info/PXD019909-DIA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909.1/diannconvert/PXD019909-DIA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD019909",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD019909"
+		},
+		"title": {
+			"title": "Spatially and cell-type resolved quantitative proteomic atlas of healthy human skin",
+			"pubmedId": [
+				{
+					"id": "33154365",
+					"path": "https://europepmc.org/article/MED/33154365"
+				}
+			]
+		},
+		"samples": 43,
+		"msruns": 43,
+		"proteins": 9445,
+		"peptides": 127893
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD010899.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.1/pipeline_info/PXD010899-LFQ.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.1/proteomicslfq/PXD010899-LFQ.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD010899",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD010899"
+		},
+		"title": {
+			"title": "Plasma Hirief -  In-depth human plasma proteome analysis captures tissue proteins and transfer of protein variants across the placenta",
+			"pubmedId": [
+				{
+					"id": "30958262",
+					"path": "https://europepmc.org/article/MED/30958262"
+				}
+			]
+		},
+		"samples": 26,
+		"msruns": 1808,
+		"proteins": 3288,
+		"peptides": 41042
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008934",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008934/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008934/pipeline_info/PXD008934.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008934/proteomicslfq/PXD008934.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008934/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD008934",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD008934"
+		},
+		"title": {
+			"title": "Characterization of proteomic changes in human heart failure",
+			"pubmedId": [
+				{
+					"id": "29892068",
+					"path": "https://europepmc.org/article/MED/29892068"
+				}
+			]
+		},
+		"samples": 34,
+		"msruns": 34,
+		"proteins": 3433,
+		"peptides": 42867
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD016999.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.1/pipeline_info/PXD016999-first-instrument.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.1/msstatsconverter/PXD016999-first-instrument.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD016999",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD016999"
+		},
+		"title": {
+			"title": "A Quantitative Proteome Map of the Human Body",
+			"pubmedId": [
+				{
+					"id": "32916130",
+					"path": "https://europepmc.org/article/MED/32916130"
+				}
+			]
+		},
+		"samples": 280,
+		"msruns": 336,
+		"proteins": 10351,
+		"peptides": 187453
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000079033.5",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.5/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.5/pipeline_info/MSV000079033-IgY14-ITRAQ.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.5/msstatsconverter/MSV000079033-IgY14-ITRAQ.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.5/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 12,
+		"msruns": 89,
+		"proteins": 1703,
+		"peptides": 23440
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD017834.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.2/pipeline_info/PXD017834-TMT.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.2/msstatsconverter/PXD017834-TMT.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD017834",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD017834"
+		},
+		"title": {
+			"title": "An Integrated Quantitative Proteomics Workflow for Biomarker Discovery and Validation in Plasma",
+			"pubmedId": []
+		},
+		"samples": 6,
+		"msruns": 18,
+		"proteins": 305,
+		"peptides": 5004
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD018678.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.2/pipeline_info/PXD018678-dda.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.2/proteomicslfq/PXD018678-dda.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD018678",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD018678"
+		},
+		"title": {
+			"title": "Proteomic analysis of ischemic and dilated cardiomyopathy pre-mortem human hearts",
+			"pubmedId": []
+		},
+		"samples": 1,
+		"msruns": 12,
+		"proteins": 5930,
+		"peptides": 65862
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD024364.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.1/pipeline_info/PXD024364-Trypsin.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.1/proteomicslfq/PXD024364-Trypsin.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 9,
+		"msruns": 281,
+		"proteins": 14615,
+		"peptides": 469414
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD002854.3",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.3/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.3/pipeline_info/PXD002854-plasma.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.3/proteomicslfq/PXD002854-plasma.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.3/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD002854",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD002854"
+		},
+		"title": {
+			"title": "Plasma proteome profiling to assess human health and disease",
+			"pubmedId": []
+		},
+		"samples": 22,
+		"msruns": 84,
+		"proteins": 267,
+		"peptides": 3808
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PMID24274931",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PMID24274931/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PMID24274931/pipeline_info/PMID24274931.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PMID24274931/proteomicslfq/PMID24274931.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PMID24274931/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 4,
+		"msruns": 80,
+		"proteins": 1814,
+		"peptides": 16381
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD012636",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012636/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012636/pipeline_info/PXD012636.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012636/proteomicslfq/PXD012636.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012636/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD012636",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD012636"
+		},
+		"title": {
+			"title": "The protein expression landscape of the heart across humans and model organisms",
+			"pubmedId": []
+		},
+		"samples": 9,
+		"msruns": 90,
+		"proteins": 6425,
+		"peptides": 113962
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD022661",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022661/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022661/pipeline_info/PXD022661.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022661/proteomicslfq/PXD022661.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022661/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD022661",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD022661"
+		},
+		"title": {
+			"title": "The proteome of normal human sclera",
+			"pubmedId": [
+				{
+					"id": "27538499",
+					"path": "https://europepmc.org/article/MED/27538499"
+				}
+			]
+		},
+		"samples": 5,
+		"msruns": 60,
+		"proteins": 1667,
+		"peptides": 12788
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD002854.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.2/pipeline_info/PXD002854-erythrocyte.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.2/proteomicslfq/PXD002854-erythrocyte.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD002854",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD002854"
+		},
+		"title": {
+			"title": "Plasma proteome profiling to assess human health and disease",
+			"pubmedId": []
+		},
+		"samples": 6,
+		"msruns": 17,
+		"proteins": 493,
+		"peptides": 4836
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000087095.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.2/pipeline_info/MSV000087095-DDA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.2/proteomicslfq/MSV000087095-DDA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 92,
+		"msruns": 247,
+		"proteins": 6130,
+		"peptides": 78724
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD019909",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909/pipeline_info/PXD019909.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909/proteomicslfq/PXD019909.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD019909",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD019909"
+		},
+		"title": {
+			"title": "Spatially and cell-type resolved quantitative proteomic atlas of healthy human skin",
+			"pubmedId": [
+				{
+					"id": "33154365",
+					"path": "https://europepmc.org/article/MED/33154365"
+				}
+			]
+		},
+		"samples": 12,
+		"msruns": 154,
+		"proteins": 11680,
+		"peptides": 243137
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004452",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004452/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004452/pipeline_info/PXD004452.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004452/proteomicslfq/PXD004452.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004452/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD004452",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004452"
+		},
+		"title": {
+			"title": "HeLa proteome of 12,250 protein-coding genes",
+			"pubmedId": [
+				{
+					"id": "28601559",
+					"path": "https://europepmc.org/article/MED/28601559"
+				}
+			]
+		},
+		"samples": 4,
+		"msruns": 184,
+		"proteins": 8693,
+		"peptides": 115974
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD002179",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002179/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002179/pipeline_info/PXD002179.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002179/proteomicslfq/PXD002179.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002179/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD002179",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD002179"
+		},
+		"title": {
+			"title": "CN-CHPP 2015 Testis Project -  Tissue-Based Proteogenomics Reveals that Human Testis Endows Plentiful Missing Proteins",
+			"pubmedId": [
+				{
+					"id": "26282447",
+					"path": "https://europepmc.org/article/MED/26282447"
+				}
+			]
+		},
+		"samples": 3,
+		"msruns": 148,
+		"proteins": 8853,
+		"peptides": 143610
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD038674",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038674/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038674/pipeline_info/PXD038674.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038674/proteomicslfq/PXD038674.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038674/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD038674",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD038674"
+		},
+		"title": {
+			"title": "Tumor-educated platelet extracellular vesicles: proteomic profiling",
+			"pubmedId": [
+				{
+					"id": "36672299",
+					"path": "https://europepmc.org/article/MED/36672299"
+				}
+			]
+		},
+		"samples": 16,
+		"msruns": 48,
+		"proteins": 1245,
+		"peptides": 12124
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD006675",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006675/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006675/pipeline_info/PXD006675.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006675/proteomicslfq/PXD006675.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006675/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD006675",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD006675"
+		},
+		"title": {
+			"title": "Region and cell-type resolved quantitative proteomic map of the human heart and its application to atrial fibrillation",
+			"pubmedId": [
+				{
+					"id": "29133944",
+					"path": "https://europepmc.org/article/MED/29133944"
+				}
+			]
+		},
+		"samples": 56,
+		"msruns": 448,
+		"proteins": 11178,
+		"peptides": 210623
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD011839",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011839/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011839/pipeline_info/PXD011839.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011839/proteomicslfq/PXD011839.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011839/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD011839",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD011839"
+		},
+		"title": {
+			"title": "Plasma proteome profiling discovers novel proteins associated with non-alcoholic fatty liver disease",
+			"pubmedId": [
+				{
+					"id": "30824564",
+					"path": "https://europepmc.org/article/MED/30824564"
+				}
+			]
+		},
+		"samples": 84,
+		"msruns": 398,
+		"proteins": 1773,
+		"peptides": 20683
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000079033.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.2/pipeline_info/MSV000079033-Blood-Plasma-TMT10.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.2/msstatsconverter/MSV000079033-Blood-Plasma-TMT10.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 10,
+		"msruns": 30,
+		"proteins": 1651,
+		"peptides": 20085
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000079033.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.1/pipeline_info/MSV000079033-Blood-Plasma-TMT6.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.1/msstatsconverter/MSV000079033-Blood-Plasma-TMT6.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 6,
+		"msruns": 30,
+		"proteins": 1656,
+		"peptides": 19212
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD023650",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD023650/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD023650/pipeline_info/PXD023650.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD023650/proteomicslfq/PXD023650.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD023650/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD023650",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023650"
+		},
+		"title": {
+			"title": "Robust micro-flow LC-MS/MS for proteome analysis – 38,000 runs and counting",
+			"pubmedId": [
+				{
+					"id": "33596053",
+					"path": "https://europepmc.org/article/MED/33596053"
+				}
+			]
+		},
+		"samples": 1,
+		"msruns": 48,
+		"proteins": 2797,
+		"peptides": 29383
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD002854.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.1/pipeline_info/PXD002854-serum.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.1/proteomicslfq/PXD002854-serum.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD002854",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD002854"
+		},
+		"title": {
+			"title": "Plasma proteome profiling to assess human health and disease",
+			"pubmedId": []
+		},
+		"samples": 2,
+		"msruns": 73,
+		"proteins": 332,
+		"peptides": 4306
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD038669.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.2/pipeline_info/PXD038669-DIA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.2/diannconvert/PXD038669-DIA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD038669",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD038669"
+		},
+		"title": {
+			"title": "Method development for simplified High-Throughput Plasma Proteomics",
+			"pubmedId": [
+				{
+					"id": "36975161",
+					"path": "https://europepmc.org/article/MED/36975161"
+				}
+			]
+		},
+		"samples": 31,
+		"msruns": 144,
+		"proteins": 455,
+		"peptides": 4221
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD030598",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030598/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030598/pipeline_info/PXD030598.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030598/diannconvert/PXD030598.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030598/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD030598",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD030598"
+		},
+		"title": {
+			"title": "Data independent acquisition mass spectrometry in severe Rheumatic Heart Disease (RHD) identifies a proteomic signature showing ongoing inflammation and effectively classifying RHD cases.",
+			"pubmedId": [
+				{
+					"id": "35317720",
+					"path": "https://europepmc.org/article/MED/35317720"
+				}
+			]
+		},
+		"samples": 435,
+		"msruns": 870,
+		"proteins": 462,
+		"peptides": 3928
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD010899.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.2/pipeline_info/PXD010899-TMT.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.2/msstatsconverter/PXD010899-TMT.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD010899",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD010899"
+		},
+		"title": {
+			"title": "Plasma Hirief -  In-depth human plasma proteome analysis captures tissue proteins and transfer of protein variants across the placenta",
+			"pubmedId": [
+				{
+					"id": "30958262",
+					"path": "https://europepmc.org/article/MED/30958262"
+				}
+			]
+		},
+		"samples": 40,
+		"msruns": 282,
+		"proteins": 1506,
+		"peptides": 16497
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008840",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008840/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008840/pipeline_info/PXD008840.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008840/proteomicslfq/PXD008840.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008840/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD008840",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD008840"
+		},
+		"title": {
+			"title": "A proteomic landscape of diffuse-type gastric cancer",
+			"pubmedId": [
+				{
+					"id": "29520031",
+					"path": "https://europepmc.org/article/MED/29520031"
+				},
+				{
+					"id": "29739932",
+					"path": "https://europepmc.org/article/MED/29739932"
+				}
+			]
+		},
+		"samples": 84,
+		"msruns": 504,
+		"proteins": 9296,
+		"peptides": 147323
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD038526",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038526/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038526/pipeline_info/PXD038526.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038526/diannconvert/PXD038526.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038526/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD038526",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD038526"
+		},
+		"title": {
+			"title": "Human plasma proteome of caloric restriction",
+			"pubmedId": []
+		},
+		"samples": 50,
+		"msruns": 50,
+		"proteins": 197,
+		"peptides": 2070
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD011349",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011349/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011349/pipeline_info/PXD011349.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011349/proteomicslfq/PXD011349.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011349/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD011349",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD011349"
+		},
+		"title": {
+			"title": "Human myocardial biopsy LC-MS/MS",
+			"pubmedId": []
+		},
+		"samples": 55,
+		"msruns": 55,
+		"proteins": 1309,
+		"peptides": 12061
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD019123",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019123/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019123/pipeline_info/PXD019123.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019123/proteomicslfq/PXD019123.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019123/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD019123",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD019123"
+		},
+		"title": {
+			"title": "Proteome profilling of chromophobe renal cell carcinomas",
+			"pubmedId": [
+				{
+					"id": "32694149",
+					"path": "https://europepmc.org/article/MED/32694149"
+				}
+			]
+		},
+		"samples": 9,
+		"msruns": 27,
+		"proteins": 2860,
+		"peptides": 24714
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD040438",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD040438/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD040438/pipeline_info/PXD040438.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD040438/proteomicslfq/PXD040438.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD040438/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD040438",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD040438"
+		},
+		"title": {
+			"title": "Covid Human plasma LC-MS Multiplatform Analyses Reveal Distinct Drivers of Systemic Pathogenesis in Adult Versus Pediatric Severe Acute COVID-19",
+			"pubmedId": []
+		},
+		"samples": 24,
+		"msruns": 24,
+		"proteins": 390,
+		"peptides": 3899
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD017052.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.1/pipeline_info/PXD017052-DDA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.1/proteomicslfq/PXD017052-DDA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.1/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD017052",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD017052"
+		},
+		"title": {
+			"title": "Rapid, Deep and Precise Profiling of the Plasma Proteome with Multi-Nanoparticle Protein Corona",
+			"pubmedId": [
+				{
+					"id": "32699280",
+					"path": "https://europepmc.org/article/MED/32699280"
+				}
+			]
+		},
+		"samples": 38,
+		"msruns": 114,
+		"proteins": 1293,
+		"peptides": 14549
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD016999.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.2/pipeline_info/PXD016999-second-instrument.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.2/msstatsconverter/PXD016999-second-instrument.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD016999",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD016999"
+		},
+		"title": {
+			"title": "A Quantitative Proteome Map of the Human Body",
+			"pubmedId": [
+				{
+					"id": "32916130",
+					"path": "https://europepmc.org/article/MED/32916130"
+				}
+			]
+		},
+		"samples": 170,
+		"msruns": 202,
+		"proteins": 10351,
+		"peptides": 173678
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD000561",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000561/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000561/pipeline_info/PXD000561.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000561/proteomicslfq/PXD000561.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000561/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD000561",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD000561"
+		},
+		"title": {
+			"title": "A draft map of the human proteome",
+			"pubmedId": [
+				{
+					"id": "24870542",
+					"path": "https://europepmc.org/article/MED/24870542"
+				},
+				{
+					"id": "24669763",
+					"path": "https://europepmc.org/article/MED/24669763"
+				}
+			]
+		},
+		"samples": 85,
+		"msruns": 2211,
+		"proteins": 12877,
+		"peptides": 289928
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004242",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004242/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004242/pipeline_info/PXD004242.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004242/proteomicslfq/PXD004242.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004242/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD004242",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004242"
+		},
+		"title": {
+			"title": "Plasma Proteome Profiling Reveals the Effects of Weight Loss on the Apolipoprotein Family and Systemic Inflammation Status",
+			"pubmedId": [
+				{
+					"id": "28007936",
+					"path": "https://europepmc.org/article/MED/28007936"
+				}
+			]
+		},
+		"samples": 58,
+		"msruns": 1290,
+		"proteins": 529,
+		"peptides": 8029
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD020727",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020727/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020727/pipeline_info/PXD020727.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020727/proteomicslfq/PXD020727.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020727/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD020727",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD020727"
+		},
+		"title": {
+			"title": "Affinity capture enrichment versus Affinity depletion: A comparison of strategies for increasing coverage of low abundant human plasma proteins",
+			"pubmedId": [
+				{
+					"id": "32824511",
+					"path": "https://europepmc.org/article/MED/32824511"
+				}
+			]
+		},
+		"samples": 41,
+		"msruns": 41,
+		"proteins": 642,
+		"peptides": 5208
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD008441",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008441/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008441/pipeline_info/PXD008441.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008441/proteomicslfq/PXD008441.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008441/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 100,
+		"msruns": 304,
+		"proteins": 1682,
+		"peptides": 17797
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD037340.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.2/pipeline_info/PXD037340-DIA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": ""
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD037340",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD037340"
+		},
+		"title": {
+			"title": "Deep plasma proteome profiling by enrichment of extracellular vesicles",
+			"pubmedId": []
+		},
+		"samples": 31,
+		"msruns": 110,
+		"proteins": 0,
+		"peptides": 0
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD032212",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD032212/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD032212/pipeline_info/PXD032212.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD032212/proteomicslfq/PXD032212.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD032212/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD032212",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD032212"
+		},
+		"title": {
+			"title": "Proteomics comparison of human valve interstitial cells from healthy patients and donors with CAVD",
+			"pubmedId": []
+		},
+		"samples": 9,
+		"msruns": 18,
+		"proteins": 3149,
+		"peptides": 33256
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD017052.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.2/pipeline_info/PXD017052-DIA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.2/diannconvert/PXD017052-DIA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD017052",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD017052"
+		},
+		"title": {
+			"title": "Rapid, Deep and Precise Profiling of the Plasma Proteome with Multi-Nanoparticle Protein Corona",
+			"pubmedId": [
+				{
+					"id": "32699280",
+					"path": "https://europepmc.org/article/MED/32699280"
+				}
+			]
+		},
+		"samples": 3140,
+		"msruns": 3139,
+		"proteins": 3230,
+		"peptides": 29694
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD013523",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013523/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013523/pipeline_info/PXD013523.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013523/proteomicslfq/PXD013523.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013523/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD013523",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD013523"
+		},
+		"title": {
+			"title": "Papillary renal cell carcinomas rewire glutathione metabolism",
+			"pubmedId": [
+				{
+					"id": "31484429",
+					"path": "https://europepmc.org/article/MED/31484429"
+				}
+			]
+		},
+		"samples": 16,
+		"msruns": 96,
+		"proteins": 5855,
+		"peptides": 65554
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD013231.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.2/pipeline_info/PXD013231-DIA.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.2/diannconvert/PXD013231-DIA.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.2/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD013231",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD013231"
+		},
+		"title": {
+			"title": "Analysis of 1,508 plasma samples of the DiOGenes study - Robust, single shot capillary flow data-independent acquisition to decipher proteomic profiles of weight loss and maintenance",
+			"pubmedId": [
+				{
+					"id": "30948622",
+					"path": "https://europepmc.org/article/MED/30948622"
+				}
+			]
+		},
+		"samples": 1549,
+		"msruns": 1549,
+		"proteins": 562,
+		"peptides": 7437
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD027125",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD027125/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD027125/pipeline_info/PXD027125.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD027125/proteomicslfq/PXD027125.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD027125/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "PXD027125",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD027125"
+		},
+		"title": {
+			"title": "Plasma biomarkers for aortic dilation in BAV patients",
+			"pubmedId": []
+		},
+		"samples": 45,
+		"msruns": 44,
+		"proteins": 340,
+		"peptides": 1712
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "MSV000079033.4",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.4/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.4/pipeline_info/MSV000079033-IgY14-Supermix-ITRAQ.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.4/msstatsconverter/MSV000079033-IgY14-Supermix-ITRAQ.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.4/summarypipeline/multiqc_report.html"
+			}
+		],
+		"accession": {
+			"id": "-",
+			"path": ""
+		},
+		"title": {
+			"title": "",
+			"pubmedId": []
+		},
+		"samples": 16,
+		"msruns": 120,
+		"proteins": 2956,
+		"peptides": 45087
+	}
+]

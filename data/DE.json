@@ -1,0 +1,1592 @@
+[
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PDC000126",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126/pipeline_info/PDC000126.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126/msstatsconverter/PDC000126.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126/msstats/VolcanoPlot.pdf"
+			}
+		],
+		"accession": {
+			"id": "PDC000126",
+			"path": "https://proteomic.datacommons.cancer.gov/pdc/study/PDC000126"
+		},
+		"title": {
+			"title": "PCT-SWATH kidney tissues -  Rapid mass spectrometric conversion of tissue biopsy samples into permanent quantitative digital proteome maps",
+			"pubmedId": [
+				{
+					"id": "25730263",
+					"path": "https://europepmc.org/article/MED/25730263"
+				}
+			]
+		},
+		"samples": 170,
+		"msruns": 204,
+		"proteins": 9638,
+		"peptides": 175954
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD003497",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/pipeline_info/PXD003497.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/diannconvert/PXD003497.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD003497",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD003497"
+		},
+		"title": {
+			"title": "Quantification of Proteome heterogeneity in benign and malignant prostate tissues",
+			"pubmedId": [
+				{
+					"id": "30090875",
+					"path": "https://europepmc.org/article/MED/30090875"
+				}
+			]
+		},
+		"samples": 30,
+		"msruns": 60,
+		"proteins": 2439,
+		"peptides": 22914
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD012574",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/pipeline_info/PXD012574.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/msstatsconverter/PXD012574.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD012574",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD012574"
+		},
+		"title": {
+			"title": "Proteomic and Genomic Signatures of Repeat-instability in Cancer and Adjacent Normal Tissues",
+			"pubmedId": [
+				{
+					"id": "31387980",
+					"path": "https://europepmc.org/article/MED/31387980"
+				}
+			]
+		},
+		"samples": 30,
+		"msruns": 24,
+		"proteins": 4867,
+		"peptides": 47577
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD030881",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/pipeline_info/PXD030881.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/msstatsconverter/PXD030881.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD030881",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD030881"
+		},
+		"title": {
+			"title": "TMT 10-plex based quantitative proteomic analysis of drug resistant breast cancer cell lines",
+			"pubmedId": [
+				{
+					"id": "35335125",
+					"path": "https://europepmc.org/article/MED/35335125"
+				}
+			]
+		},
+		"samples": 10,
+		"msruns": 24,
+		"proteins": 8260,
+		"peptides": 116306
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD003539",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/pipeline_info/PXD003539.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/diannconvert/PXD003539.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD003539",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD003539"
+		},
+		"title": {
+			"title": "NCI60 proteome by PCT-SWATH -  Quantitative Proteome Landscape of the NCI-60 Cancer Cell Lines",
+			"pubmedId": [
+				{
+					"id": "31733513",
+					"path": "https://europepmc.org/article/MED/31733513"
+				}
+			]
+		},
+		"samples": 60,
+		"msruns": 120,
+		"proteins": 3509,
+		"peptides": 23413
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD028618",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/pipeline_info/PXD028618.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/diannconvert/PXD028618.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD028618",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD028618"
+		},
+		"title": {
+			"title": "Comparative proteomic analysis of HPV(+) oropharyngeal squamous cell carcinoma recurrence",
+			"pubmedId": []
+		},
+		"samples": 18,
+		"msruns": 18,
+		"proteins": 3478,
+		"peptides": 26261
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004873",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/pipeline_info/PXD004873.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/diannconvert/PXD004873.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD004873",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004873"
+		},
+		"title": {
+			"title": "76 human liver tissue proteomes by PCT-SWATH",
+			"pubmedId": [
+				{
+					"id": "30365225",
+					"path": "https://europepmc.org/article/MED/30365225"
+				}
+			]
+		},
+		"samples": 38,
+		"msruns": 76,
+		"proteins": 3404,
+		"peptides": 31725
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD025864",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/pipeline_info/PXD025864.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/proteomicslfq/PXD025864.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD025864",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD025864"
+		},
+		"title": {
+			"title": "LC-MS/MS of proteomics in human ovarian cancer versus control samples",
+			"pubmedId": []
+		},
+		"samples": 6,
+		"msruns": 18,
+		"proteins": 3101,
+		"peptides": 31954
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD014414",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/pipeline_info/PXD014414.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/msstatsconverter/PXD014414.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD014414",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD014414"
+		},
+		"title": {
+			"title": "Quantitative proteomic landscape of metaplastic breast carcinoma pathological subtypes and their relationship to triple-negative tumors",
+			"pubmedId": [
+				{
+					"id": "32265444",
+					"path": "https://europepmc.org/article/MED/32265444"
+				}
+			]
+		},
+		"samples": 30,
+		"msruns": 24,
+		"proteins": 3130,
+		"peptides": 21693
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD002137",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/pipeline_info/PXD002137.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/proteomicslfq/PXD002137.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD002137",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD002137"
+		},
+		"title": {
+			"title": "Proteome Landscapes of the Human Colorectal Mucosa, and its Adenoma and Cancer",
+			"pubmedId": [
+				{
+					"id": "26245529",
+					"path": "https://europepmc.org/article/MED/26245529"
+				}
+			]
+		},
+		"samples": 32,
+		"msruns": 192,
+		"proteins": 10550,
+		"peptides": 166811
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004683",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/pipeline_info/PXD004683.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/msstatsconverter/PXD004683.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD004683",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004683"
+		},
+		"title": {
+			"title": "Comparison of Lung Cancer Proteome Profiles 2: TMT",
+			"pubmedId": [
+				{
+					"id": "28195392",
+					"path": "https://europepmc.org/article/MED/28195392"
+				}
+			]
+		},
+		"samples": 12,
+		"msruns": 48,
+		"proteins": 4903,
+		"peptides": 64235
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD020248",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/pipeline_info/PXD020248.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/msstatsconverter/PXD020248.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD020248",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD020248"
+		},
+		"title": {
+			"title": "Comparison of LFQ and TMT-based quantitative proteomics towards toxicology research",
+			"pubmedId": [
+				{
+					"id": "33278487",
+					"path": "https://europepmc.org/article/MED/33278487"
+				}
+			]
+		},
+		"samples": 12,
+		"msruns": 4,
+		"proteins": 3458,
+		"peptides": 34042
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD027817",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/pipeline_info/PXD027817.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/diannconvert/PXD027817.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD027817",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD027817"
+		},
+		"title": {
+			"title": "Study on prognostic biomarkers of HCC based on mass spectrometry",
+			"pubmedId": [
+				{
+					"id": "34676182",
+					"path": "https://europepmc.org/article/MED/34676182"
+				}
+			]
+		},
+		"samples": 48,
+		"msruns": 48,
+		"proteins": 329,
+		"peptides": 2373
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD020109",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/pipeline_info/PXD020109.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/proteomicslfq/PXD020109.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD020109",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD020109"
+		},
+		"title": {
+			"title": "Differential regulation of extracellular matrix proteins in three recurrent liver metastases of a single patient with colorectal cancer",
+			"pubmedId": [
+				{
+					"id": "33099724",
+					"path": "https://europepmc.org/article/MED/33099724"
+				}
+			]
+		},
+		"samples": 4,
+		"msruns": 12,
+		"proteins": 1217,
+		"peptides": 7736
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD010429",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/pipeline_info/PXD010429.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/msstatsconverter/PXD010429.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD010429",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD010429"
+		},
+		"title": {
+			"title": "Proteogenomic Landscape of Squamous Cell Lung Cancer 2: Tandem Mass Tag Datasets",
+			"pubmedId": [
+				{
+					"id": "31395880",
+					"path": "https://europepmc.org/article/MED/31395880"
+				}
+			]
+		},
+		"samples": 348,
+		"msruns": 4176,
+		"proteins": 8227,
+		"peptides": 162572
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD018830",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/pipeline_info/PXD018830.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/diannconvert/PXD018830.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD018830",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD018830"
+		},
+		"title": {
+			"title": "DIA-MS analysis of 21 breast cancer tissues",
+			"pubmedId": [
+				{
+					"id": "33855848",
+					"path": "https://europepmc.org/article/MED/33855848"
+				}
+			]
+		},
+		"samples": 25,
+		"msruns": 25,
+		"proteins": 6333,
+		"peptides": 64270
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD002395",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/pipeline_info/PXD002395.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/proteomicslfq/PXD002395.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD002395",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD002395"
+		},
+		"title": {
+			"title": "11 human cell lines -  Comparative proteomic analysis of eleven common cell lines reveals ubiquitous but varying expression of most proteins",
+			"pubmedId": [
+				{
+					"id": "22278370",
+					"path": "https://europepmc.org/article/MED/22278370"
+				}
+			]
+		},
+		"samples": 33,
+		"msruns": 198,
+		"proteins": 10530,
+		"peptides": 181082
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD025560",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/pipeline_info/PXD025560.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/diannconvert/PXD025560.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD025560",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD025560"
+		},
+		"title": {
+			"title": "Human NSCLC DIA proteomics validation cohort 2",
+			"pubmedId": [
+				{
+					"id": "34870237",
+					"path": "https://europepmc.org/article/MED/34870237"
+				}
+			]
+		},
+		"samples": 203,
+		"msruns": 203,
+		"proteins": 8523,
+		"peptides": 88199
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD014145",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/pipeline_info/PXD014145.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/msstatsconverter/PXD014145.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD014145",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD014145"
+		},
+		"title": {
+			"title": "Depletion of histone methyltransferase KMT9 inhibits lung cancer cell proliferation by inducing non-apoptotic cell death",
+			"pubmedId": [
+				{
+					"id": "32095117",
+					"path": "https://europepmc.org/article/MED/32095117"
+				}
+			]
+		},
+		"samples": 11,
+		"msruns": 12,
+		"proteins": 6482,
+		"peptides": 79960
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD032263",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/pipeline_info/PXD032263.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/diannconvert/PXD032263.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD032263",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD032263"
+		},
+		"title": {
+			"title": "Pancreatic cells spectral library by the DIA strategy and the phenotype analysis of gemcitabine-sensitive",
+			"pubmedId": []
+		},
+		"samples": 4,
+		"msruns": 8,
+		"proteins": 8079,
+		"peptides": 112288
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD021394",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/pipeline_info/PXD021394.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/diannconvert/PXD021394.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD021394",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD021394"
+		},
+		"title": {
+			"title": "DIA-MS analysis of 24 breast cancer tissues",
+			"pubmedId": [
+				{
+					"id": "33855848",
+					"path": "https://europepmc.org/article/MED/33855848"
+				}
+			]
+		},
+		"samples": 24,
+		"msruns": 24,
+		"proteins": 6577,
+		"peptides": 63072
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004684",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/pipeline_info/PXD004684.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/diannconvert/PXD004684.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD004684",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004684"
+		},
+		"title": {
+			"title": "Comparison of Lung Cancer Proteome Profiles 3: DIA",
+			"pubmedId": [
+				{
+					"id": "28195392",
+					"path": "https://europepmc.org/article/MED/28195392"
+				}
+			]
+		},
+		"samples": 8,
+		"msruns": 15,
+		"proteins": 3503,
+		"peptides": 30074
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD000672",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/pipeline_info/PXD000672.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/diannconvert/PXD000672.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD000672",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD000672"
+		},
+		"title": {
+			"title": "PCT-SWATH kidney tissues -  Rapid mass spectrometric conversion of tissue biopsy samples into permanent quantitative digital proteome maps",
+			"pubmedId": [
+				{
+					"id": "25730263",
+					"path": "https://europepmc.org/article/MED/25730263"
+				}
+			]
+		},
+		"samples": 36,
+		"msruns": 36,
+		"proteins": 2971,
+		"peptides": 25636
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD023423",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/pipeline_info/PXD023423.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/msstatsconverter/PXD023423.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD023423",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023423"
+		},
+		"title": {
+			"title": "Mining gastric cancer cellular quantitative proteomics data to analyse the proteome change upon CAMKK2 inhibition",
+			"pubmedId": [
+				{
+					"id": "33844560",
+					"path": "https://europepmc.org/article/MED/33844560"
+				}
+			]
+		},
+		"samples": 6,
+		"msruns": 36,
+		"proteins": 6683,
+		"peptides": 94888
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD023508.1",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/pipeline_info/PXD023508-phenotype.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/proteomicslfq/PXD023508-phenotype.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD023508",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023508"
+		},
+		"title": {
+			"title": "Human plasma LC-MSMS for identified protein biomarker for BRCA1/2 positive ovarian cancer",
+			"pubmedId": [
+				{
+					"id": "34064977",
+					"path": "https://europepmc.org/article/MED/34064977"
+				}
+			]
+		},
+		"samples": 80,
+		"msruns": 80,
+		"proteins": 266,
+		"peptides": 1553
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD023508.2",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/pipeline_info/PXD023508-mutation-carrier.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/proteomicslfq/PXD023508-mutation-carrier.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD023508",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023508"
+		},
+		"title": {
+			"title": "Human plasma LC-MSMS for identified protein biomarker for BRCA1/2 positive ovarian cancer",
+			"pubmedId": [
+				{
+					"id": "34064977",
+					"path": "https://europepmc.org/article/MED/34064977"
+				}
+			]
+		},
+		"samples": 80,
+		"msruns": 80,
+		"proteins": 265,
+		"peptides": 1544
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD028251",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/pipeline_info/PXD028251.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/proteomicslfq/PXD028251.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD028251",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD028251"
+		},
+		"title": {
+			"title": "Plasma proteome signature to predict outcome of breast cancer patients receiving neoadjuvant chemotherapy",
+			"pubmedId": [
+				{
+					"id": "34944885",
+					"path": "https://europepmc.org/article/MED/34944885"
+				}
+			]
+		},
+		"samples": 51,
+		"msruns": 51,
+		"proteins": 538,
+		"peptides": 7134
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD014194",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014194/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": ""
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014194/diannconvert/PXD014194.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014194/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014194/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD014194",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD014194"
+		},
+		"title": {
+			"title": "OLFM4 expression in breast tumor samples",
+			"pubmedId": [
+				{
+					"id": "31318138",
+					"path": "https://europepmc.org/article/MED/31318138"
+				}
+			]
+		},
+		"samples": 72,
+		"msruns": 145,
+		"proteins": 2856,
+		"peptides": 22926
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD022992",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/pipeline_info/PXD022992.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/diannconvert/PXD022992.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD022992",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD022992"
+		},
+		"title": {
+			"title": "Data-independent Acquisition-based Proteome and Phosphoproteome Profiling across Six Melanoma Cell Lines",
+			"pubmedId": []
+		},
+		"samples": 6,
+		"msruns": 12,
+		"proteins": 9474,
+		"peptides": 135706
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD027008",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/pipeline_info/PXD027008.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/proteomicslfq/PXD027008.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD027008",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD027008"
+		},
+		"title": {
+			"title": "Proteomic Identification of Lung Adenocarcinoma and Normal Lung Tissue",
+			"pubmedId": [
+				{
+					"id": "34988201",
+					"path": "https://europepmc.org/article/MED/34988201"
+				}
+			]
+		},
+		"samples": 10,
+		"msruns": 10,
+		"proteins": 5282,
+		"peptides": 37299
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD014943",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/pipeline_info/PXD014943.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/diannconvert/PXD014943.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD014943",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD014943"
+		},
+		"title": {
+			"title": "113 DLBCL SWATH maps by PCT-SWATH",
+			"pubmedId": [
+				{
+					"id": "31495056",
+					"path": "https://europepmc.org/article/MED/31495056"
+				}
+			]
+		},
+		"samples": 113,
+		"msruns": 113,
+		"proteins": 5609,
+		"peptides": 57115
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD023508",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/pipeline_info/PXD023508-disease.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/proteomicslfq/PXD023508-disease.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD023508",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023508"
+		},
+		"title": {
+			"title": "Human plasma LC-MSMS for identified protein biomarker for BRCA1/2 positive ovarian cancer",
+			"pubmedId": [
+				{
+					"id": "34064977",
+					"path": "https://europepmc.org/article/MED/34064977"
+				}
+			]
+		},
+		"samples": 80,
+		"msruns": 80,
+		"proteins": 265,
+		"peptides": 2805
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD030671",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/pipeline_info/PXD030671.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/msstatsconverter/PXD030671.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/msstatstmt/"
+			}
+		],
+		"accession": {
+			"id": "PXD030671",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD030671"
+		},
+		"title": {
+			"title": "Spatial Proteomic Analysis of Isogenic Metastatic Colorectal Cancer Cells Reveals Key Dysregulated Proteins Associated with Lymph Node, Liver and Lung Metastasis",
+			"pubmedId": [
+				{
+					"id": "35159257",
+					"path": "https://europepmc.org/article/MED/35159257"
+				}
+			]
+		},
+		"samples": 33,
+		"msruns": 18,
+		"proteins": 4665,
+		"peptides": 64775
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD004691",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/pipeline_info/PXD004691.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/diannconvert/PXD004691.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD004691",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD004691"
+		},
+		"title": {
+			"title": "Comparison of FFPE and fresh frozen prostate tissues using PCT SWATH",
+			"pubmedId": [
+				{
+					"id": "31495056",
+					"path": "https://europepmc.org/article/MED/31495056"
+				}
+			]
+		},
+		"samples": 97,
+		"msruns": 224,
+		"proteins": 2956,
+		"peptides": 26493
+	},
+	{
+		"reanalysis": [
+			{
+				"id": 1,
+				"title": "PXD033169",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/"
+			},
+			{
+				"id": 2,
+				"title": "SDRF",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/pipeline_info/PXD033169.sdrf.tsv"
+			},
+			{
+				"id": 3,
+				"title": "MSstats_in",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/diannconvert/PXD033169.sdrf_openms_design_msstats_in.csv"
+			},
+			{
+				"id": 4,
+				"title": "pmultiqc_report",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/summarypipeline/multiqc_report.html"
+			},
+			{
+				"id": 5,
+				"title": "differential_analysis",
+				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/msstats/"
+			}
+		],
+		"accession": {
+			"id": "PXD033169",
+			"path": "https://www.ebi.ac.uk/pride/archive/projects/PXD033169"
+		},
+		"title": {
+			"title": "Novel Diagnostic Biomarkers for High-Grade Serous Ovarian Cancer Uncovered by Data-Independent Acquisition Mass Spectrometry",
+			"pubmedId": [
+				{
+					"id": "35939567",
+					"path": "https://europepmc.org/article/MED/35939567"
+				}
+			]
+		},
+		"samples": 50,
+		"msruns": 50,
+		"proteins": 548,
+		"peptides": 5190
+	}
+]
