@@ -13,12 +13,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD034244/diannconvert/PXD034244.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD034244/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -49,12 +49,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004143/proteomicslfq/PXD004143.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004143/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -90,12 +90,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012131/proteomicslfq/PXD012131.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012131/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -131,12 +131,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009219/proteomicslfq/PXD009219.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009219/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -172,12 +172,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.3/proteomicslfq/PXD009737-LysC.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.3/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -213,12 +213,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008467/msstatsconverter/PXD008467.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008467/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -249,12 +249,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.2/proteomicslfq/PXD024364-Asp-N.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -285,12 +285,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/diannconvert/PXD036609.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -321,12 +321,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.1/proteomicslfq/PXD038669-DDA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -362,12 +362,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.1/diannconvert/PXD018678-dia.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -398,12 +398,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": ""
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030304/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -439,12 +439,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.2/proteomicslfq/PXD009737-glutamyl-endopeptidase.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -480,12 +480,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD029009/diannconvert/PXD029009.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD029009/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -516,12 +516,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020192/proteomicslfq/PXD020192.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020192/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -557,12 +557,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.1/proteomicslfq/PXD017834-LFQ.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -593,12 +593,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD039023/diannconvert/PXD039023.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD039023/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -629,12 +629,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009348.1/proteomicslfq/PXD009348-DDA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009348.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -670,12 +670,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019817/proteomicslfq/PXD019817.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019817/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -711,12 +711,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022469/proteomicslfq/PXD022469.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022469/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -752,12 +752,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008333/proteomicslfq/PXD008333.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008333/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -788,12 +788,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010154/proteomicslfq/PXD010154.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010154/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -829,12 +829,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008722/proteomicslfq/PXD008722.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008722/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -870,12 +870,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.1/proteomicslfq/PXD013231-DDA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -911,12 +911,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445/proteomicslfq/PXD005445-combined.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -952,12 +952,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445.1/proteomicslfq/PXD005445.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005445.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -993,12 +993,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD003947/proteomicslfq/PXD003947.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD003947/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1034,12 +1034,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.1/proteomicslfq/PXD037340-DDA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1070,12 +1070,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000612/proteomicslfq/PXD000612.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000612/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1111,12 +1111,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037682/diannconvert/PXD037682.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037682/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1147,12 +1147,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005736/proteomicslfq/PXD005736.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD005736/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1188,12 +1188,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.1/proteomicslfq/PXD009737-Trypsin.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD009737.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1229,12 +1229,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.1/diannconvert/MSV000087095-DIA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1265,12 +1265,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000865/proteomicslfq/PXD000865.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000865/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1306,12 +1306,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006559/msstatsconverter/PXD006559.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006559/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1347,12 +1347,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012755/proteomicslfq/PXD012755.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012755/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1388,12 +1388,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010271/proteomicslfq/PXD010271.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010271/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1429,12 +1429,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.3/msstatsconverter/MSV000079033-Blood-Plasma-iTRAQ.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.3/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1465,12 +1465,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008468/msstatsconverter/PXD008468.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008468/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1501,12 +1501,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909.1/diannconvert/PXD019909-DIA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1542,12 +1542,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.1/proteomicslfq/PXD010899-LFQ.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1583,12 +1583,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008934/proteomicslfq/PXD008934.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008934/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1624,12 +1624,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.1/msstatsconverter/PXD016999-first-instrument.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1665,12 +1665,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.5/msstatsconverter/MSV000079033-IgY14-ITRAQ.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.5/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1701,12 +1701,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.2/msstatsconverter/PXD017834-TMT.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017834.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1737,12 +1737,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.2/proteomicslfq/PXD018678-dda.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD018678.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1773,12 +1773,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.1/proteomicslfq/PXD024364-Trypsin.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD024364.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1809,12 +1809,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.3/proteomicslfq/PXD002854-plasma.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.3/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1845,12 +1845,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PMID24274931/proteomicslfq/PMID24274931.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PMID24274931/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1881,12 +1881,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012636/proteomicslfq/PXD012636.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD012636/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1917,12 +1917,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022661/proteomicslfq/PXD022661.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD022661/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1958,12 +1958,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.2/proteomicslfq/PXD002854-erythrocyte.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -1994,12 +1994,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.2/proteomicslfq/MSV000087095-DDA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000087095.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2030,12 +2030,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909/proteomicslfq/PXD019909.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019909/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2071,12 +2071,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004452/proteomicslfq/PXD004452.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004452/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2112,12 +2112,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002179/proteomicslfq/PXD002179.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002179/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2153,12 +2153,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038674/proteomicslfq/PXD038674.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038674/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2194,12 +2194,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006675/proteomicslfq/PXD006675.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD006675/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2235,12 +2235,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011839/proteomicslfq/PXD011839.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011839/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2276,12 +2276,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.2/msstatsconverter/MSV000079033-Blood-Plasma-TMT10.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2312,12 +2312,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.1/msstatsconverter/MSV000079033-Blood-Plasma-TMT6.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2348,12 +2348,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD023650/proteomicslfq/PXD023650.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD023650/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2389,12 +2389,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.1/proteomicslfq/PXD002854-serum.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD002854.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2425,12 +2425,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.2/diannconvert/PXD038669-DIA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038669.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2466,12 +2466,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030598/diannconvert/PXD030598.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD030598/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2507,12 +2507,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.2/msstatsconverter/PXD010899-TMT.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD010899.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2548,12 +2548,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008840/proteomicslfq/PXD008840.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008840/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2593,12 +2593,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038526/diannconvert/PXD038526.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD038526/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2629,12 +2629,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011349/proteomicslfq/PXD011349.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD011349/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2665,12 +2665,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019123/proteomicslfq/PXD019123.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD019123/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2706,12 +2706,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD040438/proteomicslfq/PXD040438.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD040438/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2742,12 +2742,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.1/proteomicslfq/PXD017052-DDA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.1/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2783,12 +2783,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.2/msstatsconverter/PXD016999-second-instrument.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD016999.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2824,12 +2824,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000561/proteomicslfq/PXD000561.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD000561/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2869,12 +2869,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004242/proteomicslfq/PXD004242.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD004242/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2910,12 +2910,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020727/proteomicslfq/PXD020727.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD020727/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2951,12 +2951,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008441/proteomicslfq/PXD008441.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD008441/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -2987,12 +2987,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": ""
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD037340.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -3023,12 +3023,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD032212/proteomicslfq/PXD032212.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD032212/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -3059,12 +3059,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.2/diannconvert/PXD017052-DIA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD017052.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -3100,12 +3100,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013523/proteomicslfq/PXD013523.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013523/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -3141,12 +3141,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.2/diannconvert/PXD013231-DIA.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD013231.2/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -3182,12 +3182,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD027125/proteomicslfq/PXD027125.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD027125/summarypipeline/multiqc_report.html"
 			}
 		],
@@ -3218,12 +3218,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.4/msstatsconverter/MSV000079033-IgY14-Supermix-ITRAQ.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/MSV000079033.4/summarypipeline/multiqc_report.html"
 			}
 		],

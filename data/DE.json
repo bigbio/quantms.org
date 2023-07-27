@@ -13,12 +13,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126/msstatsconverter/PDC000126.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PDC000126/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -59,12 +59,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/diannconvert/PXD003497.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003497/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -105,12 +105,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/msstatsconverter/PXD012574.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD012574/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -151,12 +151,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/msstatsconverter/PXD030881.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030881/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -197,12 +197,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/diannconvert/PXD003539.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD003539/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -243,12 +243,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/diannconvert/PXD028618.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028618/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -284,12 +284,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/diannconvert/PXD004873.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004873/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -330,12 +330,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/proteomicslfq/PXD025864.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025864/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -371,12 +371,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/msstatsconverter/PXD014414.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014414/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -417,12 +417,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/proteomicslfq/PXD002137.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002137/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -463,12 +463,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/msstatsconverter/PXD004683.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004683/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -509,12 +509,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/msstatsconverter/PXD020248.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020248/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -555,12 +555,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/diannconvert/PXD027817.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027817/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -601,12 +601,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/proteomicslfq/PXD020109.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD020109/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -647,12 +647,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/msstatsconverter/PXD010429.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD010429/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -693,12 +693,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/diannconvert/PXD018830.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD018830/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -739,12 +739,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/proteomicslfq/PXD002395.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD002395/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -785,12 +785,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/diannconvert/PXD025560.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD025560/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -831,12 +831,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/msstatsconverter/PXD014145.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014145/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -877,12 +877,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/diannconvert/PXD032263.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD032263/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -918,12 +918,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/diannconvert/PXD021394.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD021394/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -964,12 +964,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/diannconvert/PXD004684.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004684/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1010,12 +1010,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/diannconvert/PXD000672.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD000672/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1056,12 +1056,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/msstatsconverter/PXD023423.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023423/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1102,12 +1102,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/proteomicslfq/PXD023508-phenotype.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.1/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1148,12 +1148,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/proteomicslfq/PXD023508-mutation-carrier.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508.2/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1194,12 +1194,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/proteomicslfq/PXD028251.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD028251/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1240,12 +1240,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014194/diannconvert/PXD014194.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014194/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1286,12 +1286,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/diannconvert/PXD022992.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD022992/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1327,12 +1327,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/proteomicslfq/PXD027008.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD027008/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1373,12 +1373,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/diannconvert/PXD014943.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD014943/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1419,12 +1419,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/proteomicslfq/PXD023508-disease.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD023508/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1465,12 +1465,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/msstatsconverter/PXD030671.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD030671/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1511,12 +1511,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/diannconvert/PXD004691.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD004691/summarypipeline/multiqc_report.html"
 			},
 			{
@@ -1557,12 +1557,12 @@
 			},
 			{
 				"id": 3,
-				"title": "MSstats_in",
+				"title": "Peptide Table",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/diannconvert/PXD033169.sdrf_openms_design_msstats_in.csv"
 			},
 			{
 				"id": 4,
-				"title": "pmultiqc_report",
+				"title": "PMULTIQC",
 				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/differential-expression/PXD033169/summarypipeline/multiqc_report.html"
 			},
 			{
