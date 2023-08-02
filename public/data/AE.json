@@ -273,16 +273,8 @@
 	},
 	{
 		"reanalysis": [
-			{
-				"id": 1,
-				"title": "PXD036609",
-				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/"
-			},
-			{
-				"id": 2,
-				"title": "SDRF",
-				"path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/pipeline_info/PXD036609.sdrf.tsv"
-			},
+			{ "id": 1, "title": "PXD036609", "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/"},
+			{ "id": 2,"title": "SDRF", "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/absolute-expression/PXD036609/pipeline_info/PXD036609.sdrf.tsv"},
 			{
 				"id": 3,
 				"title": "Peptide Table",
