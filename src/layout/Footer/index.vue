@@ -1,6 +1,6 @@
 <template>
   <div class="footer-box">
-    <div class="footer-left">
+    <!-- <div class="footer-left">
       <el-link href="ypriverol@gmail.com" type="default" :underline="false">
         <span>Lisence</span>
       </el-link>
@@ -14,7 +14,7 @@
       <el-link href="ypriverol@gmail.com" type="default" :underline="false">
         <span>Support</span>
       </el-link>
-    </div>
+    </div> -->
     <div class="footer-right">
       <el-link href="https://www.ebi.ac.uk/" type="primary" :underline="false">
         <el-image
@@ -48,8 +48,10 @@ import openMS from '@/assets/icons/openMS.png'
 <style lang="scss" scoped>
 .footer-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
 }
 .footer-box span {
   margin-right: 10px;
