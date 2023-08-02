@@ -165,7 +165,7 @@ const init = (data) => {
         show: true
       },
       min: 1,
-      max: 7
+      max: 10
     },
     dataZoom: [
       {
