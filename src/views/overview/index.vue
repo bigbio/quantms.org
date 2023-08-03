@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="display-box">
     <!-- <h1 class="title">
       <span>Protein </span>
@@ -29,7 +30,7 @@
         <div style="">
           <el-select
             v-model="sapiens"
-            class="m-2"
+            class="left"
             size="large"
             placeholder="Select organism"
             style="width: 140px"
@@ -68,10 +69,24 @@
           <el-button type="primary" size="large" plain>Search</el-button>
         </router-link> -->
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; width: 100%; margin-top:1.5rem;">
-        <el-button type="primary" round @click="onSearch('LRBA_HUMAN')">LRBA_HUMAN</el-button>
-        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')">PGAM5_HUMAN</el-button>
-        <el-button type="primary" round @click="onSearch('LRP8_HUMAN')">LRP8_HUMAN</el-button>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin-top: 1.5rem;
+        "
+      >
+        <el-button type="primary" round @click="onSearch('LRBA_HUMAN')"
+          >LRBA_HUMAN</el-button
+        >
+        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')"
+          >PGAM5_HUMAN</el-button
+        >
+        <el-button type="primary" round @click="onSearch('LRP8_HUMAN')"
+          >LRP8_HUMAN</el-button
+        >
       </div>
     </div>
     <!-- <p>
@@ -90,6 +105,7 @@
       <router-view></router-view>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
@@ -106,6 +122,7 @@ const options = [
     label: "Homo sapiens",
   },
 ];
+
 
 // const font = ["V", "i", "s", "u", "a", "l", "i", "z", "a", "t", "i", "o", "n"];
 // const fontColor = [
@@ -128,25 +145,47 @@ const input = ref("");
 
 const onEnter = () => {
   onSearch(input.value);
-  if(!input.value){
+  if (!input.value) {
     return;
   }
   router.push({ path: "/ae/tissues", query: { protein: input.value } });
 };
 
 const onSearch = (val) => {
-  if(!val){
+  if (!val) {
     return;
   }
   input.value = val;
   router.push({ path: "/ae/tissues", query: { protein: val } });
-}
-
+};
 </script>
 <style lang="scss" scoped>
-.display-box {
-  // margin: 0 20px;
+<<<<<<< HEAD
+//.display-box {
+=======
+::v-deep {
+  .left .el-input__wrapper {
+    border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0 !important;
+    border:1px solid rgb(220, 223, 230);
+    box-shadow: none;
+  }
+
+  .input .el-input__wrapper{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+    border:1px solid rgb(220, 223, 230);
+    box-shadow: none;
+  }
 }
+
+.display-box {
+>>>>>>> 0474abf6b8c142c49ba80cc91fd10962b0ff4836
+  // margin: 0 20px;
+//}
 
 .search-box {
   background-color: white;
@@ -168,7 +207,7 @@ const onSearch = (val) => {
   margin-bottom: 20px;
 }
 .input {
-  width: 400px
+  width: 400px;
 }
 .example-showcase .el-dropdown-link {
   cursor: pointer;
@@ -197,5 +236,12 @@ h1 {
 }
 .link {
   text-decoration: none;
+}
+.button-tag {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  //width: 100%; 
+  margin-top:1.5rem;
 }
 </style>

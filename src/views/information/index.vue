@@ -82,7 +82,9 @@ import {
 } from "@/api/getTable";
 const tableDataAE = ref([]);
 const tableDataDE = ref([]);
+// const table = ref([])
 const fullTable = ref([]);
+
 const initTable = async () => {
   const AE = await getAbsolueExpression();
   tableDataAE.value = AE.data;
@@ -90,6 +92,8 @@ const initTable = async () => {
   tableDataDE.value = DE.data;
   fullTable.value = [...AE.data, ...DE.data];
 };
+
+
 
 const search1 = ref();
 // const search2 = ref();
