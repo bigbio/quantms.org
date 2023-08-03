@@ -22,34 +22,31 @@
           </div>
         </template>
       </el-table-column>
+      <el-table-column prop="category" label="Category" min-width="120" />
       <el-table-column prop="samples" label="Samples" min-width="100" />
       <el-table-column prop="msruns" label="Msruns" min-width="100" />
       <el-table-column prop="peptides" label="Peptides" min-width="100" />
       <el-table-column prop="proteins" label="Proteins" min-width="100" />
-      <el-table-column label="Title" min-width="400">
-        <template #default="scope">
-          <div style="display: flex; align-items: center">
-            {{ scope.row.title.title }}
-          </div>
-          PubmedID:
-          <span v-for="pubmed in scope.row.title.pubmedId" :key="pubmed.id">
-            <text></text>
-            <el-link :href="pubmed.path" type="primary">
-              {{ pubmed.id }}
-            </el-link>
-          </span>
-        </template>
-      </el-table-column>
+<!--      <el-table-column label="Title" min-width="400">-->
+<!--        <template #default="scope">-->
+<!--          <div style="display: flex; align-items: center">-->
+<!--            {{ scope.row.title.title }}-->
+<!--          </div>-->
+<!--          PubmedID:-->
+<!--          <span v-for="pubmed in scope.row.title.pubmedId" :key="pubmed.id">-->
+<!--            <text></text>-->
+<!--            <el-link :href="pubmed.path" type="primary">-->
+<!--              {{ pubmed.id }}-->
+<!--            </el-link>-->
+<!--          </span>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
       <el-table-column label="Reanalysis" min-width="140">
         <template #default="scope">
-          <div
-            style="display: flex; align-items: center"
-            v-for="item in scope.row.reanalysis"
-            :key="item.id"
-          >
-            <el-link :href="item.path" type="primary"
-              >{{ item.title }};<br
-            /></el-link>
+          <div style="display: flex; align-items: center" v-for="item in scope.row.reanalysis" :key="item.id" >
+            <div v-if="item.id === 1">
+              <el-link :href="item.path" type="primary" >{{ item.title }}<br/></el-link>
+            </div>
           </div>
         </template>
       </el-table-column>
@@ -76,7 +73,7 @@ const props = defineProps({
   },
   limit: {
     type: Number,
-    default: 10,
+    default: 25,
   },
 });
 
@@ -93,7 +90,7 @@ const tableData = computed(() => {
 });
 
 const handleCurrentChange = (val) => {
-  console.log(val);
+  // console.log(val);
   currentPage.value = val;
 };
 </script>

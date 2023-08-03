@@ -28,9 +28,7 @@
           margin-bottom: 1rem;
         "
       >
-        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)">
-          absolute-expression
-        </div>
+        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)"> Datasets Reanalyzed </div>
         <el-input
           v-model="search1"
           size="large"
@@ -40,39 +38,38 @@
         />
       </div>
       <Table
-        :modelValue="tableDataAE"
-        @update:modelValue="tableDataAE = $event"
+        :modelValue="fullTable" @update:modelValue="fullTable = $event"
       ></Table>
     </div>
 
-    <div class="card-box" style="margin-top:3rem;">
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          border-bottom: 2px solid rgb(229, 231, 235);
-          margin-bottom: 1rem;
-        "
-      >
-        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)">
-          differential-expression
-        </div>
-        <el-input
-          v-model="search2"
-          size="large"
-          style="width: 30%; margin: 1.5rem 0"
-          placeholder="Search"
-          :suffix-icon="Search"
-        />
-      </div>
+<!--    <div class="card-box" style="margin-top:3rem;">-->
+<!--      <div-->
+<!--        style="-->
+<!--          display: flex;-->
+<!--          align-items: center;-->
+<!--          justify-content: space-between;-->
+<!--          border-bottom: 2px solid rgb(229, 231, 235);-->
+<!--          margin-bottom: 1rem;-->
+<!--        "-->
+<!--      >-->
+<!--        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)">-->
+<!--          differential-expression-->
+<!--        </div>-->
+<!--        <el-input-->
+<!--          v-model="search2"-->
+<!--          size="large"-->
+<!--          style="width: 30%; margin: 1.5rem 0"-->
+<!--          placeholder="Search"-->
+<!--          :suffix-icon="Search"-->
+<!--        />-->
+<!--      </div>-->
 
-      <!-- <p class="body-title">differential-expression</p> -->
-      <Table
-        :modelValue="tableDataDE"
-        @update:modelValue="tableDataDE = $event"
-      ></Table>
-    </div>
+<!--      &lt;!&ndash; <p class="body-title">differential-expression</p> &ndash;&gt;-->
+<!--      <Table-->
+<!--        :modelValue="tableDataDE"-->
+<!--        @update:modelValue="tableDataDE = $event"-->
+<!--      ></Table>-->
+<!--    </div>-->
   </div>
 </template>
 <script setup>
@@ -86,17 +83,21 @@ import {
 const tableDataAE = ref([]);
 const tableDataDE = ref([]);
 // const table = ref([])
+const fullTable = ref([]);
+
 const initTable = async () => {
   const AE = await getAbsolueExpression();
   tableDataAE.value = AE.data;
   const DE = await getDifferentialExpression();
   tableDataDE.value = DE.data;
+  console.log(DE.data)
+  fullTable.value = [...AE.data, ...DE.data];
 };
 
 
 
 const search1 = ref();
-const search2 = ref();
+// const search2 = ref();
 
 onMounted(() => {
   initTable();
