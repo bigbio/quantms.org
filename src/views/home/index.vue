@@ -69,7 +69,8 @@
           <a href="https://quantms.readthedocs.io/en/latest/">quantms</a> is a bioinformatics best-practice analysis pipeline
           for Quantitative Mass Spectrometry (MS), including: DDA-LFQ, plexDDA (e.g. TMT, iTRAQ), and DIA.
         </p>
-        <p class="body-title">Citing quantms</p>
+        <img :src="pipeline" style="height: 150px; width: 800px"/>
+        <p class="body-title" style="font-size: 16px">Citing quantms</p>
         <p class="cite-content">
           Chengxin Dai, Julianus Pfeuffer, Hong Wang et al. quantms: A
           cloud-based pipeline for proteomics reanalysis enables the
@@ -124,6 +125,7 @@ import { ref } from "vue";
 // import quantMsLogo from "@/assets/images/nf-core-quantms_logo_light.png";
 // import quantMsMetro from "@/assets/images/quantms_metro.png";
 // import quantMs from "@/assets/images/quantms.png";
+import pipeline from "@/assets/images/pipeline.png";
 import {Tools, DocumentCopy, Histogram, Search} from "@element-plus/icons-vue";
 // import logo from "@/assets/logo.png";
 import logo from "@/assets/images/nf-core-quantms_logo_light.png";
@@ -176,7 +178,7 @@ a {
 .cite-content {
   font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   word-wrap: break-word;
   text-align: left;
