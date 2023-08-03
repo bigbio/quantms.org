@@ -6,6 +6,7 @@
       justify-content: space-between;
       width: 100%;
       height: 3.5rem;
+      background-color: white;
     "
   >
     <el-image
