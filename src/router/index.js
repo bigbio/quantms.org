@@ -11,7 +11,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../layout'),
     children: [
       {
-        path: '/information',
+        path: '/datasets',
         name: 'information',
         component: () => import('@/views/information')
       },

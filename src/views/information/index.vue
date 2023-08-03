@@ -1,24 +1,6 @@
 <template>
   <div class="page">
-    <!-- <h1 class="title">quantms reanalysis</h1>
-    <p class="body-content">
-      A total of 118 datasets were reanalyzed using quantms version 1.1, UniProt
-      protein sequence database (version 10.20222), only the SwissProt (reviewed
-      proteins) without isoforms information. All datasets have been deposited
-      in
-      <a
-        href="http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/"
-        >PRIDE Archive public FTP</a
-      >. All datasets were filtered at a 1% false discovery rate (FDR) at PSM
-      and protein levels for all datasets. All parameters including the
-      posttranslational modifications, precursor and fragment tolerances can be
-      found for each dataset in the corresponding SDRF. Following 2 tables show
-      the list of AE and DE datasets reanalyzed including the number of samples,
-      ms runs, unique peptides and unique proteins for each dataset, as well as
-      reanalysis results and publication information.
-    </p> -->
     <div class="card-box">
-      <!-- <p class="body-title">absolute-expression</p> -->
       <div 
         style="
           display: flex;
@@ -41,35 +23,6 @@
         :modelValue="fullTable" @update:modelValue="fullTable = $event"
       ></Table>
     </div>
-
-<!--    <div class="card-box" style="margin-top:3rem;">-->
-<!--      <div-->
-<!--        style="-->
-<!--          display: flex;-->
-<!--          align-items: center;-->
-<!--          justify-content: space-between;-->
-<!--          border-bottom: 2px solid rgb(229, 231, 235);-->
-<!--          margin-bottom: 1rem;-->
-<!--        "-->
-<!--      >-->
-<!--        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)">-->
-<!--          differential-expression-->
-<!--        </div>-->
-<!--        <el-input-->
-<!--          v-model="search2"-->
-<!--          size="large"-->
-<!--          style="width: 30%; margin: 1.5rem 0"-->
-<!--          placeholder="Search"-->
-<!--          :suffix-icon="Search"-->
-<!--        />-->
-<!--      </div>-->
-
-<!--      &lt;!&ndash; <p class="body-title">differential-expression</p> &ndash;&gt;-->
-<!--      <Table-->
-<!--        :modelValue="tableDataDE"-->
-<!--        @update:modelValue="tableDataDE = $event"-->
-<!--      ></Table>-->
-<!--    </div>-->
   </div>
 </template>
 <script setup>
