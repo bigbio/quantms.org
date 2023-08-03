@@ -69,8 +69,10 @@
           <el-button type="primary" size="large" plain>Search</el-button>
         </router-link> -->
       </div>
-      <div class="button-tag">
-          <el-button v-for="(item,index) in proteinTags" :key="index" type="primary" round @click="onSearch(item)">{{ item }}</el-button>
+      <div style="display: flex; align-items: center; justify-content: center; width: 100%; margin-top:1.5rem;">
+        <el-button type="primary" round @click="onSearch('LRBA_HUMAN')">LRBA_HUMAN</el-button>
+        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')">PGAM5_HUMAN</el-button>
+        <el-button type="primary" round @click="onSearch('LRP8_HUMAN')">LRP8_HUMAN</el-button>
       </div>
     </div>
     <!-- <p>
@@ -106,8 +108,7 @@ const options = [
     label: "Homo sapiens",
   },
 ];
-// history
-const proteinTags = ref(['LRBA_HUMAN','PGAM5_HUMAN','LRP8_HUMAN'])
+
 
 // const font = ["V", "i", "s", "u", "a", "l", "i", "z", "a", "t", "i", "o", "n"];
 // const fontColor = [
@@ -130,14 +131,6 @@ const input = ref("");
 
 const onEnter = () => {
   onSearch(input.value);
-  if (!proteinTags.value.includes(input.value)) {
-    if (proteinTags.value.length === 5) {
-      proteinTags.value.shift()
-      proteinTags.value.push(input.value)
-    } else {
-      proteinTags.value.push(input.value)
-    }
-  }
   if(!input.value){
     return;
   }

@@ -12,6 +12,7 @@
       }"
       :cell-style="{}"
       height="1000"
+      :default-sort="{ prop: ['peptides','proteins'], order: 'descending' }"
     >
       <el-table-column label="Accession" min-width="110">
         <template #default="scope">
@@ -25,8 +26,8 @@
       <el-table-column prop="category" label="Category" min-width="120" />
       <el-table-column prop="samples" label="Samples" min-width="100" />
       <el-table-column prop="msruns" label="Msruns" min-width="100" />
-      <el-table-column prop="peptides" label="Peptides" min-width="100" />
-      <el-table-column prop="proteins" label="Proteins" min-width="100" />
+      <el-table-column prop="peptides" label="Peptides" min-width="100" sortable />
+      <el-table-column prop="proteins" label="Proteins" min-width="100" sortable  />
 <!--      <el-table-column label="Title" min-width="400">-->
 <!--        <template #default="scope">-->
 <!--          <div style="display: flex; align-items: center">-->

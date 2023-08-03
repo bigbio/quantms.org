@@ -7,6 +7,10 @@
           Protein: <span>{{ protein }}</span>
         </h1>
       </div>
+      <!--tags-->
+      <div class="button-tag">
+          <el-tag v-for="(item,index) in proteinTags" :key="index" round closable :color="tagsColor[index]" @close="handleClose(item)">{{ item }}</el-tag>
+      </div>
       <!--history-->
       <div class="history">
         <el-text style="margin-right: 16px;" class="history-info" type="info" @click="drawer = true">
@@ -22,7 +26,7 @@
     </div>
 
     <div class="card">
-      <div ref="chart" style="width: 100%; height: 600px"></div>
+      <div ref="chart" v-bind:style="{width: 100 + '%', height: imgH + 'px'}"></div>
     </div>
 
   </div>
@@ -34,8 +38,8 @@ import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
 import { ref, onMounted } from 'vue'
 const router = useRouter();
-
 const drawer = ref(false)
+let imgH = 450
 let proteinTable = []
 // get proteins
 const getProteinTable = async () => {
@@ -45,7 +49,15 @@ const getProteinTable = async () => {
   proteinTable = JSON.parse(data)
   queryProtein(protein)
 }
-
+// tags
+const proteinTags = ref([])
+const handleClose = (tag) => {
+  dataHistory.value.splice(proteinTags.value.indexOf(tag), 1)
+  proteinTags.value.splice(proteinTags.value.indexOf(tag), 1)
+  // console.log(dataHistory.value)
+  init()
+}
+const dataHistory = ref([])
 const protein = ref("")
 // qeury
 const queryProtein = (input) => {
@@ -54,7 +66,19 @@ const queryProtein = (input) => {
     return item.name === input.value.trim()
   })
   if (output) {
-    init(output)
+    if (!proteinTags.value.includes(input.value.trim())) {
+      if (proteinTags.value.length === 5) {
+        proteinTags.value.shift()
+        proteinTags.value.push(input.value.trim())
+        dataHistory.value.shift()
+        dataHistory.value.push(output)
+      } else {
+        proteinTags.value.push(input.value.trim())
+        dataHistory.value.push(output)
+      }
+    }
+    // console.log(output)
+    init()
   } else {
     alert('Please enter a legal protein name')
   }
@@ -72,9 +96,44 @@ onMounted(() => {
 const chart = ref()
 // history
 const imgs = ref([])
-let myChart
+// delet_tag
 
-const init = (data) => {
+
+
+
+let myChart
+// tagstotal
+const tagsTotal = [
+                "heart",
+                "stomach",
+                "skin",
+                "blood plasma",
+                "brain",
+                "kidney",
+                "liver",
+                "lung",
+                "pancreas",
+                "spleen",
+                "adrenal gland",
+                "testis",
+                "ovary",
+                "uterus",
+                "prostate",
+                "colon",
+                "esophagus",
+                "placenta",
+  ]
+
+// init data
+const initData = (data) => {
+  if (data.tags.length < 18) {
+    tagsTotal.map((item) => {
+      if (!data.tags.includes(item)) {
+        data.tags.push(item)
+        data.data.push([0])
+      }
+    })
+  }
   let dataSort = []
   for (let i = 0; i < data.tags.length; i++) {
     let obj = {}
@@ -98,36 +157,17 @@ const init = (data) => {
   dataSort.map((item) => {
     neatData.push(item.data)
     tags.push(item.name)
- })
-  if (myChart != null && myChart !== '' && myChart !== undefined) {
-    myChart.dispose() // discard
+  })
+  return {
+    neatData,
+    tags
   }
-  myChart = echarts.init(chart.value)
-  const option = {
+}
+// option
+const options = {
     title: [
-      {
-        text: data.title,
-        left: 'center'
-      }
     ],
     dataset: [
-      {
-        source: neatData
-      },
-      {
-        transform: {
-          type: 'boxplot',
-          config: {
-            itemNameFormatter: function (params) {
-              return tags[params.value]
-            }
-          }
-        }
-      },
-      {
-        fromDatasetIndex: 1,
-        fromTransformResult: 1
-      }
     ],
     tooltip: {
       trigger: 'item',
@@ -186,15 +226,6 @@ const init = (data) => {
       min: 1,
       max: 10
     },
-    dataZoom: [
-      {
-        type: 'inside'
-      },
-      {
-        type: 'slider',
-        height: 10
-      }
-    ],
     toolbox: {
       feature: {
         saveAsImage: {
@@ -204,27 +235,111 @@ const init = (data) => {
       }
     },
     series: [
-      {
-        name: 'boxplot',
+    ]
+}
+
+// tags 
+const sortTags = ref([])
+// tags color
+const tagsColor = ["#8DD3C7","#FFFFB3","#BEBADA","#FB8072","#80B1D3"]
+const init = () => {
+  if (dataHistory.value.length === 1) {
+    options.dataset = []
+    options.series = []
+    let { neatData, tags } = initData(dataHistory.value[0])
+    sortTags.value = tags
+    options.title.push({
+      text: dataHistory.value[0].title,
+      left: 'center'
+    })
+    options.dataset.push({
+      source: neatData
+    })
+    options.dataset.push({
+        fromDatasetIndex: 0,
+        transform: {
+          type: 'boxplot',
+          config: {
+            itemNameFormatter: function (params) {
+              return tags[params.value]
+            }
+          }
+        }
+    })
+    options.series.push({
+        name: 'category0',
         type: 'boxplot',
         datasetIndex: 1,
         itemStyle: {
-          color: '#06B800',
+          color: tagsColor[0],
           color0: '#FA0000',
           borderColor: null,
           borderColor0: null
         },
-        // animation: false
-      },
-      {
-        name: 'outlier',
-        type: 'scatter',
-        encode: { x: 1, y: 0 },
-        datasetIndex: 2
-      }
-    ]
+      })
+  } else {
+    imgH = dataHistory.value.length * 450 - 100
+
+    let datas = []
+    dataHistory.value.map((item) => {
+      let data = []
+      sortTags.value.forEach((tissue) => {
+        if (!item.tags.includes(tissue)) {
+          data.push([0])
+        } else {
+          let index = item.tags.indexOf(tissue)
+          let rowArr = item.data[index]
+          data.push(rowArr)
+        }
+      })
+      datas.push(data)
+    })
+    options.dataset = []
+    options.series = []
+    options.title = []
+    options.title.push({
+      text: 'Contrast of protein expression in different tissues',
+      left: 'center'
+    })
+    datas.forEach((item,index) => {
+      options.dataset.push({
+        source: item
+      })
+      options.series.push({
+        name: 'category' + index,
+        type: 'boxplot',
+        datasetIndex: datas.length + index,
+        itemStyle: {
+          color: tagsColor[index],
+          color0: '#FA0000',
+          borderColor: null,
+          borderColor0: null
+        },
+      })
+    })
+    datas.forEach((item, index) => {
+      options.dataset.push({
+        fromDatasetIndex: index,
+        transform: {
+          type: 'boxplot',
+          config: {
+            itemNameFormatter: function (params) {
+              return sortTags.value[params.value]
+            }
+          }
+        }
+      })
+    })
   }
-  myChart.setOption(option)
+  if (myChart != null && myChart !== '' && myChart !== undefined) {
+    myChart.dispose() // discard
+  }
+  myChart = echarts.init(chart.value)
+  myChart.clear()
+  myChart.resize({
+    height: imgH
+  })
+  myChart.setOption(options)
   setTimeout(() => {
     let imgDataUrl = myChart.getDataURL({
     type: 'svg',

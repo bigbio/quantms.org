@@ -90,7 +90,6 @@ const initTable = async () => {
   tableDataAE.value = AE.data;
   const DE = await getDifferentialExpression();
   tableDataDE.value = DE.data;
-  console.log(DE.data)
   fullTable.value = [...AE.data, ...DE.data];
 };
 
