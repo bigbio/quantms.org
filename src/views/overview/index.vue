@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="display-box">
     <!-- <h1 class="title">
       <span>Protein </span>
@@ -104,6 +105,7 @@
       <router-view></router-view>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
@@ -120,6 +122,7 @@ const options = [
     label: "Homo sapiens",
   },
 ];
+
 
 // const font = ["V", "i", "s", "u", "a", "l", "i", "z", "a", "t", "i", "o", "n"];
 // const fontColor = [
@@ -157,6 +160,9 @@ const onSearch = (val) => {
 };
 </script>
 <style lang="scss" scoped>
+<<<<<<< HEAD
+//.display-box {
+=======
 ::v-deep {
   .left .el-input__wrapper {
     border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
@@ -177,8 +183,9 @@ const onSearch = (val) => {
 }
 
 .display-box {
+>>>>>>> 0474abf6b8c142c49ba80cc91fd10962b0ff4836
   // margin: 0 20px;
-}
+//}
 
 .search-box {
   background-color: white;
@@ -229,5 +236,12 @@ h1 {
 }
 .link {
   text-decoration: none;
+}
+.button-tag {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  //width: 100%; 
+  margin-top:1.5rem;
 }
 </style>
