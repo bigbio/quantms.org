@@ -36,7 +36,7 @@
       </router-link>
       </div>
       <div class="card-box" style=" display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
-      <router-link to="/information" >
+      <router-link to="/datasets" >
         <el-icon size="50px"><DocumentCopy /></el-icon>
         <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
           datasets
