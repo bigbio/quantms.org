@@ -28,60 +28,24 @@
           padding: 1.5rem;
         "
       >
-      <router-link
-          to="/home"
-        >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
-        <div
-          style="
-            font-size: 1.5rem;
-            color: rgb(107 114 128);
-            margin-top: 1.25rem;
-          "
-        >
+      <router-link to="/home">
+        <el-icon size="50px"><Tools /></el-icon>
+        <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
           quantms
         </div>
       </router-link>
       </div>
-      <div
-        class="card-box"
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          padding: 1.5rem;
-        "
-      >
-      <router-link
-          to="/information"
-        >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
-        <div
-          style="
-            font-size: 1.5rem;
-            color: rgb(107 114 128);
-            margin-top: 1.25rem;
-          "
-        >
+      <div class="card-box" style=" display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
+      <router-link to="/information" >
+        <el-icon size="50px"><DocumentCopy /></el-icon>
+        <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
           datasets
         </div>
       </router-link>  
       </div>
-      <div
-        class="card-box"
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          padding: 1.5rem;
-        "
-      >
-      <router-link
-          to="/ae"
-        >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
+      <div class="card-box" style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
+      <router-link to="/ae">
+        <el-icon size="50px"><Histogram /></el-icon>
         <div
           style="
             font-size: 1.5rem;
@@ -160,7 +124,7 @@ import { ref } from "vue";
 // import quantMsLogo from "@/assets/images/nf-core-quantms_logo_light.png";
 // import quantMsMetro from "@/assets/images/quantms_metro.png";
 // import quantMs from "@/assets/images/quantms.png";
-import { Search } from "@element-plus/icons-vue";
+import {Tools, DocumentCopy, Histogram, Search} from "@element-plus/icons-vue";
 // import logo from "@/assets/logo.png";
 import logo from "@/assets/images/nf-core-quantms_logo_light.png";
 const search = ref();
