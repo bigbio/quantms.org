@@ -85,12 +85,15 @@ import {
 } from "@/api/getTable";
 const tableDataAE = ref([]);
 const tableDataDE = ref([]);
+// const table = ref([])
 const initTable = async () => {
   const AE = await getAbsolueExpression();
   tableDataAE.value = AE.data;
   const DE = await getDifferentialExpression();
   tableDataDE.value = DE.data;
 };
+
+
 
 const search1 = ref();
 const search2 = ref();

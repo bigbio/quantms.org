@@ -1,14 +1,30 @@
 <template>
   <div>
     <div class="info">
-      <h1>Organism: <span>Homo sapiens</span></h1>
-      <h1>
-        Protein: <span>{{ protein }}</span>
-      </h1>
+      <div class="info-content">
+        <h1>Organism: <span>Homo sapiens</span></h1>
+        <h1>
+          Protein: <span>{{ protein }}</span>
+        </h1>
+      </div>
+      <!--history-->
+      <div class="history">
+        <el-text style="margin-right: 16px;" class="history-info" type="info" @click="drawer = true">
+          history
+        </el-text>
+        <el-drawer v-model="drawer" title="I am the title" :with-header="false">
+          <el-tabs tab-position="right" style="height: 300px" class="demo-tabs" v-for="(item,index) in imgs" :key="index">
+            <h5>{{ item.proteinName }}</h5>
+            <el-image style="width: 100%;" :src="item.url" fit="fill" :preview-src-list="[item.url]" />
+          </el-tabs>
+        </el-drawer>
+      </div>
     </div>
+
     <div class="card">
       <div ref="chart" style="width: 100%; height: 600px"></div>
     </div>
+
   </div>
 </template>
 <script setup>
@@ -19,6 +35,7 @@ import {useRouter, onBeforeRouteUpdate} from "vue-router";
 import { ref, onMounted } from 'vue'
 const router = useRouter();
 
+const drawer = ref(false)
 let proteinTable = []
 // get proteins
 const getProteinTable = async () => {
@@ -53,6 +70,8 @@ onMounted(() => {
 })
 
 const chart = ref()
+// history
+const imgs = ref([])
 let myChart
 
 const init = (data) => {
@@ -194,7 +213,8 @@ const init = (data) => {
           color0: '#FA0000',
           borderColor: null,
           borderColor0: null
-        }
+        },
+        // animation: false
       },
       {
         name: 'outlier',
@@ -205,6 +225,19 @@ const init = (data) => {
     ]
   }
   myChart.setOption(option)
+  setTimeout(() => {
+    let imgDataUrl = myChart.getDataURL({
+    type: 'svg',
+    pixelRatio: 2,
+    backgroundColor: '#fff',
+    excludeComponents: ['toolbox']
+    })
+    let urlFile = {
+      proteinName: protein.value,
+      url: imgDataUrl
+    }
+    imgs.value.unshift(urlFile)
+  },2000)
 }
 </script>
 <style scoped>
@@ -212,6 +245,8 @@ const init = (data) => {
   text-align: left;
   margin: 20px 0;
   margin-left: 2px;
+  display: flex;
+  justify-content: space-between;
 }
 .info h1 {
   font-size: 14px;
@@ -221,5 +256,9 @@ const init = (data) => {
 }
 .info span {
   font-weight: 700;
+}
+.history-info:hover {
+  color: black;
+  cursor: pointer;
 }
 </style>

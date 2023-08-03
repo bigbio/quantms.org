@@ -28,6 +28,9 @@
           padding: 1.5rem;
         "
       >
+      <router-link
+          to="/home"
+        >
         <img :src="logo" alt="img" style="width: 5rem; height: auto" />
         <div
           style="
@@ -38,6 +41,7 @@
         >
           quantms
         </div>
+      </router-link>
       </div>
       <div
         class="card-box"
@@ -49,6 +53,9 @@
           padding: 1.5rem;
         "
       >
+      <router-link
+          to="/information"
+        >
         <img :src="logo" alt="img" style="width: 5rem; height: auto" />
         <div
           style="
@@ -59,6 +66,7 @@
         >
           datasets
         </div>
+      </router-link>  
       </div>
       <div
         class="card-box"
@@ -70,6 +78,9 @@
           padding: 1.5rem;
         "
       >
+      <router-link
+          to="/ae"
+        >
         <img :src="logo" alt="img" style="width: 5rem; height: auto" />
         <div
           style="
@@ -80,6 +91,7 @@
         >
           absolute expression
         </div>
+      </router-link>
       </div>
     </div>
 
