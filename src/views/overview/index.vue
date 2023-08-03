@@ -81,8 +81,7 @@
         <el-button type="primary" round @click="onSearch('LRBA_HUMAN')"
           >LRBA_HUMAN</el-button
         >
-        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')"
-          >PGAM5_HUMAN</el-button
+        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')">PGAM5_HUMAN</el-button
         >
         <el-button type="primary" round @click="onSearch('LRP8_HUMAN')"
           >LRP8_HUMAN</el-button
@@ -160,9 +159,9 @@ const onSearch = (val) => {
 };
 </script>
 <style lang="scss" scoped>
-<<<<<<< HEAD
+
 //.display-box {
-=======
+
 ::v-deep {
   .left .el-input__wrapper {
     border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
@@ -183,9 +182,8 @@ const onSearch = (val) => {
 }
 
 .display-box {
->>>>>>> 0474abf6b8c142c49ba80cc91fd10962b0ff4836
   // margin: 0 20px;
-//}
+}
 
 .search-box {
   background-color: white;
@@ -238,10 +236,10 @@ h1 {
   text-decoration: none;
 }
 .button-tag {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  //width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //width: 100%;
   margin-top:1.5rem;
 }
 </style>
