@@ -31,7 +31,7 @@
       <router-link to="/home">
         <el-icon size="50px"><Tools /></el-icon>
         <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
-          quantms
+          workflow
         </div>
       </router-link>
       </div>

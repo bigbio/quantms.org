@@ -9,12 +9,12 @@
     "
   >
     <el-image
-      style=" height: 40px; margin: 0 0"
+      style=" height: 60px; margin: 0 0"
       :src="logo"
       fit="fill"
     />
     <div>
-      <router-link class="navBar" to="/home">Quantms</router-link>
+      <router-link class="navBar" to="/home">Home</router-link>
       <router-link class="navBar" to="/datasets">Datasets</router-link>
       <router-link class="navBar" to="/ae">Absolute</router-link>
     </div>
@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import logo from "@/assets/images/nf-core-quantms_logo_light.png";
+import logo from "@/assets/images/logo_complete.png";
 // import logo from "@/assets/logo.png";
 // import logo from "@/assets/icons/ebi.jpg";
 </script>
