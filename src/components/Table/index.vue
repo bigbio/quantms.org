@@ -24,8 +24,8 @@
       </el-table-column>
       <el-table-column prop="samples" label="Samples" min-width="100" />
       <el-table-column prop="msruns" label="Msruns" min-width="100" />
-      <el-table-column prop="peptides" label="Peptides" min-width="100" />
-      <el-table-column prop="proteins" label="Proteins" min-width="100" />
+      <el-table-column prop="peptides" label="Peptides" min-width="100" sortable/>
+      <el-table-column prop="proteins" label="Proteins" min-width="100" sortable/>
 <!--      <el-table-column label="Title" min-width="400">-->
 <!--        <template #default="scope">-->
 <!--          <div style="display: flex; align-items: center">-->
