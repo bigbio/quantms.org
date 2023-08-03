@@ -1,20 +1,5 @@
 <template>
   <div class="footer-box">
-    <!-- <div class="footer-left">
-      <el-link href="ypriverol@gmail.com" type="default" :underline="false">
-        <span>Lisence</span>
-      </el-link>
-      <el-link
-        href="https://ypriverol@gmail.com"
-        type="default"
-        :underline="false"
-      >
-        <span>Contact</span>
-      </el-link>
-      <el-link href="ypriverol@gmail.com" type="default" :underline="false">
-        <span>Support</span>
-      </el-link>
-    </div> -->
     <div class="footer-right">
       <el-link href="https://www.ebi.ac.uk/" type="primary" :underline="false">
         <el-image
