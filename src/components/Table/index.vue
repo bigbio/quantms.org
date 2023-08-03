@@ -11,7 +11,7 @@
         fontSize: '16px',
       }"
       :cell-style="{}"
-      height="1000"
+      height="600"
       :default-sort="{ prop: ['peptides','proteins'], order: 'descending' }"
     >
       <el-table-column label="Accession" min-width="110">
