@@ -82,13 +82,8 @@
         <span @click="onSearch('LRBA_HUMAN')"
           >LRBA_HUMAN, </span
         >
-<<<<<<< HEAD
         <span @click="onSearch('PGAM5_HUMAN')"
-          >PGAM5_HUMAN, </span
-=======
-        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')">PGAM5_HUMAN</el-button
->>>>>>> 6a39cf4b525ded798faef2eed404a90e91d5a6b1
-        >
+          >PGAM5_HUMAN, </span>
         <span @click="onSearch('LRP8_HUMAN')"
           >LRP8_HUMAN</span
         >
@@ -166,13 +161,6 @@ const onSearch = (val) => {
 };
 </script>
 <style lang="scss" scoped>
-<<<<<<< HEAD
-//.display-box {
-=======
-
-//.display-box {
-
->>>>>>> 6a39cf4b525ded798faef2eed404a90e91d5a6b1
 ::v-deep {
   .left .el-input__wrapper {
     border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
@@ -191,16 +179,6 @@ const onSearch = (val) => {
     box-shadow: none;
   }
 }
-
-<<<<<<< HEAD
-//.display-box {
-
-=======
-.display-box {
->>>>>>> 6a39cf4b525ded798faef2eed404a90e91d5a6b1
-  // margin: 0 20px;
-}
-
 .search-box {
   background-color: white;
   border-radius: 1rem;
