@@ -163,7 +163,7 @@ const onSearch = (val) => {
 <style lang="scss" scoped>
 ::v-deep {
   .left .el-input__wrapper {
-    border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
+    border-right-width: 0; 
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right-width: 0 !important;
@@ -237,7 +237,7 @@ h1 {
   margin-top:1.5rem;
 }
 .el-text span:hover{
-  color:aqua;
+  color:#84c7d0;
   cursor: pointer;
 }
 </style>

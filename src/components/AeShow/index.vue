@@ -54,7 +54,7 @@ const sortTags = ref([])
 // tags
 const proteinTags = ref([])
 // tags color
-const tagsColor = ["#8DD3C7", "#FFFFB3", "#BEBADA", "#FB8072", "#80B1D3"]
+const tagsColor = ["#8DD3C7", "#EDBC63", "#BEBADA", "#FB8072", "#80B1D3"]
 // map html
 const chart = ref()
 // history
@@ -196,6 +196,7 @@ const initData = (data) => {
 }
 // option
 const options = {
+  // backgroundColor: '#f4f5f2',
     title: [
     ],
     dataset: [
@@ -238,10 +239,10 @@ const options = {
     top: 60,
     // bottom: 20,
     },
-    grid: {
+  grid: {
       left: '10%',
       right: '10%',
-      bottom: '15%'
+      bottom: '5%'
     },
     yAxis: {
       type: 'category',
@@ -258,9 +259,12 @@ const options = {
       type: 'value',
       name: 'riBAQ',
       nameLocation: 'center',
-      nameGap: 30,
+      nameGap: 40,
       splitArea: {
-        show: true
+        show: false
+      },
+      splitLine: {
+        show: false
       },
       min: 1,
       max: 10
@@ -371,7 +375,7 @@ const init = () => {
   if (myChart != null && myChart !== '' && myChart !== undefined) {
     myChart.dispose() // discard
   }
-  myChart = echarts.init(chart.value)
+  myChart = echarts.init(chart.value,'macarons')
   myChart.clear()
   myChart.resize({
     height: imgH
