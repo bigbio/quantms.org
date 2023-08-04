@@ -3,9 +3,11 @@
     <div class="info">
       <div class="info-content">
         <h1>Organism: <span>Homo sapiens</span></h1>
+        <!--
         <h1>
           Protein: <span>{{ protein }}</span>
         </h1>
+        -->
       </div>
       <!--tags-->
       <div class="button-tag">
@@ -18,7 +20,7 @@
         </el-text>
         <el-drawer v-model="drawer" title="I am the title" :with-header="false">
           <el-tabs tab-position="right" style="height: 300px" class="demo-tabs" v-for="(item,index) in imgs" :key="index">
-            <h5>{{ item.proteinName }}</h5>
+            <h5>{{ item.proteinName.join() }}</h5>
             <el-image style="width: 100%;" :src="item.url" fit="fill" :preview-src-list="[item.url]" />
           </el-tabs>
         </el-drawer>
@@ -39,68 +41,25 @@ import {useRouter, onBeforeRouteUpdate} from "vue-router";
 import { ref, onMounted } from 'vue'
 const router = useRouter();
 const drawer = ref(false)
-let imgH = 450
+// image height
+let imgH = 600
+// database
 let proteinTable = []
-// get proteins
-const getProteinTable = async () => {
-  const res = await getProteins()
-  const byteArray = new Uint8Array(res.data)
-  const data = inflate(byteArray, { to: 'string' })
-  proteinTable = JSON.parse(data)
-  queryProtein(protein)
-}
+// data history 
+const dataHistory = ref([])
+// query protein
+const protein = ref([])
+// sorted tags 
+const sortTags = ref([])
 // tags
 const proteinTags = ref([])
-const handleClose = (tag) => {
-  dataHistory.value.splice(proteinTags.value.indexOf(tag), 1)
-  proteinTags.value.splice(proteinTags.value.indexOf(tag), 1)
-  // console.log(dataHistory.value)
-  init()
-}
-const dataHistory = ref([])
-const protein = ref("")
-// qeury
-const queryProtein = (input) => {
-  let proteins = proteinTable
-  const output = proteins.find((item) => {
-    return item.name === input.value.trim()
-  })
-  if (output) {
-    if (!proteinTags.value.includes(input.value.trim())) {
-      if (proteinTags.value.length === 5) {
-        proteinTags.value.shift()
-        proteinTags.value.push(input.value.trim())
-        dataHistory.value.shift()
-        dataHistory.value.push(output)
-      } else {
-        proteinTags.value.push(input.value.trim())
-        dataHistory.value.push(output)
-      }
-    }
-    // console.log(output)
-    init()
-  } else {
-    alert('Please enter a legal protein name')
-  }
-}
-protein.value = router.currentRoute.value.query.protein
-onBeforeRouteUpdate((to) => {
-  protein.value = to.query.protein
-  queryProtein(protein)
-})
-// loda update
-onMounted(() => {
-  getProteinTable()
-})
-
+// tags color
+const tagsColor = ["#8DD3C7", "#FFFFB3", "#BEBADA", "#FB8072", "#80B1D3"]
+// map html
 const chart = ref()
 // history
 const imgs = ref([])
-// delet_tag
-
-
-
-
+// image object
 let myChart
 // tagstotal
 const tagsTotal = [
@@ -123,6 +82,78 @@ const tagsTotal = [
                 "esophagus",
                 "placenta",
   ]
+protein.value = Array.isArray(router.currentRoute.value.query.protein) ? router.currentRoute.value.query.protein : [router.currentRoute.value.query.protein]
+// get proteins
+const getProteinTable = async () => {
+  const res = await getProteins()
+  const byteArray = new Uint8Array(res.data)
+  const data = inflate(byteArray, { to: 'string' })
+  proteinTable = JSON.parse(data)
+  queryProtein(protein)
+}
+// delete tag
+const handleClose = (tag) => {
+  dataHistory.value.splice(proteinTags.value.indexOf(tag), 1)
+  proteinTags.value.splice(proteinTags.value.indexOf(tag), 1)
+  router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
+  // console.log(dataHistory.value)
+  // init()
+}
+// qeury
+const queryProtein = (input) => {
+  if (typeof(input.value[0]) === "undefined") {
+    init()
+    return
+  }
+  // console.log(input.value)
+  let proteins = proteinTable
+  input.value.map((protein) => {
+    const output = proteins.find((item) => {
+      return item.name === protein.trim()
+    })
+    if (!output) {
+      alert('Please enter a legal protein name')
+      return
+    }
+    if (!proteinTags.value.includes(protein.trim())) {
+      if (proteinTags.value.length === 5) {
+        proteinTags.value.shift()
+        proteinTags.value.push(protein.trim())
+        dataHistory.value.shift()
+        dataHistory.value.push(output)
+      } else {
+        proteinTags.value.push(protein.trim())
+        dataHistory.value.push(output)
+      }
+    }
+    // console.log(output)
+    // init()
+  //} //else {
+    //alert('Please enter a legal protein name')
+  //}
+  })
+  // console.log("111",proteinTags.value)
+  // console.log("222",input.value)
+  if (proteinTags.value.length != input.value.length) {
+    router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
+  }
+  init()
+}
+// watch route
+
+onBeforeRouteUpdate((to) => { 
+  // console.log(to.query.proteins)
+  protein.value = to.query.protein
+  // console.log(protein.value)
+  queryProtein(protein)
+})
+
+// load update
+onMounted(() => {
+  // console.log(protein.value)
+  getProteinTable()
+})
+
 
 // init data
 const initData = (data) => {
@@ -198,6 +229,14 @@ const options = {
             '<br/>'
         ].join('')
       }
+  },
+  color: tagsColor,
+  legend: {
+    show: true,
+    orient: 'vertical',
+    right: 10,
+    top: 60,
+    // bottom: 20,
     },
     grid: {
       left: '10%',
@@ -237,15 +276,13 @@ const options = {
     series: [
     ]
 }
-
-// tags 
-const sortTags = ref([])
-// tags color
-const tagsColor = ["#8DD3C7","#FFFFB3","#BEBADA","#FB8072","#80B1D3"]
+// init image
 const init = () => {
   if (dataHistory.value.length === 1) {
     options.dataset = []
     options.series = []
+    options.title = []
+    options.legend.show = false
     let { neatData, tags } = initData(dataHistory.value[0])
     sortTags.value = tags
     options.title.push({
@@ -278,8 +315,13 @@ const init = () => {
         },
       })
   } else {
-    imgH = dataHistory.value.length * 450 - 100
-
+    sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
+    imgH = dataHistory.value.length != 0 ? dataHistory.value.length * 400 : 600
+    dataHistory.value.length === 0 ? options.title = [] : options.title.splice(0,1,{
+      text: 'Contrast of protein expression in different tissues',
+      left: 'center'
+    })
+    dataHistory.value.length === 0 ? options.legend.show = false : options.legend.show = true
     let datas = []
     dataHistory.value.map((item) => {
       let data = []
@@ -296,17 +338,12 @@ const init = () => {
     })
     options.dataset = []
     options.series = []
-    options.title = []
-    options.title.push({
-      text: 'Contrast of protein expression in different tissues',
-      left: 'center'
-    })
     datas.forEach((item,index) => {
       options.dataset.push({
         source: item
       })
       options.series.push({
-        name: 'category' + index,
+        name: proteinTags.value[index],
         type: 'boxplot',
         datasetIndex: datas.length + index,
         itemStyle: {

@@ -75,17 +75,19 @@
           align-items: center;
           justify-content: center;
           width: 100%;
-          margin-top: 1.5rem;
+          margin-top: 0.1rem;
         "
-      >
-        <el-button type="primary" round @click="onSearch('LRBA_HUMAN')"
-          >LRBA_HUMAN</el-button
+      > 
+      <el-text>Examples:
+        <span @click="onSearch('LRBA_HUMAN')"
+          >LRBA_HUMAN, </span
         >
-        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')">PGAM5_HUMAN</el-button
+        <span @click="onSearch('PGAM5_HUMAN')"
+          >PGAM5_HUMAN, </span>
+        <span @click="onSearch('LRP8_HUMAN')"
+          >LRP8_HUMAN</span
         >
-        <el-button type="primary" round @click="onSearch('LRP8_HUMAN')"
-          >LRP8_HUMAN</el-button
-        >
+      </el-text>
       </div>
     </div>
     <!-- <p>
@@ -147,7 +149,7 @@ const onEnter = () => {
   if (!input.value) {
     return;
   }
-  router.push({ path: "/ae/tissues", query: { protein: input.value } });
+  router.push({ path: "/ae/tissues", query: { protein: [input.value] } });
 };
 
 const onSearch = (val) => {
@@ -155,13 +157,10 @@ const onSearch = (val) => {
     return;
   }
   input.value = val;
-  router.push({ path: "/ae/tissues", query: { protein: val } });
+  router.push({ path: "/ae/tissues", query: { protein: [val] } });
 };
 </script>
 <style lang="scss" scoped>
-
-//.display-box {
-
 ::v-deep {
   .left .el-input__wrapper {
     border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
@@ -180,11 +179,6 @@ const onSearch = (val) => {
     box-shadow: none;
   }
 }
-
-.display-box {
-  // margin: 0 20px;
-}
-
 .search-box {
   background-color: white;
   border-radius: 1rem;
@@ -241,5 +235,9 @@ h1 {
   justify-content: center;
   //width: 100%;
   margin-top:1.5rem;
+}
+.el-text span:hover{
+  color:aqua;
+  cursor: pointer;
 }
 </style>
