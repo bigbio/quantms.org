@@ -322,7 +322,7 @@ const init = () => {
     sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
     imgH = dataHistory.value.length != 0 ? dataHistory.value.length * 400 : 600
     dataHistory.value.length === 0 ? options.title = [] : options.title.splice(0,1,{
-      text: 'Contrast of protein expression in different tissues',
+      text: 'Comparison of protein expression in different tissues',
       left: 'center'
     })
     dataHistory.value.length === 0 ? options.legend.show = false : options.legend.show = true
