@@ -41,5 +41,4 @@ import logo from "@/assets/images/logo_complete.png";
 
 }
 
-
 </style>
