@@ -161,7 +161,7 @@ const initData = (data) => {
     tagsTotal.map((item) => {
       if (!data.tags.includes(item)) {
         data.tags.push(item)
-        data.data.push([0])
+        data.data.push([])
       }
     })
   }
@@ -331,7 +331,7 @@ const init = () => {
       let data = []
       sortTags.value.forEach((tissue) => {
         if (!item.tags.includes(tissue)) {
-          data.push([0])
+          data.push([])
         } else {
           let index = item.tags.indexOf(tissue)
           let rowArr = item.data[index]
