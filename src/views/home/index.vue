@@ -28,60 +28,24 @@
           padding: 1.5rem;
         "
       >
-      <router-link
-          to="/home"
-        >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
-        <div
-          style="
-            font-size: 1.5rem;
-            color: rgb(107 114 128);
-            margin-top: 1.25rem;
-          "
-        >
-          quantms
+      <router-link to="/home">
+        <el-icon size="50px"><Tools /></el-icon>
+        <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
+          workflow
         </div>
       </router-link>
       </div>
-      <div
-        class="card-box"
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          padding: 1.5rem;
-        "
-      >
-      <router-link
-          to="/information"
-        >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
-        <div
-          style="
-            font-size: 1.5rem;
-            color: rgb(107 114 128);
-            margin-top: 1.25rem;
-          "
-        >
+      <div class="card-box" style=" display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
+      <router-link to="/datasets" >
+        <el-icon size="50px"><DocumentCopy /></el-icon>
+        <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
           datasets
         </div>
       </router-link>  
       </div>
-      <div
-        class="card-box"
-        style="
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around;
-          padding: 1.5rem;
-        "
-      >
-      <router-link
-          to="/ae"
-        >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
+      <div class="card-box" style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
+      <router-link to="/ae">
+        <el-icon size="50px"><Histogram /></el-icon>
         <div
           style="
             font-size: 1.5rem;
@@ -105,7 +69,8 @@
           <a href="https://quantms.readthedocs.io/en/latest/">quantms</a> is a bioinformatics best-practice analysis pipeline
           for Quantitative Mass Spectrometry (MS), including: DDA-LFQ, plexDDA (e.g. TMT, iTRAQ), and DIA.
         </p>
-        <p class="body-title">Citing quantms</p>
+        <img :src="pipeline" style="height: 150px; width: 800px"/>
+        <p class="body-title" style="font-size: 16px">Citing quantms</p>
         <p class="cite-content">
           Chengxin Dai, Julianus Pfeuffer, Hong Wang et al. quantms: A
           cloud-based pipeline for proteomics reanalysis enables the
@@ -160,7 +125,8 @@ import { ref } from "vue";
 // import quantMsLogo from "@/assets/images/nf-core-quantms_logo_light.png";
 // import quantMsMetro from "@/assets/images/quantms_metro.png";
 // import quantMs from "@/assets/images/quantms.png";
-import { Search } from "@element-plus/icons-vue";
+import pipeline from "@/assets/images/pipeline.png";
+import {Tools, DocumentCopy, Histogram, Search} from "@element-plus/icons-vue";
 // import logo from "@/assets/logo.png";
 import logo from "@/assets/images/nf-core-quantms_logo_light.png";
 const search = ref();
@@ -212,7 +178,7 @@ a {
 .cite-content {
   font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   word-wrap: break-word;
   text-align: left;

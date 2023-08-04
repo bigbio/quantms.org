@@ -11,7 +11,7 @@
         fontSize: '16px',
       }"
       :cell-style="{}"
-      height="1000"
+      height="600"
       :default-sort="{ prop: ['peptides','proteins'], order: 'descending' }"
     >
       <el-table-column label="Accession" min-width="110">
@@ -98,12 +98,12 @@ const handleCurrentChange = (val) => {
 <style lang="scss" scoped>
 ::v-deep {
   .el-pagination.is-background .el-pager li:not(.disabled) {
-    background-color: white; // 
+    background-color: white; //
     padding: 0 1rem;
     color: black;
   }
   .el-pagination.is-background .el-pager li:not(.disabled).is-active {
-    background-color: rgb(229, 231, 235); // 
+    background-color: rgb(229, 231, 235); //
     padding: 0 1rem;
     border-radius: 0.25rem;
   }

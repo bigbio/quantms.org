@@ -82,8 +82,12 @@
         <span @click="onSearch('LRBA_HUMAN')"
           >LRBA_HUMAN, </span
         >
+<<<<<<< HEAD
         <span @click="onSearch('PGAM5_HUMAN')"
           >PGAM5_HUMAN, </span
+=======
+        <el-button type="primary" round @click="onSearch('PGAM5_HUMAN')">PGAM5_HUMAN</el-button
+>>>>>>> 6a39cf4b525ded798faef2eed404a90e91d5a6b1
         >
         <span @click="onSearch('LRP8_HUMAN')"
           >LRP8_HUMAN</span
@@ -162,7 +166,13 @@ const onSearch = (val) => {
 };
 </script>
 <style lang="scss" scoped>
+<<<<<<< HEAD
 //.display-box {
+=======
+
+//.display-box {
+
+>>>>>>> 6a39cf4b525ded798faef2eed404a90e91d5a6b1
 ::v-deep {
   .left .el-input__wrapper {
     border-right-width: 0; /* 设置边框宽度为1px、样式为solid、颜色为#333 */
@@ -182,10 +192,14 @@ const onSearch = (val) => {
   }
 }
 
+<<<<<<< HEAD
 //.display-box {
 
+=======
+.display-box {
+>>>>>>> 6a39cf4b525ded798faef2eed404a90e91d5a6b1
   // margin: 0 20px;
-//}
+}
 
 .search-box {
   background-color: white;
@@ -238,10 +252,10 @@ h1 {
   text-decoration: none;
 }
 .button-tag {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  //width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //width: 100%;
   margin-top:1.5rem;
 }
 .el-text span:hover{
