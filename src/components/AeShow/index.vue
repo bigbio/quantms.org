@@ -231,18 +231,19 @@ const options = {
         ].join('')
       }
   },
-  color: tagsColor,
+  // color: tagsColor,
   legend: {
     show: true,
     orient: 'vertical',
     right: 10,
     top: 60,
+    data: []
     // bottom: 20,
     },
   grid: {
       left: '10%',
       right: '10%',
-      bottom: '5%'
+      bottom: '7%'
     },
     yAxis: {
       type: 'category',
@@ -314,8 +315,8 @@ const init = () => {
         itemStyle: {
           color: tagsColor[0],
           color0: '#FA0000',
-          borderColor: null,
-          borderColor0: null
+          borderColor: '#030609',
+          borderColor0: '#030609'
         },
       })
   } else {
@@ -342,6 +343,7 @@ const init = () => {
     })
     options.dataset = []
     options.series = []
+    options.legend.data = []
     datas.forEach((item,index) => {
       options.dataset.push({
         source: item
@@ -353,9 +355,16 @@ const init = () => {
         itemStyle: {
           color: tagsColor[index],
           color0: '#FA0000',
-          borderColor: null,
-          borderColor0: null
+          borderColor: '#030609',
+          borderColor0: '#030609'
         },
+      })
+      options.legend.data.push({
+        name: proteinTags.value[index],
+        itemStyle: {
+          color: tagsColor[index],
+          borderColor: tagsColor[index]
+        }
       })
     })
     datas.forEach((item, index) => {
