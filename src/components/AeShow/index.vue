@@ -276,7 +276,8 @@ const options = {
       feature: {
         saveAsImage: {
           type: 'png',
-          title: 'save as .png'
+          title: 'save as .png',
+          pixelRatio: 10
         }
       }
     },
