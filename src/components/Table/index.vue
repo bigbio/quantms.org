@@ -11,10 +11,9 @@
         fontSize: '16px',
       }"
       :cell-style="{}"
-      height="600"
-      :default-sort="{ prop: ['peptides','proteins'], order: 'descending' }"
+      height="1000"
     >
-      <el-table-column label="Accession" min-width="110">
+      <el-table-column label="Accession" width="110">
         <template #default="scope">
           <div style="display: flex; align-items: center">
             <el-link :href="scope.row.accession.path" type="primary">{{
@@ -23,11 +22,35 @@
           </div>
         </template>
       </el-table-column>
-      <el-table-column prop="category" label="Category" min-width="120" />
-      <el-table-column prop="samples" label="Samples" min-width="100" />
-      <el-table-column prop="msruns" label="Msruns" min-width="100" />
-      <el-table-column prop="peptides" label="Peptides" min-width="100" sortable />
-      <el-table-column prop="proteins" label="Proteins" min-width="100" sortable  />
+      <el-table-column prop="category" label="Category" width="180" />
+      <el-table-column prop="samples" label="Samples" width="100" />
+      <el-table-column prop="msruns" label="Msruns" width="100" />
+      <el-table-column prop="peptides" label="Peptides" min-width="100" sortable >
+        <template #default="scope">
+          <el-tooltip
+            effect="light"
+            :content="scope.row.peptides"
+            :offset="-50"
+            placement="right-start"
+          >
+            <el-progress :percentage="100*scope.row.peptides/maxPeptides" :stroke-width="12" :show-text="false"/>
+          </el-tooltip>
+
+        </template>
+      </el-table-column>
+      <el-table-column prop="proteins" label="Proteins" min-width="100" sortable  >
+        <template #default="scope">
+          <el-tooltip
+            effect="light"
+            :content="scope.row.proteins"
+            :offset="-50"
+            placement="right-start"
+          >
+            <el-progress :percentage="100*scope.row.proteins/maxProteins" :stroke-width="12" :show-text="false"/>
+          </el-tooltip>
+
+        </template>
+       </el-table-column>
 <!--      <el-table-column label="Title" min-width="400">-->
 <!--        <template #default="scope">-->
 <!--          <div style="display: flex; align-items: center">-->
@@ -63,7 +86,11 @@
   </div>
 </template>
 <script setup>
-import { computed, ref } from "vue";
+import { computed, ref, onMounted,watch } from "vue";
+
+const maxPeptides = ref(0);
+const maxProteins = ref(0);
+
 const props = defineProps({
   modelValue: {
     type: Array,
@@ -77,6 +104,17 @@ const props = defineProps({
     default: 25,
   },
 });
+
+onMounted(()=>{
+  console.log('onMounted',props.modelValue);
+})
+
+watch(()=>props.modelValue,(val)=>{
+  console.log('watch',val)
+  maxPeptides.value = Math.max(...val.map(o => o.peptides));
+  maxProteins.value = Math.max(...val.map(o => o.proteins));
+  console.log(maxPeptides.value,maxProteins.value);
+})
 
 const total = computed(() => {
   return props.modelValue.length;
