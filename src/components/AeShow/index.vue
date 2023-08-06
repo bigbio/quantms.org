@@ -136,8 +136,9 @@ const queryProtein = (input) => {
   // console.log("222",input.value)
   if (proteinTags.value.length != input.value.length) {
     router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
+  } else {
+    init()
   }
-  init()
 }
 // watch route
 
@@ -161,7 +162,7 @@ const initData = (data) => {
     tagsTotal.map((item) => {
       if (!data.tags.includes(item)) {
         data.tags.push(item)
-        data.data.push([0])
+        data.data.push([])
       }
     })
   }
@@ -231,18 +232,19 @@ const options = {
         ].join('')
       }
   },
-  color: tagsColor,
+  // color: tagsColor,
   legend: {
     show: true,
     orient: 'vertical',
     right: 10,
     top: 60,
+    data: []
     // bottom: 20,
     },
   grid: {
       left: '10%',
       right: '10%',
-      bottom: '5%'
+      bottom: '7%'
     },
     yAxis: {
       type: 'category',
@@ -314,8 +316,8 @@ const init = () => {
         itemStyle: {
           color: tagsColor[0],
           color0: '#FA0000',
-          borderColor: null,
-          borderColor0: null
+          borderColor: '#030609',
+          borderColor0: '#030609'
         },
       })
   } else {
@@ -331,7 +333,7 @@ const init = () => {
       let data = []
       sortTags.value.forEach((tissue) => {
         if (!item.tags.includes(tissue)) {
-          data.push([0])
+          data.push([])
         } else {
           let index = item.tags.indexOf(tissue)
           let rowArr = item.data[index]
@@ -342,6 +344,7 @@ const init = () => {
     })
     options.dataset = []
     options.series = []
+    options.legend.data = []
     datas.forEach((item,index) => {
       options.dataset.push({
         source: item
@@ -353,9 +356,16 @@ const init = () => {
         itemStyle: {
           color: tagsColor[index],
           color0: '#FA0000',
-          borderColor: null,
-          borderColor0: null
+          borderColor: '#030609',
+          borderColor0: '#030609'
         },
+      })
+      options.legend.data.push({
+        name: proteinTags.value[index],
+        itemStyle: {
+          color: tagsColor[index],
+          borderColor: tagsColor[index]
+        }
       })
     })
     datas.forEach((item, index) => {
@@ -382,7 +392,8 @@ const init = () => {
   })
   myChart.setOption(options)
   setTimeout(() => {
-    let imgDataUrl = myChart.getDataURL({
+    if (protein.value.length !== 0) {
+      let imgDataUrl = myChart.getDataURL({
     type: 'svg',
     pixelRatio: 2,
     backgroundColor: '#fff',
@@ -393,6 +404,7 @@ const init = () => {
       url: imgDataUrl
     }
     imgs.value.unshift(urlFile)
+    }
   },2000)
 }
 </script>
