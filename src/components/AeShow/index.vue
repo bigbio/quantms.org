@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="showImg" class="content-box">
     <div class="info">
       <div class="info-content">
         <h1>Organism: <span>Homo sapiens</span></h1>
@@ -38,13 +38,15 @@ import { getProteins } from '@/api/search'
 import { inflate } from 'pako'
 import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
-import { ref, onMounted } from 'vue'
+import { ref, onMounted,nextTick } from 'vue'
 const router = useRouter();
 const drawer = ref(false)
 // image height
-let imgH = 600
+let imgH = 500
 // database
 let proteinTable = []
+// component show
+const showImg = ref(false)
 // data history 
 const dataHistory = ref([])
 // query protein
@@ -102,10 +104,11 @@ const handleClose = (tag) => {
 // qeury
 const queryProtein = (input) => {
   if (typeof(input.value[0]) === "undefined") {
-    init()
+    // init()
+    showImg.value = false
+    myChart ? myChart.dispose() : myChart
     return
   }
-  // console.log(input.value)
   let proteins = proteinTable
   input.value.map((protein) => {
     const output = proteins.find((item) => {
@@ -132,26 +135,24 @@ const queryProtein = (input) => {
     //alert('Please enter a legal protein name')
   //}
   })
-  // console.log("111",proteinTags.value)
-  // console.log("222",input.value)
   if (proteinTags.value.length != input.value.length) {
     router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
   } else {
-    init()
+    showImg.value = true
+    imgH = dataHistory.value.length > 1 ? dataHistory.value.length * 400 : 500
+    nextTick(() => {
+      init()
+    })
   }
 }
 // watch route
-
 onBeforeRouteUpdate((to) => { 
-  // console.log(to.query.proteins)
   protein.value = to.query.protein
-  // console.log(protein.value)
   queryProtein(protein)
 })
 
 // load update
 onMounted(() => {
-  // console.log(protein.value)
   getProteinTable()
 })
 
@@ -244,7 +245,7 @@ const options = {
   grid: {
       left: '10%',
       right: '10%',
-      bottom: '7%'
+      bottom: 50
     },
     yAxis: {
       type: 'category',
@@ -322,7 +323,6 @@ const init = () => {
       })
   } else {
     sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
-    imgH = dataHistory.value.length != 0 ? dataHistory.value.length * 400 : 600
     dataHistory.value.length === 0 ? options.title = [] : options.title.splice(0,1,{
       text: 'Comparison of protein expression in different tissues',
       left: 'center'
@@ -405,10 +405,13 @@ const init = () => {
     }
     imgs.value.unshift(urlFile)
     }
-  },2000)
+  }, 2000)
 }
 </script>
 <style scoped>
+.content-box {
+  width: 100%;
+}
 .info {
   text-align: left;
   margin: 20px 0;
