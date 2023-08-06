@@ -136,8 +136,9 @@ const queryProtein = (input) => {
   // console.log("222",input.value)
   if (proteinTags.value.length != input.value.length) {
     router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
+  } else {
+    init()
   }
-  init()
 }
 // watch route
 
@@ -391,7 +392,8 @@ const init = () => {
   })
   myChart.setOption(options)
   setTimeout(() => {
-    let imgDataUrl = myChart.getDataURL({
+    if (protein.value.length !== 0) {
+      let imgDataUrl = myChart.getDataURL({
     type: 'svg',
     pixelRatio: 2,
     backgroundColor: '#fff',
@@ -402,6 +404,7 @@ const init = () => {
       url: imgDataUrl
     }
     imgs.value.unshift(urlFile)
+    }
   },2000)
 }
 </script>
