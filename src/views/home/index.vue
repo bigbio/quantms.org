@@ -28,12 +28,12 @@
           padding: 1.5rem;
         "
       >
-      <router-link to="/home">
+      <a href="https://docs.quantms.org/en/latest/">
         <el-icon size="50px"><Tools /></el-icon>
         <div style=" font-size: 1.5rem; color: rgb(107 114 128); margin-top: 1.25rem;">
           workflow
         </div>
-      </router-link>
+      </a>
       </div>
       <div class="card-box" style=" display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
       <router-link to="/datasets" >
