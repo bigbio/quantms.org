@@ -13,3 +13,10 @@ export const getDifferentialExpression = () => {
       method: 'get'
     })
 }
+export const getSingleCellExpression = () => {
+  return request(
+    {
+      url: '/data/single_cell.json',
+      method: 'get'
+    })
+}
