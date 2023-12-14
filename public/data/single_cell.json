@@ -1,0 +1,236 @@
+[
+    {
+        "reanalysis": [
+          {
+            "id": 1,
+            "title": "PXD016921",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD016921/"
+          },
+          {
+            "id": 2,
+            "title": "SDRF",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD016921/pipeline_info/PXD016921-MBR.sdrf.tsv"
+          },
+          {
+            "id": 3,
+            "title": "Peptide Table",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD016921/proteomicslfq/PXD016921-MBR.sdrf_openms_design_msstats_in.csv"
+          },
+          {
+            "id": 4,
+            "title": "PMULTIQC",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD016921/summarypipeline/multiqc_report.html"
+          }
+        ],
+        "accession": {
+          "id": "PXD034244",
+          "path": "https://www.ebi.ac.uk/pride/archive/projects/PXD016921"
+        },
+        "title": {
+          "title": "Improved Single Cell Proteome Coverage Using Narrow-Bore Packed NanoLC Columns and Ultrasensitive Mass Spectrometry",
+          "pubmedId": [{
+            "id": "31913019",
+            "path": "https://europepmc.org/article/MED/31913019"
+          }]
+        },
+        "samples": 7,
+        "msruns": 7,
+        "proteins": 1475,
+        "peptides": 11980,
+        "category": "single cell"
+      },
+    {
+    "reanalysis": [
+        {
+        "id": 1,
+        "title": "PXD023366",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023366/"
+        },
+        {
+        "id": 2,
+        "title": "SDRF",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023366/pipeline_info/PXD023366.sdrf.tsv"
+        },
+        {
+        "id": 3,
+        "title": "Peptide Table",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023366/proteomicslfq/PXD023366.sdrf_openms_design_msstats_in.csv"
+        },
+        {
+        "id": 4,
+        "title": "PMULTIQC",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023366/summarypipeline/multiqc_report.html"
+        }
+    ],
+    "accession": {
+        "id": "PXD023366",
+        "path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023366"
+    },
+    "title": {
+        "title": "Single-cell quantitative proteomic analysis of oocyte maturation revealed high heterogeneities in human in vitro matured oocytes",
+        "pubmedId": [{
+        "id": "35809850",
+        "path": "https://europepmc.org/article/MED/35809850"
+        }]
+    },
+    "samples": 36,
+    "msruns": 36,
+    "proteins": 2545,
+    "peptides": 24177,
+    "category": "single cell"
+      },
+    {
+        "reanalysis": [
+          {
+            "id": 1,
+            "title": "PXD023904-U2OS",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023904-U2OS/"
+          },
+          {
+            "id": 2,
+            "title": "SDRF",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023904-U2OS/pipeline_info/PXD023904-U2OS.sdrf.tsv"
+          },
+          {
+            "id": 3,
+            "title": "Peptide Table",
+            "path": ""
+          },
+          {
+            "id": 4,
+            "title": "PMULTIQC",
+            "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023904-U2OS/summarypipeline/multiqc_report.html"
+          }
+        ],
+        "accession": {
+          "id": "PXD023904",
+          "path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023904"
+        },
+        "title": {
+          "title": "Deep Visual Proteomics defines single-cell identity and heterogeneity",
+          "pubmedId": [{
+            "id": "35590073",
+            "path": "https://europepmc.org/article/MED/35590073"
+          }]
+        },
+        "samples": 18,
+        "msruns": 18,
+        "proteins": 3273,
+        "peptides": 25876,
+        "category": "single cell"
+      },
+    {
+    "reanalysis": [
+        {
+        "id": 1,
+        "title": "PXD023904-melanoma",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023904-melanoma/"
+        },
+        {
+        "id": 2,
+        "title": "SDRF",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023904-melanoma/pipeline_info/PXD023904-melanoma.sdrf.tsv"
+        },
+        {
+        "id": 3,
+        "title": "Peptide Table",
+        "path": ""
+        },
+        {
+        "id": 4,
+        "title": "PMULTIQC",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD023904-melanoma/summarypipeline/multiqc_report.html"
+        }
+    ],
+    "accession": {
+        "id": "PXD023904",
+        "path": "https://www.ebi.ac.uk/pride/archive/projects/PXD023904"
+    },
+    "title": {
+        "title": "Deep Visual Proteomics defines single-cell identity and heterogeneity",
+        "pubmedId": [{
+        "id": "35590073",
+        "path": "https://europepmc.org/article/MED/35590073"
+        }]
+    },
+    "samples": 28,
+    "msruns": 28,
+    "proteins": 2013,
+    "peptides": 8639,
+    "category": "single cell"
+     },
+    {
+    "reanalysis": [
+        {
+        "id": 1,
+        "title": "PXD024043-cellcycle",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD024043-cellcycle/"
+        },
+        {
+        "id": 2,
+        "title": "SDRF",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD024043-cellcycle/pipeline_info/PXD024043-cellcycle.sdrf.tsv"
+        },
+        {
+        "id": 3,
+        "title": "Peptide Table",
+        "path": ""
+        },
+        {
+        "id": 4,
+        "title": "PMULTIQC",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD024043-cellcycle/summarypipeline/multiqc_report.html"
+        }
+    ],
+    "accession": {
+        "id": "PXD024043",
+        "path": "https://www.ebi.ac.uk/pride/archive/projects/PXD024043"
+    },
+    "title": {
+        "title": "",
+        "pubmedId": []
+    },
+    "samples": 434,
+    "msruns": 434,
+    "proteins": 1781,
+    "peptides": 8734,
+    "category": "single cell"
+     },
+    {
+    "reanalysis": [
+        {
+        "id": 1,
+        "title": "PXD024043-diaPASEF-1ng",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD024043-diaPASEF-1ng/"
+        },
+        {
+        "id": 2,
+        "title": "SDRF",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD024043-diaPASEF-1ng/pipeline_info/PXD024043-diaPASEF-1ng.sdrf.tsv"
+        },
+        {
+        "id": 3,
+        "title": "Peptide Table",
+        "path": ""
+        },
+        {
+        "id": 4,
+        "title": "PMULTIQC",
+        "path": "http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/single-cell-expression/PXD024043-diaPASEF-1ng/summarypipeline/multiqc_report.html"
+        }
+    ],
+    "accession": {
+        "id": "PXD024043",
+        "path": "https://www.ebi.ac.uk/pride/archive/projects/PXD024043"
+    },
+    "title": {
+        "title": "",
+        "pubmedId": []
+    },
+    "samples": 15,
+    "msruns": 15,
+    "proteins": 3217,
+    "peptides": 20903,
+    "category": "single cell"
+     }
+]
