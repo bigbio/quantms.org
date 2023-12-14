@@ -13,7 +13,7 @@
       and protein levels for all datasets. All parameters including the
       posttranslational modifications, precursor and fragment tolerances can be
       found for each dataset in the corresponding SDRF. Following 2 tables show
-      the list of AE and DE datasets reanalyzed including the number of samples,
+      the list of AE, DE and SingleCell datasets reanalyzed including the number of samples,
       ms runs, unique peptides and unique proteins for each dataset, as well as
       reanalysis results and publication information.
     </p> -->
@@ -79,9 +79,11 @@ import { ref, onMounted } from "vue";
 import {
   getAbsolueExpression,
   getDifferentialExpression,
+  getSingleCellExpression,
 } from "@/api/getTable";
 const tableDataAE = ref([]);
 const tableDataDE = ref([]);
+const tableDataSingleCell = ref([]);
 // const table = ref([])
 const fullTable = ref([]);
 
@@ -90,7 +92,10 @@ const initTable = async () => {
   tableDataAE.value = AE.data;
   const DE = await getDifferentialExpression();
   tableDataDE.value = DE.data;
-  fullTable.value = [...AE.data, ...DE.data];
+  const SingleCell = await getSingleCellExpression();
+  tableDataSingleCell.value = SingleCell.data;
+  fullTable.value = [...AE.data, ...DE.data, ...SingleCell.data];
+
 };
 
 
