@@ -30,7 +30,7 @@
       >
         <div style="font-size: 1.5rem; color: rgb(75, 85, 99)"> Datasets Reanalyzed </div>
         <el-input
-          v-model="search1"
+          v-model="searchProject"
           size="large"
           style="width: 30%; margin: 1.5rem 0"
           placeholder="Search"
@@ -38,7 +38,7 @@
         />
       </div>
       <Table
-        :modelValue="fullTable" @update:modelValue="fullTable = $event"
+        :modelValue="filterTable" @update:modelValue="fullTable = $event"
       ></Table>
     </div>
 
@@ -75,7 +75,7 @@
 <script setup>
 import { Search } from "@element-plus/icons-vue";
 import Table from "@/components/Table/index.vue";
-import { ref, onMounted } from "vue";
+import { ref, onMounted,computed } from "vue";
 import {
   getAbsolueExpression,
   getDifferentialExpression,
@@ -100,8 +100,14 @@ const initTable = async () => {
 
 
 
-const search1 = ref();
-// const search2 = ref();
+const searchProject = ref('');
+const filterTable = computed(() =>
+  fullTable.value.filter(
+    (data) =>
+      !searchProject.value ||
+      data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase())
+  )
+)
 
 onMounted(() => {
   initTable();

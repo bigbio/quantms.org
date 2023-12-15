@@ -19,14 +19,14 @@
       <el-table-column prop="msruns" label="Msruns" width="100" />
       <el-table-column prop="peptides" label="Peptides" min-width="100" sortable="custom">
         <template #default="scope">
-          <el-tooltip effect="light" :content="scope.row.peptides" :offset="-50" placement="right-start">
+          <el-tooltip effect="light" :content="scope.row.peptides.toString()" :offset="-50" placement="right-start">
             <el-progress :percentage="(100 * scope.row.peptides) / maxPeptides" :stroke-width="12" :show-text="false" />
           </el-tooltip>
         </template>
       </el-table-column>
       <el-table-column prop="proteins" label="Proteins" min-width="100" sortable="custom">
         <template #default="scope">
-          <el-tooltip effect="light" :content="scope.row.proteins" :offset="-50" placement="right-start">
+          <el-tooltip effect="light" :content="scope.row.proteins.toString()" :offset="-50" placement="right-start">
             <el-progress :percentage="(100 * scope.row.proteins) / maxProteins" :stroke-width="12" :show-text="false" />
           </el-tooltip>
         </template>
@@ -89,7 +89,6 @@ watch(
     maxPeptides.value = Math.max(...val.map((o) => o.peptides));
     maxProteins.value = Math.max(...val.map((o) => o.proteins));
     sortedData.value = [...val];
-    console.log(maxPeptides.value, maxProteins.value);
   }
 );
 
