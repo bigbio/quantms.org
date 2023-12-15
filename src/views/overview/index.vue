@@ -79,13 +79,13 @@
         "
       > 
       <el-text>Examples:
-        <span @click="onSearch('LRBA_HUMAN')"
-          >LRBA_HUMAN, </span
+        <span @click="onSearch('P50851')"
+          >P50851, </span
         >
-        <span @click="onSearch('PGAM5_HUMAN')"
-          >PGAM5_HUMAN, </span>
-        <span @click="onSearch('LRP8_HUMAN')"
-          >LRP8_HUMAN</span
+        <span @click="onSearch('Q96HS1')"
+          >Q96HS1, </span>
+        <span @click="onSearch('Q14114')"
+          >Q14114</span
         >
       </el-text>
       </div>
