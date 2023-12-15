@@ -245,7 +245,7 @@ const options = {
   grid: {
       left: '10%',
       right: '10%',
-      bottom: 50
+      bottom: 60
     },
     yAxis: {
       type: 'category',
@@ -260,7 +260,7 @@ const options = {
     },
     xAxis: {
       type: 'value',
-      name: 'riBAQ',
+      name: 'iBAQLog',
       nameLocation: 'center',
       nameGap: 40,
       splitArea: {
