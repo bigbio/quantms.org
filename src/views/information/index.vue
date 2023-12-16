@@ -33,7 +33,7 @@
           v-model="searchProject"
           size="large"
           style="width: 30%; margin: 1.5rem 0"
-          placeholder="Search"
+          placeholder="Accession or Category "
           :suffix-icon="Search"
         />
       </div>
@@ -105,7 +105,8 @@ const filterTable = computed(() =>
   fullTable.value.filter(
     (data) =>
       !searchProject.value ||
-      data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase())
+      data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase()) ||
+      data.category.toLowerCase().includes(searchProject.value.toLowerCase())
   )
 )
 
