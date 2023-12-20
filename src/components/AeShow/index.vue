@@ -171,7 +171,7 @@ const initData = (data) => {
   for (let i = 0; i < data.tags.length; i++) {
     let obj = {}
     obj['name'] = data.tags[i]
-    obj['data'] = data.data[i].filter(value=>value<=7)
+    obj['data'] = data.data[i].filter(value=>value>=1)
     dataSort.push(obj)
   }
   // sort data
@@ -270,7 +270,7 @@ const options = {
         show: false
       },
       min: 1,
-      max: 10
+      //max: 10
     },
     toolbox: {
       feature: {
@@ -337,7 +337,7 @@ const init = () => {
           data.push([])
         } else {
           let index = item.tags.indexOf(tissue)
-          let rowArr = item.data[index]
+          let rowArr = item.data[index].filter(v=>v>=1)
           data.push(rowArr)
         }
       })
