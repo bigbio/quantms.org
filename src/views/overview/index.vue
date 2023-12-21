@@ -104,8 +104,10 @@
         min-height: 10rem;
         padding: 1rem;
       "
+      v-loading="loading"
+      element-loading-text="loading"
     >
-      <router-view :key="key"></router-view>
+      <router-view :key="key" @changeLoading="changeLoading" ></router-view>
     </div>
   </div>
 </div>
@@ -116,6 +118,7 @@ import { ref,computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { Search } from "@element-plus/icons-vue";
 const router = useRouter();
+const loading = ref(false)
 // sapiens
 const sapiens = ref("");
 // select_menus
@@ -186,6 +189,9 @@ const onSearch = (val) => {
   }
   
 };
+const changeLoading = () => {
+  loading.value = !loading.value;
+}
 </script>
 <style lang="scss" scoped>
 ::v-deep {
