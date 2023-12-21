@@ -26,7 +26,6 @@
         </el-drawer>
       </div>
     </div>
-
     <div class="card">
       <div ref="chart" v-bind:style="{width: 100 + '%', height: imgH + 'px'}"></div>
     </div>
@@ -34,7 +33,7 @@
   </div>
 </template>
 <script setup>
-import { getProteins } from '@/api/search'
+import { getProteins,getCellLineProteins } from '@/api/search'
 import { inflate } from 'pako'
 import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
@@ -49,6 +48,8 @@ let proteinTable = []
 const showImg = ref(false)
 // data history 
 const dataHistory = ref([])
+// current router name
+const routerName = ref('')
 // query protein
 const protein = ref([])
 // sorted tags 
@@ -85,9 +86,10 @@ const tagsTotal = [
                 "placenta",
   ]
 protein.value = Array.isArray(router.currentRoute.value.query.protein) ? router.currentRoute.value.query.protein : [router.currentRoute.value.query.protein]
+routerName.value = router.currentRoute.value.name
 // get proteins
 const getProteinTable = async () => {
-  const res = await getProteins()
+  const res = routerName.value ==='tissues' ? await getProteins() : await getCellLineProteins()
   const byteArray = new Uint8Array(res.data)
   const data = inflate(byteArray, { to: 'string' })
   proteinTable = JSON.parse(data)
@@ -97,9 +99,7 @@ const getProteinTable = async () => {
 const handleClose = (tag) => {
   dataHistory.value.splice(proteinTags.value.indexOf(tag), 1)
   proteinTags.value.splice(proteinTags.value.indexOf(tag), 1)
-  router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
-  // console.log(dataHistory.value)
-  // init()
+  routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } }) : router.push({ path: "/ae/cellline", query: { protein: proteinTags.value } })
 }
 // qeury
 const queryProtein = (input) => {
@@ -129,14 +129,10 @@ const queryProtein = (input) => {
         dataHistory.value.push(output)
       }
     }
-    // console.log(output)
-    // init()
-  //} //else {
-    //alert('Please enter a legal protein name')
-  //}
   })
   if (proteinTags.value.length != input.value.length) {
-    router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
+    routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } }) : router.push({ path: "/ae/cellline", query: { protein: proteinTags.value } })
+    //router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
   } else {
     showImg.value = true
     imgH = dataHistory.value.length > 1 ? dataHistory.value.length * 400 : 500
@@ -159,7 +155,8 @@ onMounted(() => {
 
 // init data
 const initData = (data) => {
-  if (data.tags.length < 18) {
+  if (routerName.value === 'tissues') {
+    if (data.tags.length < 18) {
     tagsTotal.map((item) => {
       if (!data.tags.includes(item)) {
         data.tags.push(item)
@@ -167,12 +164,21 @@ const initData = (data) => {
       }
     })
   }
+  }
   let dataSort = []
   for (let i = 0; i < data.tags.length; i++) {
     let obj = {}
     obj['name'] = data.tags[i]
     obj['data'] = data.data[i].filter(value=>value>=1)
     dataSort.push(obj)
+  }
+  if (routerName.value !== 'tissues') {
+    dataSort.sort((obja, objb) => {
+    const lena = obja.data.length
+    const lenb = objb.data.length
+    return lenb - lena
+    })
+    dataSort = dataSort.slice(0, 20);
   }
   // sort data
   dataSort.sort((obja,objb) => {
@@ -323,9 +329,13 @@ const init = () => {
         },
       })
   } else {
-    sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
+    if (routerName.value === 'tissues') {
+      sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
+    } else {
+      sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
+    }
     dataHistory.value.length === 0 ? options.title = [] : options.title.splice(0,1,{
-      text: 'Comparison of protein expression in different tissues',
+      text: `Comparison of protein expression in different ${routerName.value}`,
       left: 'center'
     })
     dataHistory.value.length === 0 ? options.legend.show = false : options.legend.show = true

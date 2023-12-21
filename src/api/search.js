@@ -16,3 +16,11 @@ export const getProteins = () => {
     responseType: 'arraybuffer'
   })
 }
+
+export const getCellLineProteins = () => {
+  return request({
+    method: 'get',
+    url: '/data/Cell_lines_IBAQ.json.gz',
+    responseType: 'arraybuffer'
+  })
+}

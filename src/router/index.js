@@ -24,6 +24,11 @@ const routes = [
             path: '/ae/tissues',
             name: 'tissues',
             component: () => import('@/components/AeShow')
+          },
+          {
+            path: '/ae/cellline',
+            name: 'cellline',
+            component: () => import('@/components/AeShow')
           }
         ]
       },
