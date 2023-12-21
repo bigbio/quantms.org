@@ -37,9 +37,10 @@ import { getProteins,getCellLineProteins } from '@/api/search'
 import { inflate } from 'pako'
 import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
-import { ref, onMounted,nextTick } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 const router = useRouter();
 const drawer = ref(false)
+const emit = defineEmits(['changeLoading'])
 // image height
 let imgH = 500
 // database
@@ -89,10 +90,12 @@ protein.value = Array.isArray(router.currentRoute.value.query.protein) ? router.
 routerName.value = router.currentRoute.value.name
 // get proteins
 const getProteinTable = async () => {
+  emit('changeLoading')
   const res = routerName.value ==='tissues' ? await getProteins() : await getCellLineProteins()
   const byteArray = new Uint8Array(res.data)
   const data = inflate(byteArray, { to: 'string' })
   proteinTable = JSON.parse(data)
+  emit('changeLoading')
   queryProtein(protein)
 }
 // delete tag
