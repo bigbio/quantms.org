@@ -69,6 +69,11 @@
           <el-button type="primary" size="large" plain>Search</el-button>
         </router-link> -->
       </div>
+      <div class="select-box">
+          <span>select type:</span>
+          <el-check-tag :checked="checkedTissue" @change="onChangeTissue" style="margin-right: 8px; font-size: 10px; border-radius: 6px;">tissue</el-check-tag>
+          <el-check-tag :checked="checkedCellLine" @change="onChangeCellLine" style="font-size: 10px; border-radius: 6px;" >cell line</el-check-tag>
+      </div>
       <div
         style="
           display: flex;
@@ -90,9 +95,6 @@
       </el-text>
       </div>
     </div>
-    <!-- <p>
-      Find the iBAQ distribution for your protein of interest, e.g. ABCD4_HUMAN
-    </p> -->
     <!--  Image  -->
     <div
       style="
@@ -103,14 +105,14 @@
         padding: 1rem;
       "
     >
-      <router-view></router-view>
+      <router-view :key="key"></router-view>
     </div>
   </div>
 </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref,computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { Search } from "@element-plus/icons-vue";
 const router = useRouter();
@@ -123,8 +125,14 @@ const options = [
     label: "Homo sapiens",
   },
 ];
-
-
+const checkedTissue = ref(true)
+const checkedCellLine = ref(false)
+const key = computed(() => router.currentRoute.value.name == 'tissues' ? 'tissues' : 'cellline')
+onMounted(() => {
+  let status = router.currentRoute.value.name == 'cellline' ? true : false
+  checkedTissue.value = !status
+  checkedCellLine.value = status
+})
 // const font = ["V", "i", "s", "u", "a", "l", "i", "z", "a", "t", "i", "o", "n"];
 // const fontColor = [
 //   "#25BEF6",
@@ -149,15 +157,34 @@ const onEnter = () => {
   if (!input.value) {
     return;
   }
-  router.push({ path: "/ae/tissues", query: { protein: [input.value] } });
+  if (checkedTissue.value) {
+    router.push({ path: "/ae/tissues", query: { protein: [input.value] } });
+  } else {
+    router.push({ path: "/ae/cellline", query: { protein: [input.value] } });
+  }
+  
 };
+// change tag status
+const onChangeTissue = (status) => {
+  checkedTissue.value = status
+  checkedCellLine.value = !status
+}
+const onChangeCellLine = (status) => {
+  checkedCellLine.value = status
+  checkedTissue.value = !status
+}
 
 const onSearch = (val) => {
   if (!val) {
     return;
   }
   input.value = val;
-  router.push({ path: "/ae/tissues", query: { protein: [val] } });
+  if (checkedTissue.value) {
+    router.push({ path: "/ae/tissues", query: { protein: [val] } });  
+  } else {
+    router.push({ path: "/ae/cellline", query: { protein: [val] } }); 
+  }
+  
 };
 </script>
 <style lang="scss" scoped>
@@ -239,5 +266,16 @@ h1 {
 .el-text span:hover{
   color:#84c7d0;
   cursor: pointer;
+}
+.select-box {
+    margin: 0.5rem 0;
+    > span {
+      margin-right: 1rem;
+      font-size: 18px;
+      font-weight: 700;
+    }
+}
+.el-check-tag {
+  font-size: 10px;
 }
 </style>
