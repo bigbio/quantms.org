@@ -3,11 +3,19 @@
     <div class="info">
       <div class="info-content">
         <h1>Organism: <span>Homo sapiens</span></h1>
-        <!--
-        <h1>
-          Protein: <span>{{ protein }}</span>
-        </h1>
-        -->
+        <el-switch
+          v-model="showBar"
+          class="ml-2"
+          inline-prompt
+          style="
+              --el-switch-on-color: #13ce66; 
+              --el-switch-off-color: #ff4949;
+              position: absolute;
+              "
+          active-text="Bar"
+          inactive-text="Box"
+          @change = "changeShow"
+        />
       </div>
       <!--tags-->
       <div class="button-tag">
@@ -45,6 +53,7 @@ const emit = defineEmits(['changeLoading'])
 let imgH = 500
 // database
 let proteinTable = []
+const showBar = ref(false)
 // component show
 const showImg = ref(false)
 // data history 
@@ -310,11 +319,11 @@ const init = () => {
       left: 'center'
     })
     //console.log(neatData,tags)
-    let { singleNum, data } = countSingleValue(neatData,2)
-    if (singleNum >= 10) {
+    let data = countSingleValue(neatData,2)
+    if (showBar.value) {
       options.series.push(
         {
-          name: '2011',
+          name: proteinTags.value[0],
           type: 'bar',
           data: data,
           itemStyle: {
@@ -384,8 +393,8 @@ const init = () => {
       })
       datas.push(data)
     })
-    let { singleNum, data } = countSingleValue(datas, 3)
-    if (singleNum >= 10) {
+    let data = countSingleValue(datas, 3)
+    if (showBar.value) {
       datas = data
       options.dataset = []
       options.series = []
@@ -489,18 +498,30 @@ const init = () => {
 // count single value
 const countSingleValue = (data, dimension) => {
   if (dimension === 2) {
+    /*
     let singleNum = data.filter((arr) => arr.length == 1).length
     if (singleNum >= 10) {
       data = data.map((arr) => Number((arr.reduce((a, b)=>a+b)/arr.length).toFixed(2)))
     }
-    return { singleNum, data }
+    return { singleNum, data } 
+    */
+    data = data.map((arr) => arr.length > 0 ? Number((arr.reduce((a, b) => a + b) / arr.length).toFixed(2)) : 0)
+    return data
   } else {
+    /*
     let singleNum = data[0].filter((arr) => arr.length == 1).length
     if (singleNum >= 10) {
       data = data.map((res) => res.map((arr) => arr.length > 0 ? Number((arr.reduce((a, b)=>a+b)/arr.length).toFixed(2)) : 0))
     }
-    return { singleNum, data }
+    return { singleNum, data } 
+    */
+    data = data.map((res) => res.map((arr) => arr.length > 0 ? Number((arr.reduce((a, b) => a + b) / arr.length).toFixed(2)) : 0))
+    return data
   }
+}
+//
+const changeShow = () => {
+  init()
 }
 </script>
 <style scoped>
