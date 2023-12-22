@@ -185,12 +185,15 @@ const initData = (data) => {
   }
   // sort data
   dataSort.sort((obja,objb) => {
-    obja.data.sort((a, b) => { return a - b })
+    /*  
     objb.data.sort((a, b) => { return a - b })
     const lena = obja.data.length
     const lenb = objb.data.length
     const mida = obja.data[Math.floor(lena / 2)]
-    const midb = objb.data[Math.floor(lenb / 2)]
+    const midb = objb.data[Math.floor(lenb / 2)] 
+    */
+    const mida = obja.data.length > 0 ? obja.data.reduce((a, b) => a + b) / obja.data.length : 0
+    const midb = obja.data.length > 0 ? objb.data.reduce((a, b) => a + b) / objb.data.length : 0
     return mida - midb
   })
   // get sort column
@@ -306,31 +309,56 @@ const init = () => {
       text: dataHistory.value[0].title,
       left: 'center'
     })
-    options.dataset.push({
+    //console.log(neatData,tags)
+    let { singleNum, data } = countSingleValue(neatData,2)
+    if (singleNum >= 10) {
+      options.series.push(
+        {
+          name: '2011',
+          type: 'bar',
+          data: data,
+          itemStyle: {
+              color: tagsColor[0],
+              color0: '#FA0000',
+              borderColor: '#030609',
+              borderColor0: '#030609',
+            }
+        }
+      )
+      options.tooltip = {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        }
+      }
+      options.yAxis.data = sortTags.value
+    } else {
+      options.dataset.push({
       source: neatData
-    })
-    options.dataset.push({
-        fromDatasetIndex: 0,
-        transform: {
-          type: 'boxplot',
-          config: {
-            itemNameFormatter: function (params) {
-              return tags[params.value]
+      })
+      options.dataset.push({
+          fromDatasetIndex: 0,
+          transform: {
+            type: 'boxplot',
+            config: {
+              itemNameFormatter: function (params) {
+                return tags[params.value]
+              }
             }
           }
-        }
-    })
-    options.series.push({
-        name: 'category0',
-        type: 'boxplot',
-        datasetIndex: 1,
-        itemStyle: {
-          color: tagsColor[0],
-          color0: '#FA0000',
-          borderColor: '#030609',
-          borderColor0: '#030609'
-        },
       })
+      options.series.push({
+          name: 'category0',
+          type: 'boxplot',
+          datasetIndex: 1,
+          itemStyle: {
+            color: tagsColor[0],
+            color0: '#FA0000',
+            borderColor: '#030609',
+            borderColor0: '#030609',
+          },
+        })
+    }
   } else {
     if (routerName.value === 'tissues') {
       sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
@@ -356,46 +384,83 @@ const init = () => {
       })
       datas.push(data)
     })
-    options.dataset = []
-    options.series = []
-    options.legend.data = []
-    datas.forEach((item,index) => {
-      options.dataset.push({
-        source: item
+    let { singleNum, data } = countSingleValue(datas, 3)
+    if (singleNum >= 10) {
+      datas = data
+      options.dataset = []
+      options.series = []
+      options.legend.data = []
+      datas.forEach((item, index) => {
+        options.series.push(
+        {
+          name: proteinTags.value[index],
+          type: 'bar',
+          data: item,
+          itemStyle: {
+              color: tagsColor[index],
+              color0: '#FA0000',
+              borderColor: '#030609',
+              borderColor0: '#030609',
+            }
+          })
+        options.legend.data.push({
+          name: proteinTags.value[index],
+          itemStyle: {
+            color: tagsColor[index],
+            borderColor: tagsColor[index]
+          }
+        })
       })
-      options.series.push({
-        name: proteinTags.value[index],
-        type: 'boxplot',
-        datasetIndex: datas.length + index,
-        itemStyle: {
-          color: tagsColor[index],
-          color0: '#FA0000',
-          borderColor: '#030609',
-          borderColor0: '#030609'
-        },
-      })
-      options.legend.data.push({
-        name: proteinTags.value[index],
-        itemStyle: {
-          color: tagsColor[index],
-          borderColor: tagsColor[index]
+      options.tooltip = {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
         }
-      })
-    })
-    datas.forEach((item, index) => {
-      options.dataset.push({
-        fromDatasetIndex: index,
-        transform: {
+      }
+      options.yAxis.data = sortTags.value
+    } else {
+      options.dataset = []
+      options.series = []
+      options.legend.data = []
+      datas.forEach((item,index) => {
+        options.dataset.push({
+          source: item
+        })
+        options.series.push({
+          name: proteinTags.value[index],
           type: 'boxplot',
-          config: {
-            itemNameFormatter: function (params) {
-              return sortTags.value[params.value]
+          datasetIndex: datas.length + index,
+          itemStyle: {
+            color: tagsColor[index],
+            color0: '#FA0000',
+            borderColor: '#030609',
+            borderColor0: '#030609',
+          },
+        })
+        options.legend.data.push({
+          name: proteinTags.value[index],
+          itemStyle: {
+            color: tagsColor[index],
+            borderColor: tagsColor[index]
+          }
+        })
+      })
+      datas.forEach((item, index) => {
+        options.dataset.push({
+          fromDatasetIndex: index,
+          transform: {
+            type: 'boxplot',
+            config: {
+              itemNameFormatter: function (params) {
+                return sortTags.value[params.value]
+              }
             }
           }
-        }
+        })
       })
-    })
+    }
   }
+
   if (myChart != null && myChart !== '' && myChart !== undefined) {
     myChart.dispose() // discard
   }
@@ -420,6 +485,22 @@ const init = () => {
     imgs.value.unshift(urlFile)
     }
   }, 2000)
+}
+// count single value
+const countSingleValue = (data, dimension) => {
+  if (dimension === 2) {
+    let singleNum = data.filter((arr) => arr.length == 1).length
+    if (singleNum >= 10) {
+      data = data.map((arr) => Number((arr.reduce((a, b)=>a+b)/arr.length).toFixed(2)))
+    }
+    return { singleNum, data }
+  } else {
+    let singleNum = data[0].filter((arr) => arr.length == 1).length
+    if (singleNum >= 10) {
+      data = data.map((res) => res.map((arr) => arr.length > 0 ? Number((arr.reduce((a, b)=>a+b)/arr.length).toFixed(2)) : 0))
+    }
+    return { singleNum, data }
+  }
 }
 </script>
 <style scoped>
