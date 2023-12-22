@@ -79,7 +79,7 @@ const tagsTotal = [
                 "heart",
                 "stomach",
                 //"skin",
-                //"blood plasma",
+                "blood plasma",
                 "brain",
                 "kidney",
                 "liver",
@@ -331,7 +331,7 @@ const init = () => {
               color0: '#FA0000',
               borderColor: '#030609',
               borderColor0: '#030609',
-            }
+          }
         }
       )
       options.tooltip = {
@@ -365,12 +365,12 @@ const init = () => {
             color0: '#FA0000',
             borderColor: '#030609',
             borderColor0: '#030609',
-          },
+          }
         })
     }
   } else {
     if (routerName.value === 'tissues') {
-      sortTags.value = sortTags.value.length ===0 ? tagsTotal : sortTags.value
+      sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
     } else {
       sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
     }
