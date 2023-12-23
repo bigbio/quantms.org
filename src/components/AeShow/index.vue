@@ -14,9 +14,25 @@
               "
           active-text="Bar"
           inactive-text="Box"
-          @change = "changeShow"
+          @change = "changeShowBar"
+        />
+        <el-switch
+          v-model="showLabel"
+          class="ml-2"
+          inline-prompt
+          v-show="showBar"
+          style="
+              --el-switch-on-color: #13ce66; 
+              --el-switch-off-color: #ff4949;
+              position: absolute;
+              left: 5.5rem;
+              "
+          active-text="Show label"
+          inactive-text="Off label"
+          @change = "changeShowLabel"
         />
       </div>
+      
       <!--tags-->
       <div class="button-tag">
           <el-tag v-for="(item,index) in proteinTags" :key="index" round closable :color="tagsColor[index]" @close="handleClose(item)">{{ item }}</el-tag>
@@ -54,6 +70,7 @@ let imgH = 500
 // database
 let proteinTable = []
 const showBar = ref(false)
+const showLabel = ref(false)
 // component show
 const showImg = ref(false)
 // data history 
@@ -334,7 +351,7 @@ const init = () => {
               borderColor0: '#030609',
           },
           label: {
-            show: true,
+            show: showLabel.value,
             position: 'right',
             formatter: function () {
               return `samples: ${samples.shift()}`
@@ -421,7 +438,7 @@ const init = () => {
               borderColor0: '#030609',
             },
           label: {
-            show: true,
+            show: showLabel.value,
             position: 'right',
             formatter: function () {
               return `samples: ${samples[index].shift()}`
@@ -540,7 +557,10 @@ const countSingleValue = (data, dimension) => {
 }
 
 //
-const changeShow = () => {
+const changeShowBar = () => {
+  init()
+}
+const changeShowLabel = () => {
   init()
 }
 </script>
