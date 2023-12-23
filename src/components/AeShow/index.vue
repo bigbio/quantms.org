@@ -94,7 +94,38 @@ const tagsTotal = [
                 "colon",
                 "esophagus",
                 "placenta",
-  ]
+]
+// 
+const boxTooltips = {
+              trigger: 'item',
+              axisPointer: {
+                type: 'shadow'
+              },
+              textStyle: {},
+              formatter: function (param) {
+                return [
+                  "<div style='margin-bottom:5px;width:100%;border-radius:3px;text-align:center;family'><p>" +
+                    param.data[0] +
+                    ' </p></div>',
+                  '<hr size=1 style="margin: 3px 0">',
+                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Max:</span>" +
+                    parseFloat(param.data[5]).toFixed(2) +
+                    '<br/>',
+                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Q3:</span>" +
+                    parseFloat(param.data[4]).toFixed(2) +
+                    '<br/>',
+                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Median:</span>" +
+                    parseFloat(param.data[3]).toFixed(2) +
+                    '<br/>',
+                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Q1:</span>" +
+                    parseFloat(param.data[2]).toFixed(2) +
+                    '<br/>',
+                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Min:</span>" +
+                    parseFloat(param.data[1]).toFixed(2) +
+                    '<br/>'
+                ].join('')
+              }
+          }
 protein.value = Array.isArray(router.currentRoute.value.query.protein) ? router.currentRoute.value.query.protein : [router.currentRoute.value.query.protein]
 routerName.value = router.currentRoute.value.name
 // get proteins
@@ -224,36 +255,7 @@ const options = {
     ],
     dataset: [
     ],
-    tooltip: {
-      trigger: 'item',
-      axisPointer: {
-        type: 'shadow'
-      },
-      textStyle: {},
-      formatter: function (param) {
-        return [
-          "<div style='margin-bottom:5px;width:100%;border-radius:3px;text-align:center;family'><p>" +
-            param.data[0] +
-            ' </p></div>',
-          '<hr size=1 style="margin: 3px 0">',
-          "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Max:</span>" +
-            parseFloat(param.data[5]).toFixed(2) +
-            '<br/>',
-          "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Q3:</span>" +
-            parseFloat(param.data[4]).toFixed(2) +
-            '<br/>',
-          "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Median:</span>" +
-            parseFloat(param.data[3]).toFixed(2) +
-            '<br/>',
-          "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Q1:</span>" +
-            parseFloat(param.data[2]).toFixed(2) +
-            '<br/>',
-          "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Min:</span>" +
-            parseFloat(param.data[1]).toFixed(2) +
-            '<br/>'
-        ].join('')
-      }
-  },
+    tooltip: {},
   // color: tagsColor,
   legend: {
     show: true,
@@ -318,8 +320,7 @@ const init = () => {
       text: dataHistory.value[0].title,
       left: 'center'
     })
-    //console.log(neatData,tags)
-    let data = countSingleValue(neatData,2)
+    let { samples,data } = countSingleValue(neatData,2)
     if (showBar.value) {
       options.series.push(
         {
@@ -331,6 +332,13 @@ const init = () => {
               color0: '#FA0000',
               borderColor: '#030609',
               borderColor0: '#030609',
+          },
+          label: {
+            show: true,
+            position: 'right',
+            formatter: function () {
+              return `samples: ${samples.shift()}`
+            }
           }
         }
       )
@@ -366,7 +374,8 @@ const init = () => {
             borderColor: '#030609',
             borderColor0: '#030609',
           }
-        })
+      })
+      options.tooltip = boxTooltips
     }
   } else {
     if (routerName.value === 'tissues') {
@@ -393,7 +402,7 @@ const init = () => {
       })
       datas.push(data)
     })
-    let data = countSingleValue(datas, 3)
+    let { samples,data } = countSingleValue(datas, 3)
     if (showBar.value) {
       datas = data
       options.dataset = []
@@ -410,7 +419,14 @@ const init = () => {
               color0: '#FA0000',
               borderColor: '#030609',
               borderColor0: '#030609',
+            },
+          label: {
+            show: true,
+            position: 'right',
+            formatter: function () {
+              return `samples: ${samples[index].shift()}`
             }
+          }
           })
         options.legend.data.push({
           name: proteinTags.value[index],
@@ -467,6 +483,7 @@ const init = () => {
           }
         })
       })
+      options.tooltip = boxTooltips
     }
   }
 
@@ -505,8 +522,9 @@ const countSingleValue = (data, dimension) => {
     }
     return { singleNum, data } 
     */
+    let samples = data.map((arr) => arr.length)
     data = data.map((arr) => arr.length > 0 ? Number((arr.reduce((a, b) => a + b) / arr.length).toFixed(2)) : 0)
-    return data
+    return { samples,data }
   } else {
     /*
     let singleNum = data[0].filter((arr) => arr.length == 1).length
@@ -515,10 +533,12 @@ const countSingleValue = (data, dimension) => {
     }
     return { singleNum, data } 
     */
+    let samples = data.map((res) => res.map((arr) => arr.length))
     data = data.map((res) => res.map((arr) => arr.length > 0 ? Number((arr.reduce((a, b) => a + b) / arr.length).toFixed(2)) : 0))
-    return data
+    return { samples,data }
   }
 }
+
 //
 const changeShow = () => {
   init()
