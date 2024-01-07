@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card-box" style="padding: 3.5rem 0">
+<!--     <div class="card-box" style="padding: 3.5rem 0">
       <el-input
         v-model="search"
         size="large"
@@ -8,7 +8,7 @@
         placeholder="Search"
         :suffix-icon="Search"
       />
-    </div>
+    </div> -->
     <div
       style="
         padding: 1.5rem 0;
@@ -99,10 +99,9 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 4rem;
         "
       >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
+        <img :src="projectImg" alt="img" style="width: 34rem; height: auto" />
       </div>
       <div
         class="card-box"
@@ -111,29 +110,26 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 4rem;
         "
       >
-        <img :src="logo" alt="img" style="width: 5rem; height: auto" />
+        <img :src="proteinsImg" alt="img" style="width: 34rem; height: auto" />
       </div>
 
     </div>
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-// import quantMsLogo from "@/assets/images/nf-core-quantms_logo_light.png";
-// import quantMsMetro from "@/assets/images/quantms_metro.png";
-// import quantMs from "@/assets/images/quantms.png";
+// import { ref } from "vue";
 import pipeline from "@/assets/images/pipeline.png";
-import {Tools, DocumentCopy, Histogram, Search} from "@element-plus/icons-vue";
+import {Tools, DocumentCopy, Histogram} from "@element-plus/icons-vue";
 // import logo from "@/assets/logo.png";
-import logo from "@/assets/images/nf-core-quantms_logo_light.png";
-const search = ref();
+import projectImg from "@/assets/images/project.png";
+import proteinsImg from "@/assets/images/proteins_of_tissue.png";
+// const search = ref();
 </script>
 <style lang="scss" scoped>
 .card-box {
-  background-color: white;
+  // background-color: white;
   border-radius: 1rem;
 }
 
