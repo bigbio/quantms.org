@@ -62,6 +62,7 @@ import { inflate } from 'pako'
 import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
 import { ref, onMounted, nextTick } from 'vue'
+import {getBoxTooltips,options} from './option'
 const router = useRouter();
 const drawer = ref(false)
 const emit = defineEmits(['changeLoading'])
@@ -112,37 +113,6 @@ const tagsTotal = [
                 "esophagus",
                 "placenta",
 ]
-// 
-const boxTooltips = {
-              trigger: 'item',
-              axisPointer: {
-                type: 'shadow'
-              },
-              textStyle: {},
-              formatter: function (param) {
-                return [
-                  "<div style='margin-bottom:5px;width:100%;border-radius:3px;text-align:center;family'><p>" +
-                    param.data[0] +
-                    ' </p></div>',
-                  '<hr size=1 style="margin: 3px 0">',
-                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Max:</span>" +
-                    parseFloat(param.data[5]).toFixed(2) +
-                    '<br/>',
-                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Q3:</span>" +
-                    parseFloat(param.data[4]).toFixed(2) +
-                    '<br/>',
-                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Median:</span>" +
-                    parseFloat(param.data[3]).toFixed(2) +
-                    '<br/>',
-                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Q1:</span>" +
-                    parseFloat(param.data[2]).toFixed(2) +
-                    '<br/>',
-                  "<span style='text-align:left;color:#8f9a7a;margin-right:15px;'>Min:</span>" +
-                    parseFloat(param.data[1]).toFixed(2) +
-                    '<br/>'
-                ].join('')
-              }
-          }
 protein.value = Array.isArray(router.currentRoute.value.query.protein) ? router.currentRoute.value.query.protein : [router.currentRoute.value.query.protein]
 routerName.value = router.currentRoute.value.name
 // get proteins
@@ -265,65 +235,6 @@ const initData = (data) => {
     tags
   }
 }
-// option
-const options = {
-  // backgroundColor: '#f4f5f2',
-    title: [
-    ],
-    dataset: [
-    ],
-    tooltip: {},
-  // color: tagsColor,
-  legend: {
-    show: true,
-    orient: 'vertical',
-    right: 10,
-    top: 60,
-    data: []
-    // bottom: 20,
-    },
-  grid: {
-      left: '10%',
-      right: '10%',
-      bottom: 60
-    },
-    yAxis: {
-      type: 'category',
-      boundaryGap: true,
-      nameGap: 30,
-      splitArea: {
-        show: false
-      },
-      splitLine: {
-        show: false
-      }
-    },
-    xAxis: {
-      type: 'value',
-      name: 'iBAQLog',
-      nameLocation: 'center',
-      nameGap: 40,
-      splitArea: {
-        show: false
-      },
-      splitLine: {
-        show: false
-      },
-      min: 1,
-      //max: 10
-    },
-    toolbox: {
-      feature: {
-        saveAsImage: {
-          type: 'png',
-          title: 'save as .png',
-          pixelRatio: 10
-        }
-      }
-    },
-    series: [
-    ]
-}
 // init image
 const init = () => {
   if (dataHistory.value.length === 1) {
@@ -390,9 +301,9 @@ const init = () => {
             color0: '#FA0000',
             borderColor: '#030609',
             borderColor0: '#030609',
-          }
+          },
       })
-      options.tooltip = boxTooltips
+      options.tooltip = getBoxTooltips(samples)
     }
   } else {
     if (routerName.value === 'tissues') {
@@ -500,7 +411,7 @@ const init = () => {
           }
         })
       })
-      options.tooltip = boxTooltips
+      options.tooltip = getBoxTooltips(samples)
     }
   }
 
