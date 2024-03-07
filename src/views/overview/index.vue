@@ -92,6 +92,7 @@
         <span @click="onSearch('Q14114')"
           >Q14114</span
         >
+        &nbsp;&nbsp;Help:<span>&nbsp;<a  href="https://github.com/bigbio/ibaqpy">iBAQLog</a></span>
       </el-text>
       </div>
     </div>
@@ -270,6 +271,14 @@ h1 {
   margin-top:1.5rem;
 }
 .el-text span:hover{
+  color:#84c7d0;
+  cursor: pointer;
+}
+.el-text span a {
+  text-decoration: none;
+}
+
+.el-text span a:hover{
   color:#84c7d0;
   cursor: pointer;
 }
