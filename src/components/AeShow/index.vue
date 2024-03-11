@@ -142,7 +142,7 @@ const queryProtein = (input) => {
   let proteins = proteinTable
   input.value.map((protein) => {
     const output = proteins.find((item) => {
-      return item.name === protein.trim()
+      return item.name === protein.trim() || item.gene_name === protein.trim()
     })
     if (!output) {
       alert('Please enter a legal protein name')
