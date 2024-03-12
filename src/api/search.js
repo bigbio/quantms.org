@@ -12,7 +12,7 @@ export const queryKey = (proteinName) => {
 export const getProteins = () => {
   return request({
     method: 'get',
-    url: '/data/proteinTable.json.gz',
+    url: '/data/tissueJson.json.gz',
     responseType: 'arraybuffer'
   })
 }
@@ -20,7 +20,7 @@ export const getProteins = () => {
 export const getCellLineProteins = () => {
   return request({
     method: 'get',
-    url: '/data/Cell_lines_IBAQ.json.gz',
+    url: '/data/cellJson.json.gz',
     responseType: 'arraybuffer'
   })
 }

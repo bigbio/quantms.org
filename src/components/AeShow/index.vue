@@ -61,7 +61,7 @@ import { getProteins,getCellLineProteins } from '@/api/search'
 import { inflate } from 'pako'
 import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
-import { ref, onMounted, nextTick } from 'vue'
+import { ref, onMounted, nextTick,computed } from 'vue'
 import {getBoxTooltips,options} from './option'
 const router = useRouter();
 const drawer = ref(false)
@@ -84,6 +84,9 @@ const protein = ref([])
 const sortTags = ref([])
 // tags
 const proteinTags = ref([])
+const tags = computed(() => {
+  return proteinTags.value.map((item)=>item.split('(')[0])
+})
 // tags color
 const tagsColor = ["#8DD3C7", "#EDBC63", "#BEBADA", "#FB8072", "#80B1D3"]
 // map html
@@ -129,7 +132,7 @@ const getProteinTable = async () => {
 const handleClose = (tag) => {
   dataHistory.value.splice(proteinTags.value.indexOf(tag), 1)
   proteinTags.value.splice(proteinTags.value.indexOf(tag), 1)
-  routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } }) : router.push({ path: "/ae/cellline", query: { protein: proteinTags.value } })
+  routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: tags.value } }) : router.push({ path: "/ae/cellline", query: { protein: tags.value} })
 }
 // qeury
 const queryProtein = (input) => {
@@ -142,26 +145,27 @@ const queryProtein = (input) => {
   let proteins = proteinTable
   input.value.map((protein) => {
     const output = proteins.find((item) => {
-      return item.name === protein.trim()
+      return item.name === protein.trim() || item.gene_name === protein.trim()
     })
     if (!output) {
       alert('Please enter a legal protein name')
       return
     }
-    if (!proteinTags.value.includes(protein.trim())) {
+    let tag = `${output.name}(${output.gene_name})`
+    if (!proteinTags.value.includes(tag.trim())) {
       if (proteinTags.value.length === 5) {
         proteinTags.value.shift()
-        proteinTags.value.push(protein.trim())
+        proteinTags.value.push(tag)
         dataHistory.value.shift()
         dataHistory.value.push(output)
       } else {
-        proteinTags.value.push(protein.trim())
+        proteinTags.value.push(tag)
         dataHistory.value.push(output)
       }
     }
   })
   if (proteinTags.value.length != input.value.length) {
-    routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } }) : router.push({ path: "/ae/cellline", query: { protein: proteinTags.value } })
+    routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: tags.value } }) : router.push({ path: "/ae/cellline", query: { protein: tags.value } })
     //router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
   } else {
     showImg.value = true
@@ -424,7 +428,7 @@ const init = () => {
     height: imgH
   })
   myChart.setOption(options)
-  setTimeout(() => {
+  nextTick(() => {
     if (protein.value.length !== 0) {
       let imgDataUrl = myChart.getDataURL({
     type: 'svg',
@@ -438,7 +442,7 @@ const init = () => {
     }
     imgs.value.unshift(urlFile)
     }
-  }, 2000)
+  })
 }
 // count single value
 const countSingleValue = (data, dimension) => {
