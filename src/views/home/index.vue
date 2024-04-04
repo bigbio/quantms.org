@@ -44,7 +44,7 @@
       </router-link>  
       </div>
       <div class="card-box" style="display: flex; flex-direction: column; align-items: center; justify-content: space-around; padding: 1.5rem;">
-      <router-link to="/ae">
+      <router-link to="/baseline">
         <el-icon size="50px"><Histogram /></el-icon>
         <div
           style="

@@ -1,16 +1,6 @@
 <template>
   <div>
   <div class="display-box">
-    <!-- <h1 class="title">
-      <span>Protein </span>
-      <span
-        v-for="(s, index) in font"
-        :key="index"
-        v-bind:style="{ color: fontColor[index] }"
-        >{{ s }}</span
-      >
-    </h1> -->
-    <!-- serch -->
     <div class="search-box">
       <div style="color: rgb(75, 85, 99); font-weight: bold; font-size: 2rem">
         Protein Search
@@ -52,22 +42,6 @@
             :suffix-icon="Search"
           />
         </div>
-        <!-- <div style="">
-         
-        </div> -->
-        <!-- <div style="width: 30%"></div> -->
-
-        <!-- <router-link
-          class="link"
-          :to="{
-            path: '/ae/tissues',
-            query: {
-              protein: input,
-            },
-          }"
-        >
-          <el-button type="primary" size="large" plain>Search</el-button>
-        </router-link> -->
       </div>
       <div class="select-box">
           <span>select type:</span>
@@ -137,23 +111,6 @@ onMounted(() => {
   checkedTissue.value = !status
   checkedCellLine.value = status
 })
-// const font = ["V", "i", "s", "u", "a", "l", "i", "z", "a", "t", "i", "o", "n"];
-// const fontColor = [
-//   "#25BEF6",
-//   "#EB3E71",
-//   "#0BB88D",
-//   "#FF7B22",
-//   "#25BEF6",
-//   "#EB3E71",
-//   "#0BB88D",
-//   "#FF7B22",
-//   "#25BEF6",
-//   "#EB3E71",
-//   "#0BB88D",
-//   "#FF7B22",
-//   "#25BEF6",
-// ];
-// input protien name
 const input = ref("");
 
 const onEnter = () => {
@@ -162,9 +119,9 @@ const onEnter = () => {
     return;
   }
   if (checkedTissue.value) {
-    router.push({ path: "/ae/tissues", query: { protein: [input.value] } });
+    router.push({ path: "/baseline/tissues", query: { protein: [input.value] } });
   } else {
-    router.push({ path: "/ae/cellline", query: { protein: [input.value] } });
+    router.push({ path: "/baseline/cellline", query: { protein: [input.value] } });
   }
   
 };
@@ -184,9 +141,9 @@ const onSearch = (val) => {
   }
   input.value = val;
   if (checkedTissue.value) {
-    router.push({ path: "/ae/tissues", query: { protein: [val] } });  
+    router.push({ path: "/baseline/tissues", query: { protein: [val] } });  
   } else {
-    router.push({ path: "/ae/cellline", query: { protein: [val] } }); 
+    router.push({ path: "/baseline/cellline", query: { protein: [val] } }); 
   }
   
 };

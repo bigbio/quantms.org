@@ -16,17 +16,17 @@ const routes = [
         component: () => import('@/views/information')
       },
       {
-        path: '/ae',
+        path: '/baseline',
         name: 'overview',
         component: () => import('@/views/overview'),
         children: [
           {
-            path: '/ae/tissues',
+            path: '/baseline/tissues',
             name: 'tissues',
             component: () => import('@/components/AeShow')
           },
           {
-            path: '/ae/cellline',
+            path: '/baseline/cellline',
             name: 'cellline',
             component: () => import('@/components/AeShow')
           }
