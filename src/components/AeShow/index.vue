@@ -132,7 +132,7 @@ const getProteinTable = async () => {
 const handleClose = (tag) => {
   dataHistory.value.splice(proteinTags.value.indexOf(tag), 1)
   proteinTags.value.splice(proteinTags.value.indexOf(tag), 1)
-  routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: tags.value } }) : router.push({ path: "/ae/cellline", query: { protein: tags.value} })
+  routerName.value ==='tissues' ? router.push({ path: "/baseline/tissues", query: { protein: tags.value } }) : router.push({ path: "/baseline/cellline", query: { protein: tags.value} })
 }
 // qeury
 const queryProtein = (input) => {
@@ -165,7 +165,7 @@ const queryProtein = (input) => {
     }
   })
   if (proteinTags.value.length != input.value.length) {
-    routerName.value ==='tissues' ? router.push({ path: "/ae/tissues", query: { protein: tags.value } }) : router.push({ path: "/ae/cellline", query: { protein: tags.value } })
+    routerName.value ==='tissues' ? router.push({ path: "/baseline/tissues", query: { protein: tags.value } }) : router.push({ path: "/baseline/cellline", query: { protein: tags.value } })
     //router.push({ path: "/ae/tissues", query: { protein: proteinTags.value } })
   } else {
     showImg.value = true
