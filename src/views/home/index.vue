@@ -53,7 +53,7 @@
             margin-top: 1.25rem;
           "
         >
-          absolute expression
+          baseline
         </div>
       </router-link>
       </div>

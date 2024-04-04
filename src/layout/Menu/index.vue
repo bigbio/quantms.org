@@ -17,7 +17,7 @@
     <div>
       <router-link class="navBar" to="/home">Home</router-link>
       <router-link class="navBar" to="/datasets">Datasets</router-link>
-      <router-link class="navBar" to="/baseline">Absolute</router-link>
+      <router-link class="navBar" to="/baseline">Baseline</router-link>
     </div>
   </div>
 </template>
