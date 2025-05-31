@@ -37,6 +37,7 @@
         prop="samples"
         label="Samples"
         width="100"
+        sortable="custom"
       />
       
       <!-- Msruns Column -->
@@ -44,6 +45,7 @@
         prop="msruns"
         label="Msruns"
         width="100"
+        sortable="custom"
       />
       
       <!-- Peptides Column -->
