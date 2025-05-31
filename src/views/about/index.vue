@@ -61,6 +61,122 @@
       </div>
       
       <div class="about-category container">
+        <h2 class="category-title">Core Contributors</h2>
+        
+        <div class="top-contributors-container">
+          <div class="contributor-cards">
+            <!-- Contributor 1 - Yasset -->
+            <div class="contributor-card">
+              <div class="contributor-avatar">
+                <a href="https://github.com/ypriverol" target="_blank">
+                  <el-avatar :size="80" src="https://avatars.githubusercontent.com/u/52113?s=60&v=4" />
+                </a>
+              </div>
+              <div class="contributor-info">
+                <h3 class="contributor-name">
+                  <a href="https://github.com/ypriverol" target="_blank" class="github-link">Yasset Perez-Riverol</a>
+                </h3>
+                <p class="contributor-role">Project Lead</p>
+                <p class="contribution-summary">
+                  Project coordination and development of the quantms ecosystem
+                </p>
+              </div>
+            </div>
+
+            <!-- Contributor 2 - Dai -->
+            <div class="contributor-card">
+              <div class="contributor-avatar">
+                <a href="https://github.com/daichengxin" target="_blank">
+                  <el-avatar :size="80" src="https://avatars.githubusercontent.com/u/37200167?s=60&v=4" />
+                </a>
+              </div>
+              <div class="contributor-info">
+                <h3 class="contributor-name">
+                  <a href="https://github.com/daichengxin" target="_blank" class="github-link">Chengxin Dai</a>
+                </h3>
+                <p class="contributor-role">Core Developer</p>
+                <p class="contribution-summary">
+                  Lead developer of quantms workflow and data analysis pipelines
+                </p>
+              </div>
+            </div>
+
+            <!-- Contributor 3 - Julianus -->
+            <div class="contributor-card">
+              <div class="contributor-avatar">
+                <a href="https://github.com/jpfeuffer" target="_blank">
+                  <el-avatar :size="80" src="https://avatars.githubusercontent.com/u/8102638?s=60&v=4" />
+                </a>
+              </div>
+              <div class="contributor-info">
+                <h3 class="contributor-name">
+                  <a href="https://github.com/jpfeuffer" target="_blank" class="github-link">Julianus Pfeuffer</a>
+                </h3>
+                <p class="contributor-role">OpenMS Core Developer</p>
+                <p class="contribution-summary">
+                  Major contributions to OpenMS and quantms workflow development
+                </p>
+              </div>
+            </div>
+
+            <!-- Contributor 4 - Timo -->
+            <div class="contributor-card">
+              <div class="contributor-avatar">
+                <a href="https://github.com/timosachsenberg" target="_blank">
+                  <el-avatar :size="80" src="https://avatars.githubusercontent.com/u/5803621?s=60&v=4" />
+                </a>
+              </div>
+              <div class="contributor-info">
+                <h3 class="contributor-name">
+                  <a href="https://github.com/timosachsenberg" target="_blank" class="github-link">Timo Sachsenberg</a>
+                </h3>
+                <p class="contributor-role">OpenMS Lead Developer</p>
+                <p class="contribution-summary">
+                  Lead developer of OpenMS and quantitative proteomics workflows
+                </p>
+              </div>
+            </div>
+
+            <!-- Contributor 5 - Fabian -->
+            <div class="contributor-card">
+              <div class="contributor-avatar">
+                <a href="https://github.com/fabianegli" target="_blank">
+                  <el-avatar :size="80" src="https://avatars.githubusercontent.com/u/8569110?s=60&v=4" />
+                </a>
+              </div>
+              <div class="contributor-info">
+                <h3 class="contributor-name">
+                  <a href="https://github.com/fabianegli" target="_blank" class="github-link">Fabian Egli</a>
+                </h3>
+                <p class="contributor-role">Bioinformatician</p>
+                <p class="contribution-summary">
+                  Key contributions to workflow development and testing
+                </p>
+              </div>
+            </div>
+
+            <!-- Contributor 6 - Henry -->
+            <div class="contributor-card">
+              <div class="contributor-avatar">
+                <a href="https://github.com/enryH" target="_blank">
+                  <el-avatar :size="80" src="https://avatars.githubusercontent.com/u/2833836?s=60&v=4" />
+                </a>
+              </div>
+              <div class="contributor-info">
+                <h3 class="contributor-name">
+                  <a href="https://github.com/enryH" target="_blank" class="github-link">Henry Webel</a>
+                </h3>
+                <p class="contributor-role">Core Developer</p>
+                <p class="contribution-summary">
+                  Key contributions to quantms workflow development and testing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-category container">
         <h2 class="category-title">GitHub Contributors</h2>
         <p class="contributors-intro">
           We are grateful to all the contributors who have helped develop and improve quantms.
@@ -238,5 +354,64 @@ import GitHubContributors from "@/components/GitHubContributors";
   &:hover {
     text-decoration: underline;
   }
+}
+
+.top-contributors-container {
+  margin: $spacing-lg 0;
+}
+
+.contributor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-lg;
+  
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contributor-card {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  padding: $spacing-lg;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.contributor-avatar {
+  margin-bottom: $spacing-md;
+}
+
+.contributor-info {
+  flex: 1;
+}
+
+.contributor-name {
+  font-size: $font-size-base;
+  color: $text-color;
+  margin-bottom: $spacing-xs;
+  font-weight: 600;
+}
+
+.contributor-role {
+  font-size: $font-size-small;
+  color: $primary-color;
+  margin-bottom: $spacing-sm;
+  font-weight: 500;
+}
+
+.contribution-summary {
+  font-size: $font-size-small;
+  color: $text-light-color;
+  line-height: 1.4;
 }
 </style>

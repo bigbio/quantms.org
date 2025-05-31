@@ -1,8 +1,6 @@
 <template>
   <div class="baseline-page">
     <section class="search-section">
-      <h1 class="section-title">Protein Search</h1>
-      
       <div class="card container">
         <div class="search-container">
           <div class="search-form">
@@ -80,11 +78,13 @@
 </template>
 
 <script setup>
-import { ref,computed, onMounted } from "vue";
+import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
 import { Search } from "@element-plus/icons-vue";
+
 const router = useRouter();
-const loading = ref(false)
+const loading = ref(false);
+
 // sapiens
 const sapiens = ref("");
 // select_menus
@@ -94,37 +94,31 @@ const options = [
     label: "Homo sapiens",
   },
 ];
-const checkedTissue = ref(true)
-const checkedCellLine = ref(false)
-const key = computed(() => router.currentRoute.value.name == 'tissues' ? 'tissues' : 'cellline')
-onMounted(() => {
-  let status = router.currentRoute.value.name == 'cellline' ? true : false
-  checkedTissue.value = !status
-  checkedCellLine.value = status
-})
+const checkedTissue = ref(true);
+const checkedCellLine = ref(false);
+const key = computed(() => router.currentRoute.value.name == 'tissues' ? 'tissues' : 'cellline');
 const input = ref("");
 
 const onEnter = () => {
   onSearch(input.value);
-  if (!input.value) {
-    return;
-  }
-  if (checkedTissue.value) {
-    router.push({ path: "/baseline/tissues", query: { protein: [input.value] } });
-  } else {
-    router.push({ path: "/baseline/cellline", query: { protein: [input.value] } });
-  }
-  
 };
+
 // change tag status
 const onChangeTissue = (status) => {
-  checkedTissue.value = status
-  checkedCellLine.value = !status
-}
+  checkedTissue.value = status;
+  checkedCellLine.value = !status;
+  if (input.value) {
+    onSearch(input.value);
+  }
+};
+
 const onChangeCellLine = (status) => {
-  checkedCellLine.value = status
-  checkedTissue.value = !status
-}
+  checkedCellLine.value = status;
+  checkedTissue.value = !status;
+  if (input.value) {
+    onSearch(input.value);
+  }
+};
 
 const onSearch = (val) => {
   if (!val) {
@@ -136,33 +130,44 @@ const onSearch = (val) => {
   } else {
     router.push({ path: "/baseline/cellline", query: { protein: [val] } }); 
   }
-  
 };
+
 const changeLoading = () => {
   loading.value = !loading.value;
-}
+};
 </script>
+
 <style lang="scss" scoped>
 .baseline-page {
   padding: $spacing-md 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  margin-top: 60px;
 }
 
 .container {
   width: 100%;
   max-width: 100%;
-}
-
-.section-title {
-  font-size: $font-size-xlarge;
-  color: $text-color;
-  margin-bottom: $spacing-xl;
-  text-align: center;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
 }
 
 .search-section,
 .results-section {
-  margin: $spacing-xl 0;
+  margin: 0;
+  width: 100%;
+}
+
+.search-section {
+  margin-bottom: $spacing-xl;
+}
+
+.results-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .search-container {
@@ -173,10 +178,10 @@ const changeLoading = () => {
   display: flex;
   justify-content: center;
   margin-bottom: $spacing-lg;
+  gap: $spacing-sm;
   
   @media (max-width: $breakpoint-sm) {
     flex-direction: column;
-    gap: $spacing-sm;
   }
 }
 
@@ -292,8 +297,10 @@ const changeLoading = () => {
 .results-container {
   background-color: $white;
   border-radius: $border-radius-lg;
-  min-height: 400px;
+  flex: 1;
   padding: $spacing-lg;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 </style>

@@ -77,7 +77,7 @@ import { getProteins,getCellLineProteins } from '@/api/search'
 import { inflate } from 'pako'
 import * as echarts from 'echarts'
 import {useRouter, onBeforeRouteUpdate} from "vue-router";
-import { ref, onMounted, nextTick,computed } from 'vue'
+import { ref, onMounted, nextTick,computed, onUnmounted } from 'vue'
 import {getBoxTooltips,options} from './option'
 const router = useRouter();
 const drawer = ref(false)
@@ -106,11 +106,11 @@ const tags = computed(() => {
 // tags color
 const tagsColor = ["#8DD3C7", "#EDBC63", "#BEBADA", "#FB8072", "#80B1D3"]
 // map html
-const chart = ref()
+const chart = ref(null)
 // history
 const imgs = ref([])
 // image object
-let myChart
+let myChart = null
 // tagstotal
 const tagsTotal = [
                 "heart",
@@ -200,8 +200,16 @@ onBeforeRouteUpdate((to) => {
 // load update
 onMounted(() => {
   getProteinTable()
+  window.addEventListener('resize', handleResize)
 })
 
+onUnmounted(() => {
+  if (myChart) {
+    myChart.dispose()
+    myChart = null
+  }
+  window.removeEventListener('resize', handleResize)
+})
 
 // init data
 const initData = (data) => {
@@ -257,208 +265,220 @@ const initData = (data) => {
 }
 // init image
 const init = () => {
-  if (dataHistory.value.length === 1) {
-    options.dataset = []
-    options.series = []
-    options.title = []
-    options.legend.show = false
-    let { neatData, tags } = initData(dataHistory.value[0])
-    sortTags.value = tags
-    options.title.push({
-      text: dataHistory.value[0].title,
-      left: 'center'
-    })
-    let { samples,data } = countSingleValue(neatData,2)
-    if (showBar.value) {
-      options.series.push(
-        {
-          name: proteinTags.value[0],
-          type: 'bar',
-          data: data,
-          itemStyle: {
-              color: tagsColor[0],
-              color0: '#FA0000',
-              borderColor: '#030609',
-              borderColor0: '#030609',
-          },
-          label: {
-            show: showLabel.value,
-            position: 'right',
-            formatter: function () {
-              return `samples: ${samples.shift()}`
-            }
-          }
-        }
-      )
-      options.tooltip = {
-        trigger: 'axis',
-        axisPointer: {
-          type: 'shadow'
-        }
-      }
-      options.yAxis.data = sortTags.value
-    } else {
-      options.dataset.push({
-      source: neatData
-      })
-      options.dataset.push({
-          fromDatasetIndex: 0,
-          transform: {
-            type: 'boxplot',
-            config: {
-              itemNameFormatter: function (params) {
-                return tags[params.value]
-              }
-            }
-          }
-      })
-      options.series.push({
-          name: 'category0',
-          type: 'boxplot',
-          datasetIndex: 1,
-          itemStyle: {
-            color: tagsColor[0],
-            color0: '#FA0000',
-            borderColor: '#030609',
-            borderColor0: '#030609',
-          },
-      })
-      options.tooltip = getBoxTooltips(samples)
-    }
-  } else {
-    if (routerName.value === 'tissues') {
-      sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
-    } else {
-      sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
-    }
-    dataHistory.value.length === 0 ? options.title = [] : options.title.splice(0,1,{
-      text: `Comparison of protein expression in different ${routerName.value}`,
-      left: 'center'
-    })
-    dataHistory.value.length === 0 ? options.legend.show = false : options.legend.show = true
-    let datas = []
-    dataHistory.value.map((item) => {
-      let data = []
-      sortTags.value.forEach((tissue) => {
-        if (!item.tags.includes(tissue)) {
-          data.push([])
-        } else {
-          let index = item.tags.indexOf(tissue)
-          let rowArr = item.data[index].filter(v=>v>=1)
-          data.push(rowArr)
-        }
-      })
-      datas.push(data)
-    })
-    let { samples,data } = countSingleValue(datas, 3)
-    if (showBar.value) {
-      datas = data
-      options.dataset = []
-      options.series = []
-      options.legend.data = []
-      datas.forEach((item, index) => {
-        options.series.push(
-        {
-          name: proteinTags.value[index],
-          type: 'bar',
-          data: item,
-          itemStyle: {
-              color: tagsColor[index],
-              color0: '#FA0000',
-              borderColor: '#030609',
-              borderColor0: '#030609',
-            },
-          label: {
-            show: showLabel.value,
-            position: 'right',
-            formatter: function () {
-              return `samples: ${samples[index].shift()}`
-            }
-          }
-          })
-        options.legend.data.push({
-          name: proteinTags.value[index],
-          itemStyle: {
-            color: tagsColor[index],
-            borderColor: tagsColor[index]
-          }
-        })
-      })
-      options.tooltip = {
-        trigger: 'axis',
-        axisPointer: {
-          type: 'shadow'
-        }
-      }
-      options.yAxis.data = sortTags.value
-    } else {
-      options.dataset = []
-      options.series = []
-      options.legend.data = []
-      datas.forEach((item,index) => {
-        options.dataset.push({
-          source: item
-        })
-        options.series.push({
-          name: proteinTags.value[index],
-          type: 'boxplot',
-          datasetIndex: datas.length + index,
-          itemStyle: {
-            color: tagsColor[index],
-            color0: '#FA0000',
-            borderColor: '#030609',
-            borderColor0: '#030609',
-          },
-        })
-        options.legend.data.push({
-          name: proteinTags.value[index],
-          itemStyle: {
-            color: tagsColor[index],
-            borderColor: tagsColor[index]
-          }
-        })
-      })
-      datas.forEach((item, index) => {
-        options.dataset.push({
-          fromDatasetIndex: index,
-          transform: {
-            type: 'boxplot',
-            config: {
-              itemNameFormatter: function (params) {
-                return sortTags.value[params.value]
-              }
-            }
-          }
-        })
-      })
-      options.tooltip = getBoxTooltips(samples)
-    }
+  if (!chart.value || !showImg.value) {
+    return
   }
 
   if (myChart != null && myChart !== '' && myChart !== undefined) {
     myChart.dispose() // discard
   }
-  myChart = echarts.init(chart.value,'macarons')
-  myChart.clear()
-  myChart.resize({
-    height: imgH
-  })
-  myChart.setOption(options)
-  nextTick(() => {
-    if (protein.value.length !== 0) {
-      let imgDataUrl = myChart.getDataURL({
-    type: 'svg',
-    pixelRatio: 2,
-    backgroundColor: '#fff',
-    excludeComponents: ['toolbox']
+
+  try {
+    myChart = echarts.init(chart.value)
+    myChart.clear()
+
+    if (dataHistory.value.length === 1) {
+      options.dataset = []
+      options.series = []
+      options.title = []
+      options.legend.show = false
+      let { neatData, tags } = initData(dataHistory.value[0])
+      sortTags.value = tags
+      options.title.push({
+        text: dataHistory.value[0].title,
+        left: 'center'
+      })
+      let { samples, data } = countSingleValue(neatData, 2)
+      if (showBar.value) {
+        options.series.push(
+          {
+            name: proteinTags.value[0],
+            type: 'bar',
+            data: data,
+            itemStyle: {
+                color: tagsColor[0],
+                color0: '#FA0000',
+                borderColor: '#030609',
+                borderColor0: '#030609',
+            },
+            label: {
+              show: showLabel.value,
+              position: 'right',
+              formatter: function () {
+                return `samples: ${samples.shift()}`
+              }
+            }
+          }
+        )
+        options.tooltip = {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
+        }
+        options.yAxis.data = sortTags.value
+      } else {
+        options.dataset.push({
+        source: neatData
+        })
+        options.dataset.push({
+            fromDatasetIndex: 0,
+            transform: {
+              type: 'boxplot',
+              config: {
+                itemNameFormatter: function (params) {
+                  return tags[params.value]
+                }
+              }
+            }
+        })
+        options.series.push({
+            name: 'category0',
+            type: 'boxplot',
+            datasetIndex: 1,
+            itemStyle: {
+              color: tagsColor[0],
+              color0: '#FA0000',
+              borderColor: '#030609',
+              borderColor0: '#030609',
+            },
+        })
+        options.tooltip = getBoxTooltips(samples)
+      }
+    } else {
+      if (routerName.value === 'tissues') {
+        sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
+      } else {
+        sortTags.value = sortTags.value.length ===0 ? initData(dataHistory.value[0]).tags : sortTags.value
+      }
+      dataHistory.value.length === 0 ? options.title = [] : options.title.splice(0,1,{
+        text: `Comparison of protein expression in different ${routerName.value}`,
+        left: 'center'
+      })
+      dataHistory.value.length === 0 ? options.legend.show = false : options.legend.show = true
+      let datas = []
+      dataHistory.value.map((item) => {
+        let data = []
+        sortTags.value.forEach((tissue) => {
+          if (!item.tags.includes(tissue)) {
+            data.push([])
+          } else {
+            let index = item.tags.indexOf(tissue)
+            let rowArr = item.data[index].filter(v=>v>=1)
+            data.push(rowArr)
+          }
+        })
+        datas.push(data)
+      })
+      let { samples,data } = countSingleValue(datas, 3)
+      if (showBar.value) {
+        datas = data
+        options.dataset = []
+        options.series = []
+        options.legend.data = []
+        datas.forEach((item, index) => {
+          options.series.push(
+          {
+            name: proteinTags.value[index],
+            type: 'bar',
+            data: item,
+            itemStyle: {
+                color: tagsColor[index],
+                color0: '#FA0000',
+                borderColor: '#030609',
+                borderColor0: '#030609',
+              },
+            label: {
+              show: showLabel.value,
+              position: 'right',
+              formatter: function () {
+                return `samples: ${samples[index].shift()}`
+              }
+            }
+            })
+          options.legend.data.push({
+            name: proteinTags.value[index],
+            itemStyle: {
+              color: tagsColor[index],
+              borderColor: tagsColor[index]
+            }
+          })
+        })
+        options.tooltip = {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
+        }
+        options.yAxis.data = sortTags.value
+      } else {
+        options.dataset = []
+        options.series = []
+        options.legend.data = []
+        datas.forEach((item,index) => {
+          options.dataset.push({
+            source: item
+          })
+          options.series.push({
+            name: proteinTags.value[index],
+            type: 'boxplot',
+            datasetIndex: datas.length + index,
+            itemStyle: {
+              color: tagsColor[index],
+              color0: '#FA0000',
+              borderColor: '#030609',
+              borderColor0: '#030609',
+            },
+          })
+          options.legend.data.push({
+            name: proteinTags.value[index],
+            itemStyle: {
+              color: tagsColor[index],
+              borderColor: tagsColor[index]
+            }
+          })
+        })
+        datas.forEach((item, index) => {
+          options.dataset.push({
+            fromDatasetIndex: index,
+            transform: {
+              type: 'boxplot',
+              config: {
+                itemNameFormatter: function (params) {
+                  return sortTags.value[params.value]
+                }
+              }
+            }
+          })
+        })
+        options.tooltip = getBoxTooltips(samples)
+      }
+    }
+
+    myChart.resize({
+      height: imgH
     })
-    let urlFile = {
-      proteinName: protein.value,
-      url: imgDataUrl
-    }
-    imgs.value.unshift(urlFile)
-    }
-  })
+    myChart.setOption(options)
+
+    // Handle image capture
+    nextTick(() => {
+      if (protein.value.length !== 0) {
+        let imgDataUrl = myChart.getDataURL({
+          type: 'svg',
+          pixelRatio: 2,
+          backgroundColor: '#fff',
+          excludeComponents: ['toolbox']
+        })
+        let urlFile = {
+          proteinName: protein.value,
+          url: imgDataUrl
+        }
+        imgs.value.unshift(urlFile)
+      }
+    })
+  } catch (error) {
+    console.error('Chart initialization failed:', error)
+  }
 }
 // count single value
 const countSingleValue = (data, dimension) => {
@@ -493,6 +513,13 @@ const changeShowBar = () => {
 }
 const changeShowLabel = () => {
   init()
+}
+
+// Add resize handler
+const handleResize = () => {
+  if (myChart) {
+    myChart.resize()
+  }
 }
 </script>
 <style lang="scss" scoped>
