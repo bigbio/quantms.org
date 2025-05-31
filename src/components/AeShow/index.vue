@@ -377,17 +377,13 @@ const init = () => {
         options.series = []
         options.legend.data = []
         datas.forEach((item, index) => {
-          options.series.push(
-          {
+          options.series.push({
             name: proteinTags.value[index],
             type: 'bar',
             data: item,
             itemStyle: {
-                color: tagsColor[index],
-                color0: '#FA0000',
-                borderColor: '#030609',
-                borderColor0: '#030609',
-              },
+              color: tagsColor[index]
+            },
             label: {
               show: showLabel.value,
               position: 'right',
@@ -395,12 +391,11 @@ const init = () => {
                 return `samples: ${samples[index].shift()}`
               }
             }
-            })
+          })
           options.legend.data.push({
             name: proteinTags.value[index],
             itemStyle: {
-              color: tagsColor[index],
-              borderColor: tagsColor[index]
+              color: tagsColor[index]
             }
           })
         })
@@ -415,7 +410,7 @@ const init = () => {
         options.dataset = []
         options.series = []
         options.legend.data = []
-        datas.forEach((item,index) => {
+        datas.forEach((item, index) => {
           options.dataset.push({
             source: item
           })
@@ -425,19 +420,28 @@ const init = () => {
             datasetIndex: datas.length + index,
             itemStyle: {
               color: tagsColor[index],
-              color0: '#FA0000',
-              borderColor: '#030609',
-              borderColor0: '#030609',
+              borderWidth: 2,
+              borderColor: '#333',
+              borderRadius: 2
             },
+            boxWidth: [10, 100],
+            layout: 'horizontal',
+            emphasis: {
+              itemStyle: {
+                borderWidth: 2.5,
+                shadowBlur: 4,
+                shadowColor: 'rgba(0,0,0,0.2)'
+              }
+            }
           })
           options.legend.data.push({
             name: proteinTags.value[index],
             itemStyle: {
-              color: tagsColor[index],
-              borderColor: tagsColor[index]
+              color: tagsColor[index]
             }
           })
         })
+        
         datas.forEach((item, index) => {
           options.dataset.push({
             fromDatasetIndex: index,
