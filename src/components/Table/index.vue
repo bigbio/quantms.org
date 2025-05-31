@@ -1,75 +1,161 @@
 <template>
-  <div>
-    <el-table :data="tableData" @sort-change="onSortChange" border stripe style="width: 100%" :header-cell-style="{
-      backgroundColor: 'white',
-      color: '#000',
-      fontSize: '16px',
-    }" :cell-style="{}" height="1000">
+  <div class="data-table-container">
+    <el-table
+      :data="tableData"
+      @sort-change="onSortChange"
+      border
+      stripe
+      :header-cell-style="headerCellStyle"
+      :cell-style="cellStyle"
+      height="800"
+      class="data-table"
+    >
+      <!-- Accession Column -->
       <el-table-column label="Accession" width="110">
         <template #default="scope">
-          <div style="display: flex; align-items: center">
-            <el-link :href="scope.row.accession.path" type="primary">{{
-              scope.row.accession.id
-            }}</el-link>
+          <div class="d-flex align-center">
+            <el-link
+              :href="scope.row.accession.path"
+              type="primary"
+              class="accession-link"
+            >
+              {{ scope.row.accession.id }}
+            </el-link>
           </div>
         </template>
       </el-table-column>
-      <el-table-column prop="category" label="Category" width="180" />
-      <el-table-column prop="samples" label="Samples" width="100" />
-      <el-table-column prop="msruns" label="Msruns" width="100" />
-      <el-table-column prop="peptides" label="Peptides" min-width="100" sortable="custom">
+      
+      <!-- Category Column -->
+      <el-table-column
+        prop="category"
+        label="Category"
+        width="180"
+      />
+      
+      <!-- Samples Column -->
+      <el-table-column
+        prop="samples"
+        label="Samples"
+        width="100"
+      />
+      
+      <!-- Msruns Column -->
+      <el-table-column
+        prop="msruns"
+        label="Msruns"
+        width="100"
+      />
+      
+      <!-- Peptides Column -->
+      <el-table-column
+        prop="peptides"
+        label="Peptides"
+        min-width="100"
+        sortable="custom"
+      >
         <template #default="scope">
-          <el-tooltip effect="light" :content="scope.row.peptides.toString()" :offset="-50" placement="right-start">
-            <el-progress :percentage="(100 * scope.row.peptides) / maxPeptides" :stroke-width="12" :show-text="false" />
+          <el-tooltip
+            effect="light"
+            :content="scope.row.peptides.toString()"
+            :offset="-50"
+            placement="right-start"
+          >
+            <el-progress
+              :percentage="calculatePercentage(scope.row.peptides, maxPeptides)"
+              :stroke-width="12"
+              :show-text="false"
+              class="data-progress"
+            />
           </el-tooltip>
         </template>
       </el-table-column>
-      <el-table-column prop="proteins" label="Proteins" min-width="100" sortable="custom">
+      
+      <!-- Proteins Column -->
+      <el-table-column
+        prop="proteins"
+        label="Proteins"
+        min-width="100"
+        sortable="custom"
+      >
         <template #default="scope">
-          <el-tooltip effect="light" :content="scope.row.proteins.toString()" :offset="-50" placement="right-start">
-            <el-progress :percentage="(100 * scope.row.proteins) / maxProteins" :stroke-width="12" :show-text="false" />
+          <el-tooltip
+            effect="light"
+            :content="scope.row.proteins.toString()"
+            :offset="-50"
+            placement="right-start"
+          >
+            <el-progress
+              :percentage="calculatePercentage(scope.row.proteins, maxProteins)"
+              :stroke-width="12"
+              :show-text="false"
+              class="data-progress"
+            />
           </el-tooltip>
         </template>
       </el-table-column>
-      <!--      <el-table-column label="Title" min-width="400">-->
-      <!--        <template #default="scope">-->
-      <!--          <div style="display: flex; align-items: center">-->
-      <!--            {{ scope.row.title.title }}-->
-      <!--          </div>-->
-      <!--          PubmedID:-->
-      <!--          <span v-for="pubmed in scope.row.title.pubmedId" :key="pubmed.id">-->
-      <!--            <text></text>-->
-      <!--            <el-link :href="pubmed.path" type="primary">-->
-      <!--              {{ pubmed.id }}-->
-      <!--            </el-link>-->
-      <!--          </span>-->
-      <!--        </template>-->
-      <!--      </el-table-column>-->
-      <el-table-column label="Reanalysis" min-width="140">
+      
+      <!-- Reanalysis Column -->
+      <el-table-column
+        label="Reanalysis"
+        min-width="140"
+      >
         <template #default="scope">
-          <div style="display: flex; align-items: center" v-for="item in scope.row.reanalysis" :key="item.id">
+          <div
+            v-for="item in scope.row.reanalysis"
+            :key="item.id"
+            class="reanalysis-item"
+          >
             <div v-if="item.id === 1">
-              <el-link :href="item.path" type="primary">{{ item.title }}<br /></el-link>
+              <el-link
+                :href="item.path"
+                type="primary"
+                class="reanalysis-link"
+              >
+                {{ item.title }}
+              </el-link>
             </div>
           </div>
         </template>
       </el-table-column>
     </el-table>
-    <el-pagination style="margin-top: 10px" layout="pager,total" background :page-size="limit" :total="total"
-      @current-change="handleCurrentChange" />
+    
+    <!-- Pagination -->
+    <el-pagination
+      class="table-pagination"
+      layout="pager,total"
+      background
+      :page-size="limit"
+      :total="total"
+      @current-change="handleCurrentChange"
+    />
   </div>
 </template>
 <script setup>
 import { computed, ref, onMounted, watch } from "vue";
 
+// Reactive state
 const maxPeptides = ref(0);
 const maxProteins = ref(0);
 const currentPage = ref(1);
 const sortedData = ref([]);
 
+// Table styling
+const headerCellStyle = {
+  backgroundColor: 'white',
+  color: '#000',
+  fontSize: '16px',
+  fontWeight: '600'
+};
+
+const cellStyle = {
+  fontSize: '14px'
+};
+
+// Props definition
 const props = defineProps({
   modelValue: {
     type: Array,
+    required: true
   },
   page: {
     type: Number,
@@ -81,19 +167,29 @@ const props = defineProps({
   },
 });
 
-onMounted(() => { });
+// Lifecycle hooks
+onMounted(() => {
+  // Initialize component
+});
 
+// Watch for changes in data
 watch(
   () => props.modelValue,
   (val) => {
-    maxPeptides.value = Math.max(...val.map((o) => o.peptides));
-    maxProteins.value = Math.max(...val.map((o) => o.proteins));
-    sortedData.value = [...val];
-  }
+    if (val && val.length > 0) {
+      maxPeptides.value = Math.max(...val.map((o) => o.peptides));
+      maxProteins.value = Math.max(...val.map((o) => o.proteins));
+      sortedData.value = [...val];
+    } else {
+      sortedData.value = [];
+    }
+  },
+  { immediate: true }
 );
 
+// Computed properties
 const total = computed(() => {
-  return props.modelValue.length;
+  return props.modelValue?.length || 0;
 });
 
 const tableData = computed(() => {
@@ -102,38 +198,80 @@ const tableData = computed(() => {
   return sortedData.value.slice(start, end);
 });
 
+// Methods
 const handleCurrentChange = (val) => {
   currentPage.value = val;
 };
 
 const onSortChange = ({ prop, order }) => {
-  let sortOrder = order == "ascending" ? 1 : -1;
+  const sortOrder = order === "ascending" ? 1 : -1;
   sortedData.value.sort((a, b) => {
-    let v1 = a[prop];
-    let v2 = b[prop];
+    const v1 = a[prop];
+    const v2 = b[prop];
     if (v1 < v2) return -1 * sortOrder;
     if (v1 > v2) return 1 * sortOrder;
     return 0;
   });
 };
+
+const calculatePercentage = (value, max) => {
+  if (!max) return 0;
+  return (100 * value) / max;
+};
 </script>
 
 <style lang="scss" scoped>
-::v-deep {
-  .el-pagination.is-background .el-pager li:not(.disabled) {
-    background-color: white; //
-    padding: 0 1rem;
-    color: black;
+.data-table-container {
+  width: 100%;
+  margin-bottom: $spacing-lg;
+}
+
+.data-table {
+  width: 100%;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.accession-link,
+.reanalysis-link {
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.reanalysis-item {
+  margin-bottom: $spacing-xs;
+}
+
+.data-progress {
+  :deep(.el-progress-bar__inner) {
+    background-color: $primary-color;
+  }
+}
+
+.table-pagination {
+  margin-top: $spacing-md;
+  display: flex;
+  justify-content: center;
+  
+  :deep(.el-pagination.is-background .el-pager li:not(.disabled)) {
+    background-color: $white;
+    padding: 0 $spacing-md;
+    color: $text-color;
   }
 
-  .el-pagination.is-background .el-pager li:not(.disabled).is-active {
-    background-color: rgb(229, 231, 235); //
-    padding: 0 1rem;
-    border-radius: 0.25rem;
+  :deep(.el-pagination.is-background .el-pager li:not(.disabled).is-active) {
+    background-color: $primary-color;
+    color: $white;
+    padding: 0 $spacing-md;
+    border-radius: $border-radius;
   }
 
-  .el-pagination.is-background .el-pager li:not(.disabled):hover {
-    color: #389a99;
+  :deep(.el-pagination.is-background .el-pager li:not(.disabled):hover) {
+    color: $primary-color;
   }
 }
 </style>

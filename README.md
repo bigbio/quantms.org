@@ -12,6 +12,12 @@ npm install
 npm run serve
 ```
 
+If you have issues security in Mac, you can run it as: 
+
+```
+NODE_OPTIONS=--openssl-legacy-provider npm run serve
+```
+
 ### Compiles and minifies for production
 ```
 npm run build

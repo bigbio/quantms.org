@@ -1,59 +1,75 @@
 <template>
-  <div v-show="showImg" class="content-box">
-    <div class="info">
-      <div class="info-content">
-        <h1>Organism: <span>Homo sapiens</span></h1>
-        <el-switch
-          v-model="showBar"
-          class="ml-2"
-          inline-prompt
-          style="
-              --el-switch-on-color: #13ce66; 
-              --el-switch-off-color: #ff4949;
-              position: absolute;
-              "
-          active-text="Bar"
-          inactive-text="Box"
-          @change = "changeShowBar"
-        />
-        <el-switch
-          v-model="showLabel"
-          class="ml-2"
-          inline-prompt
-          v-show="showBar"
-          style="
-              --el-switch-on-color: #13ce66; 
-              --el-switch-off-color: #ff4949;
-              position: absolute;
-              left: 5.5rem;
-              "
-          active-text="Show label"
-          inactive-text="Off label"
-          @change = "changeShowLabel"
-        />
+  <div v-show="showImg" class="ae-visualization">
+    <div class="visualization-header">
+      <div class="organism-info">
+        <h1 class="organism-title">Organism: <span class="organism-name">Homo sapiens</span></h1>
+        
+        <div class="visualization-controls">
+          <el-switch
+            v-model="showBar"
+            class="visualization-switch"
+            inline-prompt
+            active-text="Bar"
+            inactive-text="Box"
+            @change="changeShowBar"
+          />
+          
+          <el-switch
+            v-model="showLabel"
+            class="visualization-switch label-switch"
+            inline-prompt
+            v-show="showBar"
+            active-text="Show label"
+            inactive-text="Off label"
+            @change="changeShowLabel"
+          />
+        </div>
       </div>
       
-      <!--tags-->
-      <div class="button-tag">
-          <el-tag v-for="(item,index) in proteinTags" :key="index" round closable :color="tagsColor[index]" @close="handleClose(item)">{{ item }}</el-tag>
+      <!-- Protein Tags -->
+      <div class="protein-tags">
+        <el-tag
+          v-for="(item, index) in proteinTags"
+          :key="index"
+          round
+          closable
+          :color="tagsColor[index]"
+          @close="handleClose(item)"
+          class="protein-tag"
+        >
+          {{ item }}
+        </el-tag>
       </div>
-      <!--history-->
-      <div class="history">
-        <el-text style="margin-right: 16px;" class="history-info" type="info" @click="drawer = true">
-          history
+      
+      <!-- History Drawer -->
+      <div class="history-section">
+        <el-text class="history-button" type="info" @click="drawer = true">
+          History
         </el-text>
-        <el-drawer v-model="drawer" title="I am the title" :with-header="false">
-          <el-tabs tab-position="right" style="height: 300px" class="demo-tabs" v-for="(item,index) in imgs" :key="index">
-            <h5>{{ item.proteinName.join() }}</h5>
-            <el-image style="width: 100%;" :src="item.url" fit="fill" :preview-src-list="[item.url]" />
-          </el-tabs>
+        
+        <el-drawer v-model="drawer" title="Visualization History" size="50%">
+          <div class="history-content">
+            <div v-for="(item, index) in imgs" :key="index" class="history-item">
+              <h5 class="history-item-title">{{ item.proteinName.join(', ') }}</h5>
+              <el-image
+                class="history-image"
+                :src="item.url"
+                fit="contain"
+                :preview-src-list="[item.url]"
+              />
+            </div>
+          </div>
         </el-drawer>
       </div>
     </div>
-    <div class="card">
-      <div ref="chart" v-bind:style="{width: 100 + '%', height: imgH + 'px'}"></div>
+    
+    <div class="visualization-card">
+      <div
+        ref="chart"
+        class="chart-container"
+        :style="{height: imgH + 'px'}"
+      ></div>
     </div>
-
   </div>
 </template>
 <script setup>
@@ -479,28 +495,133 @@ const changeShowLabel = () => {
   init()
 }
 </script>
-<style scoped>
-.content-box {
+<style lang="scss" scoped>
+.ae-visualization {
   width: 100%;
 }
-.info {
+
+.visualization-header {
   text-align: left;
-  margin: 20px 0;
-  margin-left: 2px;
+  margin: $spacing-md 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+  
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
-.info h1 {
-  font-size: 14px;
-  margin: 5px 0;
-  font-weight: inherit;
+
+.organism-info {
+  position: relative;
+  padding-right: 12rem;
+  
+  @media (max-width: $breakpoint-sm) {
+    padding-right: 0;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.organism-title {
+  font-size: $font-size-base;
+  margin: $spacing-xs 0;
   font-weight: 500;
 }
-.info span {
+
+.organism-name {
   font-weight: 700;
 }
-.history-info:hover {
-  color: black;
+
+.visualization-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: $spacing-md;
+  
+  @media (max-width: $breakpoint-sm) {
+    position: static;
+    margin-top: $spacing-sm;
+  }
+}
+
+.visualization-switch {
+  --el-switch-on-color: #{$success-color};
+  --el-switch-off-color: #{$error-color};
+}
+
+.label-switch {
+  margin-left: $spacing-lg;
+}
+
+.protein-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+}
+
+.protein-tag {
+  margin-right: $spacing-xs;
+}
+
+.history-section {
+  display: flex;
+  align-items: center;
+}
+
+.history-button {
   cursor: pointer;
+  margin-right: $spacing-md;
+  transition: $transition-base;
+  
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.history-content {
+  padding: $spacing-md;
+}
+
+.history-item {
+  margin-bottom: $spacing-lg;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: $spacing-md;
+}
+
+.history-item-title {
+  font-size: $font-size-base;
+  margin-bottom: $spacing-sm;
+  font-weight: 500;
+}
+
+.history-image {
+  width: 100%;
+  border-radius: $border-radius;
+}
+
+.visualization-card {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  padding: $spacing-md;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: $spacing-lg;
+}
+
+.chart-container {
+  width: 100%;
+  min-height: 400px;
+}
+
+.history-info {
+  cursor: pointer;
+  transition: $transition-base;
+  
+  &:hover {
+    color: $text-color;
+  }
 }
 </style>

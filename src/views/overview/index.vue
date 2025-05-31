@@ -1,91 +1,82 @@
 <template>
-  <div>
-  <div class="display-box">
-    <div class="search-box">
-      <div style="color: rgb(75, 85, 99); font-weight: bold; font-size: 2rem">
-        Protein Search
-      </div>
-
-      <div
-        style="
-          margin-top: 1rem;
-          padding: 1rem 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          /* border-bottom: 2px solid rgb(229, 231, 235); */
-        "
-      >
-        <div style="">
-          <el-select
-            v-model="sapiens"
-            class="left"
-            size="large"
-            placeholder="Select organism"
-            style="width: 140px"
-          >
-            <el-option
-              v-for="item in options"
-              :key="item.value"
-              :label="item.label"
-              :value="item.value"
+  <div class="baseline-page">
+    <section class="search-section">
+      <h1 class="section-title">Protein Search</h1>
+      
+      <div class="card container">
+        <div class="search-container">
+          <div class="search-form">
+            <el-select
+              v-model="sapiens"
+              class="organism-select"
+              size="large"
+              placeholder="Select organism"
+            >
+              <el-option
+                v-for="item in options"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value"
+              />
+            </el-select>
+            
+            <el-input
+              v-model="input"
+              placeholder="Enter protein name"
+              size="large"
+              clearable
+              @keyup.enter.native="onEnter"
+              class="protein-input"
+              :suffix-icon="Search"
             />
-          </el-select>
-          <el-input
-            v-model="input"
-            placeholder="protein name"
-            size="large"
-            clearable
-            @keyup.enter.native="onEnter"
-            class="input"
-            :suffix-icon="Search"
-          />
+          </div>
+          
+          <div class="type-selector">
+            <span class="selector-label">Select type:</span>
+            <div class="selector-options">
+              <el-check-tag
+                :checked="checkedTissue"
+                @change="onChangeTissue"
+                class="type-tag tissue-tag"
+              >
+                Tissue
+              </el-check-tag>
+              <el-check-tag
+                :checked="checkedCellLine"
+                @change="onChangeCellLine"
+                class="type-tag cell-tag"
+              >
+                Cell Line
+              </el-check-tag>
+            </div>
+          </div>
+          
+          <div class="examples-container">
+            <el-text class="examples-text">
+              Examples:
+              <span @click="onSearch('P50851')" class="example-link">P50851</span>,
+              <span @click="onSearch('Q96HS1')" class="example-link">Q96HS1</span>,
+              <span @click="onSearch('Q14114')" class="example-link">Q14114</span>
+              &nbsp;&nbsp;Help: <a href="https://github.com/bigbio/ibaqpy" class="help-link">iBAQLog</a>
+            </el-text>
+          </div>
         </div>
       </div>
-      <div class="select-box">
-          <span>select type:</span>
-          <el-check-tag :checked="checkedTissue" @change="onChangeTissue" style="margin-right: 8px; font-size: 10px; border-radius: 6px;">tissue</el-check-tag>
-          <el-check-tag :checked="checkedCellLine" @change="onChangeCellLine" style="font-size: 10px; border-radius: 6px;" >cell line</el-check-tag>
-      </div>
+    </section>
+    
+    <section class="results-section">
       <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          margin-top: 0.1rem;
-        "
-      > 
-      <el-text>Examples:
-        <span @click="onSearch('P50851')"
-          >P50851, </span
-        >
-        <span @click="onSearch('Q96HS1')"
-          >Q96HS1, </span>
-        <span @click="onSearch('Q14114')"
-          >Q14114</span
-        >
-        &nbsp;&nbsp;Help:<span>&nbsp;<a  href="https://github.com/bigbio/ibaqpy">iBAQLog</a></span>
-      </el-text>
+        class="results-container container"
+        v-loading="loading"
+        element-loading-text="Loading data..."
+      >
+        <router-view
+          :key="key"
+          @changeLoading="changeLoading"
+        ></router-view>
       </div>
-    </div>
-    <!--  Image  -->
-    <div
-      style="
-        margin-top: 1rem;
-        background-color: white;
-        border-radius: 1rem;
-        min-height: 10rem;
-        padding: 1rem;
-      "
-      v-loading="loading"
-      element-loading-text="loading"
-    >
-      <router-view :key="key" @changeLoading="changeLoading" ></router-view>
-    </div>
+    </section>
   </div>
-</div>
 </template>
 
 <script setup>
@@ -152,102 +143,157 @@ const changeLoading = () => {
 }
 </script>
 <style lang="scss" scoped>
-::v-deep {
-  .left .el-input__wrapper {
-    border-right-width: 0; 
+.baseline-page {
+  padding: $spacing-md 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-title {
+  font-size: $font-size-xlarge;
+  color: $text-color;
+  margin-bottom: $spacing-xl;
+  text-align: center;
+}
+
+.search-section,
+.results-section {
+  margin: $spacing-xl 0;
+}
+
+.search-container {
+  padding: $spacing-lg;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing-lg;
+  
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    gap: $spacing-sm;
+  }
+}
+
+.organism-select {
+  width: 140px;
+  
+  :deep(.el-input__wrapper) {
+    border-right-width: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right-width: 0 !important;
-    border:1px solid rgb(220, 223, 230);
+    border: 1px solid $border-color;
     box-shadow: none;
   }
+  
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    
+    :deep(.el-input__wrapper) {
+      border-radius: $border-radius;
+      border-width: 1px;
+    }
+  }
+}
 
-  .input .el-input__wrapper{
+.protein-input {
+  width: 400px;
+  
+  :deep(.el-input__wrapper) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left-width: 0;
-    border:1px solid rgb(220, 223, 230);
+    border: 1px solid $border-color;
     box-shadow: none;
   }
+  
+  @media (max-width: $breakpoint-md) {
+    width: 300px;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    
+    :deep(.el-input__wrapper) {
+      border-radius: $border-radius;
+      border-width: 1px;
+    }
+  }
 }
-.search-box {
-  background-color: white;
-  border-radius: 1rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.introduction-msg {
-  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  text-align: left;
-  border: 1px solid red;
-  margin-bottom: 20px;
-}
-.input {
-  width: 400px;
-}
-.example-showcase .el-dropdown-link {
-  cursor: pointer;
-  color: aqua;
-  display: flex;
-  align-items: center;
-}
-h1 {
-  text-align: left;
-}
-.search-box {
-  display: flex;
-  margin-bottom: 2px;
-}
-.display-box p {
-  text-align: left;
-  font-size: 10px;
-  font-weight: bold;
-  margin-bottom: 32px;
-  margin-left: 2px;
-}
-.title {
-  font-size: 40px;
-  // font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-}
-.link {
-  text-decoration: none;
-}
-.button-tag {
+
+.type-selector {
   display: flex;
   align-items: center;
   justify-content: center;
-  //width: 100%;
-  margin-top:1.5rem;
-}
-.el-text span:hover{
-  color:#84c7d0;
-  cursor: pointer;
-}
-.el-text span a {
-  text-decoration: none;
+  margin: $spacing-md 0;
+  
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing-xs;
+  }
 }
 
-.el-text span a:hover{
-  color:#84c7d0;
+.selector-label {
+  margin-right: $spacing-lg;
+  font-size: $font-size-base;
+  font-weight: 600;
+  color: $text-color;
+}
+
+.selector-options {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+.type-tag {
+  font-size: $font-size-small;
+  border-radius: $border-radius;
+  padding: $spacing-xs $spacing-sm;
+}
+
+.examples-container {
+  display: flex;
+  justify-content: center;
+  margin-top: $spacing-md;
+}
+
+.examples-text {
+  font-size: $font-size-base;
+}
+
+.example-link {
+  color: $primary-color;
   cursor: pointer;
+  transition: $transition-base;
+  
+  &:hover {
+    color: darken($primary-color, 10%);
+    text-decoration: underline;
+  }
 }
-.select-box {
-    margin: 0.5rem 0;
-    > span {
-      margin-right: 1rem;
-      font-size: 18px;
-      font-weight: 700;
-    }
+
+.help-link {
+  color: $link-color;
+  text-decoration: none;
+  transition: $transition-base;
+  
+  &:hover {
+    color: darken($link-color, 10%);
+    text-decoration: underline;
+  }
 }
-.el-check-tag {
-  font-size: 10px;
+
+.results-container {
+  background-color: $white;
+  border-radius: $border-radius-lg;
+  min-height: 400px;
+  padding: $spacing-lg;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 </style>

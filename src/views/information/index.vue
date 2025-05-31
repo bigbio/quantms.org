@@ -1,75 +1,29 @@
 <template>
-  <div class="page">
-    <!-- <h1 class="title">quantms reanalysis</h1>
-    <p class="body-content">
-      A total of 118 datasets were reanalyzed using quantms version 1.1, UniProt
-      protein sequence database (version 10.20222), only the SwissProt (reviewed
-      proteins) without isoforms information. All datasets have been deposited
-      in
-      <a
-        href="http://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/"
-        >PRIDE Archive public FTP</a
-      >. All datasets were filtered at a 1% false discovery rate (FDR) at PSM
-      and protein levels for all datasets. All parameters including the
-      posttranslational modifications, precursor and fragment tolerances can be
-      found for each dataset in the corresponding SDRF. Following 2 tables show
-      the list of AE, DE and SingleCell datasets reanalyzed including the number of samples,
-      ms runs, unique peptides and unique proteins for each dataset, as well as
-      reanalysis results and publication information.
-    </p> -->
-    <div class="card-box">
-      <!-- <p class="body-title">absolute-expression</p> -->
-      <div 
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          border-bottom: 2px solid rgb(229, 231, 235);
-          margin-bottom: 1rem;
-        "
-      >
-        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)"> Datasets Reanalyzed </div>
-        <el-input
-          v-model="searchProject"
-          size="large"
-          style="width: 30%; margin: 1.5rem 0"
-          placeholder="Accession or Category "
-          :suffix-icon="Search"
-        />
+  <div class="datasets-page">
+    <section class="datasets-section">
+      <h1 class="section-title">Datasets Reanalyzed</h1>
+      
+      <div class="card container">
+        <div class="datasets-header">
+          <div class="search-container">
+            <el-input
+              v-model="searchProject"
+              size="large"
+              placeholder="Search by Accession or Category"
+              :suffix-icon="Search"
+              class="search-input"
+            />
+          </div>
+        </div>
+        
+        <div class="datasets-table">
+          <Table
+            :modelValue="filterTable"
+            @update:modelValue="fullTable = $event"
+          ></Table>
+        </div>
       </div>
-      <Table
-        :modelValue="filterTable" @update:modelValue="fullTable = $event"
-      ></Table>
-    </div>
-
-<!--    <div class="card-box" style="margin-top:3rem;">-->
-<!--      <div-->
-<!--        style="-->
-<!--          display: flex;-->
-<!--          align-items: center;-->
-<!--          justify-content: space-between;-->
-<!--          border-bottom: 2px solid rgb(229, 231, 235);-->
-<!--          margin-bottom: 1rem;-->
-<!--        "-->
-<!--      >-->
-<!--        <div style="font-size: 1.5rem; color: rgb(75, 85, 99)">-->
-<!--          differential-expression-->
-<!--        </div>-->
-<!--        <el-input-->
-<!--          v-model="search2"-->
-<!--          size="large"-->
-<!--          style="width: 30%; margin: 1.5rem 0"-->
-<!--          placeholder="Search"-->
-<!--          :suffix-icon="Search"-->
-<!--        />-->
-<!--      </div>-->
-
-<!--      &lt;!&ndash; <p class="body-title">differential-expression</p> &ndash;&gt;-->
-<!--      <Table-->
-<!--        :modelValue="tableDataDE"-->
-<!--        @update:modelValue="tableDataDE = $event"-->
-<!--      ></Table>-->
-<!--    </div>-->
+    </section>
   </div>
 </template>
 <script setup>
@@ -115,35 +69,53 @@ onMounted(() => {
 });
 </script>
 <style lang="scss" scoped>
-.title {
-  font-size: 32px;
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-}
-.page {
-  // width: 95%;
-  // margin: 12px auto;
+.datasets-page {
+  padding: $spacing-md 0;
+  width: 100%;
 }
 
-.card-box{
-  background-color: white;
-  border-radius: 1rem;
-  padding: 1.5rem
+.datasets-section {
+  margin: $spacing-xl 0;
+  width: 100%;
 }
-.body-title {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+
+.container {
+  width: 100%;
+  max-width: 100%;
 }
-.body-content {
-  font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  text-align: left;
-  margin-top: 14px;
+
+.section-title {
+  font-size: $font-size-xlarge;
+  color: $text-color;
+  margin-bottom: $spacing-xl;
+  text-align: center;
+}
+
+.datasets-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $spacing-lg;
+  border-bottom: 2px solid $border-color;
+  padding-bottom: $spacing-md;
+}
+
+.search-container {
+  width: 30%;
+  
+  @media (max-width: $breakpoint-md) {
+    width: 50%;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+}
+
+.search-input {
+  width: 100%;
+}
+
+.datasets-table {
+  margin-top: $spacing-md;
 }
 </style>

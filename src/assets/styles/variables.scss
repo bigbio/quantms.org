@@ -1,0 +1,46 @@
+// Color variables
+$primary-color: #389a99;
+$secondary-color: #4b8f73;
+$text-color: #2c3e50;
+$text-light-color: #6b7280;
+$background-color: #f9fafb;
+$white: #ffffff;
+$border-color: #ebecee;
+$success-color: #13ce66;
+$error-color: #ff4949;
+$link-color: #2563eb;
+
+// Font variables
+$font-family: '"Helvetica Neue", Helvetica, Arial, sans-serif';
+$font-size-small: 14px;
+$font-size-base: 16px;
+$font-size-large: 18px;
+$font-size-xlarge: 24px;
+
+// Spacing variables
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 3rem;
+
+// Layout variables
+$container-max-width: 1152px;
+$header-height: 3.5rem;
+$border-radius: 0.25rem;
+$border-radius-lg: 1rem;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Z-index
+$z-index-header: 100;
+$z-index-modal: 1000;
+$z-index-tooltip: 2000;
+
+// Transitions
+$transition-base: all 0.3s ease;

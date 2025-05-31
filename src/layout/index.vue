@@ -1,49 +1,68 @@
 <template>
-  <el-container class="container">
-    <el-header class="header">
+  <el-container class="layout-container">
+    <el-header class="layout-header">
       <Menu />
     </el-header>
-    <!-- <el-container> -->
-    <el-main class="main">
-      <router-view />
+    <el-main class="layout-main">
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </el-main>
-    <el-footer class="footer">
+    <el-footer class="layout-footer">
       <Footer />
     </el-footer>
-    <!-- </el-container> -->
   </el-container>
 </template>
+
 <script setup>
 import Menu from "./Menu";
 import Footer from "./Footer";
 </script>
+
 <style lang="scss" scoped>
-.container {
+.layout-container {
   margin: 0 auto;
-  max-width: 1152px;
+  max-width: $container-max-width;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.header {
+.layout-header {
   position: sticky;
   width: 100%;
-  background-color: rgb(249 250 251);
+  background-color: $background-color;
   top: 0;
-  // margin: 0 auto;
-  z-index: 100;
+  z-index: $z-index-header;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.main {
-  // margin-top: 3.5rem;
-  // background-color: white;
+.layout-main {
+  flex: 1;
+  padding: $spacing-lg $spacing-md;
+  
+  @media (max-width: $breakpoint-sm) {
+    padding: $spacing-md $spacing-sm;
+  }
 }
 
-.aside {
-  margin-left: 10px;
-  // height: 2500px;
-  background-color: #4b8f73;
+.layout-footer {
+  border-top: 1px solid $border-color;
+  padding: $spacing-md 0;
 }
-.footer {
-  border-top: 1px solid #ebecee;
+
+// Page transition animations
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
