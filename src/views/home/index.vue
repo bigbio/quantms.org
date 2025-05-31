@@ -74,7 +74,6 @@
 
     <!-- Visualization Section -->
     <section class="visualization-section">
-      <h2 class="section-title">Data Visualizations</h2>
       <div class="grid grid-3">
         <div class="visualization-card">
           <h3 class="chart-title">Proteins per Project</h3>
@@ -98,7 +97,7 @@
 <script setup>
 import pipeline from "@/assets/images/pipeline.png";
 import { Tools, DocumentCopy, Histogram, Document } from "@element-plus/icons-vue";
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import * as echarts from 'echarts';
 import { getAbsolueExpression, getDifferentialExpression, getSingleCellExpression } from "@/api/getTable";
 import axios from 'axios';
@@ -181,19 +180,28 @@ const fetchData = async () => {
 
 // Initialize all charts
 const initCharts = () => {
-  initProteinsPerProjectChart();
-  initPeptidesPerProjectChart();
-  initProteinsPerTissueChart();
+  if (proteinsPerProjectChart.value) {
+    proteinsPerProjectInstance = echarts.init(proteinsPerProjectChart.value);
+    initProteinsPerProjectChart();
+  }
+  
+  if (peptidesPerProjectChart.value) {
+    peptidesPerProjectInstance = echarts.init(peptidesPerProjectChart.value);
+    initPeptidesPerProjectChart();
+  }
+  
+  if (proteinsPerTissueChart.value) {
+    proteinsPerTissueInstance = echarts.init(proteinsPerTissueChart.value);
+    initProteinsPerTissueChart();
+  }
 };
 
 // Initialize proteins per project chart
 const initProteinsPerProjectChart = () => {
-  if (!proteinsPerProjectChart.value) return;
+  if (!proteinsPerProjectInstance) return;
 
   // Combine all datasets
   const allData = [...aeData.value, ...deData.value, ...singleCellData.value];
-
-  // Process data for histogram
   const proteinCounts = allData.map(item => item.proteins);
 
   // Create bins for histogram
@@ -209,58 +217,69 @@ const initProteinsPerProjectChart = () => {
     }
   });
 
-  // Format bin labels
+  // Format bin labels with K for thousands
   const binLabels = bins.map((bin, index) => {
-    if (index === bins.length - 1) return `${bin}+`;
-    return `${bin}-${bins[index + 1]}`;
+    const formatNumber = (num) => num >= 1000 ? `${num/1000}K` : num;
+    if (index === bins.length - 1) return `${formatNumber(bin)}+`;
+    return `${formatNumber(bin)}-${formatNumber(bins[index + 1])}`;
   });
-
-  // Initialize chart
-  proteinsPerProjectInstance = echarts.init(proteinsPerProjectChart.value);
 
   const option = {
     tooltip: {
       trigger: 'axis',
-      formatter: '{b}: {c} projects'
+      formatter: '{b}: {c} projects',
+      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      borderColor: '#ccc',
+      borderWidth: 1,
+      textStyle: {
+        color: '#666'
+      }
     },
     grid: {
-      left: '10%',
-      right: '5%',
-      bottom: '10%',
-      top: '5%',
+      left: '12%',
+      right: '8%',
+      bottom: '15%',
+      top: '10%',
       containLabel: true
     },
     xAxis: {
       type: 'category',
       data: binLabels,
       axisLine: {
-        show: false
+        show: true,
+        lineStyle: {
+          color: '#ddd'
+        }
       },
       axisTick: {
         show: false
       },
       axisLabel: {
         rotate: 45,
-        fontSize: 10,
-        margin: 8
+        fontSize: 11,
+        margin: 12,
+        color: '#666',
+        formatter: (value) => value.replace('-', ' - ')
       }
     },
     yAxis: {
       type: 'value',
       name: 'Projects',
       nameLocation: 'middle',
-      nameGap: 30,
-      axisLabel: {
-        fontSize: 10
-      },
+      nameGap: 40,
       nameTextStyle: {
-        fontSize: 12,
-        fontWeight: 'bold'
+        fontSize: 13,
+        fontWeight: 'bold',
+        color: '#666'
+      },
+      axisLabel: {
+        fontSize: 11,
+        color: '#666'
       },
       splitLine: {
         lineStyle: {
           type: 'dashed',
-          opacity: 0.3
+          color: '#eee'
         }
       }
     },
@@ -269,9 +288,21 @@ const initProteinsPerProjectChart = () => {
         data: counts,
         type: 'bar',
         itemStyle: {
-          color: '#389a99'
+          color: '#389a99',
+          borderRadius: [4, 4, 0, 0]
         },
-        barWidth: '60%'
+        barWidth: '60%',
+        emphasis: {
+          itemStyle: {
+            color: '#2a7372'
+          }
+        },
+        label: {
+          show: true,
+          position: 'top',
+          fontSize: 11,
+          color: '#666'
+        }
       }
     ]
   };
@@ -281,12 +312,10 @@ const initProteinsPerProjectChart = () => {
 
 // Initialize peptides per project chart
 const initPeptidesPerProjectChart = () => {
-  if (!peptidesPerProjectChart.value) return;
+  if (!peptidesPerProjectInstance) return;
 
   // Combine all datasets
   const allData = [...aeData.value, ...deData.value, ...singleCellData.value];
-
-  // Process data for histogram
   const peptideCounts = allData.map(item => item.peptides);
 
   // Create bins for histogram
@@ -302,52 +331,70 @@ const initPeptidesPerProjectChart = () => {
     }
   });
 
-  // Format bin labels
+  // Format bin labels with K for thousands
   const binLabels = bins.map((bin, index) => {
-    if (index === bins.length - 1) return `${bin}+`;
-    return `${bin}-${bins[index + 1]}`;
+    const formatNumber = (num) => num >= 1000 ? `${num/1000}K` : num;
+    if (index === bins.length - 1) return `${formatNumber(bin)}+`;
+    return `${formatNumber(bin)}-${formatNumber(bins[index + 1])}`;
   });
-
-  // Initialize chart
-  peptidesPerProjectInstance = echarts.init(peptidesPerProjectChart.value);
 
   const option = {
     tooltip: {
       trigger: 'axis',
-      formatter: '{b}: {c} projects'
+      formatter: '{b}: {c} projects',
+      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      borderColor: '#ccc',
+      borderWidth: 1,
+      textStyle: {
+        color: '#666'
+      }
     },
     grid: {
-      left: '10%',
-      right: '5%',
-      bottom: '10%',
-      top: '5%',
+      left: '12%',
+      right: '8%',
+      bottom: '15%',
+      top: '10%',
       containLabel: true
     },
     xAxis: {
       type: 'category',
       data: binLabels,
       axisLine: {
-        show: false
+        show: true,
+        lineStyle: {
+          color: '#ddd'
+        }
       },
       axisTick: {
         show: false
       },
       axisLabel: {
         rotate: 45,
-        fontSize: 10,
-        margin: 8
+        fontSize: 11,
+        margin: 12,
+        color: '#666',
+        formatter: (value) => value.replace('-', ' - ')
       }
     },
     yAxis: {
       type: 'value',
-      name: 'Number of Projects',
+      name: 'Projects',
       nameLocation: 'middle',
       nameGap: 40,
-      axisLabel: {
-        fontSize: 10
-      },
       nameTextStyle: {
-        fontSize: 12
+        fontSize: 13,
+        fontWeight: 'bold',
+        color: '#666'
+      },
+      axisLabel: {
+        fontSize: 11,
+        color: '#666'
+      },
+      splitLine: {
+        lineStyle: {
+          type: 'dashed',
+          color: '#eee'
+        }
       }
     },
     series: [
@@ -355,9 +402,21 @@ const initPeptidesPerProjectChart = () => {
         data: counts,
         type: 'bar',
         itemStyle: {
-          color: '#2563eb'
+          color: '#2563eb',
+          borderRadius: [4, 4, 0, 0]
         },
-        barWidth: '60%'
+        barWidth: '60%',
+        emphasis: {
+          itemStyle: {
+            color: '#1d4ed8'
+          }
+        },
+        label: {
+          show: true,
+          position: 'top',
+          fontSize: 11,
+          color: '#666'
+        }
       }
     ]
   };
@@ -367,7 +426,7 @@ const initPeptidesPerProjectChart = () => {
 
 // Initialize proteins per tissue chart
 const initProteinsPerTissueChart = () => {
-  if (!proteinsPerTissueChart.value || !tissueData.value || !tissueData.value.length) return;
+  if (!proteinsPerTissueInstance || !tissueData.value || !tissueData.value.length) return;
 
   // Process tissue data - count proteins per tissue
   const tissueProteins = {};
@@ -388,68 +447,52 @@ const initProteinsPerTissueChart = () => {
   // Convert to array and sort by protein count
   const processedTissueData = Object.entries(tissueProteins)
     .map(([tissue, count]) => ({ tissue, proteins: count }))
-    .sort((a, b) => b.proteins - a.proteins)
-    .slice(0, 15); // Take top 15 tissues
-
-  // Initialize chart
-  proteinsPerTissueInstance = echarts.init(proteinsPerTissueChart.value);
+    .sort((a, b) => b.proteins - a.proteins);
 
   const option = {
     tooltip: {
-      trigger: 'axis',
-      formatter: '{b}: {c} proteins'
-    },
-    grid: {
-      left: '15%',
-      right: '5%',
-      bottom: '5%',
-      top: '5%',
-      containLabel: true
-    },
-    xAxis: {
-      type: 'value',
-      axisLine: {
-        show: false
+      trigger: 'item',
+      formatter: (params) => {
+        const value = params.value >= 1000 ? `${(params.value/1000).toFixed(1)}K` : params.value;
+        const name = params.name.charAt(0).toUpperCase() + params.name.slice(1);
+        return `${name}: ${value} proteins (${params.percent.toFixed(1)}%)`;
       },
-      axisTick: {
-        show: false
-      },
-      axisLabel: {
-        fontSize: 10,
-        margin: 8
-      },
-      splitLine: {
-        lineStyle: {
-          type: 'dashed',
-          opacity: 0.3
-        }
-      }
-    },
-    yAxis: {
-      type: 'category',
-      data: processedTissueData.map(item => item.tissue),
-      axisLabel: {
-        fontSize: 10,
-        margin: 8
-      },
-      axisTick: {
-        show: false
+      backgroundColor: 'rgba(255, 255, 255, 0.95)',
+      borderColor: '#ccc',
+      borderWidth: 1,
+      padding: [8, 12],
+      textStyle: {
+        color: '#666',
+        fontSize: 13
       }
     },
     series: [
       {
-        data: processedTissueData.map(item => item.proteins),
-        type: 'bar',
+        type: 'pie',
+        radius: ['30%', '70%'],
+        center: ['50%', '45%'],
+        avoidLabelOverlap: true,
         itemStyle: {
-          color: '#4b8f73'
+          borderRadius: 4,
+          borderColor: '#fff',
+          borderWidth: 2
         },
-        barWidth: '60%',
         label: {
-          show: true,
-          position: 'right',
-          fontSize: 10,
-          color: '#666'
-        }
+          show: false
+        },
+        emphasis: {
+          scale: true,
+          scaleSize: 5,
+          itemStyle: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.2)'
+          }
+        },
+        data: processedTissueData.map(item => ({
+          name: item.tissue,
+          value: item.proteins
+        }))
       }
     ]
   };
@@ -459,15 +502,29 @@ const initProteinsPerTissueChart = () => {
 
 // Handle window resize
 const handleResize = () => {
-  proteinsPerProjectInstance?.resize();
-  peptidesPerProjectInstance?.resize();
-  proteinsPerTissueInstance?.resize();
+  if (proteinsPerProjectInstance) {
+    proteinsPerProjectInstance.resize();
+  }
+  if (peptidesPerProjectInstance) {
+    peptidesPerProjectInstance.resize();
+  }
+  if (proteinsPerTissueInstance) {
+    proteinsPerTissueInstance.resize();
+  }
 };
 
 // Lifecycle hooks
 onMounted(() => {
   fetchData();
   window.addEventListener('resize', handleResize);
+});
+
+// Clean up on component unmount
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
+  proteinsPerProjectInstance?.dispose();
+  peptidesPerProjectInstance?.dispose();
+  proteinsPerTissueInstance?.dispose();
 });
 </script>
 
@@ -478,40 +535,42 @@ onMounted(() => {
 
 // Feature Cards
 .feature-section {
-  margin: $spacing-xl 0;
-}
+  padding: $spacing-xl 0;
+  margin: 0 auto;
+  max-width: $container-max-width;
+  width: 100%;
 
-.grid-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-
-  @media (max-width: $breakpoint-lg) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .grid {
+    display: grid;
+    gap: $spacing-lg;
   }
 
-  @media (max-width: $breakpoint-sm) {
-    grid-template-columns: 1fr;
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+    
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: $breakpoint-sm) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
 .feature-card {
+  background-color: $white;
   border-radius: $border-radius-lg;
   padding: $spacing-lg;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: $transition-base;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 220px;
-
+  height: 100%;
+  
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
   }
 }
 
-// Workflow card - primary teal color
+// Workflow card - primary color
 .workflow-card {
   background-color: rgba($primary-color, 0.15);
   border-left: 4px solid $primary-color;
@@ -576,7 +635,7 @@ onMounted(() => {
 }
 
 .feature-title {
-  font-size: $font-size-large;
+  font-size: $font-size-xl;
   color: $text-color;
   margin-top: $spacing-md;
   font-weight: 500;
@@ -654,42 +713,61 @@ onMounted(() => {
 // Visualization Section
 .visualization-section {
   margin: $spacing-xl 0;
-}
+  padding: 0 $spacing-md;
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0 auto;
 
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr);
-
-  @media (max-width: $breakpoint-lg) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: $breakpoint-md) {
-    grid-template-columns: 1fr;
+  .grid {
+    display: grid;
+    gap: $spacing-xl;
+    margin-top: $spacing-xl;
   }
 }
 
 .visualization-card {
   background-color: $white;
   border-radius: $border-radius-lg;
-  padding: $spacing-md;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  padding: $spacing-lg;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: $transition-base;
+  height: 100%;
+  min-height: 400px;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .chart-title {
-  font-size: $font-size-base;
+  font-size: $font-size-lg;
   font-weight: 600;
   color: $text-color;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-lg;
   text-align: center;
 }
 
 .chart-container {
   width: 100%;
-  height: 300px;
+  height: 350px;
+  position: relative;
+}
+
+.toggle-chart-btn {
+  padding: $spacing-sm $spacing-md;
+  background-color: $primary-color;
+  color: white;
+  border: none;
   border-radius: $border-radius;
+  cursor: pointer;
+  font-size: $font-size-small;
+  transition: $transition-base;
+  display: block;
+  margin: 0 auto $spacing-sm;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
 </style>

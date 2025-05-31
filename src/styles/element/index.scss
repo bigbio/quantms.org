@@ -1,0 +1,28 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $font-family: (
+    '': 'Inter',
+    -apple-system: -apple-system,
+    -webkit-system: -webkit-system,
+    sans-serif: sans-serif,
+  ),
+  $colors: (
+    'primary': (
+      'base': $primary-color,
+    ),
+    'success': (
+      'base': $success-color,
+    ),
+    'warning': (
+      'base': $warning-color,
+    ),
+    'danger': (
+      'base': $error-color,
+    ),
+    'error': (
+      'base': $error-color,
+    ),
+    'info': (
+      'base': $info-color,
+    ),
+  )
+); 

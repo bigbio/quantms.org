@@ -36,7 +36,7 @@
       <el-table-column
         prop="samples"
         label="Samples"
-        width="100"
+        width="120"
         sortable="custom"
       />
       
@@ -44,7 +44,7 @@
       <el-table-column
         prop="msruns"
         label="Msruns"
-        width="100"
+        width="120"
         sortable="custom"
       />
       
@@ -233,6 +233,23 @@ const calculatePercentage = (value, max) => {
   border-radius: $border-radius;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  :deep(.el-table__header) {
+    th {
+      .cell {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 24px !important;
+        
+        .caret-wrapper {
+          margin-left: $spacing-sm;
+          position: absolute;
+          right: 8px;
+        }
+      }
+    }
+  }
 }
 
 .accession-link,

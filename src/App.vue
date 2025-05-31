@@ -15,13 +15,13 @@
 <style lang="scss">
 // App-specific styles
 #app {
+  width: 100%;
+  height: 100%;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  color: $text-color;
 }
 
 // Page transition animations

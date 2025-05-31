@@ -85,9 +85,9 @@ onMounted(() => {
 }
 
 .section-title {
-  font-size: $font-size-xlarge;
+  font-size: $font-size-2xl;
   color: $text-color;
-  margin-bottom: $spacing-xl;
+  margin-bottom: $spacing-lg;
   text-align: center;
 }
 

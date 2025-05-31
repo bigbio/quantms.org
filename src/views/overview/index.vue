@@ -301,4 +301,14 @@ const changeLoading = () => {
   display: flex;
   flex-direction: column;
 }
+
+.overview-table {
+  width: 100%;
+  margin-top: $spacing-lg;
+
+  th, td {
+    padding: $spacing-sm;
+    border: 1px solid $border-color-base;
+  }
+}
 </style>

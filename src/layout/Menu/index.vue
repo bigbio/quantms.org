@@ -24,9 +24,13 @@ import logo from "@/assets/images/logo_complete.png";
 
 <style lang="scss" scoped>
 .main-nav {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-index-header;
   background-color: $white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {

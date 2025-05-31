@@ -3,8 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import * as ELIcons from '@element-plus/icons-vue'
+import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-import './assets/styles/global.scss'
+import './assets/styles/main.scss'  // This will import _variables.scss and set global styles
 
 // Create Vue application
 const app = createApp(App)
@@ -26,4 +27,4 @@ app.config.errorHandler = (err, vm, info) => {
 }
 
 // Mount application
-app.use(store).use(router).mount('#app')
+app.use(store).use(router).use(ElementPlus).mount('#app')

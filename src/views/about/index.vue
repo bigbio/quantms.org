@@ -209,18 +209,18 @@ import GitHubContributors from "@/components/GitHubContributors";
 .about-page {
   padding: $spacing-md 0;
   width: 100%;
+
+  .section-title {
+    font-size: $font-size-2xl;
+    color: $text-color;
+    margin-bottom: $spacing-lg;
+    text-align: center;
+  }
 }
 
 .about-section {
   margin: $spacing-xl 0;
   width: 100%;
-}
-
-.section-title {
-  font-size: $font-size-xlarge;
-  color: $text-color;
-  margin-bottom: $spacing-xl;
-  text-align: center;
 }
 
 .container {
