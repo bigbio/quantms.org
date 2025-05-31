@@ -12,6 +12,7 @@
         <router-link class="nav-link" to="/datasets">Datasets</router-link>
         <router-link class="nav-link" to="/baseline">Baseline</router-link>
         <router-link class="nav-link" to="/publications">Publications</router-link>
+        <router-link class="nav-link" to="/about">About Us</router-link>
       </div>
     </div>
   </nav>
