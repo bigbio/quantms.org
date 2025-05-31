@@ -428,19 +428,23 @@ const initPeptidesPerProjectChart = () => {
 const initProteinsPerTissueChart = () => {
   if (!proteinsPerTissueInstance || !tissueData.value || !tissueData.value.length) return;
 
-  // Process tissue data - count proteins per tissue
+  // Process tissue data - count unique proteins per tissue
   const tissueProteins = {};
+  const proteinTissueMap = new Map(); // Map to track which tissues each protein appears in
 
-  // Count proteins for each tissue
+  // First pass: build the protein to tissue mapping
   tissueData.value.forEach(protein => {
     if (protein.tags && Array.isArray(protein.tags)) {
-      protein.tags.forEach(tissue => {
-        if (!tissueProteins[tissue]) {
-          tissueProteins[tissue] = 1;
-        } else {
-          tissueProteins[tissue]++;
-        }
-      });
+      // Create an entry for this protein with its tissues
+      proteinTissueMap.set(protein.name, new Set(protein.tags));
+    }
+  });
+
+  // Second pass: count unique proteins for each tissue
+  proteinTissueMap.forEach((tissues) => {
+    if (tissues.size === 1) { // If protein appears in only one tissue
+      const tissue = Array.from(tissues)[0];
+      tissueProteins[tissue] = (tissueProteins[tissue] || 0) + 1;
     }
   });
 
@@ -455,7 +459,7 @@ const initProteinsPerTissueChart = () => {
       formatter: (params) => {
         const value = params.value >= 1000 ? `${(params.value/1000).toFixed(1)}K` : params.value;
         const name = params.name.charAt(0).toUpperCase() + params.name.slice(1);
-        return `${name}: ${value} proteins (${params.percent.toFixed(1)}%)`;
+        return `${name}: ${value} unique proteins (${params.percent.toFixed(1)}%)`;
       },
       backgroundColor: 'rgba(255, 255, 255, 0.95)',
       borderColor: '#ccc',
@@ -470,7 +474,7 @@ const initProteinsPerTissueChart = () => {
       {
         type: 'pie',
         radius: ['30%', '70%'],
-        center: ['50%', '45%'],
+        center: ['50%', '50%'],
         avoidLabelOverlap: true,
         itemStyle: {
           borderRadius: 4,
@@ -478,16 +482,29 @@ const initProteinsPerTissueChart = () => {
           borderWidth: 2
         },
         label: {
-          show: false
+          show: true,
+          position: 'outside',
+          formatter: '{b}',
+          fontSize: 12,
+          color: '#666'
         },
         emphasis: {
-          scale: true,
-          scaleSize: 5,
+          label: {
+            show: true,
+            fontSize: 14,
+            fontWeight: 'bold'
+          },
           itemStyle: {
             shadowBlur: 10,
             shadowOffsetX: 0,
             shadowColor: 'rgba(0, 0, 0, 0.2)'
           }
+        },
+        labelLine: {
+          show: true,
+          length: 10,
+          length2: 10,
+          smooth: true
         },
         data: processedTissueData.map(item => ({
           name: item.tissue,
