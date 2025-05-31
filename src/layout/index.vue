@@ -24,7 +24,7 @@ import Footer from "./Footer";
 <style lang="scss" scoped>
 .layout-container {
   margin: 0 auto;
-  max-width: $container-max-width;
+  width: 100%;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -43,10 +43,13 @@ import Footer from "./Footer";
 
 .layout-main {
   flex: 1;
-  padding: $spacing-lg $spacing-md;
+  padding: $spacing-lg 0;
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
   
   @media (max-width: $breakpoint-sm) {
-    padding: $spacing-md $spacing-sm;
+    padding: $spacing-md 0;
   }
 }
 

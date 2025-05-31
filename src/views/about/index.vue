@@ -10,8 +10,7 @@
           <!-- EMBL-EBI Team -->
           <div class="team-card">
             <div class="team-header">
-              <el-image :src="ebiLogo" fit="contain" class="team-logo" alt="EMBL-EBI Logo" />
-              <h3 class="team-title">EMBL-EBI PRIDE Team</h3>
+              <el-image :src="ebiLogo" fit="contain" class="team-logo ebi-logo" alt="EMBL-EBI Logo" />
             </div>
             <div class="team-content">
               <div class="team-leader">
@@ -28,7 +27,6 @@
           <div class="team-card">
             <div class="team-header">
               <el-image :src="openMSLogo" fit="contain" class="team-logo" alt="OpenMS Logo" />
-              <h3 class="team-title">OpenMS Team</h3>
             </div>
             <div class="team-content">
               <div class="team-leader">
@@ -45,7 +43,6 @@
           <div class="team-card">
             <div class="team-header">
               <el-image :src="cquptLogo" fit="contain" class="team-logo" alt="CQUPT Logo" />
-              <h3 class="team-title">Chongqing University of Posts and Telecommunications</h3>
             </div>
             <div class="team-content">
               <div class="team-leader">
@@ -228,7 +225,7 @@ import GitHubContributors from "@/components/GitHubContributors";
 
 .container {
   width: 100%;
-  max-width: 100%;
+  margin: 0 auto;
 }
 
 .about-category {
@@ -270,40 +267,39 @@ import GitHubContributors from "@/components/GitHubContributors";
 
 .team-header {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-xl;
 }
 
 .team-logo {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
-  margin-right: $spacing-md;
   border-radius: $border-radius;
 }
 
-.team-title {
-  font-size: $font-size-base;
-  color: $text-color;
-  font-weight: bold;
+.ebi-logo {
+  width: 200px;
+  height: 160px;
 }
 
 .team-content {
-  padding-left: $spacing-sm;
+  text-align: center;
 }
 
 .team-leader {
-  margin-bottom: $spacing-sm;
+  margin-bottom: $spacing-md;
 }
 
 .leader-name {
-  font-size: $font-size-base;
+  font-size: $font-size-large;
   color: $text-color;
   margin-bottom: $spacing-xs;
 }
 
 .leader-position {
-  font-size: $font-size-small;
+  font-size: $font-size-base;
   color: $text-light-color;
   margin-bottom: $spacing-xs;
 }
