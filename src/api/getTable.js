@@ -20,3 +20,19 @@ export const getSingleCellExpression = () => {
       method: 'get'
     })
 }
+
+// Function to fetch dataset details from PRIDE API
+export const getPrideDatasetDetails = (accessionId) => {
+  return request({
+    url: `https://www.ebi.ac.uk/pride/ws/archive/v3/projects/${accessionId}`,
+    method: 'get'
+  });
+};
+
+// Function to fetch dataset details from ProteomeCentral PROXI API
+export const getProxiDatasetDetails = (accessionId) => {
+  return request({
+    url: `http://proteomecentral.proteomexchange.org/api/dataset/${accessionId}`,
+    method: 'get'
+  });
+};
