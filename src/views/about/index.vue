@@ -2,10 +2,10 @@
   <div class="about-page">
     <section class="about-section">
       <h1 class="section-title">About Us</h1>
-      
+
       <div class="about-category container">
         <h2 class="category-title">Leading Teams</h2>
-        
+
         <div class="teams-container">
           <!-- EMBL-EBI Team -->
           <div class="team-card">
@@ -14,7 +14,7 @@
             </div>
             <div class="team-content">
               <div class="team-leader">
-                <h4 class="leader-name">Yasset Perez-Riverol, Professor</h4>
+                <h4 class="leader-name">Yasset Perez-Riverol, PhD</h4>
                 <p class="leader-position">Team Coordinator at EMBL-EBI, PRIDE Team</p>
               </div>
               <p class="team-description">
@@ -38,7 +38,7 @@
               </p>
             </div>
           </div>
-          
+
           <!-- OpenMS Team -->
           <div class="team-card">
             <div class="team-header">
@@ -72,10 +72,10 @@
           </div>
         </div>
       </div>
-      
+
       <div class="about-category container">
         <h2 class="category-title">Core Contributors</h2>
-        
+
         <div class="top-contributors-container">
           <div class="contributor-cards">
             <!-- Contributor 1 - Yasset -->
@@ -188,21 +188,21 @@
           </div>
         </div>
       </div>
-      
+
       <div class="about-category container">
         <h2 class="category-title">GitHub Contributors</h2>
         <p class="contributors-intro">
           We are grateful to all the contributors who have helped develop and improve quantms.
         </p>
-        
+
         <div class="github-contributors-container">
           <p class="contributors-message">
             Our project is made possible by the contributions of many developers and researchers.
             We appreciate everyone who has contributed code, documentation, ideas, and feedback.
           </p>
-          
+
           <GitHubContributors />
-          
+
           <p class="contributors-tip">
             The quantms project is open source and welcomes new contributors.
             Visit our <a href="https://github.com/bigbio/quantms" target="_blank" class="github-link">GitHub repository</a>
@@ -263,11 +263,11 @@ import GitHubContributors from "@/components/GitHubContributors";
   gap: $spacing-lg;
   margin: 0 auto;
   width: 100%;
-  
+
   @media (max-width: $breakpoint-xl) {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   @media (max-width: $breakpoint-md) {
     grid-template-columns: 1fr;
   }
@@ -282,7 +282,7 @@ import GitHubContributors from "@/components/GitHubContributors";
   transition: $transition-base;
   display: flex;
   flex-direction: column;
-  
+
   &:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -378,7 +378,7 @@ import GitHubContributors from "@/components/GitHubContributors";
   color: $primary-color;
   text-decoration: none;
   font-weight: 500;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -392,7 +392,7 @@ import GitHubContributors from "@/components/GitHubContributors";
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: $spacing-lg;
-  
+
   @media (max-width: $breakpoint-sm) {
     grid-template-columns: 1fr;
   }
@@ -408,7 +408,7 @@ import GitHubContributors from "@/components/GitHubContributors";
   align-items: center;
   text-align: center;
   transition: transform 0.2s ease-in-out;
-  
+
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
