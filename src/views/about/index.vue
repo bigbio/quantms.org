@@ -14,7 +14,7 @@
             </div>
             <div class="team-content">
               <div class="team-leader">
-                <h4 class="leader-name">Yasset Perez-Riverol, PhD</h4>
+                <h4 class="leader-name">Yasset Perez-Riverol, Professor</h4>
                 <p class="leader-position">Team Coordinator at EMBL-EBI, PRIDE Team</p>
               </div>
               <p class="team-description">
@@ -259,6 +259,8 @@ import GitHubContributors from "@/components/GitHubContributors";
   margin-bottom: $spacing-lg;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: $transition-base;
+  display: flex;
+  flex-direction: column;
   
   &:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -270,6 +272,7 @@ import GitHubContributors from "@/components/GitHubContributors";
   justify-content: center;
   align-items: center;
   margin-bottom: $spacing-xl;
+  height: 160px;
 }
 
 .team-logo {
@@ -286,10 +289,18 @@ import GitHubContributors from "@/components/GitHubContributors";
 
 .team-content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
 }
 
 .team-leader {
   margin-bottom: $spacing-md;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .leader-name {
