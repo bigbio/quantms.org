@@ -22,6 +22,22 @@
               </p>
             </div>
           </div>
+
+          <!-- CQUPT Team -->
+          <div class="team-card">
+            <div class="team-header">
+              <el-image :src="cquptLogo" fit="contain" class="team-logo" alt="CQUPT Logo" />
+            </div>
+            <div class="team-content">
+              <div class="team-leader">
+                <h4 class="leader-name">Mingze Bai, Professor</h4>
+                <p class="leader-position">Chongqing Key Laboratory of Big Data for Bio Intelligence</p>
+              </div>
+              <p class="team-description">
+                Contributing expertise in big data analysis and bioinformatics.
+              </p>
+            </div>
+          </div>
           
           <!-- OpenMS Team -->
           <div class="team-card">
@@ -38,19 +54,19 @@
               </p>
             </div>
           </div>
-          
-          <!-- CQUPT Team -->
+
+          <!-- BPRC Team -->
           <div class="team-card">
             <div class="team-header">
-              <el-image :src="cquptLogo" fit="contain" class="team-logo" alt="CQUPT Logo" />
+              <el-image :src="bprcLogo" fit="contain" class="team-logo" alt="BPRC Logo" />
             </div>
             <div class="team-content">
               <div class="team-leader">
-                <h4 class="leader-name">Mingze Bai, Professor</h4>
-                <p class="leader-position">Chongqing Key Laboratory of Big Data for Bio Intelligence</p>
+                <h4 class="leader-name">Chengxin Dai, PhD Candidate</h4>
+                <p class="leader-position">State Key Laboratory of Medical Proteomics, Beijing Proteome Research Center</p>
               </div>
               <p class="team-description">
-                Contributing expertise in big data analysis and bioinformatics.
+                Leading research in proteomics data analysis and workflow development at National Center for Protein Sciences.
               </p>
             </div>
           </div>
@@ -202,6 +218,7 @@
 import ebiLogo from "@/assets/icons/ebi.jpg";
 import openMSLogo from "@/assets/icons/openMS.png";
 import cquptLogo from "@/assets/icons/cqupt.jpg";
+import bprcLogo from "@/assets/icons/bprc.png";
 import GitHubContributors from "@/components/GitHubContributors";
 </script>
 
@@ -241,18 +258,22 @@ import GitHubContributors from "@/components/GitHubContributors";
 }
 
 .teams-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: $spacing-lg;
+  margin: 0 auto;
+  width: 100%;
+  
+  @media (max-width: $breakpoint-xl) {
+    grid-template-columns: repeat(2, 1fr);
+  }
   
   @media (max-width: $breakpoint-md) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
 .team-card {
-  flex: 1;
-  min-width: 300px;
   background-color: $white;
   border-radius: $border-radius-lg;
   padding: $spacing-lg;
