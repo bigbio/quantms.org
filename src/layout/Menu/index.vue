@@ -3,7 +3,7 @@
     <div class="nav-container">
       <div class="nav-logo">
         <router-link to="/">
-          <el-image :src="logo" fit="contain" class="logo-image" alt="QuantMS Logo" />
+          <el-image :src="logo" fit="contain" class="logo-image" alt="quantms Logo" />
         </router-link>
       </div>
 

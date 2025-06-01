@@ -1,6 +1,8 @@
 <template>
   <div class="publications-page">
+    <MetaTags />
     <section class="publications-section">
+      <h1 class="section-title">Publications</h1>
       <div class="publication-category container">
         <h2 class="category-title">Main Publication</h2>
         <div class="publication-card">
@@ -47,6 +49,28 @@
                     </td>
                     <td class="link-column">
                       <a href="https://doi.org/10.1016/j.jprot.2025.105440" target="_blank" class="publication-link">
+                        <el-button type="primary" size="small">View</el-button>
+                      </a>
+                    </td>
+                  </tr>
+
+                  <!-- 2024 Publications -->
+                  <tr>
+                    <td>
+                      <p class="citation-text">
+                        Arecco N, Mocavini I, Blanco E, Ballaré C, Libman E, Bonnal S, Irimia M, Di Croce L. (2024). Alternative splicing decouples local from global PRC2 activity. <em>Molecular Cell</em>, 84(6):1049-1061.e8. doi: 10.1016/j.molcel.2024.02.011. PMID: 38452766
+                        <el-tooltip
+                          content="This manuscript uses the proteomicslfq pipeline, an early version of quantms"
+                          placement="top"
+                          effect="light"
+                        >
+                          <span class="tooltip-trigger">*</span>
+                        </el-tooltip>
+                        .
+                      </p>
+                    </td>
+                    <td class="link-column">
+                      <a href="https://doi.org/10.1016/j.molcel.2024.02.011" target="_blank" class="publication-link">
                         <el-button type="primary" size="small">View</el-button>
                       </a>
                     </td>
@@ -138,7 +162,7 @@
             </div>
           </el-tab-pane>
 
-          <el-tab-pane label="Using quantms (3)">
+          <el-tab-pane label="Using quantms (5)">
             <div class="publications-table-container">
               <table class="publications-table">
                 <thead>
@@ -149,14 +173,23 @@
                 </thead>
                 <tbody>
                   <!-- Publications using quantms framework -->
+                  <!-- 2025 Publications -->
                   <tr>
                     <td>
                       <p class="citation-text">
-                        Truong P, The M, Käll L. (2023). Triqler for Protein Summarization of Data from Data-Independent Acquisition Mass Spectrometry. <em>J Proteome Res</em>, 22(4):1359-1366. doi: 10.1021/acs.jproteome.2c00607. PMID: 36988210; PMCID: PMC10088044.
+                        Bernardo Harrington GM, Cool P, Hulme C, Fisher-Stokes J, Peffers M, Masri WE, Osman A, Chowdhury JR, Kumar N, Budithi S, Wright K. (2025). A Comprehensive Proteomic and Bioinformatic Analysis of Human Spinal Cord Injury Plasma Identifies Proteins Associated with the Complement Cascade and Liver Function as Potential Prognostic Indicators of Neurological Outcome. <em>Journal of Neurotrauma</em>, 42(3-4):292-306. doi: 10.1089/neu.2023.0064. PMID: 39636693
+                        <el-tooltip
+                          content="This manuscript uses the proteomicslfq pipeline, an early version of quantms"
+                          placement="top"
+                          effect="light"
+                        >
+                          <span class="tooltip-trigger">*</span>
+                        </el-tooltip>
+                        .
                       </p>
                     </td>
                     <td class="link-column">
-                      <a href="https://doi.org/10.1021/acs.jproteome.2c00607" target="_blank" class="publication-link">
+                      <a href="https://doi.org/10.1089/neu.2023.0064" target="_blank" class="publication-link">
                         <el-button type="primary" size="small">View</el-button>
                       </a>
                     </td>
@@ -183,6 +216,42 @@
                     </td>
                     <td class="link-column">
                       <a href="https://doi.org/10.1016/j.envpol.2025.126214" target="_blank" class="publication-link">
+                        <el-button type="primary" size="small">View</el-button>
+                      </a>
+                    </td>
+                  </tr>
+
+                  <!-- 2024 Publications -->
+                  <tr>
+                    <td>
+                      <p class="citation-text">
+                        Arecco N, Mocavini I, Blanco E, Ballaré C, Libman E, Bonnal S, Irimia M, Di Croce L. (2024). Alternative splicing decouples local from global PRC2 activity. <em>Molecular Cell</em>, 84(6):1049-1061.e8. doi: 10.1016/j.molcel.2024.02.011. PMID: 38452766
+                        <el-tooltip
+                          content="This manuscript uses the proteomicslfq pipeline, an early version of quantms"
+                          placement="top"
+                          effect="light"
+                        >
+                          <span class="tooltip-trigger">*</span>
+                        </el-tooltip>
+                        .
+                      </p>
+                    </td>
+                    <td class="link-column">
+                      <a href="https://doi.org/10.1016/j.molcel.2024.02.011" target="_blank" class="publication-link">
+                        <el-button type="primary" size="small">View</el-button>
+                      </a>
+                    </td>
+                  </tr>
+
+                  <!-- 2023 Publications -->
+                  <tr>
+                    <td>
+                      <p class="citation-text">
+                        Truong P, The M, Käll L. (2023). Triqler for Protein Summarization of Data from Data-Independent Acquisition Mass Spectrometry. <em>J Proteome Res</em>, 22(4):1359-1366. doi: 10.1021/acs.jproteome.2c00607. PMID: 36988210; PMCID: PMC10088044.
+                      </p>
+                    </td>
+                    <td class="link-column">
+                      <a href="https://doi.org/10.1021/acs.jproteome.2c00607" target="_blank" class="publication-link">
                         <el-button type="primary" size="small">View</el-button>
                       </a>
                     </td>
@@ -224,6 +293,7 @@
 </template>
 
 <script setup>
+import MetaTags from '@/components/MetaTags.vue';
 // Publications page component
 </script>
 
@@ -354,6 +424,13 @@
 
 .citation-text em {
   font-style: italic;
+}
+
+.tooltip-trigger {
+  color: $primary-color;
+  cursor: help;
+  font-weight: bold;
+  margin-left: 2px;
 }
 
 .link-column {

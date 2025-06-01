@@ -35,6 +35,7 @@ declare module 'vue' {
     ElText: typeof import('element-plus/es')['ElText']
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
     GitHubContributors: typeof import('./components/GitHubContributors/index.vue')['default']
+    MetaTags: typeof import('./components/MetaTags.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Table: typeof import('./components/Table/index.vue')['default']

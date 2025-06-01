@@ -1,5 +1,6 @@
 <template>
   <div class="about-page">
+    <MetaTags />
     <section class="about-section">
       <h1 class="section-title">About Us</h1>
 
@@ -215,6 +216,7 @@
 </template>
 
 <script setup>
+import MetaTags from '@/components/MetaTags.vue';
 import ebiLogo from "@/assets/icons/ebi.jpg";
 import openMSLogo from "@/assets/icons/openMS.png";
 import cquptLogo from "@/assets/icons/cqupt.jpg";
