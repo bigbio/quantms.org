@@ -65,8 +65,8 @@
           quantms: a cloud-based pipeline for quantitative proteomics enables the reanalysis of public proteomics data.
           Nat Methods. 2024 Sep;21(9):1603-1607. doi: 10.1038/s41592-024-02343-1. Epub 2024 Jul 4.
           PMID: 38965444; PMCID: PMC11399091.
-          <a href="https://doi.org/10.1038/s41592-024-02343-1" class="citation-link">
-            [https://doi.org/10.1038/s41592-024-02343-1]
+          doi: <a href="https://doi.org/10.1038/s41592-024-02343-1" class="citation-link">
+            10.1038/s41592-024-02343-1
           </a>
         </blockquote>
       </div>
@@ -184,12 +184,12 @@ const initCharts = () => {
     proteinsPerProjectInstance = echarts.init(proteinsPerProjectChart.value);
     initProteinsPerProjectChart();
   }
-  
+
   if (peptidesPerProjectChart.value) {
     peptidesPerProjectInstance = echarts.init(peptidesPerProjectChart.value);
     initPeptidesPerProjectChart();
   }
-  
+
   if (proteinsPerTissueChart.value) {
     proteinsPerTissueInstance = echarts.init(proteinsPerTissueChart.value);
     initProteinsPerTissueChart();
@@ -564,11 +564,11 @@ onUnmounted(() => {
 
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
-    
+
     @media (max-width: $breakpoint-lg) {
       grid-template-columns: repeat(2, 1fr);
     }
-    
+
     @media (max-width: $breakpoint-sm) {
       grid-template-columns: 1fr;
     }
@@ -581,7 +581,7 @@ onUnmounted(() => {
   padding: $spacing-lg;
   transition: $transition-base;
   height: 100%;
-  
+
   &:hover {
     transform: translateY(-2px);
   }
