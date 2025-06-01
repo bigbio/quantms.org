@@ -16,30 +16,55 @@
           </div>
         </div>
         
-        <div class="datasets-table">
-          <Table
-            :modelValue="filterTable"
-            @update:modelValue="fullTable = $event"
-          ></Table>
+        <div class="datasets-tabs">
+          <el-tabs type="border-card">
+            <el-tab-pane label="Absolute Expression">
+              <div class="datasets-table">
+                <Table
+                  :modelValue="filterAbsoluteTable"
+                  @update:modelValue="tableDataAE = $event"
+                ></Table>
+              </div>
+            </el-tab-pane>
+            
+            <el-tab-pane label="Differential Expression">
+              <div class="datasets-table">
+                <Table
+                  :modelValue="filterDifferentialTable"
+                  @update:modelValue="tableDataDE = $event"
+                ></Table>
+              </div>
+            </el-tab-pane>
+            
+            <el-tab-pane label="Single Cell">
+              <div class="datasets-table">
+                <Table
+                  :modelValue="filterSingleCellTable"
+                  @update:modelValue="tableDataSingleCell = $event"
+                ></Table>
+              </div>
+            </el-tab-pane>
+          </el-tabs>
         </div>
       </div>
     </section>
   </div>
 </template>
+
 <script setup>
 import { Search } from "@element-plus/icons-vue";
 import Table from "@/components/Table/index.vue";
-import { ref, onMounted,computed } from "vue";
+import { ref, onMounted, computed } from "vue";
 import {
   getAbsolueExpression,
   getDifferentialExpression,
   getSingleCellExpression,
 } from "@/api/getTable";
+
 const tableDataAE = ref([]);
 const tableDataDE = ref([]);
 const tableDataSingleCell = ref([]);
-// const table = ref([])
-const fullTable = ref([]);
+const searchProject = ref('');
 
 const initTable = async () => {
   const AE = await getAbsolueExpression();
@@ -48,26 +73,40 @@ const initTable = async () => {
   tableDataDE.value = DE.data;
   const SingleCell = await getSingleCellExpression();
   tableDataSingleCell.value = SingleCell.data;
-  fullTable.value = [...AE.data, ...DE.data, ...SingleCell.data];
-
 };
 
-
-
-const searchProject = ref('');
-const filterTable = computed(() =>
-  fullTable.value.filter(
+const filterAbsoluteTable = computed(() =>
+  tableDataAE.value.filter(
     (data) =>
       !searchProject.value ||
       data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase()) ||
       data.category.toLowerCase().includes(searchProject.value.toLowerCase())
   )
-)
+);
+
+const filterDifferentialTable = computed(() =>
+  tableDataDE.value.filter(
+    (data) =>
+      !searchProject.value ||
+      data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase()) ||
+      data.category.toLowerCase().includes(searchProject.value.toLowerCase())
+  )
+);
+
+const filterSingleCellTable = computed(() =>
+  tableDataSingleCell.value.filter(
+    (data) =>
+      !searchProject.value ||
+      data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase()) ||
+      data.category.toLowerCase().includes(searchProject.value.toLowerCase())
+  )
+);
 
 onMounted(() => {
   initTable();
 });
 </script>
+
 <style lang="scss" scoped>
 .datasets-page {
   padding: $spacing-md 0;
@@ -117,5 +156,11 @@ onMounted(() => {
 
 .datasets-table {
   margin-top: $spacing-md;
+}
+
+.datasets-tabs {
+  :deep(.el-tabs__content) {
+    padding: $spacing-md;
+  }
 }
 </style>
