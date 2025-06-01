@@ -1,6 +1,5 @@
 <template>
   <div class="publications-page">
-    <MetaTags />
     <section class="publications-section">
       <h1 class="section-title">Publications</h1>
       <div class="publication-category container">
@@ -293,7 +292,11 @@
 </template>
 
 <script setup>
-import MetaTags from '@/components/MetaTags.vue';
+import { useMetaTags } from '@/composables/useMetaTags';
+
+// Initialize meta tags
+useMetaTags();
+
 // Publications page component
 </script>
 

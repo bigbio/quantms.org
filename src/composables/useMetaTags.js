@@ -1,13 +1,5 @@
-<template>
-  <div v-if="false"><!-- Meta component doesn't render anything visible --></div>
-</template>
-
-<script setup>
-import { ref, onMounted } from 'vue';
+import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
-
-const route = useRoute();
-const baseUrl = 'https://quantms.org';
 
 // Default meta information
 const defaultMeta = {
@@ -15,7 +7,7 @@ const defaultMeta = {
   description: 'quantms is a bioinformatics best-practice analysis pipeline for Quantitative Mass Spectrometry (MS), including DDA-LFQ, plexDDA (TMT, iTRAQ), and DIA.',
   keywords: 'quantms, proteomics, mass spectrometry, bioinformatics, DDA-LFQ, TMT, iTRAQ, DIA, OpenMS',
   author: 'Yasset Perez-Riverol, Timo Sachsenberg, Mingze Bai, Chengxin Dai',
-  image: `${baseUrl}/logo.png`
+  image: 'https://quantms.org/logo.png'
 };
 
 // Route-specific meta information
@@ -37,35 +29,6 @@ const routeMeta = {
     keywords: 'quantms team, proteomics pipeline, development team, contributors',
   }
 };
-
-onMounted(() => {
-  // Get meta info for current route
-  const meta = routeMeta[route.path] || defaultMeta;
-
-  // Update meta tags
-  document.title = meta.title;
-  updateMetaTag('description', meta.description);
-  updateMetaTag('keywords', meta.keywords);
-  updateMetaTag('author', meta.author || defaultMeta.author);
-
-  // Open Graph meta tags
-  updateMetaTag('og:title', meta.title);
-  updateMetaTag('og:description', meta.description);
-  updateMetaTag('og:image', meta.image || defaultMeta.image);
-  updateMetaTag('og:url', `${baseUrl}${route.path}`);
-  updateMetaTag('og:type', 'website');
-
-  // Twitter Card meta tags
-  updateMetaTag('twitter:card', 'summary_large_image');
-  updateMetaTag('twitter:title', meta.title);
-  updateMetaTag('twitter:description', meta.description);
-  updateMetaTag('twitter:image', meta.image || defaultMeta.image);
-
-  // Schema.org structured data
-  if (route.path === '/publications') {
-    addSchemaOrgScript();
-  }
-});
 
 // Helper function to update meta tags
 const updateMetaTag = (name, content) => {
@@ -153,5 +116,4 @@ export function useMetaTags() {
       addSchemaOrgScript();
     }
   });
-}
-</script> 
+} 
