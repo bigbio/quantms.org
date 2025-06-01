@@ -12,14 +12,20 @@ $text-light-color: #666;
 $text-lighter-color: #999;
 
 $border-color: #dcdfe6;
+$border-color-base: #dcdfe6;
 $background-color: #f5f7fa;
 
 $white: #fff;
 $black: #000;
 $link-color: $primary-color;
 
+// Layout
+$header-height: 60px;  // Added for Menu component
+$sidebar-width: 240px;
+
 // Typography
-$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: $font-family;
 $font-size-base: 14px;
 $font-size-lg: 16px;
 $font-size-sm: 12px;
@@ -37,11 +43,19 @@ $spacing-md: 16px;
 $spacing-lg: 24px;
 $spacing-xl: 32px;
 $spacing-2xl: 48px;
+$spacing-xxl: 64px;
 
 // Border radius
 $border-radius: 4px;
 $border-radius-sm: 2px;
 $border-radius-lg: 8px;
+
+// Z-index
+$z-index-header: 1000;
+$z-index-dropdown: 1050;
+$z-index-modal: 1060;
+$z-index-popover: 1070;
+$z-index-tooltip: 1080;
 
 // Transitions
 $transition-base: all 0.3s ease;
