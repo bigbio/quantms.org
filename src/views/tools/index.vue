@@ -128,6 +128,26 @@
             </div>
           </div>
         </el-card>
+
+        <!-- quantms-rescoring -->
+        <el-card class="tool-card" :body-style="{ padding: '0px' }" shadow="hover">
+          <div class="tool-header rescoring-color">
+            <h2 class="tool-title">quantms-rescoring</h2>
+          </div>
+          <div class="tool-content">
+            <p class="tool-description">
+              A Python tool that adds features to peptide-spectrum matches (PSMs) in idXML files using multiple tools including MS2PIP and DeepLC. It leverages the MS²Rescore framework to improve identification confidence in proteomics data analysis.
+            </p>
+            <div class="tool-links">
+              <a href="https://github.com/bigbio/quantms-rescoring" target="_blank" class="tool-link">
+                <el-button type="primary" plain>
+                  <el-icon><Link /></el-icon>
+                  GitHub
+                </el-button>
+              </a>
+            </div>
+          </div>
+        </el-card>
       </div>
     </section>
   </div>
@@ -216,6 +236,10 @@ import { Link, Reading } from '@element-plus/icons-vue';
 
 .quantms-color {
   background-color: #9b59b6;
+}
+
+.rescoring-color {
+  background-color: #f39c12;
 }
 
 .tool-title {
