@@ -33,6 +33,11 @@ const routes = [
         ]
       },
       {
+        path: '/tools',
+        name: 'tools',
+        component: () => import('@/views/tools')
+      },
+      {
         path: '/home',
         name: 'home',
         component: () => import('@/views/home')
