@@ -16,21 +16,41 @@ const routes = [
         component: () => import('@/views/information')
       },
       {
-        path: '/ae',
+        path: '/baseline',
         name: 'overview',
         component: () => import('@/views/overview'),
         children: [
           {
-            path: '/ae/tissues',
+            path: '/baseline/tissues',
             name: 'tissues',
+            component: () => import('@/components/AeShow')
+          },
+          {
+            path: '/baseline/cellline',
+            name: 'cellline',
             component: () => import('@/components/AeShow')
           }
         ]
       },
       {
+        path: '/tools',
+        name: 'tools',
+        component: () => import('@/views/tools')
+      },
+      {
         path: '/home',
         name: 'home',
         component: () => import('@/views/home')
+      },
+      {
+        path: '/publications',
+        name: 'publications',
+        component: () => import('@/views/publications')
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: () => import('@/views/about')
       }
     ]
   }
