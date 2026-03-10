@@ -1,0 +1,2396 @@
+[
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "HuiYan-Bat",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/HuiYan-Bat/"
+      }
+    ],
+    "Accession": {
+      "id": "HuiYan-Bat",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Rhinolophus sinicus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "timsTOF",
+    "FragmentMethod": "HCD@43",
+    "Enzyme": "Trypsin",
+    "PSM": 2334922,
+    "msruns": 40
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "HuiYan-E480",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/HuiYan-E480/"
+      }
+    ],
+    "Accession": {
+      "id": "HuiYan-E480",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Exploris 480",
+    "FragmentMethod": "HCD@28",
+    "Enzyme": "Trypsin",
+    "PSM": 58527901,
+    "msruns": 763
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0000937001",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0000937001/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0000937001",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@32",
+    "Enzyme": "Trypsin",
+    "PSM": 24924726,
+    "msruns": 1344
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0000937003",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0000937003/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0000937003",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@32.0",
+    "Enzyme": "Trypsin",
+    "PSM": 6551233,
+    "msruns": 585
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0001289001",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001289001/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0001289001",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@32.0",
+    "Enzyme": "Trypsin",
+    "PSM": 17387674,
+    "msruns": 1139
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0001590001",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001590001/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0001590001",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 7488098,
+    "msruns": 659
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0001804001",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001804001/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0001804001",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@32.00",
+    "Enzyme": "Trypsin",
+    "PSM": 23982246,
+    "msruns": 2136
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0001804002",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001804002/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0001804002",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@32.0",
+    "Enzyme": "Trypsin",
+    "PSM": 1426890,
+    "msruns": 451
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0002031000",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0002031000/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0002031000",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 27013882,
+    "msruns": 724
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "IPX0004073001",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0004073001/"
+      }
+    ],
+    "Accession": {
+      "id": "IPX0004073001",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1018214,
+    "msruns": 120
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD000561",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000561/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD000561",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 10334261,
+    "msruns": 2187
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD000612",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000612/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD000612",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 6416764,
+    "msruns": 231
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD000865",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000865-Chymotrypsin/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD000865",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "LTQ Orbitrap Velos",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Chymotrypsin",
+    "PSM": 148896,
+    "msruns": 168
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD000865",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000865-LysC/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD000865",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "LTQ Orbitrap Elite",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Lys-C",
+    "PSM": 529187,
+    "msruns": 120
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD000865",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000865/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD000865",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "LTQ Orbitrap Velos",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 4990620,
+    "msruns": 767
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD002137",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002137/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD002137",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 18775812,
+    "msruns": 192
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD002395",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002395/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD002395",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "LTQ Orbitrap Velos",
+    "FragmentMethod": "HCD@40.00",
+    "Enzyme": "Trypsin",
+    "PSM": 3796473,
+    "msruns": 198
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD002767",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002767/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD002767",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Solanum tuberosum",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 2666095,
+    "msruns": 297
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD002854",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002854/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD002854",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 548653,
+    "msruns": 174
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD003903",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD003903/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD003903",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 7325444,
+    "msruns": 335
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD003947",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD003947/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD003947",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 740197,
+    "msruns": 103
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD004242",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004242/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD004242",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 5197467,
+    "msruns": 1289
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD004452",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004452-GluC/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD004452",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Gluc",
+    "PSM": 154347,
+    "msruns": 39
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD004452",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004452/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD004452",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 5495744,
+    "msruns": 789
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD004732",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004732/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD004732",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@35.00",
+    "Enzyme": "Trypsin",
+    "PSM": 14298028,
+    "msruns": 538
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD006225",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD006225/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD006225",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Drosophila melanogaster",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 536276,
+    "msruns": 31
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD006675",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD006675/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD006675",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 9272915,
+    "msruns": 585
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD008333",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD008333/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD008333",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 2036467,
+    "msruns": 201
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD008722",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD008722/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD008722",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 3642440,
+    "msruns": 252
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD008840",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD008840/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD008840",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@32.00",
+    "Enzyme": "Trypsin",
+    "PSM": 9733821,
+    "msruns": 504
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD009348",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009348/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD009348",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 386933,
+    "msruns": 163
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD009449",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009449-CID/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD009449",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "CID@35.00",
+    "Enzyme": "Trypsin",
+    "PSM": 201402,
+    "msruns": 26
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD009449",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009449-HCD/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD009449",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 697583,
+    "msruns": 39
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD009737",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009737-GluC/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD009737",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Gluc",
+    "PSM": 349187,
+    "msruns": 36
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD009737",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009737-LysC/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD009737",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Lys-C",
+    "PSM": 430334,
+    "msruns": 36
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD009737",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009737-Trypsin/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD009737",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 573528,
+    "msruns": 36
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD010154",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010154/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD010154",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 16819411,
+    "msruns": 1364
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD010595",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010595/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD010595",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@20.00",
+    "Enzyme": "Trypsin",
+    "PSM": 8840962,
+    "msruns": 384
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD010899",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010899/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD010899",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1570723,
+    "msruns": 1803
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD010957",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010957/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD010957",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 22686367,
+    "msruns": 1437
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012131",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012131/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012131",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 4563808,
+    "msruns": 311
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012174",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012174/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012174",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "LTQ Orbitrap Velos",
+    "FragmentMethod": "CID@35.00",
+    "Enzyme": "Trypsin",
+    "PSM": 15621996,
+    "msruns": 1194
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012636",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Danio-rerio/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012636",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Danio rerio",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 98759,
+    "msruns": 58
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012636",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Horse/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012636",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Equus caballus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 134634,
+    "msruns": 124
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012636",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Mouse/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012636",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1568361,
+    "msruns": 120
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012636",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Pig/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012636",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Sus scrofa domesticus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 417991,
+    "msruns": 120
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012636",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Rat/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012636",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Rattus norvegicus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 937801,
+    "msruns": 120
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD012636",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Homo/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD012636",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@28.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1132652,
+    "msruns": 89
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD013231",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD013231/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD013231",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 468370,
+    "msruns": 105
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD013868",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD013868/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD013868",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Arabidopsis",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 17606574,
+    "msruns": 1435
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bacteroides_Fragilis/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Bacteroides Fragilis",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 51628,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bacteroides_Uniformis/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Bacteroides Uniformis",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 54455,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bifidobacterium_longum/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Bifidobacterium Longum Subsp Longum",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 21831,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Chromera/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Chromera velia",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 68644,
+    "msruns": 5
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Clostridium_Bolteae/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Clostridium Bolteae",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 30124,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Clostridium_Saccharolyticum/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Clostridium saccharolyticum",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 32736,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Collinsella_aerofacien/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Collinsella Aerofaciens",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 28061,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Danio-rerio/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Danio rerio",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 340169,
+    "msruns": 7
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Eggerthella_Lenta/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Eggerthella Lenta",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 11032,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Fusarium_oxysporum/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Fusarium oxysporum",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 185361,
+    "msruns": 11
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Fusobacterium/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Fusobacterium Nucleatum Subsp Nucleatum",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 26424,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Gallus_Gallus/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Gallus Gallus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 294035,
+    "msruns": 8
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/XD014877-Gossypium/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Gossypium hirsutum",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 248653,
+    "msruns": 8
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Halobacterium/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Halobacterium sp",
+    "Superkingdom": "Archea",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 31395,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Lactobacillus/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Lactobacillus Paracasei",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 340169,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Mus-Musculus/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 267991,
+    "msruns": 7
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Mycoplasmen/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mycoplasmen",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 3608,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Neurospora/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Neurospora Crassa",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 78622,
+    "msruns": 7
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Odoribacter/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Odoribacter splanchnicus",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 40367,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Parabacteroiders_Distasonis/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Parabacteroides Distasonis",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 34529,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Parabacteroiders_Merdae/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Parabacteroides Merdae",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 39236,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Phaeodactylum/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Phaeodactylum tricornutum ",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 126526,
+    "msruns": 7
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Prevotella/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Prevotella Copri",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 31720,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/XD014877-Roseburia/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Roseburia Intestinalis",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 17139,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Ruminococcus_Bromii/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Ruminococcus Bromii",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 20232,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Ruminococcus_gnavus/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Ruminococcus Gnavus",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 27689,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Streptococuus_Parasanguinis/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Streptococcus Parasanguinis",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 26601,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Sulfolobus_solfataricus/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Sulfolobus solfataricus",
+    "Superkingdom": "Archea",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1926,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Symbiodinium_microadriaticum/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Symbiodinium microadriaticum",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 4310,
+    "msruns": 5
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Triticum_aestivum/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Triticum aestivum",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 265766,
+    "msruns": 7
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Veillonella_parvula/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Veillonella parvula",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 30734,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Vitris_vinifera/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Vitris vinifera",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 203696,
+    "msruns": 7
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/XD014877-Akkermansia_muciniphilia/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Akkermansia muciniphilia",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 22013,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bacteroides_Thetaiotaomicron/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Bacteroides Thetaiotaomicron",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 50460,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Drosophila/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Drosophila",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 217125,
+    "msruns": 8
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD014877",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Ruminococcus_torques/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD014877",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Ruminococcus Torques",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 20811,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD016986",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD016986/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD016986",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Riftia pachyptila",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "LTQ Orbitrap Velos",
+    "FragmentMethod": "CID@35.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1973461,
+    "msruns": 349
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD018830",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD018830/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD018830",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 2527193,
+    "msruns": 276
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_hCOV/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "hCOV",
+    "Superkingdom": "Virus",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 151,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_VSV/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "HSV",
+    "Superkingdom": "Virus",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 3288,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_LACV/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "LACV",
+    "Superkingdom": "Virus",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 2339,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_RVFV/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "RVFV",
+    "Superkingdom": "Virus",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1429,
+    "msruns": 2
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_VSV/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "VSV",
+    "Superkingdom": "Virus",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 819,
+    "msruns": 1
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_ZIKV/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "ZIKV",
+    "Superkingdom": "Virus",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 835,
+    "msruns": 2
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019483",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019483",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 4001686,
+    "msruns": 111
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD019643",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019643/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD019643",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "unspecific cleavage",
+    "PSM": 4290071,
+    "msruns": 719
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD020192",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD020192/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD020192",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 7649835,
+    "msruns": 91
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD021013",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD021013/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD021013",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@23.00",
+    "Enzyme": "unspecific cleavage",
+    "PSM": 16314438,
+    "msruns": 996
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD022469",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD022469/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD022469",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@27.50",
+    "Enzyme": "Trypsin",
+    "PSM": 696434,
+    "msruns": 383
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD024364",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD024364-LysC/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD024364",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Lys-C",
+    "PSM": 509465,
+    "msruns": 30
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD024364",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD024364-Trypsin/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD024364",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 7120784,
+    "msruns": 281
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD028735",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD028735-Ecoli/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD028735",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Escherichia coli",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 99467,
+    "msruns": 39
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD028735",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD028735-Homo/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD028735",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF-X",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 1511325,
+    "msruns": 45
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD030348",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD030348/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD030348",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 6483317,
+    "msruns": 284
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD030983",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD030983/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD030983",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 30714490,
+    "msruns": 2137
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD040266",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD040266/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD040266",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "timsTOF",
+    "FragmentMethod": "CID@43",
+    "Enzyme": "Trypsin",
+    "PSM": 896379,
+    "msruns": 48
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD010429",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010429/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD010429",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 2578074,
+    "msruns": 696
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD005478",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD005478/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD005478",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mycobacterium tuberculosis",
+    "Superkingdom": "Prokaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@38",
+    "Enzyme": "Trypsin",
+    "PSM": 2013520,
+    "msruns": 582
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD002899",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002899/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD002899",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Xenopus laevis",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@27.00",
+    "Enzyme": "Trypsin",
+    "PSM": 3498190,
+    "msruns": 357
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD004352",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004352/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD004352",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive Plus",
+    "FragmentMethod": "HCD@26",
+    "Enzyme": "Trypsin",
+    "PSM": 1208405,
+    "msruns": 455
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD025555",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD025555/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD025555",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Orbitrap Fusion Lumos",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 9620961,
+    "msruns": 797
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD005526",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD005526/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD005526",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Mus musculus",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "Trypsin",
+    "PSM": 13527205,
+    "msruns": 395
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD021398",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD021398/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD021398",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Homo sapiens",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive",
+    "FragmentMethod": "HCD@25.00",
+    "Enzyme": "unspecific cleavage",
+    "PSM": 4305190,
+    "msruns": 566
+  },
+  {
+    "reanalysis": [
+      {
+        "id": 1,
+        "title": "PXD034656",
+        "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD034656/"
+      }
+    ],
+    "Accession": {
+      "id": "PXD034656",
+      "path": ""
+    },
+    "category": "π-MSNet",
+    "Species": "Saccharomyces cerevisia",
+    "Superkingdom": "Eukaryote",
+    "Instrument": "Q Exactive HF",
+    "FragmentMethod": "HCD@30.00",
+    "Enzyme": "Trypsin",
+    "PSM": 3264025,
+    "msruns": 639
+  }
+]
