@@ -21,6 +21,14 @@ export const getSingleCellExpression = () => {
     })
 }
 
+export const getMSNet = () => {
+  return request(
+    {
+      url: '/data/MSNet.json',
+      method: 'get'
+    })
+}
+
 // Function to fetch dataset details from PRIDE API
 export const getPrideDatasetDetails = (accessionId) => {
   return request({
@@ -33,6 +41,13 @@ export const getPrideDatasetDetails = (accessionId) => {
 export const getProxiDatasetDetails = (accessionId) => {
   return request({
     url: `http://proteomecentral.proteomexchange.org/api/dataset/${accessionId}`,
+    method: 'get'
+  });
+};
+
+export const getMSNetDatasetDetails = (accessionPath) => {
+  return request({
+    url: accessionPath,
     method: 'get'
   });
 };

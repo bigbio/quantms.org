@@ -44,6 +44,15 @@
                 ></Table>
               </div>
             </el-tab-pane>
+
+            <el-tab-pane label="MSNet Datasets">
+              <div class="datasets-table">
+                <MSNetTable
+                  :modelValue="filterMSNetTable"
+                  @update:modelValue="tableDataMSNet = $event"
+                ></MSNetTable>
+              </div>
+            </el-tab-pane>
           </el-tabs>
         </div>
       </div>
@@ -54,16 +63,19 @@
 <script setup>
 import { Search } from "@element-plus/icons-vue";
 import Table from "@/components/Table/index.vue";
+import MSNetTable from "@/components/MSNetShow/index.vue";
 import { ref, onMounted, computed } from "vue";
 import {
   getAbsolueExpression,
   getDifferentialExpression,
   getSingleCellExpression,
+  getMSNet,
 } from "@/api/getTable";
 
 const tableDataAE = ref([]);
 const tableDataDE = ref([]);
 const tableDataSingleCell = ref([]);
+const tableDataMSNet = ref([]);
 const searchProject = ref('');
 
 const initTable = async () => {
@@ -73,6 +85,8 @@ const initTable = async () => {
   tableDataDE.value = DE.data;
   const SingleCell = await getSingleCellExpression();
   tableDataSingleCell.value = SingleCell.data;
+  const MSNet = await getMSNet();
+  tableDataMSNet.value = MSNet.data;
 };
 
 const filterAbsoluteTable = computed(() =>
@@ -95,6 +109,15 @@ const filterDifferentialTable = computed(() =>
 
 const filterSingleCellTable = computed(() =>
   tableDataSingleCell.value.filter(
+    (data) =>
+      !searchProject.value ||
+      data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase()) ||
+      data.category.toLowerCase().includes(searchProject.value.toLowerCase())
+  )
+);
+
+const filterMSNetTable = computed(() =>
+  tableDataMSNet.value.filter(
     (data) =>
       !searchProject.value ||
       data.accession.id.toLowerCase().includes(searchProject.value.toLowerCase()) ||
