@@ -323,8 +323,8 @@ const handleExpandChange = async (row, expandedRows) => {
         details = {
           title: response.data.title,
           description: response.data.description,
-          labHead: response.data.principal_investigator,
-          submitter: response.data.submitter
+          labPIs: response.data.principal_investigator,
+          submitters: response.data.submitter
         };
       }
       datasetDetails.value[row.accession.id] = details;
