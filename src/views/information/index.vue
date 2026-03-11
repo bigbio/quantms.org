@@ -47,10 +47,10 @@
 
             <el-tab-pane label="MSNet Datasets">
               <div class="datasets-table">
-                <Table
+                <MSNetTable
                   :modelValue="filterMSNetTable"
                   @update:modelValue="tableDataMSNet = $event"
-                ></Table>
+                ></MSNetTable>
               </div>
             </el-tab-pane>
           </el-tabs>
@@ -63,6 +63,7 @@
 <script setup>
 import { Search } from "@element-plus/icons-vue";
 import Table from "@/components/Table/index.vue";
+import MSNetTable from "@/components/MSNetShow/index.vue";
 import { ref, onMounted, computed } from "vue";
 import {
   getAbsolueExpression,
@@ -84,8 +85,8 @@ const initTable = async () => {
   tableDataDE.value = DE.data;
   const SingleCell = await getSingleCellExpression();
   tableDataSingleCell.value = SingleCell.data;
-  const tableDataMSNet = await getMSNet();
-  tableDataMSNet.value = tableDataMSNet.data;
+  const MSNet = await getMSNet();
+  tableDataMSNet.value = MSNet.data;
 };
 
 const filterAbsoluteTable = computed(() =>

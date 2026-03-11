@@ -7,7 +7,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/HuiYan-Bat/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "HuiYan-Bat",
       "path": ""
     },
@@ -18,7 +18,7 @@
     "FragmentMethod": "HCD@43",
     "Enzyme": "Trypsin",
     "PSM": 2334922,
-    "msruns": 40
+    "Msruns": 40
   },
   {
     "reanalysis": [
@@ -28,7 +28,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/HuiYan-E480/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "HuiYan-E480",
       "path": ""
     },
@@ -39,7 +39,7 @@
     "FragmentMethod": "HCD@28",
     "Enzyme": "Trypsin",
     "PSM": 58527901,
-    "msruns": 763
+    "Msruns": 763
   },
   {
     "reanalysis": [
@@ -49,9 +49,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0000937001/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0000937001",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD006512"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -60,7 +60,7 @@
     "FragmentMethod": "HCD@32",
     "Enzyme": "Trypsin",
     "PSM": 24924726,
-    "msruns": 1344
+    "Msruns": 1344
   },
   {
     "reanalysis": [
@@ -70,9 +70,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0000937003/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0000937003",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD006512"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -81,7 +81,7 @@
     "FragmentMethod": "HCD@32.0",
     "Enzyme": "Trypsin",
     "PSM": 6551233,
-    "msruns": 585
+    "Msruns": 585
   },
   {
     "reanalysis": [
@@ -91,9 +91,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001289001/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0001289001",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD011821"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -102,7 +102,7 @@
     "FragmentMethod": "HCD@32.0",
     "Enzyme": "Trypsin",
     "PSM": 17387674,
-    "msruns": 1139
+    "Msruns": 1139
   },
   {
     "reanalysis": [
@@ -112,9 +112,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001590001/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0001590001",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD014404"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -123,7 +123,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 7488098,
-    "msruns": 659
+    "Msruns": 659
   },
   {
     "reanalysis": [
@@ -133,9 +133,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001804001/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0001804001",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD020252"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -144,7 +144,7 @@
     "FragmentMethod": "HCD@32.00",
     "Enzyme": "Trypsin",
     "PSM": 23982246,
-    "msruns": 2136
+    "Msruns": 2136
   },
   {
     "reanalysis": [
@@ -154,9 +154,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0001804002/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0001804002",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD020252"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -165,7 +165,7 @@
     "FragmentMethod": "HCD@32.0",
     "Enzyme": "Trypsin",
     "PSM": 1426890,
-    "msruns": 451
+    "Msruns": 451
   },
   {
     "reanalysis": [
@@ -175,9 +175,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0002031000/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0002031000",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD038732"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -186,7 +186,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 27013882,
-    "msruns": 724
+    "Msruns": 724
   },
   {
     "reanalysis": [
@@ -196,9 +196,9 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/IPX0004073001/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "IPX0004073001",
-      "path": ""
+      "path": "http://proteomecentral.proteomexchange.org/api/dataset/PXD031498"
     },
     "category": "π-MSNet",
     "Species": "Homo sapiens",
@@ -207,7 +207,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 1018214,
-    "msruns": 120
+    "Msruns": 120
   },
   {
     "reanalysis": [
@@ -217,7 +217,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000561/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD000561",
       "path": ""
     },
@@ -228,7 +228,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 10334261,
-    "msruns": 2187
+    "Msruns": 2187
   },
   {
     "reanalysis": [
@@ -238,7 +238,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000612/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD000612",
       "path": ""
     },
@@ -249,7 +249,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 6416764,
-    "msruns": 231
+    "Msruns": 231
   },
   {
     "reanalysis": [
@@ -259,7 +259,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000865-Chymotrypsin/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD000865",
       "path": ""
     },
@@ -270,7 +270,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Chymotrypsin",
     "PSM": 148896,
-    "msruns": 168
+    "Msruns": 168
   },
   {
     "reanalysis": [
@@ -280,7 +280,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000865-LysC/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD000865",
       "path": ""
     },
@@ -291,7 +291,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Lys-C",
     "PSM": 529187,
-    "msruns": 120
+    "Msruns": 120
   },
   {
     "reanalysis": [
@@ -301,7 +301,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD000865/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD000865",
       "path": ""
     },
@@ -312,7 +312,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 4990620,
-    "msruns": 767
+    "Msruns": 767
   },
   {
     "reanalysis": [
@@ -322,7 +322,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002137/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD002137",
       "path": ""
     },
@@ -333,7 +333,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 18775812,
-    "msruns": 192
+    "Msruns": 192
   },
   {
     "reanalysis": [
@@ -343,7 +343,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002395/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD002395",
       "path": ""
     },
@@ -354,7 +354,7 @@
     "FragmentMethod": "HCD@40.00",
     "Enzyme": "Trypsin",
     "PSM": 3796473,
-    "msruns": 198
+    "Msruns": 198
   },
   {
     "reanalysis": [
@@ -364,7 +364,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002767/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD002767",
       "path": ""
     },
@@ -375,7 +375,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 2666095,
-    "msruns": 297
+    "Msruns": 297
   },
   {
     "reanalysis": [
@@ -385,7 +385,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002854/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD002854",
       "path": ""
     },
@@ -396,7 +396,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 548653,
-    "msruns": 174
+    "Msruns": 174
   },
   {
     "reanalysis": [
@@ -406,7 +406,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD003903/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD003903",
       "path": ""
     },
@@ -417,7 +417,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 7325444,
-    "msruns": 335
+    "Msruns": 335
   },
   {
     "reanalysis": [
@@ -427,7 +427,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD003947/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD003947",
       "path": ""
     },
@@ -438,7 +438,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 740197,
-    "msruns": 103
+    "Msruns": 103
   },
   {
     "reanalysis": [
@@ -448,7 +448,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004242/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD004242",
       "path": ""
     },
@@ -459,7 +459,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 5197467,
-    "msruns": 1289
+    "Msruns": 1289
   },
   {
     "reanalysis": [
@@ -469,7 +469,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004452-GluC/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD004452",
       "path": ""
     },
@@ -480,7 +480,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Gluc",
     "PSM": 154347,
-    "msruns": 39
+    "Msruns": 39
   },
   {
     "reanalysis": [
@@ -490,7 +490,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004452/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD004452",
       "path": ""
     },
@@ -501,7 +501,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 5495744,
-    "msruns": 789
+    "Msruns": 789
   },
   {
     "reanalysis": [
@@ -511,7 +511,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004732/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD004732",
       "path": ""
     },
@@ -522,7 +522,7 @@
     "FragmentMethod": "HCD@35.00",
     "Enzyme": "Trypsin",
     "PSM": 14298028,
-    "msruns": 538
+    "Msruns": 538
   },
   {
     "reanalysis": [
@@ -532,7 +532,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD006225/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD006225",
       "path": ""
     },
@@ -543,7 +543,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 536276,
-    "msruns": 31
+    "Msruns": 31
   },
   {
     "reanalysis": [
@@ -553,7 +553,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD006675/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD006675",
       "path": ""
     },
@@ -564,7 +564,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 9272915,
-    "msruns": 585
+    "Msruns": 585
   },
   {
     "reanalysis": [
@@ -574,7 +574,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD008333/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD008333",
       "path": ""
     },
@@ -585,7 +585,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 2036467,
-    "msruns": 201
+    "Msruns": 201
   },
   {
     "reanalysis": [
@@ -595,7 +595,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD008722/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD008722",
       "path": ""
     },
@@ -606,7 +606,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 3642440,
-    "msruns": 252
+    "Msruns": 252
   },
   {
     "reanalysis": [
@@ -616,7 +616,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD008840/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD008840",
       "path": ""
     },
@@ -627,7 +627,7 @@
     "FragmentMethod": "HCD@32.00",
     "Enzyme": "Trypsin",
     "PSM": 9733821,
-    "msruns": 504
+    "Msruns": 504
   },
   {
     "reanalysis": [
@@ -637,7 +637,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009348/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD009348",
       "path": ""
     },
@@ -648,7 +648,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 386933,
-    "msruns": 163
+    "Msruns": 163
   },
   {
     "reanalysis": [
@@ -658,7 +658,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009449-CID/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD009449",
       "path": ""
     },
@@ -669,7 +669,7 @@
     "FragmentMethod": "CID@35.00",
     "Enzyme": "Trypsin",
     "PSM": 201402,
-    "msruns": 26
+    "Msruns": 26
   },
   {
     "reanalysis": [
@@ -679,7 +679,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009449-HCD/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD009449",
       "path": ""
     },
@@ -690,7 +690,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 697583,
-    "msruns": 39
+    "Msruns": 39
   },
   {
     "reanalysis": [
@@ -700,7 +700,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009737-GluC/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD009737",
       "path": ""
     },
@@ -711,7 +711,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Gluc",
     "PSM": 349187,
-    "msruns": 36
+    "Msruns": 36
   },
   {
     "reanalysis": [
@@ -721,7 +721,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009737-LysC/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD009737",
       "path": ""
     },
@@ -732,7 +732,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Lys-C",
     "PSM": 430334,
-    "msruns": 36
+    "Msruns": 36
   },
   {
     "reanalysis": [
@@ -742,7 +742,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD009737-Trypsin/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD009737",
       "path": ""
     },
@@ -753,7 +753,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 573528,
-    "msruns": 36
+    "Msruns": 36
   },
   {
     "reanalysis": [
@@ -763,7 +763,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010154/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD010154",
       "path": ""
     },
@@ -774,7 +774,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 16819411,
-    "msruns": 1364
+    "Msruns": 1364
   },
   {
     "reanalysis": [
@@ -784,7 +784,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010595/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD010595",
       "path": ""
     },
@@ -795,7 +795,7 @@
     "FragmentMethod": "HCD@20.00",
     "Enzyme": "Trypsin",
     "PSM": 8840962,
-    "msruns": 384
+    "Msruns": 384
   },
   {
     "reanalysis": [
@@ -805,7 +805,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010899/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD010899",
       "path": ""
     },
@@ -816,7 +816,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 1570723,
-    "msruns": 1803
+    "Msruns": 1803
   },
   {
     "reanalysis": [
@@ -826,7 +826,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010957/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD010957",
       "path": ""
     },
@@ -837,7 +837,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 22686367,
-    "msruns": 1437
+    "Msruns": 1437
   },
   {
     "reanalysis": [
@@ -847,7 +847,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012131/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012131",
       "path": ""
     },
@@ -858,7 +858,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 4563808,
-    "msruns": 311
+    "Msruns": 311
   },
   {
     "reanalysis": [
@@ -868,7 +868,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012174/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012174",
       "path": ""
     },
@@ -879,7 +879,7 @@
     "FragmentMethod": "CID@35.00",
     "Enzyme": "Trypsin",
     "PSM": 15621996,
-    "msruns": 1194
+    "Msruns": 1194
   },
   {
     "reanalysis": [
@@ -889,7 +889,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Danio-rerio/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012636",
       "path": ""
     },
@@ -900,7 +900,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 98759,
-    "msruns": 58
+    "Msruns": 58
   },
   {
     "reanalysis": [
@@ -910,7 +910,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Horse/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012636",
       "path": ""
     },
@@ -921,7 +921,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 134634,
-    "msruns": 124
+    "Msruns": 124
   },
   {
     "reanalysis": [
@@ -931,7 +931,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Mouse/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012636",
       "path": ""
     },
@@ -942,7 +942,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 1568361,
-    "msruns": 120
+    "Msruns": 120
   },
   {
     "reanalysis": [
@@ -952,7 +952,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Pig/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012636",
       "path": ""
     },
@@ -963,7 +963,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 417991,
-    "msruns": 120
+    "Msruns": 120
   },
   {
     "reanalysis": [
@@ -973,7 +973,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Rat/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012636",
       "path": ""
     },
@@ -984,7 +984,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 937801,
-    "msruns": 120
+    "Msruns": 120
   },
   {
     "reanalysis": [
@@ -994,7 +994,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD012636-Homo/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD012636",
       "path": ""
     },
@@ -1005,7 +1005,7 @@
     "FragmentMethod": "HCD@28.00",
     "Enzyme": "Trypsin",
     "PSM": 1132652,
-    "msruns": 89
+    "Msruns": 89
   },
   {
     "reanalysis": [
@@ -1015,7 +1015,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD013231/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD013231",
       "path": ""
     },
@@ -1026,7 +1026,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 468370,
-    "msruns": 105
+    "Msruns": 105
   },
   {
     "reanalysis": [
@@ -1036,7 +1036,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD013868/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD013868",
       "path": ""
     },
@@ -1047,7 +1047,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 17606574,
-    "msruns": 1435
+    "Msruns": 1435
   },
   {
     "reanalysis": [
@@ -1057,7 +1057,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bacteroides_Fragilis/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1068,7 +1068,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 51628,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1078,7 +1078,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bacteroides_Uniformis/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1089,7 +1089,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 54455,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1099,7 +1099,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bifidobacterium_longum/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1110,7 +1110,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 21831,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1120,7 +1120,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Chromera/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1131,7 +1131,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 68644,
-    "msruns": 5
+    "Msruns": 5
   },
   {
     "reanalysis": [
@@ -1141,7 +1141,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Clostridium_Bolteae/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1152,7 +1152,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 30124,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1162,7 +1162,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Clostridium_Saccharolyticum/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1173,7 +1173,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 32736,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1183,7 +1183,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Collinsella_aerofacien/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1194,7 +1194,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 28061,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1204,7 +1204,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Danio-rerio/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1215,7 +1215,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 340169,
-    "msruns": 7
+    "Msruns": 7
   },
   {
     "reanalysis": [
@@ -1225,7 +1225,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Eggerthella_Lenta/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1236,7 +1236,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 11032,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1246,7 +1246,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Fusarium_oxysporum/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1257,7 +1257,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 185361,
-    "msruns": 11
+    "Msruns": 11
   },
   {
     "reanalysis": [
@@ -1267,7 +1267,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Fusobacterium/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1278,7 +1278,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 26424,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1288,7 +1288,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Gallus_Gallus/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1299,7 +1299,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 294035,
-    "msruns": 8
+    "Msruns": 8
   },
   {
     "reanalysis": [
@@ -1309,7 +1309,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/XD014877-Gossypium/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1320,7 +1320,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 248653,
-    "msruns": 8
+    "Msruns": 8
   },
   {
     "reanalysis": [
@@ -1330,7 +1330,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Halobacterium/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1341,7 +1341,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 31395,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1351,7 +1351,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Lactobacillus/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1362,7 +1362,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 340169,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1372,7 +1372,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Mus-Musculus/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1383,7 +1383,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 267991,
-    "msruns": 7
+    "Msruns": 7
   },
   {
     "reanalysis": [
@@ -1393,7 +1393,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Mycoplasmen/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1404,7 +1404,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 3608,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1414,7 +1414,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Neurospora/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1425,7 +1425,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 78622,
-    "msruns": 7
+    "Msruns": 7
   },
   {
     "reanalysis": [
@@ -1435,7 +1435,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Odoribacter/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1446,7 +1446,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 40367,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1456,7 +1456,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Parabacteroiders_Distasonis/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1467,7 +1467,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 34529,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1477,7 +1477,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Parabacteroiders_Merdae/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1488,7 +1488,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 39236,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1498,7 +1498,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Phaeodactylum/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1509,7 +1509,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 126526,
-    "msruns": 7
+    "Msruns": 7
   },
   {
     "reanalysis": [
@@ -1519,7 +1519,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Prevotella/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1530,7 +1530,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 31720,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1540,7 +1540,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/XD014877-Roseburia/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1551,7 +1551,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 17139,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1561,7 +1561,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Ruminococcus_Bromii/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1572,7 +1572,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 20232,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1582,7 +1582,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Ruminococcus_gnavus/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1593,7 +1593,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 27689,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1603,7 +1603,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Streptococuus_Parasanguinis/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1614,7 +1614,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 26601,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1624,7 +1624,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Sulfolobus_solfataricus/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1635,7 +1635,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 1926,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1645,7 +1645,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Symbiodinium_microadriaticum/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1656,7 +1656,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 4310,
-    "msruns": 5
+    "Msruns": 5
   },
   {
     "reanalysis": [
@@ -1666,7 +1666,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Triticum_aestivum/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1677,7 +1677,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 265766,
-    "msruns": 7
+    "Msruns": 7
   },
   {
     "reanalysis": [
@@ -1687,7 +1687,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Veillonella_parvula/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1698,7 +1698,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 30734,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1708,7 +1708,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Vitris_vinifera/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1719,7 +1719,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 203696,
-    "msruns": 7
+    "Msruns": 7
   },
   {
     "reanalysis": [
@@ -1729,7 +1729,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/XD014877-Akkermansia_muciniphilia/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1740,7 +1740,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 22013,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1750,7 +1750,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Bacteroides_Thetaiotaomicron/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1761,7 +1761,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 50460,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1771,7 +1771,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Drosophila/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1782,7 +1782,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 217125,
-    "msruns": 8
+    "Msruns": 8
   },
   {
     "reanalysis": [
@@ -1792,7 +1792,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD014877-Ruminococcus_torques/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD014877",
       "path": ""
     },
@@ -1803,7 +1803,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 20811,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1813,7 +1813,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD016986/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD016986",
       "path": ""
     },
@@ -1824,7 +1824,7 @@
     "FragmentMethod": "CID@35.00",
     "Enzyme": "Trypsin",
     "PSM": 1973461,
-    "msruns": 349
+    "Msruns": 349
   },
   {
     "reanalysis": [
@@ -1834,7 +1834,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD018830/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD018830",
       "path": ""
     },
@@ -1845,7 +1845,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 2527193,
-    "msruns": 276
+    "Msruns": 276
   },
   {
     "reanalysis": [
@@ -1855,7 +1855,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_hCOV/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1866,7 +1866,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 151,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1876,7 +1876,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_VSV/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1887,7 +1887,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 3288,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1897,7 +1897,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_LACV/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1908,7 +1908,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 2339,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1918,7 +1918,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_RVFV/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1929,7 +1929,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 1429,
-    "msruns": 2
+    "Msruns": 2
   },
   {
     "reanalysis": [
@@ -1939,7 +1939,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_VSV/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1950,7 +1950,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 819,
-    "msruns": 1
+    "Msruns": 1
   },
   {
     "reanalysis": [
@@ -1960,7 +1960,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483_ZIKV/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1971,7 +1971,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 835,
-    "msruns": 2
+    "Msruns": 2
   },
   {
     "reanalysis": [
@@ -1981,7 +1981,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019483/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019483",
       "path": ""
     },
@@ -1992,7 +1992,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 4001686,
-    "msruns": 111
+    "Msruns": 111
   },
   {
     "reanalysis": [
@@ -2002,7 +2002,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD019643/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD019643",
       "path": ""
     },
@@ -2013,7 +2013,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "unspecific cleavage",
     "PSM": 4290071,
-    "msruns": 719
+    "Msruns": 719
   },
   {
     "reanalysis": [
@@ -2023,7 +2023,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD020192/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD020192",
       "path": ""
     },
@@ -2034,7 +2034,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 7649835,
-    "msruns": 91
+    "Msruns": 91
   },
   {
     "reanalysis": [
@@ -2044,7 +2044,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD021013/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD021013",
       "path": ""
     },
@@ -2055,7 +2055,7 @@
     "FragmentMethod": "HCD@23.00",
     "Enzyme": "unspecific cleavage",
     "PSM": 16314438,
-    "msruns": 996
+    "Msruns": 996
   },
   {
     "reanalysis": [
@@ -2065,7 +2065,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD022469/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD022469",
       "path": ""
     },
@@ -2076,7 +2076,7 @@
     "FragmentMethod": "HCD@27.50",
     "Enzyme": "Trypsin",
     "PSM": 696434,
-    "msruns": 383
+    "Msruns": 383
   },
   {
     "reanalysis": [
@@ -2086,7 +2086,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD024364-LysC/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD024364",
       "path": ""
     },
@@ -2097,7 +2097,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Lys-C",
     "PSM": 509465,
-    "msruns": 30
+    "Msruns": 30
   },
   {
     "reanalysis": [
@@ -2107,7 +2107,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD024364-Trypsin/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD024364",
       "path": ""
     },
@@ -2118,7 +2118,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 7120784,
-    "msruns": 281
+    "Msruns": 281
   },
   {
     "reanalysis": [
@@ -2128,7 +2128,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD028735-Ecoli/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD028735",
       "path": ""
     },
@@ -2139,7 +2139,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 99467,
-    "msruns": 39
+    "Msruns": 39
   },
   {
     "reanalysis": [
@@ -2149,7 +2149,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD028735-Homo/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD028735",
       "path": ""
     },
@@ -2160,7 +2160,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 1511325,
-    "msruns": 45
+    "Msruns": 45
   },
   {
     "reanalysis": [
@@ -2170,7 +2170,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD030348/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD030348",
       "path": ""
     },
@@ -2181,7 +2181,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 6483317,
-    "msruns": 284
+    "Msruns": 284
   },
   {
     "reanalysis": [
@@ -2191,7 +2191,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD030983/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD030983",
       "path": ""
     },
@@ -2202,7 +2202,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 30714490,
-    "msruns": 2137
+    "Msruns": 2137
   },
   {
     "reanalysis": [
@@ -2212,7 +2212,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD040266/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD040266",
       "path": ""
     },
@@ -2223,7 +2223,7 @@
     "FragmentMethod": "CID@43",
     "Enzyme": "Trypsin",
     "PSM": 896379,
-    "msruns": 48
+    "Msruns": 48
   },
   {
     "reanalysis": [
@@ -2233,7 +2233,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD010429/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD010429",
       "path": ""
     },
@@ -2244,7 +2244,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 2578074,
-    "msruns": 696
+    "Msruns": 696
   },
   {
     "reanalysis": [
@@ -2254,7 +2254,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD005478/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD005478",
       "path": ""
     },
@@ -2265,7 +2265,7 @@
     "FragmentMethod": "HCD@38",
     "Enzyme": "Trypsin",
     "PSM": 2013520,
-    "msruns": 582
+    "Msruns": 582
   },
   {
     "reanalysis": [
@@ -2275,7 +2275,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD002899/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD002899",
       "path": ""
     },
@@ -2286,7 +2286,7 @@
     "FragmentMethod": "HCD@27.00",
     "Enzyme": "Trypsin",
     "PSM": 3498190,
-    "msruns": 357
+    "Msruns": 357
   },
   {
     "reanalysis": [
@@ -2296,7 +2296,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD004352/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD004352",
       "path": ""
     },
@@ -2307,7 +2307,7 @@
     "FragmentMethod": "HCD@26",
     "Enzyme": "Trypsin",
     "PSM": 1208405,
-    "msruns": 455
+    "Msruns": 455
   },
   {
     "reanalysis": [
@@ -2317,7 +2317,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD025555/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD025555",
       "path": ""
     },
@@ -2328,7 +2328,7 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 9620961,
-    "msruns": 797
+    "Msruns": 797
   },
   {
     "reanalysis": [
@@ -2338,7 +2338,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD005526/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD005526",
       "path": ""
     },
@@ -2349,7 +2349,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "Trypsin",
     "PSM": 13527205,
-    "msruns": 395
+    "Msruns": 395
   },
   {
     "reanalysis": [
@@ -2359,7 +2359,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD021398/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD021398",
       "path": ""
     },
@@ -2370,7 +2370,7 @@
     "FragmentMethod": "HCD@25.00",
     "Enzyme": "unspecific cleavage",
     "PSM": 4305190,
-    "msruns": 566
+    "Msruns": 566
   },
   {
     "reanalysis": [
@@ -2380,7 +2380,7 @@
         "path": "https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-collections/msnet/PXD034656/"
       }
     ],
-    "Accession": {
+    "accession": {
       "id": "PXD034656",
       "path": ""
     },
@@ -2391,6 +2391,6 @@
     "FragmentMethod": "HCD@30.00",
     "Enzyme": "Trypsin",
     "PSM": 3264025,
-    "msruns": 639
+    "Msruns": 639
   }
 ]

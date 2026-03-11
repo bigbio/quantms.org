@@ -44,3 +44,10 @@ export const getProxiDatasetDetails = (accessionId) => {
     method: 'get'
   });
 };
+
+export const getMSNetDatasetDetails = (accessionPath) => {
+  return request({
+    url: accessionPath,
+    method: 'get'
+  });
+};
