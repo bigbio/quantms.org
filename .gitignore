@@ -2,4 +2,6 @@
 ./package-lock.json
 /dist/
 /package-lock.json
-.idea/
+.idea/node_modules
+.DS_Store
+.idea
