@@ -1,16 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>quantms.org</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>quantms — Quantitative Proteomics Ecosystem</title>
+<meta name="description" content="An open-source ecosystem for large-scale quantitative proteomics. Cloud-ready Nextflow pipelines, standalone Python libraries, and ML-powered tools.">
+<link rel="canonical" href="https://quantms.org/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="quantms — Quantitative Proteomics Ecosystem">
+<meta property="og:description" content="From raw spectra to biological insight. Cloud-ready Nextflow pipelines, Python libraries, and ML-powered tools for large-scale quantitative proteomics.">
+<meta property="og:url" content="https://quantms.org/">
+<meta property="og:site_name" content="quantms">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="quantms — Quantitative Proteomics Ecosystem">
+<meta name="twitter:description" content="From raw spectra to biological insight. Open-source quantitative proteomics platform.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="gradient-bar"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg width="48" height="48" viewBox="0 0 70 70" fill="none" class="logo-svg">
+        <polygon points="35,56 10,46 35,36 60,46" fill="#409eff" opacity="0.3"/>
+        <polygon points="35,48 14,40 35,32 56,40" fill="#6366f1" opacity="0.5"/>
+        <polygon points="35,40 18,34 35,28 52,34" fill="#7c3aed" opacity="0.65"/>
+        <rect x="24" y="20" width="2.5" height="6" rx="0.8" fill="#7c3aed" opacity="0.4"/>
+        <rect x="28" y="14" width="2.5" height="12" rx="0.8" fill="#8b5cf6" opacity="0.55"/>
+        <rect x="32" y="8" width="2.5" height="18" rx="0.8" fill="#7c3aed" opacity="0.8"/>
+        <rect x="36" y="12" width="2.5" height="14" rx="0.8" fill="#8b5cf6" opacity="0.6"/>
+        <rect x="40" y="18" width="2.5" height="8" rx="0.8" fill="#7c3aed" opacity="0.45"/>
+      </svg>
+      <span>quant<span class="logo-accent">ms</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#workflow">Workflow</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="tools.html">Tools</a>
+      <a href="publications.html">Publications</a>
+      <a href="about.html">About</a>
+      <a href="https://github.com/bigbio" target="_blank" class="nav-github">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://docs.quantms.org" class="nav-cta" target="_blank">Get Started</a>
+    </div>
+    <button class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <a href="#workflow" onclick="this.parentElement.classList.remove('open')">Workflow</a>
+  <a href="#ecosystem" onclick="this.parentElement.classList.remove('open')">Ecosystem</a>
+  <a href="tools.html" onclick="this.parentElement.classList.remove('open')">Tools</a>
+  <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
+  <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="particle" style="width:4px;height:4px;background:var(--blue);top:12%;left:8%;animation:float-1 12s ease-in-out infinite;"></div>
+  <div class="particle" style="width:3px;height:3px;background:var(--indigo);top:22%;left:88%;animation:float-2 16s ease-in-out infinite;"></div>
+  <div class="particle" style="width:5px;height:5px;background:var(--blue);top:58%;left:18%;animation:float-3 10s ease-in-out infinite;"></div>
+  <div class="particle" style="width:3px;height:3px;background:var(--violet);top:68%;left:78%;animation:float-1 14s ease-in-out infinite 2s;"></div>
+  <div class="particle" style="width:4px;height:4px;background:var(--indigo);top:38%;left:4%;animation:float-2 18s ease-in-out infinite 1s;"></div>
+  <div class="particle" style="width:3px;height:3px;background:var(--blue);top:48%;left:92%;animation:float-3 15s ease-in-out infinite 3s;"></div>
+  <div class="particle" style="width:4px;height:4px;background:var(--violet);top:82%;left:42%;animation:float-1 11s ease-in-out infinite 1.5s;"></div>
+  <div class="particle" style="width:3px;height:3px;background:var(--blue);top:18%;left:52%;animation:float-2 20s ease-in-out infinite 0.5s;"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Quantitative Proteomics Platform</div>
+        <h1 class="hero-title">From Raw Spectra to Biological Insight</h1>
+        <p class="hero-subtitle">An open-source ecosystem for large-scale quantitative proteomics. Cloud-ready Nextflow pipelines, standalone Python libraries, and ML-powered tools &mdash; process DDA and DIA data with dedicated workflows, or use the standalone tools with any search engine.</p>
+        <div class="hero-ctas">
+          <a href="https://docs.quantms.org" class="btn-primary" target="_blank">
+            Get Started <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://portal.quantms.org" class="btn-outline" target="_blank">
+            Explore Data <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+        <!-- Pipeline flow diagram -->
+        <div class="hero-pipeline">
+          <svg viewBox="0 0 520 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="10" width="88" height="60" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+            <rect x="0" y="10" width="3" height="60" rx="1.5" fill="url(#hg)"/>
+            <text x="44" y="36" text-anchor="middle" font-family="Inter" font-size="10" font-weight="600" fill="#0f172a">Raw Data</text>
+            <text x="44" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#94a3b8">.mzML .raw .d</text>
+
+            <line x1="93" y1="40" x2="115" y2="40" stroke="#409eff" stroke-width="1.5" class="dash-animated"/>
+            <polygon points="113,36 120,40 113,44" fill="#409eff" opacity="0.7"/>
+
+            <rect x="124" y="10" width="88" height="60" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+            <rect x="124" y="10" width="3" height="60" rx="1.5" fill="url(#hg)"/>
+            <text x="168" y="36" text-anchor="middle" font-family="Inter" font-size="10" font-weight="600" fill="#0f172a">Identification</text>
+            <text x="168" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#94a3b8">rescoring</text>
+
+            <line x1="217" y1="40" x2="239" y2="40" stroke="#6366f1" stroke-width="1.5" class="dash-animated" style="animation-delay:0.3s"/>
+            <polygon points="237,36 244,40 237,44" fill="#6366f1" opacity="0.7"/>
+
+            <rect x="248" y="10" width="88" height="60" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+            <rect x="248" y="10" width="3" height="60" rx="1.5" fill="url(#hg)"/>
+            <text x="292" y="36" text-anchor="middle" font-family="Inter" font-size="10" font-weight="600" fill="#0f172a">Quantification</text>
+            <text x="292" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#94a3b8">mokume</text>
+
+            <line x1="341" y1="40" x2="363" y2="40" stroke="#7c3aed" stroke-width="1.5" class="dash-animated" style="animation-delay:0.6s"/>
+            <polygon points="361,36 368,40 361,44" fill="#7c3aed" opacity="0.7"/>
+
+            <rect x="372" y="10" width="88" height="60" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+            <rect x="372" y="10" width="3" height="60" rx="1.5" fill="url(#hg)"/>
+            <text x="416" y="36" text-anchor="middle" font-family="Inter" font-size="10" font-weight="600" fill="#0f172a">Quality Control</text>
+            <text x="416" y="50" text-anchor="middle" font-family="JetBrains Mono" font-size="7" fill="#94a3b8">pmultiqc</text>
+
+            <line x1="465" y1="40" x2="478" y2="40" stroke="#8b5cf6" stroke-width="1.5" class="dash-animated" style="animation-delay:0.9s"/>
+            <polygon points="476,36 483,40 476,44" fill="#8b5cf6" opacity="0.7"/>
+
+            <rect x="487" y="18" width="33" height="44" rx="22" fill="white" stroke="#8b5cf6" stroke-width="1.5"/>
+            <text x="503" y="44" text-anchor="middle" font-family="Inter" font-size="8" font-weight="600" fill="#8b5cf6">&#x2192;</text>
+
+            <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#409eff"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient></defs>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="ht-bar">
+          <div class="ht-dot red"></div>
+          <div class="ht-dot yellow"></div>
+          <div class="ht-dot green"></div>
+          <div class="ht-title">ecosystem tools</div>
+        </div>
+        <div class="ht-tabs">
+          <button class="ht-tab active" onclick="heroTab('quantms')">quantms</button>
+          <button class="ht-tab" onclick="heroTab('quantmsdiann')">quantmsdiann</button>
+          <button class="ht-tab" onclick="heroTab('qpx')">qpx</button>
+          <button class="ht-tab" onclick="heroTab('mokume')">mokume</button>
+          <button class="ht-tab" onclick="heroTab('pmultiqc')">pmultiqc</button>
+        </div>
+        <div class="ht-body">
+          <div class="ht-panel active" id="hero-quantms">
+<pre><span class="cm"># DDA proteomics pipeline (LFQ &amp; TMT/iTRAQ)</span>
+nextflow run bigbio/quantms \
+    <span class="fl">-profile</span> docker \
+    <span class="fl">--input</span> <span class="str">samplesheet.csv</span> \
+    <span class="fl">--database</span> <span class="str">uniprot.fasta</span> \
+    <span class="fl">--outdir</span> <span class="str">results/</span>
+
+<span class="cm"># Runs on laptops, HPC, or AWS/GCP/Azure</span>
+<span class="cm"># DDA-LFQ, DDA-ISO (TMT/iTRAQ) workflows</span></pre>
+          </div>
+          <div class="ht-panel" id="hero-quantmsdiann">
+<pre><span class="cm"># DIA proteomics pipeline (powered by DIA-NN)</span>
+nextflow run bigbio/quantmsdiann \
+    <span class="fl">-profile</span> docker \
+    <span class="fl">--input</span> <span class="str">samplesheet.csv</span> \
+    <span class="fl">--database</span> <span class="str">uniprot.fasta</span> \
+    <span class="fl">--outdir</span> <span class="str">results/</span>
+
+<span class="cm"># Dedicated DIA workflow with DIA-NN engine</span>
+<span class="cm"># Library-free or spectral library modes</span></pre>
+          </div>
+          <div class="ht-panel" id="hero-qpx">
+<pre><span class="cm"># Convert search engine outputs to unified format</span>
+qpx convert \
+    <span class="fl">--tool</span> <span class="str">diann</span> \
+    <span class="fl">--report</span> <span class="str">diann_report.tsv</span> \
+    <span class="fl">--sdrf</span> <span class="str">experiment.sdrf.tsv</span>
+
+<span class="cm"># Supported: DIA-NN, MaxQuant, FragPipe,</span>
+<span class="cm">#   Spectronaut, quantms, Sage, MSFragger</span>
+<span class="cm"># Export to Parquet or AnnData (.h5ad)</span></pre>
+          </div>
+          <div class="ht-panel" id="hero-mokume">
+<pre><span class="cm"># Protein quantification from any search engine</span>
+<span class="cm"># Works with quantms, quantmsdiann, MaxQuant, FragPipe</span>
+mokume features2proteins \
+    <span class="fl">-p</span> features.parquet \
+    <span class="fl">-o</span> proteins.csv \
+    <span class="fl">-s</span> experiment.sdrf.tsv \
+    <span class="fl">--quant-method</span> <span class="str">maxlfq</span>
+
+<span class="cm"># TMT with IRS + differential expression</span>
+mokume features2proteins \
+    <span class="fl">-p</span> features.parquet \
+    <span class="fl">--quant-method</span> <span class="str">median</span> \
+    <span class="fl">--irs</span> <span class="fl">--de</span></pre>
+          </div>
+          <div class="ht-panel" id="hero-pmultiqc">
+<pre><span class="cm"># Interactive QC reports for any experiment</span>
+multiqc results/ \
+    <span class="fl">--module</span> <span class="str">pmultiqc</span>
+
+<span class="cm"># Generate mokume QC + comparison reports</span>
+mokume features2proteins \
+    <span class="fl">-p</span> features.parquet \
+    <span class="fl">-s</span> experiment.sdrf.tsv \
+    <span class="fl">--report</span> <span class="str">qc_report.html</span>
+
+<span class="cm"># HTML reports: PCA, heatmaps, CVs, volcanos</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+  </div>
+</section>
+
+<!-- ==================== 1. WORKFLOW ==================== -->
+<section class="workflow" id="workflow">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>The Pipeline</h2>
+      <div class="underline"></div>
+      <p>A Nextflow-orchestrated workflow where specialized tools handle each step.</p>
+    </div>
+    <div class="workflow-grid animate-in">
+      <div class="workflow-text">
+        <h3>End-to-End Quantitative Proteomics</h3>
+        <p>Two dedicated Nextflow pipelines: <strong>quantms</strong> for DDA (LFQ &amp; TMT/iTRAQ) and <strong>quantmsdiann</strong> for DIA &mdash; but the downstream tools work independently too. Use <strong>mokume</strong> to quantify proteins from any search engine output. Use <strong>pmultiqc</strong> for QC on any experiment.</p>
+        <ul class="workflow-steps">
+          <li><span class="step-num">1</span><span><strong>Convert & search</strong> raw spectra against protein databases</span></li>
+          <li><span class="step-num">2</span><span><strong>Rescore PSMs</strong> with ML models for higher sensitivity</span></li>
+          <li><span class="step-num">3</span><span><strong>Quantify proteins</strong> using iBAQ, MaxLFQ, TopN, or ratio methods</span></li>
+          <li><span class="step-num">4</span><span><strong>Generate QC reports</strong> and differential expression results</span></li>
+        </ul>
+        <a href="https://docs.quantms.org" class="link-arrow" target="_blank">Read pipeline docs &rarr;</a>
+      </div>
+      <div class="workflow-visual">
+        <div class="wf-stage">
+          <div class="wf-icon" style="background:rgba(64,158,255,0.1);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#409eff" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="wf-stage-info"><h4>Raw Data Acquisition</h4><span>.mzML &middot; .raw &middot; .d</span></div>
+          <div class="wf-tool-pills"><span class="wf-pill">quantms</span></div>
+        </div>
+        <div class="wf-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </div>
+        <div class="wf-stage">
+          <div class="wf-icon" style="background:rgba(99,102,241,0.1);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div class="wf-stage-info"><h4>Identification & Rescoring</h4><span>MS2PIP &middot; DeepLC &middot; Percolator</span></div>
+          <div class="wf-tool-pills"><span class="wf-pill">rescoring</span></div>
+        </div>
+        <div class="wf-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </div>
+        <div class="wf-stage">
+          <div class="wf-icon" style="background:rgba(124,58,237,0.1);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"><rect x="3" y="12" width="4" height="9"/><rect x="10" y="5" width="4" height="16"/><rect x="17" y="9" width="4" height="12"/></svg>
+          </div>
+          <div class="wf-stage-info"><h4>Quantification</h4><span>iBAQ &middot; MaxLFQ &middot; TopN &middot; Ratio</span></div>
+          <div class="wf-tool-pills"><span class="wf-pill">mokume</span><span class="wf-pill">qpx</span></div>
+        </div>
+        <div class="wf-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </div>
+        <div class="wf-stage">
+          <div class="wf-icon" style="background:rgba(139,92,246,0.1);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="wf-stage-info"><h4>Quality Control & DE</h4><span>Interactive reports &middot; Volcano plots</span></div>
+          <div class="wf-tool-pills"><span class="wf-pill">pmultiqc</span><span class="wf-pill">mokume</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 2. DATA & EXPLORATION ==================== -->
+<section class="data-section" id="data">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>Data & Exploration</h2>
+      <div class="underline"></div>
+      <p>Browse reanalyzed proteomics datasets and explore results interactively.</p>
+    </div>
+    <div class="data-grid animate-in">
+      <div class="data-visual">
+        <svg viewBox="0 0 320 210">
+          <!-- Intensity distribution across samples (box/violin-like) -->
+          <defs>
+            <linearGradient id="bar-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#409eff" stop-opacity="0.8"/><stop offset="100%" stop-color="#409eff" stop-opacity="0.3"/></linearGradient>
+            <linearGradient id="bar-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0.3"/></linearGradient>
+            <linearGradient id="bar-g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/></linearGradient>
+          </defs>
+          <!-- Axes -->
+          <line x1="35" y1="10" x2="35" y2="175" stroke="var(--border)" stroke-width="1"/>
+          <line x1="35" y1="175" x2="310" y2="175" stroke="var(--border)" stroke-width="1"/>
+          <!-- Y axis label -->
+          <text x="10" y="95" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)" transform="rotate(-90, 10, 95)">log2 Intensity</text>
+          <!-- Y ticks -->
+          <text x="30" y="28" text-anchor="end" font-family="JetBrains Mono" font-size="7" fill="var(--text-muted)">30</text>
+          <line x1="33" y1="25" x2="37" y2="25" stroke="var(--border)" stroke-width="0.5"/>
+          <text x="30" y="68" text-anchor="end" font-family="JetBrains Mono" font-size="7" fill="var(--text-muted)">25</text>
+          <line x1="33" y1="65" x2="37" y2="65" stroke="var(--border)" stroke-width="0.5"/>
+          <text x="30" y="108" text-anchor="end" font-family="JetBrains Mono" font-size="7" fill="var(--text-muted)">20</text>
+          <line x1="33" y1="105" x2="37" y2="105" stroke="var(--border)" stroke-width="0.5"/>
+          <text x="30" y="148" text-anchor="end" font-family="JetBrains Mono" font-size="7" fill="var(--text-muted)">15</text>
+          <line x1="33" y1="145" x2="37" y2="145" stroke="var(--border)" stroke-width="0.5"/>
+          <!-- Grid lines -->
+          <line x1="37" y1="25" x2="310" y2="25" stroke="var(--border-subtle)" stroke-width="0.5"/>
+          <line x1="37" y1="65" x2="310" y2="65" stroke="var(--border-subtle)" stroke-width="0.5"/>
+          <line x1="37" y1="105" x2="310" y2="105" stroke="var(--border-subtle)" stroke-width="0.5"/>
+          <line x1="37" y1="145" x2="310" y2="145" stroke="var(--border-subtle)" stroke-width="0.5"/>
+
+          <!-- Sample 1: Liver (blue) - box + whisker -->
+          <line x1="60" y1="40" x2="60" y2="55" stroke="#409eff" stroke-width="1.5"/>
+          <rect x="47" y="55" width="26" height="60" rx="3" fill="url(#bar-g1)" stroke="#409eff" stroke-width="1"/>
+          <line x1="47" y1="80" x2="73" y2="80" stroke="#409eff" stroke-width="2"/>
+          <line x1="60" y1="115" x2="60" y2="135" stroke="#409eff" stroke-width="1.5"/>
+          <line x1="53" y1="40" x2="67" y2="40" stroke="#409eff" stroke-width="1"/>
+          <line x1="53" y1="135" x2="67" y2="135" stroke="#409eff" stroke-width="1"/>
+
+          <!-- Sample 2: Brain (blue) -->
+          <line x1="105" y1="35" x2="105" y2="50" stroke="#409eff" stroke-width="1.5"/>
+          <rect x="92" y="50" width="26" height="65" rx="3" fill="url(#bar-g1)" stroke="#409eff" stroke-width="1"/>
+          <line x1="92" y1="78" x2="118" y2="78" stroke="#409eff" stroke-width="2"/>
+          <line x1="105" y1="115" x2="105" y2="140" stroke="#409eff" stroke-width="1.5"/>
+          <line x1="98" y1="35" x2="112" y2="35" stroke="#409eff" stroke-width="1"/>
+          <line x1="98" y1="140" x2="112" y2="140" stroke="#409eff" stroke-width="1"/>
+
+          <!-- Sample 3: Heart (indigo) -->
+          <line x1="150" y1="45" x2="150" y2="60" stroke="#6366f1" stroke-width="1.5"/>
+          <rect x="137" y="60" width="26" height="55" rx="3" fill="url(#bar-g2)" stroke="#6366f1" stroke-width="1"/>
+          <line x1="137" y1="85" x2="163" y2="85" stroke="#6366f1" stroke-width="2"/>
+          <line x1="150" y1="115" x2="150" y2="130" stroke="#6366f1" stroke-width="1.5"/>
+          <line x1="143" y1="45" x2="157" y2="45" stroke="#6366f1" stroke-width="1"/>
+          <line x1="143" y1="130" x2="157" y2="130" stroke="#6366f1" stroke-width="1"/>
+
+          <!-- Sample 4: Kidney (indigo) -->
+          <line x1="195" y1="38" x2="195" y2="52" stroke="#6366f1" stroke-width="1.5"/>
+          <rect x="182" y="52" width="26" height="62" rx="3" fill="url(#bar-g2)" stroke="#6366f1" stroke-width="1"/>
+          <line x1="182" y1="76" x2="208" y2="76" stroke="#6366f1" stroke-width="2"/>
+          <line x1="195" y1="114" x2="195" y2="138" stroke="#6366f1" stroke-width="1.5"/>
+          <line x1="188" y1="38" x2="202" y2="38" stroke="#6366f1" stroke-width="1"/>
+          <line x1="188" y1="138" x2="202" y2="138" stroke="#6366f1" stroke-width="1"/>
+
+          <!-- Sample 5: Plasma (violet) -->
+          <line x1="240" y1="55" x2="240" y2="68" stroke="#7c3aed" stroke-width="1.5"/>
+          <rect x="227" y="68" width="26" height="50" rx="3" fill="url(#bar-g3)" stroke="#7c3aed" stroke-width="1"/>
+          <line x1="227" y1="90" x2="253" y2="90" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="240" y1="118" x2="240" y2="142" stroke="#7c3aed" stroke-width="1.5"/>
+          <line x1="233" y1="55" x2="247" y2="55" stroke="#7c3aed" stroke-width="1"/>
+          <line x1="233" y1="142" x2="247" y2="142" stroke="#7c3aed" stroke-width="1"/>
+
+          <!-- Sample 6: Spleen (violet) -->
+          <line x1="285" y1="42" x2="285" y2="56" stroke="#7c3aed" stroke-width="1.5"/>
+          <rect x="272" y="56" width="26" height="58" rx="3" fill="url(#bar-g3)" stroke="#7c3aed" stroke-width="1"/>
+          <line x1="272" y1="82" x2="298" y2="82" stroke="#7c3aed" stroke-width="2"/>
+          <line x1="285" y1="114" x2="285" y2="136" stroke="#7c3aed" stroke-width="1.5"/>
+          <line x1="278" y1="42" x2="292" y2="42" stroke="#7c3aed" stroke-width="1"/>
+          <line x1="278" y1="136" x2="292" y2="136" stroke="#7c3aed" stroke-width="1"/>
+
+          <!-- Sample labels -->
+          <text x="60" y="192" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Liver</text>
+          <text x="105" y="192" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Brain</text>
+          <text x="150" y="192" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Heart</text>
+          <text x="195" y="192" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Kidney</text>
+          <text x="240" y="192" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Plasma</text>
+          <text x="285" y="192" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Spleen</text>
+          <!-- X axis label -->
+          <text x="172" y="207" text-anchor="middle" font-family="Inter" font-size="8" fill="var(--text-muted)">Samples</text>
+        </svg>
+      </div>
+      <div class="data-text">
+        <h3>Explore Reanalyzed Datasets</h3>
+        <p>The <strong>quantms.org</strong> data portal hosts thousands of public proteomics datasets reanalyzed from <strong>ProteomeXchange</strong> repositories (PRIDE, MassIVE, jPOST). Browse absolute and differential expression across tissues, diseases, and organisms. All ecosystem tools also work locally for your own data analysis.</p>
+        <div class="data-stats" id="portal-stats">
+          <div class="data-stat"><div class="data-stat-num" data-stat="datasets" data-target="0">0</div><div class="data-stat-label">Datasets</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="collections" data-target="0">0</div><div class="data-stat-label">Collections</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="organisms" data-target="0">0</div><div class="data-stat-label">Organisms</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="proteins" data-target="0">0</div><div class="data-stat-label">Proteins</div></div>
+        </div>
+        <a href="https://portal.quantms.org" class="link-arrow" target="_blank">Visit data portal &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 3. FORMATS & STANDARDS ==================== -->
+<section class="formats" id="formats">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>Standards & Formats</h2>
+      <div class="underline"></div>
+      <p>Built on open formats for reproducible, metadata-rich proteomics.</p>
+    </div>
+    <div class="formats-grid animate-in">
+      <div class="formats-text">
+        <h3>Reproducibility by Design</h3>
+        <p>Every experiment in the ecosystem is described with <strong>SDRF</strong> (Sample and Data Relationship Format), ensuring complete metadata annotation. The <strong>qpx</strong> library bridges the gap between search engines &mdash; converting outputs from quantms, quantmsdiann, DIA-NN, FragPipe, MaxQuant, and Spectronaut into a unified format.</p>
+        <p>Convert outputs from any search engine into a unified Parquet format. Export to AnnData for integration with scverse and other analysis ecosystems.</p>
+        <a href="https://qpx.quantms.org" class="link-arrow" target="_blank">qpx documentation &rarr;</a>
+      </div>
+      <div class="format-cards">
+        <div class="format-card">
+          <h4>SDRF &mdash; Sample Metadata</h4>
+          <p>Standardized experimental design: organisms, tissues, labels, conditions. Used by all quantms tools for automatic sample grouping.</p>
+        </div>
+        <div class="format-card">
+          <h4>qpx &mdash; Format Conversion</h4>
+          <p>Convert from <code>DIA-NN</code>, <code>FragPipe</code>, <code>MaxQuant</code>, <code>Spectronaut</code>, <code>quantms</code>. Unified Parquet output with PSM-level data.</p>
+        </div>
+        <div class="format-card">
+          <h4>AnnData &mdash; Interoperability</h4>
+          <p>Export protein matrices to <code>.h5ad</code> for integration with scanpy, scverse, and the broader Python data science ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 4. LIBRARIES (MOKUME) ==================== -->
+<section class="libraries" id="libraries">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>Quantification Library</h2>
+      <div class="underline"></div>
+      <p>mokume &mdash; the protein quantification engine at the heart of quantms.</p>
+    </div>
+    <div class="lib-grid animate-in">
+      <div class="lib-text">
+        <h3>mokume</h3>
+        <p>A comprehensive Python library for protein quantification from peptide-level data. Works standalone with output from <strong>any search engine</strong> &mdash; not just quantms. Supports 6+ quantification methods, normalization, IRS for multi-plex TMT, batch correction, and differential expression.</p>
+        <div class="lib-caps">
+          <span class="lib-cap">iBAQ</span>
+          <span class="lib-cap">MaxLFQ</span>
+          <span class="lib-cap">TopN</span>
+          <span class="lib-cap">DirectLFQ</span>
+          <span class="lib-cap">Ratio (TMT)</span>
+          <span class="lib-cap">IRS</span>
+          <span class="lib-cap">ComBat</span>
+          <span class="lib-cap">DE Analysis</span>
+        </div>
+        <div class="lib-install"><span class="pr">$</span> <span class="cm">pip install mokume</span></div>
+        <div>
+          <a href="https://mokume.quantms.org" class="link-arrow" target="_blank" style="margin-right: 24px;">Documentation &rarr;</a>
+          <a href="https://github.com/bigbio/mokume" class="link-arrow" target="_blank">GitHub &rarr;</a>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dot red"></div>
+          <div class="terminal-dot yellow"></div>
+          <div class="terminal-dot green"></div>
+          <div class="terminal-title">mokume</div>
+        </div>
+        <div class="terminal-tabs">
+          <button class="terminal-tab active" onclick="switchTab('cli')">CLI</button>
+          <button class="terminal-tab" onclick="switchTab('python')">Python</button>
+          <button class="terminal-tab" onclick="switchTab('nextflow')">Nextflow</button>
+        </div>
+        <div class="terminal-body">
+          <div class="t-panel active" id="tab-cli">
+<pre><span class="cm"># LFQ quantification</span>
+mokume features2proteins \
+    <span class="fl">-p</span> features.parquet \
+    <span class="fl">-o</span> proteins.csv \
+    <span class="fl">-s</span> experiment.sdrf.tsv \
+    <span class="fl">--quant-method</span> <span class="str">maxlfq</span>
+
+<span class="cm"># TMT + IRS + DE analysis</span>
+mokume features2proteins \
+    <span class="fl">-p</span> features.parquet \
+    <span class="fl">--quant-method</span> <span class="str">median</span> \
+    <span class="fl">--irs</span> <span class="fl">--de</span> \
+    <span class="fl">--de-contrasts</span> <span class="str">"NASH-HL"</span></pre>
+          </div>
+          <div class="t-panel" id="tab-python">
+<pre><span class="kw">from</span> mokume.pipeline <span class="kw">import</span> (
+    QuantificationPipeline, PipelineConfig
+)
+<span class="kw">from</span> mokume.pipeline.config <span class="kw">import</span> (
+    InputConfig, QuantificationConfig
+)
+
+config <span class="op">=</span> <span class="fn">PipelineConfig</span>(
+    input<span class="op">=</span><span class="fn">InputConfig</span>(
+        parquet<span class="op">=</span><span class="str">"features.parquet"</span>,
+        sdrf<span class="op">=</span><span class="str">"experiment.sdrf.tsv"</span>,
+    ),
+    quantification<span class="op">=</span><span class="fn">QuantificationConfig</span>(
+        method<span class="op">=</span><span class="str">"maxlfq"</span>,
+    ),
+)
+pipeline <span class="op">=</span> <span class="fn">QuantificationPipeline</span>(config)
+proteins <span class="op">=</span> pipeline.<span class="fn">run</span>()</pre>
+          </div>
+          <div class="t-panel" id="tab-nextflow">
+<pre><span class="cm">// Run quantms pipeline</span>
+nextflow run bigbio/quantms \
+    <span class="fl">-profile</span> docker \
+    <span class="fl">--input</span> <span class="str">samplesheet.csv</span> \
+    <span class="fl">--database</span> <span class="str">uniprot.fasta</span> \
+    <span class="fl">--outdir</span> <span class="str">results/</span>
+
+<span class="cm">// Cloud-ready: AWS, GCP, Azure</span>
+<span class="cm">// Nature Methods 2024</span></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 5. VISUALIZATION & REPORTS ==================== -->
+<section class="reports" id="reports">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>Visualization & Reports</h2>
+      <div class="underline"></div>
+      <p>Publication-ready QC reports and interactive visualizations.</p>
+    </div>
+    <div class="reports-grid animate-in">
+      <div class="reports-text">
+        <h3>From QC to Volcano Plots</h3>
+        <p><strong>pmultiqc</strong> generates interactive HTML reports with comprehensive QC metrics for every experiment. <strong>mokume</strong> adds differential expression reports, interactive plots, and workflow comparison dashboards.</p>
+        <ul class="report-features">
+          <li>Sample correlation heatmaps &amp; PCA</li>
+          <li>CV distributions &amp; missing value analysis</li>
+          <li>Volcano plots &amp; differential expression tables</li>
+          <li>Workflow comparison across methods</li>
+          <li>Interactive HTML &mdash; no extra tools needed</li>
+        </ul>
+        <a href="https://mokume.quantms.org/user-guide/visualization/" class="link-arrow" target="_blank" style="margin-right: 24px;">mokume reports &rarr;</a>
+        <a href="https://pmultiqc.quantms.org" class="link-arrow" target="_blank">pmultiqc &rarr;</a>
+      </div>
+      <div class="report-visual">
+        <svg viewBox="0 0 320 220">
+          <line x1="160" y1="10" x2="160" y2="200" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="20" y1="200" x2="300" y2="200" stroke="var(--border)" stroke-width="1"/>
+          <line x1="20" y1="200" x2="20" y2="10" stroke="var(--border)" stroke-width="1"/>
+          <line x1="20" y1="80" x2="300" y2="80" stroke="var(--text-muted)" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
+          <circle cx="140" cy="170" r="3" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="155" cy="160" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="165" cy="175" r="3" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="148" cy="150" r="2" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="172" cy="165" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="135" cy="145" r="3" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="180" cy="155" r="2" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="152" cy="185" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="168" cy="140" r="2" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="145" cy="130" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="175" cy="135" r="3" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="160" cy="120" r="2" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="50" cy="40" r="5" fill="var(--indigo)" opacity="0.7"/>
+          <circle cx="65" cy="55" r="4" fill="var(--indigo)" opacity="0.6"/>
+          <circle cx="45" cy="65" r="3.5" fill="var(--indigo)" opacity="0.5"/>
+          <circle cx="80" cy="70" r="3" fill="var(--indigo)" opacity="0.5"/>
+          <circle cx="55" cy="75" r="4" fill="var(--indigo)" opacity="0.6"/>
+          <circle cx="70" cy="90" r="3" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="90" cy="100" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
+          <circle cx="260" cy="30" r="6" fill="var(--blue)" opacity="0.7"/>
+          <circle cx="245" cy="50" r="4.5" fill="var(--blue)" opacity="0.6"/>
+          <circle cx="275" cy="45" r="4" fill="var(--blue)" opacity="0.6"/>
+          <circle cx="235" cy="60" r="3.5" fill="var(--blue)" opacity="0.5"/>
+          <circle cx="270" cy="68" r="3" fill="var(--blue)" opacity="0.5"/>
+          <circle cx="250" cy="78" r="3.5" fill="var(--blue)" opacity="0.55"/>
+          <circle cx="230" cy="95" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
+          <text x="160" y="215" text-anchor="middle" font-family="Inter" font-size="9" fill="var(--text-muted)">log2 Fold Change</text>
+          <text x="12" y="105" text-anchor="middle" font-family="Inter" font-size="9" fill="var(--text-muted)" transform="rotate(-90, 12, 105)">&minus;log10 p-value</text>
+          <text x="50" y="28" text-anchor="middle" font-family="Inter" font-size="8" font-weight="600" fill="var(--indigo)">Down</text>
+          <text x="260" y="20" text-anchor="middle" font-family="Inter" font-size="8" font-weight="600" fill="var(--blue)">Up</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 6. ECOSYSTEM ==================== -->
+<section class="ecosystem" id="ecosystem">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>The Ecosystem</h2>
+      <div class="underline"></div>
+      <p>Eight specialized tools, one unified platform.</p>
+    </div>
+    <div class="eco-grid">
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#409eff" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>quantms</h3>
+        <div class="eco-type">Nextflow Pipeline</div>
+        <p class="eco-desc">DDA proteomics: LFQ and TMT/iTRAQ workflows. <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" style="color:var(--blue-dark);font-weight:500;">Nature Methods 2024</a>.</p>
+        <div class="eco-links"><a href="https://docs.quantms.org" target="_blank">Docs &rarr;</a> <a href="https://github.com/bigbio/quantms" target="_blank">GitHub &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#409eff" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>quantmsdiann</h3>
+        <div class="eco-type">Nextflow Pipeline</div>
+        <p class="eco-desc">DIA proteomics powered by DIA-NN. Library-free and spectral library modes.</p>
+        <div class="eco-links"><a href="https://github.com/bigbio/quantmsdiann" target="_blank">GitHub &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"><rect x="3" y="12" width="4" height="9"/><rect x="10" y="5" width="4" height="16"/><rect x="17" y="9" width="4" height="12"/></svg>
+        </div>
+        <h3>mokume</h3>
+        <div class="eco-type">Python Library</div>
+        <p class="eco-desc">Protein quantification, normalization, batch correction, DE. Successor to <em>ibaqpy</em>.</p>
+        <div class="eco-links"><a href="https://mokume.quantms.org" target="_blank">Docs &rarr;</a> <a href="https://pypi.org/project/mokume/" target="_blank">PyPI &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+        </div>
+        <h3>qpx</h3>
+        <div class="eco-type">Python CLI</div>
+        <p class="eco-desc">Format conversion: DIA-NN, FragPipe, MaxQuant. AnnData export.</p>
+        <div class="eco-links"><a href="https://qpx.quantms.org" target="_blank">Docs &rarr;</a> <a href="https://github.com/bigbio/quantms.io" target="_blank">GitHub &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>pmultiqc</h3>
+        <div class="eco-type">MultiQC Plugin</div>
+        <p class="eco-desc">Interactive HTML QC reports for LFQ, TMT, and DIA.</p>
+        <div class="eco-links"><a href="https://pmultiqc.quantms.org" target="_blank">Docs &rarr;</a> <a href="https://github.com/bigbio/pmultiqc" target="_blank">GitHub &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#409eff" stroke-width="2" stroke-linecap="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        </div>
+        <h3>quantms-rescoring</h3>
+        <div class="eco-type">ML Tool</div>
+        <p class="eco-desc">PSM rescoring with MS2PIP, DeepLC, AlphaPeptDeep.</p>
+        <div class="eco-links"><a href="https://github.com/bigbio/quantms-rescoring" target="_blank">GitHub &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>sdrf-pipelines</h3>
+        <div class="eco-type">Python Library</div>
+        <p class="eco-desc">SDRF validation, annotation, and conversion for proteomics metadata.</p>
+        <div class="eco-links"><a href="https://github.com/bigbio/sdrf-pipelines" target="_blank">GitHub &rarr;</a> <a href="https://pypi.org/project/sdrf-pipelines/" target="_blank">PyPI &rarr;</a></div>
+      </div>
+      <div class="eco-card animate-in">
+        <div class="eco-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3>quantms.org</h3>
+        <div class="eco-type">Web Portal</div>
+        <p class="eco-desc">Browse reanalyzed proteomics datasets interactively.</p>
+        <div class="eco-links"><a href="https://portal.quantms.org" target="_blank">Visit &rarr;</a> <a href="https://github.com/bigbio/quantms.org" target="_blank">GitHub &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 7. WHY QUANTMS ==================== -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>Why quantms</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card animate-in">
+        <div class="why-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#409eff" stroke-width="1.5" stroke-linecap="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <h3>Standards-First</h3>
+        <p>SDRF metadata, open file formats, and reproducible workflows ensure every experiment is fully documented and shareable.</p>
+      </div>
+      <div class="why-card animate-in">
+        <div class="why-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+        </div>
+        <h3>Large-Scale & Cloud-Ready</h3>
+        <p>Process 50,000+ datasets at cloud scale. Nextflow orchestration with Docker/Singularity runs on laptops, HPC clusters, or AWS/GCP/Azure. Python libraries handle local analysis just as well.</p>
+      </div>
+      <div class="why-card animate-in">
+        <div class="why-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <h3>Works With Your Tools</h3>
+        <p>Not locked in. Use mokume and pmultiqc with data from quantms, quantmsdiann, MaxQuant, FragPipe, Spectronaut, or DIA-NN. Export to AnnData for the scverse ecosystem.</p>
+      </div>
+      <div class="why-card animate-in">
+        <div class="why-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="12" width="4" height="9"/><rect x="10" y="5" width="4" height="16"/><rect x="17" y="9" width="4" height="12"/></svg>
+        </div>
+        <h3>Publication-Ready</h3>
+        <p>Interactive QC reports, volcano plots, PCA, heatmaps, and differential expression tables &mdash; ready for your next manuscript.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 8. COMMUNITY ==================== -->
+<section class="community" id="community">
+  <div class="container">
+    <div class="section-header animate-in">
+      <h2>Open Science, Open Community</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="community-grid">
+      <div class="animate-in">
+        <h3>Contributors</h3>
+        <div class="contrib-grid">
+          <div class="contrib-avatar">YP</div>
+          <div class="contrib-avatar">JP</div>
+          <div class="contrib-avatar">HW</div>
+          <div class="contrib-avatar">PZ</div>
+          <div class="contrib-avatar">JK</div>
+          <div class="contrib-avatar">EA</div>
+          <div class="contrib-avatar">CD</div>
+          <div class="contrib-avatar">TS</div>
+          <div class="contrib-avatar">HW</div>
+          <div class="contrib-avatar">MB</div>
+          <div class="contrib-avatar">AS</div>
+          <div class="contrib-avatar">+</div>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 6px;">Join 20+ contributors from EMBL-EBI, OpenMS, and research institutions worldwide.</p>
+        <a href="https://github.com/bigbio" target="_blank" class="contrib-cta">
+          Contribute on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="animate-in">
+        <h3>Cited In Research</h3>
+        <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" class="pub-card" style="text-decoration:none;color:inherit;display:block;">
+          <h4>quantms: A cloud-based pipeline for quantitative proteomics enables the reanalysis of public datasets</h4>
+          <p class="pub-meta">Dai C, Pfeuffer J, Wang H, et al. &bull; <span class="pub-journal">Nature Methods</span> &bull; 2024</p>
+        </a>
+        <a href="https://doi.org/10.1016/j.jprot.2025.105440" target="_blank" class="pub-card" style="text-decoration:none;color:inherit;display:block;">
+          <h4>Ibaqpy: A scalable Python package for baseline quantification in proteomics leveraging SDRF metadata</h4>
+          <p class="pub-meta">Zheng P, Audain E, Webel H, et al. &bull; <span class="pub-journal">J Proteomics</span> &bull; 2025</p>
+        </a>
+        <a href="https://doi.org/10.1002/pmic.202300188" target="_blank" class="pub-card" style="text-decoration:none;color:inherit;display:block;">
+          <h4>Tissue-based absolute quantification using large-scale TMT and LFQ experiments</h4>
+          <p class="pub-meta">Wang H, Dai C, Pfeuffer J, et al. &bull; <span class="pub-journal">Proteomics</span> &bull; 2023</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">
+          <svg width="28" height="28" viewBox="0 0 70 70" fill="none" class="flogo-svg">
+            <polygon points="35,56 10,46 35,36 60,46" fill="#60a5fa" opacity="0.4"/>
+            <polygon points="35,48 14,40 35,32 56,40" fill="#818cf8" opacity="0.6"/>
+            <polygon points="35,40 18,34 35,28 52,34" fill="#a78bfa" opacity="0.75"/>
+            <rect x="24" y="20" width="2.5" height="6" rx="0.8" fill="#a78bfa" opacity="0.5"/>
+            <rect x="28" y="14" width="2.5" height="12" rx="0.8" fill="#c4b5fd" opacity="0.65"/>
+            <rect x="32" y="8" width="2.5" height="18" rx="0.8" fill="#a78bfa" opacity="0.9"/>
+            <rect x="36" y="12" width="2.5" height="14" rx="0.8" fill="#c4b5fd" opacity="0.7"/>
+            <rect x="40" y="18" width="2.5" height="8" rx="0.8" fill="#a78bfa" opacity="0.55"/>
+          </svg>
+          <span>quant<span style="color:#60a5fa">ms</span></span>
+        </div>
+        <p>A complete, open-source ecosystem for quantitative proteomics analysis.</p>
+        <div class="footer-social">
+          <a href="https://github.com/bigbio" target="_blank" title="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://twitter.com/quantikiwe" target="_blank" title="Twitter/X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="https://docs.quantms.org" target="_blank">quantms pipeline</a></li>
+          <li><a href="https://mokume.quantms.org" target="_blank">mokume</a></li>
+          <li><a href="https://qpx.quantms.org" target="_blank">qpx</a></li>
+          <li><a href="https://pmultiqc.quantms.org" target="_blank">pmultiqc</a></li>
+          <li><a href="https://github.com/bigbio/quantms-rescoring" target="_blank">quantms-rescoring</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://docs.quantms.org" target="_blank">Pipeline Docs</a></li>
+          <li><a href="https://docs.quantms.org" target="_blank">Quick Start</a></li>
+          <li><a href="https://mokume.quantms.org/reference/python-api/" target="_blank">Python API</a></li>
+          <li><a href="https://portal.quantms.org" target="_blank">Data Portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://github.com/bigbio" target="_blank">GitHub Organization</a></li>
+          <li><a href="https://github.com/bigbio/mokume" target="_blank">Contributing</a></li>
+          <li><a href="#community">Publications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024&ndash;2026 BigBio Team. MIT License.</span>
+      <span>Built with open science.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

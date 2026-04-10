@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-04-10T00:00:00Z",
+  "datasets": 57,
+  "collections": 3,
+  "workflows": 4,
+  "quant_methods": 6,
+  "organisms": 5,
+  "proteins": 42000,
+  "peptides": 890000,
+  "psms": 45000000,
+  "source": "portal.quantms.org"
+}
