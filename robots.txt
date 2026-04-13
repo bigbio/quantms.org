@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quantms.org/sitemap.xml
+
+# LLM Discovery
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: Amazonbot
+User-agent: Google-Extended
+Allow: /llms.txt
