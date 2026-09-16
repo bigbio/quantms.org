@@ -320,6 +320,7 @@ main:focus { outline: none; }
   .hero-pipeline svg { margin: 0 auto; }
   .hero-title { font-size: 2.5rem; }
   .workflow-grid, .data-grid, .formats-grid, .lib-grid, .reports-grid { grid-template-columns: 1fr; gap: 28px; }
+  .workflow-grid > *, .data-grid > *, .formats-grid > *, .lib-grid > *, .reports-grid > *, .hero-inner > * { min-width: 0; }
   .eco-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: 1fr; }
   .community-grid { grid-template-columns: 1fr; }
@@ -343,5 +344,7 @@ main:focus { outline: none; }
   .hero-ctas { flex-direction: column; align-items: center; }
   .data-stats { flex-wrap: wrap; }
   .hero-terminal .ht-tab { padding: 8px 10px; }
+  .workflow-visual { padding: 16px; }
+  .wf-stage { flex-wrap: wrap; padding: 10px 12px; }
   .terminal-tab { padding: 8px 14px; }
 }
