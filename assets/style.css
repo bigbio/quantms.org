@@ -283,8 +283,16 @@ a:hover { color: var(--teal-dark); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 14px 0; display: flex; justify-content: space-between; font-size: 0.72rem; color: #64748b; }
 
 /* ===== ANIMATIONS ===== */
-.animate-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.animate-in.visible { opacity: 1; transform: translateY(0); }
+/* Content is only hidden for the reveal animation when JavaScript is running */
+.js .animate-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.js .animate-in.visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .animate-in { opacity: 1; transform: none; transition: none; }
+  .particle, .scroll-indicator svg, .dash-animated { animation: none !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
