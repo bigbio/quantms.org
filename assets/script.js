@@ -1,6 +1,12 @@
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // Nav scroll effect
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+if (nav) {
+  const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 60);
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+}
 
 // Mobile menu: open/close, Esc to close, focus trap, restore focus
 (function () {
@@ -48,26 +54,48 @@ window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', windo
 })();
 
 // Scroll animations
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-}, { threshold: 0.12 });
-document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
-
-// Hero terminal tab switching
-function heroTab(tab) {
-  document.querySelectorAll('.ht-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.ht-panel').forEach(p => p.classList.remove('active'));
-  document.querySelector(`[onclick="heroTab('${tab}')"]`).classList.add('active');
-  document.getElementById(`hero-${tab}`).classList.add('active');
+if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+  document.querySelectorAll('.animate-in').forEach(el => el.classList.add('visible'));
+} else {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 }
 
-// Library terminal tab switching
-function switchTab(tab) {
-  document.querySelectorAll('.terminal-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.t-panel').forEach(p => p.classList.remove('active'));
-  document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
-  document.getElementById(`tab-${tab}`).classList.add('active');
+// Terminal tab switching (hero + mokume examples)
+// Buttons carry data-tab; each one points at its panel through aria-controls.
+function initTabs(tablist) {
+  const tabs = [...tablist.querySelectorAll('[role="tab"]')];
+  function select(tab, focus) {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.classList.toggle('active', on);
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => select(tab, false));
+    tab.addEventListener('keydown', e => {
+      let next = null;
+      if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') next = tabs[0];
+      else if (e.key === 'End') next = tabs[tabs.length - 1];
+      if (next) { e.preventDefault(); select(next, true); }
+    });
+  });
 }
+document.querySelectorAll('.ht-tabs, .terminal-tabs').forEach(initTabs);
 
 // Load portal stats (homepage only)
 // The live file is published by the quantms-portal build. A copy is kept in
@@ -109,17 +137,26 @@ function loadPortalStats() {
 
 // Stat counter animation
 function formatStat(value) {
-  if (value >= 1000000) return (value / 1000000).toFixed(1) + 'M';
-  if (value >= 1000) return (value / 1000).toFixed(0) + 'K';
-  return value.toString();
+  // Decide the unit after rounding, so 999,500 shows as "1.0M" rather than "1000K"
+  if (value >= 999500) return (value / 1000000).toFixed(1) + 'M';
+  if (value >= 1000) return Math.round(value / 1000) + 'K';
+  return String(value);
 }
 
 function initStatCounters() {
+  const counters = document.querySelectorAll('[data-target]');
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    counters.forEach(el => {
+      const target = parseInt(el.getAttribute('data-target'), 10);
+      if (target) el.textContent = formatStat(target);
+    });
+    return;
+  }
   const statObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const target = parseInt(el.getAttribute('data-target'));
+        const target = parseInt(el.getAttribute('data-target'), 10);
         if (!target || el.dataset.counted) return;
         el.dataset.counted = 'true';
         const duration = 2000;
@@ -137,7 +174,7 @@ function initStatCounters() {
       }
     });
   }, { threshold: 0.5 });
-  document.querySelectorAll('[data-target]').forEach(el => statObserver.observe(el));
+  counters.forEach(el => statObserver.observe(el));
 }
 
 // Load stats on page load, then init counters

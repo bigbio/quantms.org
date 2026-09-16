@@ -233,15 +233,15 @@
           <div class="ht-dot green"></div>
           <div class="ht-title">ecosystem tools</div>
         </div>
-        <div class="ht-tabs">
-          <button class="ht-tab active" onclick="heroTab('quantms')">quantms</button>
-          <button class="ht-tab" onclick="heroTab('quantmsdiann')">quantmsdiann</button>
-          <button class="ht-tab" onclick="heroTab('qpx')">qpx</button>
-          <button class="ht-tab" onclick="heroTab('mokume')">mokume</button>
-          <button class="ht-tab" onclick="heroTab('pmultiqc')">pmultiqc</button>
+        <div class="ht-tabs" role="tablist" aria-label="Ecosystem tool examples">
+          <button type="button" class="ht-tab active" role="tab" id="hero-tab-quantms" data-tab="quantms" aria-controls="hero-quantms" aria-selected="true">quantms</button>
+          <button type="button" class="ht-tab" role="tab" id="hero-tab-quantmsdiann" data-tab="quantmsdiann" aria-controls="hero-quantmsdiann" aria-selected="false" tabindex="-1">quantmsdiann</button>
+          <button type="button" class="ht-tab" role="tab" id="hero-tab-qpx" data-tab="qpx" aria-controls="hero-qpx" aria-selected="false" tabindex="-1">qpx</button>
+          <button type="button" class="ht-tab" role="tab" id="hero-tab-mokume" data-tab="mokume" aria-controls="hero-mokume" aria-selected="false" tabindex="-1">mokume</button>
+          <button type="button" class="ht-tab" role="tab" id="hero-tab-pmultiqc" data-tab="pmultiqc" aria-controls="hero-pmultiqc" aria-selected="false" tabindex="-1">pmultiqc</button>
         </div>
         <div class="ht-body">
-          <div class="ht-panel active" id="hero-quantms">
+          <div class="ht-panel active" id="hero-quantms" role="tabpanel" aria-labelledby="hero-tab-quantms" tabindex="0">
 <pre><span class="cm"># DDA proteomics pipeline (LFQ &amp; TMT/iTRAQ)</span>
 nextflow run bigbio/quantms \
     <span class="fl">-profile</span> docker \
@@ -252,7 +252,7 @@ nextflow run bigbio/quantms \
 <span class="cm"># Runs on laptops, HPC, or AWS/GCP/Azure</span>
 <span class="cm"># DDA-LFQ, DDA-ISO (TMT/iTRAQ) workflows</span></pre>
           </div>
-          <div class="ht-panel" id="hero-quantmsdiann">
+          <div class="ht-panel" id="hero-quantmsdiann" role="tabpanel" aria-labelledby="hero-tab-quantmsdiann" tabindex="0">
 <pre><span class="cm"># DIA proteomics pipeline (powered by DIA-NN)</span>
 nextflow run bigbio/quantmsdiann \
     <span class="fl">-profile</span> docker \
@@ -263,7 +263,7 @@ nextflow run bigbio/quantmsdiann \
 <span class="cm"># Dedicated DIA workflow with DIA-NN engine</span>
 <span class="cm"># Library-free or spectral library modes</span></pre>
           </div>
-          <div class="ht-panel" id="hero-qpx">
+          <div class="ht-panel" id="hero-qpx" role="tabpanel" aria-labelledby="hero-tab-qpx" tabindex="0">
 <pre><span class="cm"># Convert search engine outputs to unified format</span>
 qpx convert \
     <span class="fl">--tool</span> <span class="str">diann</span> \
@@ -274,7 +274,7 @@ qpx convert \
 <span class="cm">#   Spectronaut, quantms, Sage, MSFragger</span>
 <span class="cm"># Export to Parquet or AnnData (.h5ad)</span></pre>
           </div>
-          <div class="ht-panel" id="hero-mokume">
+          <div class="ht-panel" id="hero-mokume" role="tabpanel" aria-labelledby="hero-tab-mokume" tabindex="0">
 <pre><span class="cm"># Protein quantification from any search engine</span>
 <span class="cm"># Works with quantms, quantmsdiann, MaxQuant, FragPipe</span>
 mokume features2proteins \
@@ -289,7 +289,7 @@ mokume features2proteins \
     <span class="fl">--quant-method</span> <span class="str">median</span> \
     <span class="fl">--irs</span> <span class="fl">--de</span></pre>
           </div>
-          <div class="ht-panel" id="hero-pmultiqc">
+          <div class="ht-panel" id="hero-pmultiqc" role="tabpanel" aria-labelledby="hero-tab-pmultiqc" tabindex="0">
 <pre><span class="cm"># Interactive QC reports for any experiment</span>
 multiqc results/ \
     <span class="fl">--module</span> <span class="str">pmultiqc</span>
@@ -640,13 +640,13 @@ mokume features2proteins \
           <div class="terminal-dot green"></div>
           <div class="terminal-title">mokume</div>
         </div>
-        <div class="terminal-tabs">
-          <button class="terminal-tab active" onclick="switchTab('cli')">CLI</button>
-          <button class="terminal-tab" onclick="switchTab('python')">Python</button>
-          <button class="terminal-tab" onclick="switchTab('nextflow')">Nextflow</button>
+        <div class="terminal-tabs" role="tablist" aria-label="mokume usage examples">
+          <button type="button" class="terminal-tab active" role="tab" id="lib-tab-cli" data-tab="cli" aria-controls="tab-cli" aria-selected="true">CLI</button>
+          <button type="button" class="terminal-tab" role="tab" id="lib-tab-python" data-tab="python" aria-controls="tab-python" aria-selected="false" tabindex="-1">Python</button>
+          <button type="button" class="terminal-tab" role="tab" id="lib-tab-nextflow" data-tab="nextflow" aria-controls="tab-nextflow" aria-selected="false" tabindex="-1">Nextflow</button>
         </div>
         <div class="terminal-body">
-          <div class="t-panel active" id="tab-cli">
+          <div class="t-panel active" id="tab-cli" role="tabpanel" aria-labelledby="lib-tab-cli" tabindex="0">
 <pre><span class="cm"># LFQ quantification</span>
 mokume features2proteins \
     <span class="fl">-p</span> features.parquet \
@@ -661,7 +661,7 @@ mokume features2proteins \
     <span class="fl">--irs</span> <span class="fl">--de</span> \
     <span class="fl">--de-contrasts</span> <span class="str">"NASH-HL"</span></pre>
           </div>
-          <div class="t-panel" id="tab-python">
+          <div class="t-panel" id="tab-python" role="tabpanel" aria-labelledby="lib-tab-python" tabindex="0">
 <pre><span class="kw">from</span> mokume.pipeline <span class="kw">import</span> (
     QuantificationPipeline, PipelineConfig
 )
@@ -681,7 +681,7 @@ config <span class="op">=</span> <span class="fn">PipelineConfig</span>(
 pipeline <span class="op">=</span> <span class="fn">QuantificationPipeline</span>(config)
 proteins <span class="op">=</span> pipeline.<span class="fn">run</span>()</pre>
           </div>
-          <div class="t-panel" id="tab-nextflow">
+          <div class="t-panel" id="tab-nextflow" role="tabpanel" aria-labelledby="lib-tab-nextflow" tabindex="0">
 <pre><span class="cm">// Run quantms pipeline</span>
 nextflow run bigbio/quantms \
     <span class="fl">-profile</span> docker \
