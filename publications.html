@@ -134,7 +134,22 @@
   margin: 0 auto;
 }
 .tabs-wrapper input[type="radio"] {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+  opacity: 0;
+}
+#tab-team:focus-visible ~ .tab-labels label[for="tab-team"],
+#tab-using:focus-visible ~ .tab-labels label[for="tab-using"] {
+  outline: 2px solid var(--blue-dark);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 .tab-labels {
   display: flex;
@@ -357,8 +372,8 @@
     </div>
 
     <div class="tabs-wrapper animate-in">
-      <input type="radio" name="pub-tabs" id="tab-team" checked>
-      <input type="radio" name="pub-tabs" id="tab-using">
+      <input type="radio" name="pub-tabs" id="tab-team" aria-controls="pub-team" checked>
+      <input type="radio" name="pub-tabs" id="tab-using" aria-controls="pub-using">
 
       <div class="tab-labels">
         <label for="tab-team">Team Publications (9)</label>
@@ -366,7 +381,7 @@
       </div>
 
       <!-- Team Publications -->
-      <div class="tab-content team-content">
+      <div class="tab-content team-content" id="pub-team">
         <ul class="pub-list">
           <li class="pub-list-item">
             <span class="pub-year-badge">2026</span>
@@ -453,7 +468,7 @@
       </div>
 
       <!-- Using quantms -->
-      <div class="tab-content using-content">
+      <div class="tab-content using-content" id="pub-using">
         <ul class="pub-list">
           <li class="pub-list-item">
             <span class="pub-year-badge">2026</span>
