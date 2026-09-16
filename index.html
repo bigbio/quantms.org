@@ -102,13 +102,15 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <div class="gradient-bar"></div>
 
 <!-- Navigation -->
-<nav class="nav" id="nav">
+<nav class="nav" id="nav" aria-label="Main">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <svg width="48" height="48" viewBox="0 0 70 70" fill="none" class="logo-svg">
+    <a href="index.html" class="nav-logo" aria-label="quantms home">
+      <svg width="48" height="48" viewBox="0 0 70 70" fill="none" class="logo-svg" aria-hidden="true" focusable="false">
         <polygon points="35,56 10,46 35,36 60,46" fill="#409eff" opacity="0.3"/>
         <polygon points="35,48 14,40 35,32 56,40" fill="#6366f1" opacity="0.5"/>
         <polygon points="35,40 18,34 35,28 52,34" fill="#7c3aed" opacity="0.65"/>
@@ -121,30 +123,36 @@
       <span>quant<span class="logo-accent">ms</span></span>
     </a>
     <div class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="#workflow">Workflow</a>
       <a href="#ecosystem">Ecosystem</a>
       <a href="tools.html">Tools</a>
       <a href="publications.html">Publications</a>
       <a href="about.html">About</a>
-      <a href="https://github.com/bigbio" target="_blank" class="nav-github">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      <a href="https://github.com/bigbio" target="_blank" rel="noopener" class="nav-github" aria-label="bigbio on GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
       </a>
-      <a href="https://docs.quantms.org" class="nav-cta" target="_blank">Get Started</a>
+      <a href="https://docs.quantms.org" class="nav-cta" target="_blank" rel="noopener">Get Started</a>
     </div>
-    <button class="nav-hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    <button type="button" class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
-  <a href="#workflow" onclick="this.parentElement.classList.remove('open')">Workflow</a>
-  <a href="#ecosystem" onclick="this.parentElement.classList.remove('open')">Ecosystem</a>
-  <a href="tools.html" onclick="this.parentElement.classList.remove('open')">Tools</a>
-  <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
-  <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <button type="button" class="mobile-close" aria-label="Close menu"><span aria-hidden="true">&times;</span></button>
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="#workflow">Workflow</a>
+  <a href="#ecosystem">Ecosystem</a>
+  <a href="tools.html">Tools</a>
+  <a href="publications.html">Publications</a>
+  <a href="about.html">About</a>
+  <a href="https://github.com/bigbio" target="_blank" rel="noopener" class="mobile-github"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub</a>
+  <a href="https://docs.quantms.org" target="_blank" rel="noopener" class="nav-cta">Get Started</a>
 </div>
+
+<main id="main" tabindex="-1">
 
 <!-- ==================== HERO ==================== -->
 <section class="hero" id="home">
@@ -926,13 +934,15 @@ nextflow run bigbio/quantms \
   </div>
 </section>
 
+</main>
+
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand-name">
-          <svg width="28" height="28" viewBox="0 0 70 70" fill="none" class="flogo-svg">
+          <svg width="28" height="28" viewBox="0 0 70 70" fill="none" class="flogo-svg" aria-hidden="true" focusable="false">
             <polygon points="35,56 10,46 35,36 60,46" fill="#60a5fa" opacity="0.4"/>
             <polygon points="35,48 14,40 35,32 56,40" fill="#818cf8" opacity="0.6"/>
             <polygon points="35,40 18,34 35,28 52,34" fill="#a78bfa" opacity="0.75"/>
@@ -942,39 +952,40 @@ nextflow run bigbio/quantms \
             <rect x="36" y="12" width="2.5" height="14" rx="0.8" fill="#c4b5fd" opacity="0.7"/>
             <rect x="40" y="18" width="2.5" height="8" rx="0.8" fill="#a78bfa" opacity="0.55"/>
           </svg>
-          <span>quant<span style="color:#60a5fa">ms</span></span>
+          <span>quant<span class="footer-accent">ms</span></span>
         </div>
         <p>A complete, open-source ecosystem for quantitative proteomics analysis.</p>
         <div class="footer-social">
-          <a href="https://github.com/bigbio" target="_blank" title="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
-          <a href="https://twitter.com/quantikiwe" target="_blank" title="Twitter/X"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://github.com/bigbio" target="_blank" rel="noopener" title="GitHub" aria-label="bigbio on GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+          <a href="https://twitter.com/quantikiwe" target="_blank" rel="noopener" title="Twitter/X" aria-label="quantms on X (Twitter)"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
         </div>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h2 class="footer-heading">Tools</h2>
         <ul>
-          <li><a href="https://docs.quantms.org" target="_blank">quantms pipeline</a></li>
-          <li><a href="https://mokume.quantms.org" target="_blank">mokume</a></li>
-          <li><a href="https://qpx.quantms.org" target="_blank">qpx</a></li>
-          <li><a href="https://pmultiqc.quantms.org" target="_blank">pmultiqc</a></li>
-          <li><a href="https://github.com/bigbio/quantms-rescoring" target="_blank">quantms-rescoring</a></li>
+          <li><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms pipeline</a></li>
+          <li><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a></li>
+          <li><a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a></li>
+          <li><a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx</a></li>
+          <li><a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a></li>
+          <li><a href="https://github.com/bigbio/quantms-rescoring" target="_blank" rel="noopener">quantms-rescoring</a></li>
         </ul>
       </div>
       <div>
-        <h4>Resources</h4>
+        <h2 class="footer-heading">Resources</h2>
         <ul>
-          <li><a href="https://docs.quantms.org" target="_blank">Pipeline Docs</a></li>
-          <li><a href="https://docs.quantms.org" target="_blank">Quick Start</a></li>
-          <li><a href="https://mokume.quantms.org/reference/python-api/" target="_blank">Python API</a></li>
-          <li><a href="https://portal.quantms.org" target="_blank">Data Portal</a></li>
+          <li><a href="https://docs.quantms.org" target="_blank" rel="noopener">Pipeline Docs</a></li>
+          <li><a href="https://docs.quantms.org/usage/" target="_blank" rel="noopener">Quick Start</a></li>
+          <li><a href="https://mokume.quantms.org/reference/python-api/" target="_blank" rel="noopener">Python API</a></li>
+          <li><a href="https://portal.quantms.org" target="_blank" rel="noopener">Data Portal</a></li>
         </ul>
       </div>
       <div>
-        <h4>Community</h4>
+        <h2 class="footer-heading">Community</h2>
         <ul>
-          <li><a href="https://github.com/bigbio" target="_blank">GitHub Organization</a></li>
-          <li><a href="https://github.com/bigbio/mokume" target="_blank">Contributing</a></li>
-          <li><a href="#community">Publications</a></li>
+          <li><a href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub Organization</a></li>
+          <li><a href="https://github.com/bigbio/quantms/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li>
+          <li><a href="publications.html">Publications</a></li>
         </ul>
       </div>
     </div>

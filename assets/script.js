@@ -2,6 +2,51 @@
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
 
+// Mobile menu: open/close, Esc to close, focus trap, restore focus
+(function () {
+  const menu = document.getElementById('mobileMenu');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (!menu || !toggle) return;
+  const closeBtn = menu.querySelector('.mobile-close');
+  const focusables = () => [...menu.querySelectorAll('a[href], button:not([disabled])')];
+
+  function openMenu() {
+    menu.hidden = false;
+    menu.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('menu-open');
+    (closeBtn || focusables()[0]).focus();
+  }
+  function closeMenu(restoreFocus = true) {
+    menu.classList.remove('open');
+    menu.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+    if (restoreFocus) toggle.focus();
+  }
+
+  toggle.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', () => closeMenu());
+  menu.addEventListener('click', e => {
+    const link = e.target.closest('a');
+    if (link) closeMenu(false);
+  });
+  document.addEventListener('keydown', e => {
+    if (!menu.classList.contains('open')) return;
+    if (e.key === 'Escape') { e.preventDefault(); closeMenu(); return; }
+    if (e.key === 'Tab') {
+      const items = focusables();
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  // Close the overlay if the viewport grows past the mobile breakpoint
+  window.matchMedia('(min-width: 769px)').addEventListener('change', e => {
+    if (e.matches && menu.classList.contains('open')) closeMenu(false);
+  });
+})();
+
 // Scroll animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
