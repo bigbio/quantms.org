@@ -152,6 +152,25 @@ a:hover { color: var(--teal-dark); }
 .data-stat-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; margin-top: 2px; }
 .link-arrow { font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
 
+/* ===== AI & MODELS ===== */
+.ai-section { padding: var(--section-pad) 0; background: var(--bg); }
+.ai-text h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 16px; }
+.ai-text p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
+.ai-stats { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+.ai-stat { text-align: center; }
+.ai-stat-num { font-size: 1.8rem; font-weight: 800; background: var(--gradient-subtle); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.ai-stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.ai-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.ai-ctas .btn-primary, .ai-ctas .btn-outline { font-size: 0.85rem; padding: 10px 20px; }
+.ai-pipeline { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+.ai-pipeline-title { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 16px; }
+.ai-steps { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.ai-step { display: flex; align-items: center; gap: 12px; }
+.ai-step-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.ai-step-title { font-size: 0.85rem; font-weight: 600; }
+.ai-step-desc { font-size: 0.7rem; color: var(--text-muted); }
+.ai-step-connector { margin-left: 18px; height: 16px; border-left: 2px dashed var(--border); }
+
 /* ===== 3. FORMATS & STANDARDS ===== */
 .formats { padding: var(--section-pad) 0; background: var(--bg); }
 .formats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); align-items: center; }
