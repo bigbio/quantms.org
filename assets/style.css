@@ -298,6 +298,7 @@ a:hover { color: var(--teal-dark); }
   .why-grid { grid-template-columns: 1fr; }
   .community-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .scroll-indicator { display: none; }
 }
 @media (max-width: 768px) {
   :root { --section-pad: 48px; --grid-gap: 24px; }
