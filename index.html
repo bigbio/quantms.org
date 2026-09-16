@@ -77,7 +77,7 @@
       "@type": "DataCatalog",
       "name": "quantms Portal",
       "url": "https://portal.quantms.org",
-      "description": "Data portal with 251 standardized proteomics datasets in QPX format"
+      "description": "Data portal with standardized, reanalyzed public proteomics datasets in QPX format"
     }
   ]
 }
@@ -465,12 +465,12 @@ mokume features2proteins \
       </div>
       <div class="data-text">
         <h3>Explore Reanalyzed Datasets</h3>
-        <p>The <strong>quantms.org</strong> data portal hosts thousands of public proteomics datasets reanalyzed from <strong>ProteomeXchange</strong> repositories (PRIDE, MassIVE, jPOST). Browse absolute and differential expression across tissues, diseases, and organisms. All ecosystem tools also work locally for your own data analysis.</p>
+        <p>The <strong>quantms.org</strong> data portal hosts hundreds of public proteomics datasets reanalyzed from <strong>ProteomeXchange</strong> repositories (PRIDE, MassIVE, jPOST). Browse absolute and differential expression across tissues, diseases, and organisms. All ecosystem tools also work locally for your own data analysis.</p>
         <div class="data-stats" id="portal-stats">
-          <div class="data-stat"><div class="data-stat-num" data-stat="datasets" data-target="0">0</div><div class="data-stat-label">Datasets</div></div>
-          <div class="data-stat"><div class="data-stat-num" data-stat="collections" data-target="0">0</div><div class="data-stat-label">Collections</div></div>
-          <div class="data-stat"><div class="data-stat-num" data-stat="organisms" data-target="0">0</div><div class="data-stat-label">Organisms</div></div>
-          <div class="data-stat"><div class="data-stat-num" data-stat="proteins" data-target="0">0</div><div class="data-stat-label">Proteins</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="datasets" data-target="251">251</div><div class="data-stat-label">Datasets</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="collections" data-target="4">4</div><div class="data-stat-label">Collections</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="organisms" data-target="53">53</div><div class="data-stat-label">Organisms</div></div>
+          <div class="data-stat"><div class="data-stat-num" data-stat="proteins" data-target="648023">648K</div><div class="data-stat-label">Proteins</div></div>
         </div>
         <a href="https://portal.quantms.org" class="link-arrow" target="_blank">Visit data portal &rarr;</a>
       </div>
@@ -489,7 +489,7 @@ mokume features2proteins \
     <div class="data-grid animate-in">
       <div class="ai-text">
         <h3>From Data to Models</h3>
-        <p>The quantms ecosystem reanalyzes thousands of public proteomics experiments, producing standardized datasets. These datasets train deep learning models that improve every step of the pipeline &mdash; from spectrum prediction to de novo sequencing.</p>
+        <p>The quantms ecosystem reanalyzes hundreds of public proteomics datasets, producing standardized, metadata-rich results. These datasets train deep learning models that improve every step of the pipeline &mdash; from spectrum prediction to de novo sequencing.</p>
         <div class="ai-stats">
           <div class="ai-stat">
             <div class="ai-stat-num">500M+</div>
@@ -523,7 +523,7 @@ mokume features2proteins \
               </div>
               <div>
                 <div class="ai-step-title">Public Datasets</div>
-                <div class="ai-step-desc">50,000+ experiments from ProteomeXchange</div>
+                <div class="ai-step-desc">Public experiments from ProteomeXchange (PRIDE, MassIVE, jPOST)</div>
               </div>
             </li>
             <li class="ai-step-connector" aria-hidden="true"></li>
@@ -858,7 +858,7 @@ nextflow run bigbio/quantms \
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
         </div>
         <h3>Large-Scale & Cloud-Ready</h3>
-        <p>Process 50,000+ datasets at cloud scale. Nextflow orchestration with Docker/Singularity runs on laptops, HPC clusters, or AWS/GCP/Azure. Python libraries handle local analysis just as well.</p>
+        <p>Reanalyze hundreds of public datasets at cloud scale. Nextflow orchestration with Docker/Singularity runs on laptops, HPC clusters, or AWS/GCP/Azure. Python libraries handle local analysis just as well.</p>
       </div>
       <div class="why-card animate-in">
         <div class="why-icon">
