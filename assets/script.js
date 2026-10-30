@@ -1,181 +1,194 @@
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Live data portal numbers (homepage only).
+// Catalogue numbers come from the dataset-search API; protein and peptide counts come from
+// the statistics file of the peptide search index; model and tool counts come from the PRIDE
+// FTP models folder. Placeholders hold each value's place while it loads; a group is removed
+// if its source fails.
+const DATASETS_API = 'https://api.quantms.org/dataset-search';
+const INDEX_STATS = 'https://browse.quantms.org/quantms/apps/statistics/stats.json';
+const MODELS_FTP = 'https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-models/';
 
-// Nav scroll effect
-const nav = document.getElementById('nav');
-if (nav) {
-  const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 60);
-  window.addEventListener('scroll', updateNav, { passive: true });
-  updateNav();
+function getJSON(url) {
+  return fetch(url).then(r => {
+    if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
+    return r.json();
+  });
 }
 
-// Mobile menu: open/close, Esc to close, focus trap, restore focus
-(function () {
-  const menu = document.getElementById('mobileMenu');
-  const toggle = document.querySelector('.nav-hamburger');
-  if (!menu || !toggle) return;
-  const closeBtn = menu.querySelector('.mobile-close');
-  const focusables = () => [...menu.querySelectorAll('a[href], button:not([disabled])')];
-
-  function openMenu() {
-    menu.hidden = false;
-    menu.classList.add('open');
-    toggle.setAttribute('aria-expanded', 'true');
-    document.body.classList.add('menu-open');
-    (closeBtn || focusables()[0]).focus();
+async function loadCatalogue() {
+  const collections = (await getJSON(`${DATASETS_API}/collections`)).collections;
+  const datasets = [];
+  for (let page = 1; ; page++) {
+    const res = await getJSON(`${DATASETS_API}/datasets?page_size=200&page=${page}`);
+    datasets.push(...res.datasets);
+    if (page >= res.total_pages) break;
   }
-  function closeMenu(restoreFocus = true) {
-    menu.classList.remove('open');
-    menu.hidden = true;
-    toggle.setAttribute('aria-expanded', 'false');
-    document.body.classList.remove('menu-open');
-    if (restoreFocus) toggle.focus();
-  }
+  return {
+    collections: collections.length,
+    datasets: new Set(datasets.map(d => d.dataset_ref)).size,
+    accessions: new Set(datasets.map(d => d.accession)).size,
+  };
+}
 
-  toggle.addEventListener('click', openMenu);
-  if (closeBtn) closeBtn.addEventListener('click', () => closeMenu());
-  menu.addEventListener('click', e => {
-    const link = e.target.closest('a');
-    if (link) closeMenu(false);
-  });
-  document.addEventListener('keydown', e => {
-    if (!menu.classList.contains('open')) return;
-    if (e.key === 'Escape') { e.preventDefault(); closeMenu(); return; }
-    if (e.key === 'Tab') {
-      const items = focusables();
-      const first = items[0], last = items[items.length - 1];
-      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+async function loadIndex() {
+  const stats = await getJSON(INDEX_STATS);
+  return {
+    proteins: stats.kpis.proteins,
+    peptides: stats.kpis.peptides,
+    generated: stats.generated_at.slice(0, 10),
+  };
+}
+
+// Paths of the files below an Apache directory index, relative to the root, walking sub-folders.
+async function listFiles(url, prefix = '') {
+  const res = await fetch(url + prefix);
+  if (!res.ok) throw new Error(`${url + prefix}: HTTP ${res.status}`);
+  const names = [...(await res.text()).matchAll(/<a href="([^"?/][^"]*)">/g)].map(m => m[1]);
+  const nested = await Promise.all(names.map(n => n.endsWith('/') ? listFiles(url, prefix + n) : [prefix + n]));
+  return nested.flat();
+}
+
+// Released models are the files of the FTP folder; their folders are <collection>/<tool>/.
+async function loadModels() {
+  const files = await listFiles(MODELS_FTP);
+  return {
+    models: files.length,
+    tools: new Set(files.map(f => f.split('/')[1])).size,
+  };
+}
+
+function compact(value) {
+  if (value >= 1e6) return (value / 1e6).toFixed(1) + 'M';
+  if (value >= 1e4) return (value / 1e3).toFixed(1) + 'K';
+  return value.toLocaleString('en-US');
+}
+
+function show(box, values) {
+  for (const [key, value] of Object.entries(values)) {
+    const el = box.querySelector(`[data-num="${key}"]`);
+    if (typeof value === 'number') {
+      el.textContent = compact(value);
+      el.title = value.toLocaleString('en-US');
+    } else {
+      el.textContent = value;
     }
-  });
-  // Close the overlay if the viewport grows past the mobile breakpoint
-  window.matchMedia('(min-width: 769px)').addEventListener('change', e => {
-    if (e.matches && menu.classList.contains('open')) closeMenu(false);
-  });
-})();
-
-// Scroll animations
-if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-  document.querySelectorAll('.animate-in').forEach(el => el.classList.add('visible'));
-} else {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
-}
-
-// Terminal tab switching (hero + mokume examples)
-// Buttons carry data-tab; each one points at its panel through aria-controls.
-function initTabs(tablist) {
-  const tabs = [...tablist.querySelectorAll('[role="tab"]')];
-  function select(tab, focus) {
-    tabs.forEach(t => {
-      const on = t === tab;
-      t.classList.toggle('active', on);
-      t.setAttribute('aria-selected', on ? 'true' : 'false');
-      t.tabIndex = on ? 0 : -1;
-      const panel = document.getElementById(t.getAttribute('aria-controls'));
-      if (panel) panel.classList.toggle('active', on);
-    });
-    if (focus) tab.focus();
+    el.classList.add('data-in');
   }
-  tabs.forEach((tab, i) => {
-    tab.addEventListener('click', () => select(tab, false));
-    tab.addEventListener('keydown', e => {
-      let next = null;
-      if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
-      else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
-      else if (e.key === 'Home') next = tabs[0];
-      else if (e.key === 'End') next = tabs[tabs.length - 1];
-      if (next) { e.preventDefault(); select(next, true); }
-    });
+  box.removeAttribute('aria-busy');
+}
+
+function drop(box, group, err) {
+  console.warn(`portal ${group}:`, err);
+  box.querySelectorAll(`[data-group="${group}"]`).forEach(el => { el.hidden = true; });
+  box.removeAttribute('aria-busy');
+  if (!box.querySelector('dl > div:not([hidden])')) box.hidden = true;
+}
+
+const numbersBox = document.getElementById('portal-numbers');
+if (numbersBox) {
+  // Shown only when this script runs, so visitors without JavaScript never see placeholders.
+  numbersBox.hidden = false;
+  numbersBox.setAttribute('aria-busy', 'true');
+  loadCatalogue().then(v => show(numbersBox, v)).catch(err => drop(numbersBox, 'catalog', err));
+  loadIndex().then(v => show(numbersBox, v)).catch(err => drop(numbersBox, 'index', err));
+}
+
+const modelsBox = document.getElementById('model-numbers');
+if (modelsBox) {
+  modelsBox.querySelectorAll('[data-group="models"]').forEach(el => { el.hidden = false; });
+  modelsBox.setAttribute('aria-busy', 'true');
+  loadModels().then(v => show(modelsBox, v)).catch(err => drop(modelsBox, 'models', err));
+}
+
+// Pipeline map in the home intro: hovering, tapping or focusing a step shows what it does,
+// and hovering a line, a legend key or a step of one workflow fades the other workflow.
+const metro = document.querySelector('.metro-card');
+if (metro) {
+  const tip = metro.querySelector('.metro-tip');
+  const steps = [...metro.querySelectorAll('.metro-step')];
+  let active = null;
+
+  // Parameter names (--name) are set as code so they never break across lines.
+  function fill(el, text) {
+    el.replaceChildren(...text.split(/(--[a-z_]+)/).map((part, i) => (
+      i % 2 ? Object.assign(document.createElement('code'), { textContent: part }) : part
+    )));
+  }
+
+  function showTip(step) {
+    if (active) active.classList.remove('is-active');
+    active = step;
+    step.classList.add('is-active');
+    tip.querySelector('b').textContent = step.getAttribute('aria-label');
+    fill(tip.querySelector('span'), step.dataset.tip);
+    fill(tip.querySelector('small'), step.dataset.meta || '');
+    tip.hidden = false;
+    // Centre above the step, or below it when there is no room inside the figure.
+    const box = metro.getBoundingClientRect();
+    const mark = step.querySelector('.metro-hit').getBoundingClientRect();
+    const left = mark.left + mark.width / 2 - box.left - tip.offsetWidth / 2;
+    tip.style.left = `${Math.max(8, Math.min(left, box.width - tip.offsetWidth - 8))}px`;
+    const above = mark.top - box.top - tip.offsetHeight - 6;
+    tip.style.top = `${above >= 8 ? above : mark.bottom - box.top + 6}px`;
+  }
+
+  function hideTip() {
+    if (active) active.classList.remove('is-active');
+    active = null;
+    tip.hidden = true;
+  }
+
+  function highlight(route) {
+    if (route) metro.dataset.focus = route;
+    else delete metro.dataset.focus;
+  }
+
+  // One tab stop for the whole map; the arrow keys move between steps.
+  steps.forEach((step, i) => { step.tabIndex = i ? -1 : 0; });
+
+  metro.addEventListener('pointerover', e => {
+    const step = e.target.closest('.metro-step');
+    if (step) showTip(step); else hideTip();
+    const route = e.target.closest('[data-route]');
+    highlight(route && route.dataset.route);
   });
-}
-document.querySelectorAll('.ht-tabs, .terminal-tabs').forEach(initTabs);
+  // A touch pointer leaves as soon as the finger lifts, so a tapped step keeps its
+  // tooltip until the next tap outside the map.
+  metro.addEventListener('pointerleave', e => {
+    if (e.pointerType === 'touch') return;
+    hideTip();
+    highlight(null);
+  });
+  document.addEventListener('pointerdown', e => {
+    if (metro.contains(e.target)) return;
+    hideTip();
+    highlight(null);
+  });
+  // On narrow screens the map scrolls sideways; keep the tooltip on its step.
+  metro.querySelector('.metro-scroll').addEventListener('scroll', () => { if (active) showTip(active); }, { passive: true });
 
-// Load portal stats (homepage only)
-// The live file is published by the quantms-portal build. A copy is kept in
-// this repo (data/portal-stats.json) as a fallback, and the real numbers are
-// also written into the HTML so the section never shows placeholders.
-const PORTAL_STATS_SOURCES = [
-  'https://portal.quantms.org/data/portal-stats.json',
-  'data/portal-stats.json'
-];
-
-function fetchStats(url) {
-  const ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
-  const timer = ctrl ? setTimeout(() => ctrl.abort(), 5000) : null;
-  return fetch(url, ctrl ? { signal: ctrl.signal } : undefined)
-    .then(r => (r.ok ? r.json() : null))
-    .catch(() => null)
-    .finally(() => { if (timer) clearTimeout(timer); });
-}
-
-function loadPortalStats() {
-  Promise.all(PORTAL_STATS_SOURCES.map(fetchStats)).then(results => {
-    // Prefer the most recently generated stats file that loaded
-    const stats = results
-      .filter(s => s && typeof s === 'object')
-      .sort((a, b) => String(b.generated_at || '').localeCompare(String(a.generated_at || '')))[0];
-    if (stats) {
-      document.querySelectorAll('[data-stat]').forEach(el => {
-        const value = Number(stats[el.getAttribute('data-stat')]);
-        if (Number.isFinite(value) && value > 0) {
-          el.setAttribute('data-target', value);
-          el.textContent = formatStat(value);
-        }
-      });
+  metro.addEventListener('focusin', e => {
+    const step = e.target.closest('.metro-step');
+    if (!step) return;
+    showTip(step);
+    highlight(step.dataset.route);
+  });
+  metro.addEventListener('focusout', () => {
+    hideTip();
+    highlight(null);
+  });
+  metro.addEventListener('keydown', e => {
+    const i = steps.indexOf(e.target);
+    if (i < 0) return;
+    if (e.key === 'Escape') {
+      hideTip();
+      return;
     }
-    // If nothing loaded, the numbers already in the HTML stay as they are
-    initStatCounters();
+    const move = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+    if (!move) return;
+    e.preventDefault();
+    const next = steps[(i + move + steps.length) % steps.length];
+    steps[i].tabIndex = -1;
+    next.tabIndex = 0;
+    next.focus();
   });
 }
-
-// Stat counter animation
-function formatStat(value) {
-  // Decide the unit after rounding, so 999,500 shows as "1.0M" rather than "1000K"
-  if (value >= 999500) return (value / 1000000).toFixed(1) + 'M';
-  if (value >= 1000) return Math.round(value / 1000) + 'K';
-  return String(value);
-}
-
-function initStatCounters() {
-  const counters = document.querySelectorAll('[data-target]');
-  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-    counters.forEach(el => {
-      const target = parseInt(el.getAttribute('data-target'), 10);
-      if (target) el.textContent = formatStat(target);
-    });
-    return;
-  }
-  const statObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.getAttribute('data-target'), 10);
-        if (!target || el.dataset.counted) return;
-        el.dataset.counted = 'true';
-        const duration = 2000;
-        const start = performance.now();
-        function update(now) {
-          const elapsed = now - start;
-          const progress = Math.min(elapsed / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          const current = Math.floor(eased * target);
-          el.textContent = formatStat(current);
-          if (progress < 1) requestAnimationFrame(update);
-          else el.textContent = formatStat(target);
-        }
-        requestAnimationFrame(update);
-      }
-    });
-  }, { threshold: 0.5 });
-  counters.forEach(el => statObserver.observe(el));
-}
-
-// Load stats on page load, then init counters
-if (document.getElementById('portal-stats')) loadPortalStats();
