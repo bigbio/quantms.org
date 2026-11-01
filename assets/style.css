@@ -445,3 +445,4 @@ main section.search-band { padding: 16px 0 12px; }
 .k-speclib { width: 18px; height: 5px; border-radius: 3px; background: #8a5cc4; }
 .metro-card[data-focus="free"] [data-route="lib"], .metro-card[data-focus="lib"] [data-route="free"] { opacity: 0.18; }
 .metro-note { font-size: 11px; fill: var(--muted); }
+.comp-cite { font-size: 0.8125rem; color: var(--muted); margin: 0.4em 0 0; }
