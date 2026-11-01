@@ -144,22 +144,26 @@
   <div class="wrap">
     <div class="entry-grid">
       <div class="entry-box">
-        <h2><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a></h2>
-        <p class="entry-kind">Data-dependent acquisition (DDA): label-free, TMT, iTRAQ</p>
-        <p>Comet, MS-GF+ or Sage search, Percolator rescoring and OpenMS quantification, driven by an SDRF file.</p>
-        <p class="entry-links"><a href="https://docs.quantms.org" target="_blank" rel="noopener">Documentation</a> &middot; <a href="https://github.com/bigbio/quantms" target="_blank" rel="noopener">GitHub</a></p>
+        <h2>Workflows</h2>
+        <p class="entry-kind">Pipelines for DDA and DIA</p>
+        <p><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a> for DDA (label-free, TMT, iTRAQ) and <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a> for DIA with DIA-NN, both driven by an SDRF file on a laptop, HPC cluster or cloud.</p>
+        <p class="entry-links"><a href="https://github.com/bigbio" target="_blank" rel="noopener">Source code on GitHub</a></p>
       </div>
       <div class="entry-box">
-        <h2><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a></h2>
-        <p class="entry-kind">Data-independent acquisition (DIA) with DIA-NN</p>
-        <p>Library-free or spectral-library DIA, plexDIA and timsTOF data, from the same SDRF input.</p>
-        <p class="entry-links"><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">Documentation</a> &middot; <a href="https://github.com/bigbio/quantmsdiann" target="_blank" rel="noopener">GitHub</a></p>
+        <h2>Data portal</h2>
+        <p class="entry-kind">Public ProteomeXchange datasets, reanalysed</p>
+        <p><a href="https://portal.quantms.org/apps/dataset-search" target="_blank" rel="noopener">Browse datasets</a> by organism, instrument and collection, <a href="https://portal.quantms.org/apps/peptide-search" target="_blank" rel="noopener">find the datasets that contain a peptide or protein</a>, and download QPX tables, SDRF and MSstats input.</p>
+        <p class="entry-links"><a href="https://portal.quantms.org" target="_blank" rel="noopener">Open the portal</a> &middot; <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Statistics</a></p>
       </div>
-      <div class="entry-box entry-wide">
-        <h2><a href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a></h2>
-        <p class="entry-kind">Public ProteomeXchange datasets, reprocessed with these pipelines</p>
-        <p>Browse datasets by organism, instrument and collection, find the datasets that contain a peptide or protein, and download QPX tables, SDRF and MSstats input.</p>
-        <p class="entry-links"><a href="https://portal.quantms.org/apps/dataset-search" target="_blank" rel="noopener">Datasets</a> &middot; <a href="https://portal.quantms.org/apps/peptide-search" target="_blank" rel="noopener">Peptide search</a> &middot; <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Statistics</a></p>
+      <div class="entry-box">
+        <h2>Algorithms</h2>
+        <p class="entry-kind">Peptide search and protein quantification</p>
+        <p><a href="https://andes.quantms.org" target="_blank" rel="noopener">andes</a>, a peptide search engine for DDA data. <a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a>, protein quantification from QPX features: iBAQ, MaxLFQ, DirectLFQ and TopN.</p>
+      </div>
+      <div class="entry-box">
+        <h2>Formats</h2>
+        <p class="entry-kind">Sample metadata and results</p>
+        <p><a href="https://sdrf.quantms.org" target="_blank" rel="noopener">SDRF-Proteomics</a> describes the samples and links them to the raw files. <a href="https://qpx.quantms.org" target="_blank" rel="noopener">QPX</a> stores PSM, feature and protein-group results as Parquet tables.</p>
       </div>
     </div>
   </div>
@@ -455,16 +459,20 @@
         <article class="comp"><h4><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a> <span>1.10.0 &middot; Nextflow</span></h4><p>DDA proteomics: label-free with ProteomicsLFQ, TMT and iTRAQ with IsobaricWorkflow.</p><p class="comp-links"><a href="https://github.com/bigbio/quantms" target="_blank" rel="noopener">GitHub</a></p><p class="comp-cite">Cite: Dai C, et al. <i>Nat Methods</i> 2024. <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" rel="noopener">doi:10.1038/s41592-024-02343-1</a></p></article>
         <article class="comp"><h4><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a> <span>2.3.0 &middot; Nextflow</span></h4><p>DIA proteomics with DIA-NN 1.8.1 by default; newer DIA-NN releases through profiles.</p><p class="comp-links"><a href="https://github.com/bigbio/quantmsdiann" target="_blank" rel="noopener">GitHub</a></p><p class="comp-cite">Cite: Yue QX, et al. Preprint, <i>Research Square</i> 2026. <a href="https://doi.org/10.21203/rs.3.rs-10319687/v1" target="_blank" rel="noopener">doi:10.21203/rs.3.rs-10319687/v1</a></p></article>
       </div>
-      <h3 class="group">Results and analysis</h3>
+      <h3 class="group">Algorithms</h3>
+      <div class="comps">
+        <article class="comp"><h4><a href="https://andes.quantms.org" target="_blank" rel="noopener">andes</a> <span>0.3.0 &middot; Rust</span></h4><p>Peptide database search engine for DDA: mzML, MGF, Thermo .raw or Bruker .d and a FASTA in, a Percolator-ready .pin out. Optional modes for chimeric spectra, secondary modifications and intact N-glycopeptides.</p><p class="comp-links"><a href="https://github.com/bigbio/andes" target="_blank" rel="noopener">GitHub</a></p></article>
+        <article class="comp"><h4><a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a> <span>0.1.0 &middot; Python</span></h4><p>Protein quantification from QPX features: piBAQ, MaxLFQ, DirectLFQ and TopN, with normalisation, IRS, ComBat and differential expression. Replaces ibaqpy.</p><p class="comp-links"><a href="https://pypi.org/project/mokume/" target="_blank" rel="noopener">PyPI</a></p><p class="comp-cite">Cite: its predecessor ibaqpy: Zheng P, et al. <i>J Proteomics</i> 2025. <a href="https://doi.org/10.1016/j.jprot.2025.105440" target="_blank" rel="noopener">doi:10.1016/j.jprot.2025.105440</a></p></article>
+      </div>
+      <h3 class="group">Formats</h3>
       <div class="comps">
         <article class="comp"><h4><a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx</a> <span>1.2.0 &middot; Python CLI</span></h4><p>Converts quantms, quantmsdiann, DIA-NN, FragPipe, MaxQuant and Spectronaut output into QPX: PSM, feature and protein-group tables in Parquet, with sample and run metadata. Exports AnnData for scverse.</p><p class="comp-links"><a href="https://github.com/bigbio/qpx" target="_blank" rel="noopener">GitHub</a></p></article>
-        <article class="comp"><h4><a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a> <span>0.1.0 &middot; Python</span></h4><p>Protein quantification from QPX features: piBAQ, MaxLFQ, DirectLFQ and TopN, with normalisation, IRS, ComBat and differential expression. Replaces ibaqpy.</p><p class="comp-links"><a href="https://pypi.org/project/mokume/" target="_blank" rel="noopener">PyPI</a></p><p class="comp-cite">Cite: its predecessor ibaqpy: Zheng P, et al. <i>J Proteomics</i> 2025. <a href="https://doi.org/10.1016/j.jprot.2025.105440" target="_blank" rel="noopener">doi:10.1016/j.jprot.2025.105440</a></p></article>
-        <article class="comp"><h4><a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a> <span>0.0.48 &middot; MultiQC plugin</span></h4><p>QC reports for quantms, quantmsdiann, DIA-NN, MaxQuant, FragPipe and mzIdentML results: identification rates, mass error, missed cleavages, intensities and missing values.</p><p class="comp-links"><a href="https://github.com/bigbio/pmultiqc" target="_blank" rel="noopener">GitHub</a></p><p class="comp-cite">Cite: Yue QX, et al. <i>Mol Cell Proteomics</i> 2026. <a href="https://doi.org/10.1016/j.mcpro.2026.101530" target="_blank" rel="noopener">doi:10.1016/j.mcpro.2026.101530</a></p></article>
+        <article class="comp"><h4><a href="https://github.com/bigbio/sdrf-pipelines" target="_blank" rel="noopener">sdrf-pipelines</a> <span>0.1.7 &middot; Python</span></h4><p>Validates SDRF files and writes the pipeline configuration.</p><p class="comp-links"><a href="https://pypi.org/project/sdrf-pipelines/" target="_blank" rel="noopener">PyPI</a></p><p class="comp-cite">Cite: Dai C, et al. <i>Nat Commun</i> 2021. <a href="https://doi.org/10.1038/s41467-021-26111-3" target="_blank" rel="noopener">doi:10.1038/s41467-021-26111-3</a></p></article>
       </div>
       <h3 class="group">Used inside the pipelines</h3>
       <div class="comps">
         <article class="comp"><h4><a href="https://github.com/bigbio/quantms-rescoring" target="_blank" rel="noopener">quantms-rescoring</a> <span>0.0.25 &middot; Python</span></h4><p>MS2PIP, DeepLC and AlphaPeptDeep features for Percolator.</p><p class="comp-cite">Cite: Dai C, et al. Preprint, <i>bioRxiv</i> 2026. <a href="https://doi.org/10.64898/2026.01.12.698877" target="_blank" rel="noopener">doi:10.64898/2026.01.12.698877</a></p></article>
-        <article class="comp"><h4><a href="https://github.com/bigbio/sdrf-pipelines" target="_blank" rel="noopener">sdrf-pipelines</a> <span>0.1.7 &middot; Python</span></h4><p>Validates SDRF files and writes the pipeline configuration.</p><p class="comp-links"><a href="https://pypi.org/project/sdrf-pipelines/" target="_blank" rel="noopener">PyPI</a></p><p class="comp-cite">Cite: Dai C, et al. <i>Nat Commun</i> 2021. <a href="https://doi.org/10.1038/s41467-021-26111-3" target="_blank" rel="noopener">doi:10.1038/s41467-021-26111-3</a></p></article>
+        <article class="comp"><h4><a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a> <span>0.0.48 &middot; MultiQC plugin</span></h4><p>QC reports for quantms, quantmsdiann, DIA-NN, MaxQuant, FragPipe and mzIdentML results: identification rates, mass error, missed cleavages, intensities and missing values.</p><p class="comp-links"><a href="https://github.com/bigbio/pmultiqc" target="_blank" rel="noopener">GitHub</a></p><p class="comp-cite">Cite: Yue QX, et al. <i>Mol Cell Proteomics</i> 2026. <a href="https://doi.org/10.1016/j.mcpro.2026.101530" target="_blank" rel="noopener">doi:10.1016/j.mcpro.2026.101530</a></p></article>
       </div>
       <p class="table-note">Installation for each tool: <a href="tools.html">Tools</a>.</p>
     </section>

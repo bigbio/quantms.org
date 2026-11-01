@@ -300,8 +300,6 @@ main section.entry-points { padding: 22px 0 6px; }
 .entry-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .entry-box { border: 1px solid var(--border); border-top: 3px solid var(--brand); padding: 12px 14px; font-size: 0.9375rem; background: #fff; }
 .entry-box h2 { font-size: 1.125rem; margin: 0 0 2px; padding: 0; border: 0; }
-.entry-box h2 a { text-decoration: none; }
-.entry-box h2 a:hover { text-decoration: underline; }
 .entry-kind { font-size: 0.8125rem; color: var(--muted); margin-bottom: 0.6em; }
 .entry-box p { margin-bottom: 0.6em; }
 .entry-count b { font-weight: 600; color: var(--brand-deep); }
@@ -350,8 +348,8 @@ main section.side-box { padding: 0; }
 .tab-panel .metro-card { border-top: 0; border-radius: 0 0 6px 6px; }
 .k-dia { width: 18px; height: 5px; border-radius: 3px; background: #1f9e74; }
 
-/* Entry row: three boxes, the portal one wider; links sit on the bottom edge. */
-.entry-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.45fr); }
+/* Entry row: four boxes; links sit on the bottom edge. */
+.entry-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .entry-box { display: flex; flex-direction: column; padding: 14px 16px; }
 .entry-links { margin-top: auto; padding-top: 6px; }
 main section.entry-points { padding: 24px 0 8px; }
