@@ -80,13 +80,12 @@ function drop(box, group, err) {
   console.warn(`portal ${group}:`, err);
   box.querySelectorAll(`[data-group="${group}"]`).forEach(el => { el.hidden = true; });
   box.removeAttribute('aria-busy');
-  if (!box.querySelector('dl > div:not([hidden])')) box.hidden = true;
 }
 
 const numbersBox = document.getElementById('portal-numbers');
 if (numbersBox) {
   // Shown only when this script runs, so visitors without JavaScript never see placeholders.
-  numbersBox.hidden = false;
+  numbersBox.querySelectorAll('[data-group]').forEach(el => { el.hidden = false; });
   numbersBox.setAttribute('aria-busy', 'true');
   loadCatalogue().then(v => show(numbersBox, v)).catch(err => drop(numbersBox, 'catalog', err));
   loadIndex().then(v => show(numbersBox, v)).catch(err => drop(numbersBox, 'index', err));
@@ -191,4 +190,42 @@ if (metro) {
     next.tabIndex = 0;
     next.focus();
   });
+}
+
+// Homepage search: sends the query to the matching portal application. "Any" guesses the
+// kind from the text; without JavaScript the form falls back to dataset search.
+const searchForm = document.getElementById('site-search');
+if (searchForm) {
+  const input = searchForm.querySelector('#search-q');
+  const kind = searchForm.querySelector('#search-kind');
+  const PORTAL = 'https://portal.quantms.org/apps/';
+
+  function guessKind(q) {
+    if (/^(PXD|MSV|PDC|JPST|IPX|PRD)\d+/i.test(q)) return 'dataset';
+    if (/^[OPQ][0-9][A-Z0-9]{3}[0-9](-\d+)?$|^[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}(-\d+)?$/i.test(q)) return 'protein';
+    if (/^[ACDEFGHIKLMNPQRSTVWY]{7,}$/.test(q)) return 'peptide';
+    if (/^[A-Za-z0-9-]{2,15}$/.test(q)) return 'protein';
+    return 'dataset';
+  }
+
+  function target(q, k) {
+    if (k === 'peptide') return `${PORTAL}peptide-search?mode=peptide&sequence=${encodeURIComponent(q.toUpperCase())}`;
+    if (k === 'protein') return `${PORTAL}peptide-search?mode=protein&query=${encodeURIComponent(q)}`;
+    return `${PORTAL}dataset-search?q=${encodeURIComponent(q)}`;
+  }
+
+  searchForm.addEventListener('submit', e => {
+    const q = input.value.trim();
+    e.preventDefault();
+    if (!q) { input.focus(); return; }
+    const k = kind.value === 'auto' ? guessKind(q) : kind.value;
+    window.open(target(q, k), '_blank', 'noopener');
+  });
+
+  searchForm.querySelectorAll('[data-example]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    input.value = a.dataset.example;
+    kind.value = 'auto';
+    input.focus();
+  }));
 }

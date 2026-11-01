@@ -104,49 +104,91 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
+<div class="org-bar">
+  <div class="wrap org-inner">
+    <a href="https://www.ebi.ac.uk" target="_blank" rel="noopener">EMBL-EBI</a>
+    <span><a href="https://www.ebi.ac.uk/pride/" target="_blank" rel="noopener">PRIDE</a><a href="https://openms.de" target="_blank" rel="noopener">OpenMS</a><a href="https://github.com/bigbio" target="_blank" rel="noopener">BigBio on GitHub</a></span>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="quantms home"><svg viewBox="0 0 70 70" fill="none" class="flogo-svg" aria-hidden="true" focusable="false">
-            <polygon points="35,56 10,46 35,36 60,46" fill="#60a5fa" opacity="0.4"/>
-            <polygon points="35,48 14,40 35,32 56,40" fill="#818cf8" opacity="0.6"/>
-            <polygon points="35,40 18,34 35,28 52,34" fill="#a78bfa" opacity="0.75"/>
-            <rect x="24" y="20" width="2.5" height="6" rx="0.8" fill="#a78bfa" opacity="0.5"/>
-            <rect x="28" y="14" width="2.5" height="12" rx="0.8" fill="#c4b5fd" opacity="0.65"/>
-            <rect x="32" y="8" width="2.5" height="18" rx="0.8" fill="#a78bfa" opacity="0.9"/>
-            <rect x="36" y="12" width="2.5" height="14" rx="0.8" fill="#c4b5fd" opacity="0.7"/>
-            <rect x="40" y="18" width="2.5" height="8" rx="0.8" fill="#a78bfa" opacity="0.55"/>
-          </svg><span>quant<b>ms</b></span></a>
+    <a class="brand" href="index.html" aria-label="quantms home"><span>quant<b>ms</b></span></a>
     <nav class="site-nav" aria-label="Main">
-      <a href="#workflow">Workflow</a>
-      <a href="#ecosystem">Ecosystem</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a>
       <a href="tools.html">Tools</a>
       <a href="publications.html">Publications</a>
       <a href="about.html">About</a>
-      <a href="https://docs.quantms.org" target="_blank" rel="noopener">Documentation</a>
-      <a href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://docs.quantms.org" target="_blank" rel="noopener">Help</a>
     </nav>
   </div>
 </header>
 
 <main id="main" tabindex="-1">
 
-<section class="intro" id="home">
+<section class="search-band" id="home">
   <div class="wrap">
-    <div class="intro-head">
-      <div>
-        <h1>quantms</h1>
-        <p class="lede">An open-source ecosystem for large-scale quantitative proteomics. Cloud-ready Nextflow pipelines, standalone Python libraries, and ML-powered tools &mdash; process DDA and DIA data with dedicated workflows, or use the standalone tools with any search engine.</p>
+    <form class="site-search" id="site-search" action="https://portal.quantms.org/apps/dataset-search" method="get" target="_blank">
+      <label for="search-q">Search reanalysed public proteomics data</label>
+      <div class="search-row">
+        <select id="search-kind" aria-label="What to search">
+          <option value="auto">Any</option>
+          <option value="peptide">Peptide</option>
+          <option value="protein">Protein</option>
+          <option value="dataset">Dataset</option>
+        </select>
+        <input id="search-q" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="Peptide sequence, UniProt accession, gene name or PXD accession">
+        <button type="submit">Search</button>
       </div>
-      <div>
-        <p class="actions">
-          <a class="btn" href="https://docs.quantms.org" target="_blank" rel="noopener">Documentation</a>
-          <a class="btn btn-quiet" href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a>
-          <a class="btn btn-quiet" href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub</a>
-        </p>
-        <p class="cite-line">Dai C, Pfeuffer J, Wang H, et al. quantms: a cloud-based pipeline for quantitative proteomics enables the reanalysis of public proteomics data. <i>Nat Methods</i> 2024;21(9):1603&ndash;1607. <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" rel="noopener">doi:10.1038/s41592-024-02343-1</a></p>
+      <p class="search-examples">Examples: <a href="#" data-example="LVNELTEFAK">LVNELTEFAK</a>, <a href="#" data-example="P02768">P02768</a>, <a href="#" data-example="GAPDH">GAPDH</a>, <a href="#" data-example="PXD004452">PXD004452</a></p>
+    </form>
+  </div>
+</section>
+
+<section class="entry-points">
+  <div class="wrap">
+    <div class="entry-grid">
+      <div class="entry-box">
+        <h2><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a></h2>
+        <p class="entry-kind">DDA pipeline &middot; release 1.10.0</p>
+        <p>Label-free and TMT/iTRAQ quantification with Comet, MS-GF+ or Sage, Percolator rescoring and OpenMS quantification.</p>
+        <p class="entry-links"><a href="https://docs.quantms.org" target="_blank" rel="noopener">Documentation</a> &middot; <a href="https://github.com/bigbio/quantms" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+      <div class="entry-box">
+        <h2><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a></h2>
+        <p class="entry-kind">DIA pipeline &middot; release 2.3.0</p>
+        <p>Data-independent acquisition with DIA-NN, library-free or with a spectral library, from one SDRF file.</p>
+        <p class="entry-links"><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">Documentation</a> &middot; <a href="https://github.com/bigbio/quantmsdiann" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+      <div class="entry-box" id="portal-numbers">
+        <h2><a href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a></h2>
+        <p class="entry-kind">Reanalysed ProteomeXchange datasets</p>
+        <p class="entry-count" data-group="catalog" hidden><b data-num="datasets"><span class="skel" style="width: 2.2ch"></span></b> datasets from <b data-num="accessions"><span class="skel" style="width: 2ch"></span></b> accessions in <b data-num="collections"><span class="skel" style="width: 1ch"></span></b> collections</p>
+        <p class="entry-count" data-group="index" hidden><b data-num="peptides"><span class="skel" style="width: 3ch"></span></b> peptides, <b data-num="proteins"><span class="skel" style="width: 3.6ch"></span></b> proteins in the search index <small>(built <span data-num="generated"><span class="skel" style="width: 5em"></span></span>)</small></p>
+        <p class="entry-links"><a href="https://portal.quantms.org/apps/dataset-search" target="_blank" rel="noopener">Datasets</a> &middot; <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Statistics</a></p>
+      </div>
+      <div class="entry-box">
+        <h2><a href="tools.html">Libraries</a></h2>
+        <p class="entry-kind">Python, work with any search engine</p>
+        <ul class="entry-list">
+          <li><a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx</a> 1.2.0: convert results to QPX Parquet</li>
+          <li><a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a> 0.1.0: protein quantification</li>
+          <li><a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a> 0.0.48: QC reports</li>
+        </ul>
       </div>
     </div>
-    <figure class="fig-card metro-card">
+  </div>
+</section>
+
+<div class="wrap page-cols">
+
+  <div class="page-main">
+
+    <section class="block" id="pipeline">
+      <h2>The quantms pipeline for DDA data</h2>
+    <figure class="metro-card fig-card">
       <div class="metro-scroll">
         <svg class="metro" viewBox="-12 0 1172 300" role="group" aria-labelledby="metro-title" aria-describedby="metro-desc">
         <title id="metro-title">quantms pipeline for DDA data</title>
@@ -242,21 +284,14 @@
         <b>quantms 1.10 for DDA data</b>, redrawn from the metro map in the <a href="https://github.com/bigbio/quantms#functionality-overview" target="_blank" rel="noopener">quantms README</a>. DIA data are processed by <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a>.
       </figcaption>
     </figure>
-  </div>
-</section>
+    </section>
 
-<section id="workflow">
-  <div class="wrap">
-    <h2>Workflow</h2>
-    <div class="two-col">
-      <div>
-        <p>Two dedicated Nextflow pipelines: <strong>quantms</strong> for DDA (LFQ &amp; TMT/iTRAQ) and <strong>quantmsdiann</strong> for DIA &mdash; but the downstream tools work independently too. Use <strong>mokume</strong> to quantify proteins from any search engine output. Use <strong>pmultiqc</strong> for QC on any experiment.</p>
-        <p>Both pipelines take an SDRF file that describes the samples and raw files, and run with Docker or Singularity on a laptop, an HPC cluster, or AWS, GCP and Azure.</p>
-        <p class="links-inline"><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms documentation</a> &middot; <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann documentation</a></p>
-      </div>
-      <div>
+    <section class="block" id="run">
+      <h2>Run it</h2>
+      <p>Both pipelines take an SDRF file describing samples, raw files and labels, and run with Docker or Singularity on a laptop, an HPC cluster or a cloud account.</p>
+      <div class="two-col tight">
         <figure class="code-figure">
-          <figcaption>DDA: LFQ and TMT/iTRAQ</figcaption>
+          <figcaption>DDA: label-free, TMT, iTRAQ</figcaption>
 <pre><code><span class="f">nextflow run</span> bigbio/quantms \
     -profile docker \
     --input experiment.sdrf.tsv \
@@ -264,7 +299,7 @@
     --outdir results/</code></pre>
         </figure>
         <figure class="code-figure">
-          <figcaption>DIA, with DIA-NN: library-free or spectral library</figcaption>
+          <figcaption>DIA with DIA-NN</figcaption>
 <pre><code><span class="f">nextflow run</span> bigbio/quantmsdiann \
     -profile docker \
     --input experiment.sdrf.tsv \
@@ -272,336 +307,77 @@
     --outdir results/</code></pre>
         </figure>
       </div>
-    </div>
-    <div class="table-scroll" style="margin-top:28px">
-    <table class="data-table steps">
-      <caption class="sr-only">Steps of the quantms DDA pipeline and the standalone tools used after it</caption>
-      <thead><tr><th scope="col">Step</th><th scope="col">What happens</th><th scope="col">Methods</th><th scope="col">Component</th></tr></thead>
-      <tbody>
-        <tr class="group"><td colspan="4">Inside the quantms pipeline</td></tr>
-        <tr><td><span class="step">1</span>Search</td><td>Convert raw files and search spectra against a protein database</td><td class="mono">Comet &middot; MS-GF+ &middot; Sage</td><td>quantms</td></tr>
-        <tr><td><span class="step">2</span>Rescoring</td><td>Rescore PSMs with predicted fragment intensities and retention times, then control the FDR</td><td class="mono">MS2PIP &middot; DeepLC &middot; AlphaPeptDeep &middot; Percolator</td><td>quantms-rescoring</td></tr>
-        <tr><td><span class="step">3</span>Quantification</td><td>Quantify peptides and proteins; export MSstats input and QPX tables</td><td class="mono">ProteomicsLFQ (LFQ) &middot; IsobaricWorkflow (TMT/iTRAQ)</td><td>quantms (OpenMS)</td></tr>
-        <tr><td><span class="step">4</span>Quality control</td><td>Build an interactive QC report for the run</td><td class="mono">MultiQC</td><td>pmultiqc</td></tr>
-        <tr class="group"><td colspan="4">Standalone, after the pipeline or with other search engines</td></tr>
-        <tr><td>Conversion</td><td>Convert search engine output to QPX Parquet tables</td><td class="mono">DIA-NN &middot; MaxQuant &middot; FragPipe &middot; Spectronaut &middot; quantms</td><td>qpx</td></tr>
-        <tr><td>Protein analysis</td><td>Protein quantification, normalization, batch correction and differential expression</td><td class="mono">MaxLFQ &middot; DirectLFQ &middot; piBAQ &middot; TopN</td><td>mokume</td></tr>
-      </tbody>
-    </table>
-    </div>
-    <p class="table-note">mokume is not part of the quantms pipeline: it reads QPX feature tables, from quantms or from any engine that qpx converts.</p>
-  </div>
-</section>
+    </section>
 
-<section id="data" class="alt">
-  <div class="wrap">
-    <h2>Reanalysed public datasets</h2>
-    <div class="two-col">
-      <div>
-        <p>The <strong>quantms.org</strong> data portal hosts hundreds of public proteomics datasets reanalyzed from <strong>ProteomeXchange</strong> repositories (PRIDE, MassIVE, jPOST), grouped into collections that can be browsed, searched and downloaded. All ecosystem tools also work locally for your own data analysis.</p>
-        <p><a class="btn" href="https://portal.quantms.org" target="_blank" rel="noopener">Open the data portal</a></p>
+    <section class="block" id="portal">
+      <h2>Data portal applications</h2>
+      <div class="shots">
+        <a href="https://portal.quantms.org/apps/dataset-search" target="_blank" rel="noopener"><img src="assets/images/portal/dataset-search.jpg" width="900" height="406" alt="" loading="lazy"><span>Dataset search<small>Every dataset across collections, with downloads</small></span></a>
+        <a href="https://portal.quantms.org/apps/peptide-search" target="_blank" rel="noopener"><img src="assets/images/portal/peptide-search.jpg" width="900" height="406" alt="" loading="lazy"><span>Peptide and protein search<small>Datasets that contain a sequence</small></span></a>
+        <a href="https://portal.quantms.org/apps/cell-lines" target="_blank" rel="noopener"><img src="assets/images/portal/cell-lines.jpg" width="900" height="406" alt="" loading="lazy"><span>Cancer cell line proteome<small>Protein abundance by lineage and cell line</small></span></a>
+        <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener"><img src="assets/images/portal/statistics.jpg" width="900" height="406" alt="" loading="lazy"><span>Statistics<small>Organisms, instruments, tissues, modifications</small></span></a>
       </div>
-      <figure class="fig">
-        <svg viewBox="0 0 320 210" role="img" aria-label="Example box plot of log2 protein intensity across six tissues: liver, brain, heart, kidney, plasma and spleen">
-          <!-- Intensity distribution across samples (box/violin-like) -->
-          <defs>
-            <linearGradient id="bar-g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#409eff" stop-opacity="0.8"/><stop offset="100%" stop-color="#409eff" stop-opacity="0.3"/></linearGradient>
-            <linearGradient id="bar-g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" stop-opacity="0.8"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0.3"/></linearGradient>
-            <linearGradient id="bar-g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.8"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/></linearGradient>
-          </defs>
-          <!-- Axes -->
-          <line x1="35" y1="10" x2="35" y2="175" stroke="var(--border)" stroke-width="1"/>
-          <line x1="35" y1="175" x2="310" y2="175" stroke="var(--border)" stroke-width="1"/>
-          <!-- Y axis label -->
-          <text x="10" y="95" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)" transform="rotate(-90, 10, 95)">log2 Intensity</text>
-          <!-- Y ticks -->
-          <text x="30" y="28" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="8" fill="var(--text-muted)">30</text>
-          <line x1="33" y1="25" x2="37" y2="25" stroke="var(--border)" stroke-width="0.5"/>
-          <text x="30" y="68" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="8" fill="var(--text-muted)">25</text>
-          <line x1="33" y1="65" x2="37" y2="65" stroke="var(--border)" stroke-width="0.5"/>
-          <text x="30" y="108" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="8" fill="var(--text-muted)">20</text>
-          <line x1="33" y1="105" x2="37" y2="105" stroke="var(--border)" stroke-width="0.5"/>
-          <text x="30" y="148" text-anchor="end" font-family="'JetBrains Mono', 'Fira Code', ui-monospace, monospace" font-size="8" fill="var(--text-muted)">15</text>
-          <line x1="33" y1="145" x2="37" y2="145" stroke="var(--border)" stroke-width="0.5"/>
-          <!-- Grid lines -->
-          <line x1="37" y1="25" x2="310" y2="25" stroke="var(--border-subtle)" stroke-width="0.5"/>
-          <line x1="37" y1="65" x2="310" y2="65" stroke="var(--border-subtle)" stroke-width="0.5"/>
-          <line x1="37" y1="105" x2="310" y2="105" stroke="var(--border-subtle)" stroke-width="0.5"/>
-          <line x1="37" y1="145" x2="310" y2="145" stroke="var(--border-subtle)" stroke-width="0.5"/>
+    </section>
 
-          <!-- Sample 1: Liver (blue) - box + whisker -->
-          <line x1="60" y1="40" x2="60" y2="55" stroke="#409eff" stroke-width="1.5"/>
-          <rect x="47" y="55" width="26" height="60" rx="3" fill="url(#bar-g1)" stroke="#409eff" stroke-width="1"/>
-          <line x1="47" y1="80" x2="73" y2="80" stroke="#409eff" stroke-width="2"/>
-          <line x1="60" y1="115" x2="60" y2="135" stroke="#409eff" stroke-width="1.5"/>
-          <line x1="53" y1="40" x2="67" y2="40" stroke="#409eff" stroke-width="1"/>
-          <line x1="53" y1="135" x2="67" y2="135" stroke="#409eff" stroke-width="1"/>
+    <section class="block" id="ecosystem">
+      <h2>Components</h2>
+      <div class="table-scroll">
+      <table class="data-table">
+        <thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Latest</th><th scope="col">Description</th><th scope="col">Links</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">quantms</th><td>Nextflow pipeline</td><td class="mono">1.10.0</td><td>DDA proteomics: label-free and TMT/iTRAQ.</td><td><a href="https://docs.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/quantms" target="_blank" rel="noopener">GitHub</a></td></tr>
+          <tr><th scope="row">quantmsdiann</th><td>Nextflow pipeline</td><td class="mono">2.3.0</td><td>DIA proteomics with DIA-NN.</td><td><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/quantmsdiann" target="_blank" rel="noopener">GitHub</a></td></tr>
+          <tr><th scope="row">qpx</th><td>Python CLI</td><td class="mono">1.2.0</td><td>Converts quantms, DIA-NN, FragPipe, MaxQuant and Spectronaut output to QPX Parquet; AnnData export.</td><td><a href="https://qpx.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/qpx" target="_blank" rel="noopener">GitHub</a></td></tr>
+          <tr><th scope="row">mokume</th><td>Python library</td><td class="mono">0.1.0</td><td>Protein quantification (piBAQ, MaxLFQ, DirectLFQ, TopN), normalisation, batch correction, differential expression. Replaces ibaqpy.</td><td><a href="https://mokume.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://pypi.org/project/mokume/" target="_blank" rel="noopener">PyPI</a></td></tr>
+          <tr><th scope="row">pmultiqc</th><td>MultiQC plugin</td><td class="mono">0.0.48</td><td>QC reports for quantms, quantmsdiann, DIA-NN, MaxQuant, FragPipe and mzIdentML results.</td><td><a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/pmultiqc" target="_blank" rel="noopener">GitHub</a></td></tr>
+          <tr><th scope="row">quantms-rescoring</th><td>Python tool</td><td class="mono">0.0.25</td><td>Rescoring features from MS2PIP, DeepLC and AlphaPeptDeep.</td><td><a href="https://github.com/bigbio/quantms-rescoring" target="_blank" rel="noopener">GitHub</a></td></tr>
+          <tr><th scope="row">sdrf-pipelines</th><td>Python library</td><td class="mono">0.1.7</td><td>SDRF validation and conversion to pipeline configuration.</td><td><a href="https://github.com/bigbio/sdrf-pipelines" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://pypi.org/project/sdrf-pipelines/" target="_blank" rel="noopener">PyPI</a></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="table-note">Installation and citations for each tool: <a href="tools.html">Tools</a>.</p>
+    </section>
 
-          <!-- Sample 2: Brain (blue) -->
-          <line x1="105" y1="35" x2="105" y2="50" stroke="#409eff" stroke-width="1.5"/>
-          <rect x="92" y="50" width="26" height="65" rx="3" fill="url(#bar-g1)" stroke="#409eff" stroke-width="1"/>
-          <line x1="92" y1="78" x2="118" y2="78" stroke="#409eff" stroke-width="2"/>
-          <line x1="105" y1="115" x2="105" y2="140" stroke="#409eff" stroke-width="1.5"/>
-          <line x1="98" y1="35" x2="112" y2="35" stroke="#409eff" stroke-width="1"/>
-          <line x1="98" y1="140" x2="112" y2="140" stroke="#409eff" stroke-width="1"/>
-
-          <!-- Sample 3: Heart (indigo) -->
-          <line x1="150" y1="45" x2="150" y2="60" stroke="#6366f1" stroke-width="1.5"/>
-          <rect x="137" y="60" width="26" height="55" rx="3" fill="url(#bar-g2)" stroke="#6366f1" stroke-width="1"/>
-          <line x1="137" y1="85" x2="163" y2="85" stroke="#6366f1" stroke-width="2"/>
-          <line x1="150" y1="115" x2="150" y2="130" stroke="#6366f1" stroke-width="1.5"/>
-          <line x1="143" y1="45" x2="157" y2="45" stroke="#6366f1" stroke-width="1"/>
-          <line x1="143" y1="130" x2="157" y2="130" stroke="#6366f1" stroke-width="1"/>
-
-          <!-- Sample 4: Kidney (indigo) -->
-          <line x1="195" y1="38" x2="195" y2="52" stroke="#6366f1" stroke-width="1.5"/>
-          <rect x="182" y="52" width="26" height="62" rx="3" fill="url(#bar-g2)" stroke="#6366f1" stroke-width="1"/>
-          <line x1="182" y1="76" x2="208" y2="76" stroke="#6366f1" stroke-width="2"/>
-          <line x1="195" y1="114" x2="195" y2="138" stroke="#6366f1" stroke-width="1.5"/>
-          <line x1="188" y1="38" x2="202" y2="38" stroke="#6366f1" stroke-width="1"/>
-          <line x1="188" y1="138" x2="202" y2="138" stroke="#6366f1" stroke-width="1"/>
-
-          <!-- Sample 5: Plasma (violet) -->
-          <line x1="240" y1="55" x2="240" y2="68" stroke="#7c3aed" stroke-width="1.5"/>
-          <rect x="227" y="68" width="26" height="50" rx="3" fill="url(#bar-g3)" stroke="#7c3aed" stroke-width="1"/>
-          <line x1="227" y1="90" x2="253" y2="90" stroke="#7c3aed" stroke-width="2"/>
-          <line x1="240" y1="118" x2="240" y2="142" stroke="#7c3aed" stroke-width="1.5"/>
-          <line x1="233" y1="55" x2="247" y2="55" stroke="#7c3aed" stroke-width="1"/>
-          <line x1="233" y1="142" x2="247" y2="142" stroke="#7c3aed" stroke-width="1"/>
-
-          <!-- Sample 6: Spleen (violet) -->
-          <line x1="285" y1="42" x2="285" y2="56" stroke="#7c3aed" stroke-width="1.5"/>
-          <rect x="272" y="56" width="26" height="58" rx="3" fill="url(#bar-g3)" stroke="#7c3aed" stroke-width="1"/>
-          <line x1="272" y1="82" x2="298" y2="82" stroke="#7c3aed" stroke-width="2"/>
-          <line x1="285" y1="114" x2="285" y2="136" stroke="#7c3aed" stroke-width="1.5"/>
-          <line x1="278" y1="42" x2="292" y2="42" stroke="#7c3aed" stroke-width="1"/>
-          <line x1="278" y1="136" x2="292" y2="136" stroke="#7c3aed" stroke-width="1"/>
-
-          <!-- Sample labels -->
-          <text x="60" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Liver</text>
-          <text x="105" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Brain</text>
-          <text x="150" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Heart</text>
-          <text x="195" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Kidney</text>
-          <text x="240" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Plasma</text>
-          <text x="285" y="192" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Spleen</text>
-          <!-- X axis label -->
-          <text x="172" y="207" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" fill="var(--text-muted)">Samples</text>
-        </svg>
-      </figure>
-    </div>
-    <div class="facts-band" id="portal-numbers" hidden>
-      <dl class="facts">
-        <div data-group="catalog"><dt>Collections</dt><dd data-num="collections"><span class="skel" style="width: 1ch"></span></dd></div>
-        <div data-group="catalog"><dt>Datasets</dt><dd><span data-num="datasets"><span class="skel" style="width: 2.2ch"></span></span><small>from <span data-num="accessions"><span class="skel" style="width: 2ch"></span></span> source accessions</small></dd></div>
-        <div data-group="index"><dt>Proteins in search index</dt><dd data-num="proteins"><span class="skel" style="width: 3.6ch"></span></dd></div>
-        <div data-group="index"><dt>Peptides in search index</dt><dd data-num="peptides"><span class="skel" style="width: 3ch"></span></dd></div>
-      </dl>
-      <p class="facts-note">
-        <span data-group="catalog">Collections and datasets: current data portal catalogue; a dataset listed in more than one collection is counted once.</span>
-        <span data-group="index">Proteins and peptides: distinct counts over the peptide search index, which also covers retired collections; index generated <span data-num="generated"><span class="skel" style="width: 6em"></span></span>.</span>
-      </p>
-    </div>
-    <div class="shots">
-      <a href="https://portal.quantms.org/apps/dataset-search" target="_blank" rel="noopener"><img src="assets/images/portal/dataset-search.jpg" width="900" height="406" alt="" loading="lazy"><span>Dataset Search<small>Every dataset across collections, with downloads</small></span></a>
-      <a href="https://portal.quantms.org/apps/peptide-search" target="_blank" rel="noopener"><img src="assets/images/portal/peptide-search.jpg" width="900" height="406" alt="" loading="lazy"><span>Peptide &amp; Protein Search<small>Datasets containing a peptide or protein</small></span></a>
-      <a href="https://portal.quantms.org/apps/cell-lines" target="_blank" rel="noopener"><img src="assets/images/portal/cell-lines.jpg" width="900" height="406" alt="" loading="lazy"><span>Cancer Cell Line Proteome<small>Protein abundance by lineage and cell line</small></span></a>
-      <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener"><img src="assets/images/portal/statistics.jpg" width="900" height="406" alt="" loading="lazy"><span>Statistics<small>Organisms, instruments, tissues, modifications</small></span></a>
-    </div>
   </div>
-</section>
 
-<section id="ai">
-  <div class="wrap two-col">
-    <div>
-      <h2>Machine-learning models</h2>
-      <p>The quantms ecosystem reanalyzes hundreds of public proteomics datasets, producing standardized, metadata-rich results. These datasets train deep learning models that improve every step of the pipeline &mdash; from spectrum prediction to de novo sequencing.</p>
-      <dl class="facts" id="model-numbers" style="grid-template-columns: repeat(3, minmax(0, 1fr))">
-        <div><dt>Training spectra</dt><dd>500M+</dd></div>
-        <div data-group="models" hidden><dt>Released models</dt><dd data-num="models"><span class="skel" style="width: 1ch"></span></dd></div>
-        <div data-group="models" hidden><dt>Tools</dt><dd data-num="tools"><span class="skel" style="width: 1ch"></span></dd></div>
-      </dl>
-      <p style="margin-top:1em" class="links-inline"><a href="https://portal.quantms.org/models" target="_blank" rel="noopener">Model list</a> &middot; <a href="https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-models/" target="_blank" rel="noopener">FTP repository</a></p>
-    </div>
-    <ol class="flow">
-      <li><strong>Public datasets</strong><br>Public experiments from ProteomeXchange (PRIDE, MassIVE, jPOST)</li>
-      <li><strong>quantms reanalysis</strong><br>Standardized processing with quantms &amp; quantmsdiann</li>
-      <li><strong>Model training</strong><br>AlphaPeptDeep, AutoRT, GPTime, HelixNovo</li>
-      <li><strong>Applications</strong><br>10-30% more identifications, de novo sequencing, RT prediction</li>
-    </ol>
-  </div>
-</section>
+  <aside class="page-side" aria-label="News and help">
 
-<section id="formats" class="alt">
-  <div class="wrap two-col">
-    <div>
-      <h2>Standards and formats</h2>
-      <p>Every experiment in the ecosystem is described with <strong>SDRF</strong> (Sample and Data Relationship Format), ensuring complete metadata annotation. The <strong>qpx</strong> library bridges the gap between search engines &mdash; converting outputs from quantms, quantmsdiann, DIA-NN, FragPipe, MaxQuant, and Spectronaut into a unified format.</p>
-      <p>Convert outputs from any search engine into a unified Parquet format. Export to AnnData for integration with scverse and other analysis ecosystems.</p>
-      <p class="links-inline"><a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx documentation</a></p>
-    </div>
-    <div>
-      <dl class="deflist">
-        <div><dt>SDRF &mdash; sample metadata</dt><dd>Standardized experimental design: organisms, tissues, labels, conditions. Used by all quantms tools for automatic sample grouping.</dd></div>
-        <div><dt>qpx &mdash; format conversion</dt><dd>Convert from <code>DIA-NN</code>, <code>FragPipe</code>, <code>MaxQuant</code>, <code>Spectronaut</code>, <code>quantms</code>. Unified Parquet output with PSM-level data.</dd></div>
-        <div><dt>AnnData &mdash; interoperability</dt><dd>Export protein matrices to <code>.h5ad</code> for integration with scanpy, scverse, and the broader Python data science ecosystem.</dd></div>
-      </dl>
-      <figure class="code-figure">
-        <figcaption>Convert a DIA-NN report to QPX</figcaption>
-<pre><code><span class="f">qpxc convert diann</span> \
-    --report-path report.tsv \
-    --sdrf-file experiment.sdrf.tsv \
-    --output-folder qpx/</code></pre>
-        <p class="note">Other converters: <code>maxquant</code>, <code>fragpipe</code>, <code>spectronaut</code>, <code>openms</code>, <code>mzidentml</code>, and more.</p>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section id="libraries">
-  <div class="wrap two-col">
-    <div>
-      <h2>Protein quantification: mokume</h2>
-      <p>A comprehensive Python library for protein quantification from peptide-level data. Works standalone with output from <strong>any search engine</strong> &mdash; not just quantms. Supports 6+ quantification methods, normalization, IRS for multi-plex TMT, batch correction, and differential expression.</p>
-      <ul class="chips" aria-label="Methods">
-        <li>piBAQ</li><li>MaxLFQ</li><li>DirectLFQ</li><li>TopN</li><li>Ratio (TMT)</li><li>IRS</li><li>ComBat</li><li>DE analysis</li>
+    <section class="side-box">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time datetime="2026-10-30">30 Oct 2026</time><a href="https://github.com/bigbio/qpx/releases/tag/v1.2.0" target="_blank" rel="noopener">qpx 1.2.0</a> released</li>
+        <li><time datetime="2026-10-30">30 Oct 2026</time><a href="https://github.com/bigbio/sdrf-pipelines/releases/tag/v0.1.7" target="_blank" rel="noopener">sdrf-pipelines 0.1.7</a> released</li>
+        <li><time datetime="2026-10-10">10 Oct 2026</time><a href="https://github.com/bigbio/quantms-rescoring/releases/tag/v0.0.25" target="_blank" rel="noopener">quantms-rescoring 0.0.25</a> released</li>
+        <li><time datetime="2026-09-06">6 Sep 2026</time><a href="https://github.com/bigbio/pmultiqc/releases/tag/v0.0.48" target="_blank" rel="noopener">pmultiqc 0.0.48</a> released</li>
+        <li><time datetime="2026-08-15">15 Aug 2026</time><a href="https://github.com/bigbio/quantms/releases/tag/1.10.0" target="_blank" rel="noopener">quantms 1.10.0</a> and <a href="https://github.com/bigbio/quantmsdiann/releases/tag/v2.3.0" target="_blank" rel="noopener">quantmsdiann 2.3.0</a> released</li>
       </ul>
-      <pre class="install"><code>pip install mokume</code></pre>
-      <p class="links-inline"><a href="https://mokume.quantms.org" target="_blank" rel="noopener">Documentation</a> &middot; <a href="https://github.com/bigbio/mokume" target="_blank" rel="noopener">GitHub</a></p>
-    </div>
-    <figure class="code-figure">
-      <figcaption>Command line</figcaption>
-<pre><code><span class="c"># Protein quantification with MaxLFQ</span>
-<span class="f">mokume quantify features2proteins</span> \
-    --parquet features.parquet \
-    --sdrf experiment.sdrf.tsv \
-    --quant-method maxlfq \
-    --output proteins.csv
+    </section>
 
-<span class="c"># Add differential expression for one contrast</span>
-<span class="f">mokume quantify features2proteins</span> \
-    --parquet features.parquet \
-    --sdrf experiment.sdrf.tsv \
-    --quant-method maxlfq \
-    --de-contrast "Treatment" "Control" \
-    --output proteins.csv \
-    --de-output de_results.csv</code></pre>
-      <p class="note">Other methods: <code>directlfq</code>, <code>pibaq</code> (with <code>--fasta</code>), <code>top3</code> or any <code>top&lt;N&gt;</code>, <code>sum</code>.</p>
-    </figure>
-  </div>
-</section>
-
-<section id="reports" class="alt">
-  <div class="wrap two-col">
-    <div>
-      <h2>Quality control and reports</h2>
-      <p><strong>pmultiqc</strong> generates interactive HTML reports with comprehensive QC metrics for every experiment. <strong>mokume</strong> adds differential expression reports, interactive plots, and workflow comparison dashboards.</p>
-      <ul>
-        <li>Sample correlation heatmaps &amp; PCA</li>
-        <li>CV distributions &amp; missing value analysis</li>
-        <li>Volcano plots &amp; differential expression tables</li>
-        <li>Workflow comparison across methods</li>
-        <li>Interactive HTML &mdash; no extra tools needed</li>
+    <section class="side-box">
+      <h2>Getting started</h2>
+      <ul class="plain">
+        <li><a href="https://docs.quantms.org/usage/" target="_blank" rel="noopener">Run quantms on your data</a></li>
+        <li><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">Run quantmsdiann (DIA)</a></li>
+        <li><a href="https://github.com/bigbio/proteomics-metadata-standard" target="_blank" rel="noopener">Write an SDRF file</a></li>
+        <li><a href="https://portal.quantms.org/models" target="_blank" rel="noopener">Models trained on reanalysed data</a></li>
+        <li><a href="https://github.com/bigbio/quantms/issues" target="_blank" rel="noopener">Report a problem</a></li>
       </ul>
-      <figure class="code-figure">
-        <figcaption>QC report for a quantms run</figcaption>
-<pre><code><span class="f">multiqc</span> --quantms-plugin results/ -o report/</code></pre>
-        <p class="note">Other inputs: <code>--diann-plugin</code>, <code>--maxquant-plugin</code>, <code>--fragpipe-plugin</code>, <code>--mzid-plugin</code>, <code>--qpx-plugin</code>.</p>
-      </figure>
-      <p class="links-inline" style="margin-top:1em"><a href="https://mokume.quantms.org/user-guide/visualization/" target="_blank" rel="noopener">mokume reports</a> &middot; <a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a></p>
-    </div>
-    <figure class="fig">
-      <svg viewBox="0 0 320 220" role="img" aria-label="Example volcano plot showing down- and up-regulated proteins by log2 fold change and p-value">
-          <line x1="160" y1="10" x2="160" y2="200" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 3"/>
-          <line x1="20" y1="200" x2="300" y2="200" stroke="var(--border)" stroke-width="1"/>
-          <line x1="20" y1="200" x2="20" y2="10" stroke="var(--border)" stroke-width="1"/>
-          <line x1="20" y1="80" x2="300" y2="80" stroke="var(--text-muted)" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.5"/>
-          <circle cx="140" cy="170" r="3" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="155" cy="160" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="165" cy="175" r="3" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="148" cy="150" r="2" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="172" cy="165" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="135" cy="145" r="3" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="180" cy="155" r="2" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="152" cy="185" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="168" cy="140" r="2" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="145" cy="130" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="175" cy="135" r="3" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="160" cy="120" r="2" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="50" cy="40" r="5" fill="var(--indigo)" opacity="0.7"/>
-          <circle cx="65" cy="55" r="4" fill="var(--indigo)" opacity="0.6"/>
-          <circle cx="45" cy="65" r="3.5" fill="var(--indigo)" opacity="0.5"/>
-          <circle cx="80" cy="70" r="3" fill="var(--indigo)" opacity="0.5"/>
-          <circle cx="55" cy="75" r="4" fill="var(--indigo)" opacity="0.6"/>
-          <circle cx="70" cy="90" r="3" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="90" cy="100" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
-          <circle cx="260" cy="30" r="6" fill="var(--blue)" opacity="0.7"/>
-          <circle cx="245" cy="50" r="4.5" fill="var(--blue)" opacity="0.6"/>
-          <circle cx="275" cy="45" r="4" fill="var(--blue)" opacity="0.6"/>
-          <circle cx="235" cy="60" r="3.5" fill="var(--blue)" opacity="0.5"/>
-          <circle cx="270" cy="68" r="3" fill="var(--blue)" opacity="0.5"/>
-          <circle cx="250" cy="78" r="3.5" fill="var(--blue)" opacity="0.55"/>
-          <circle cx="230" cy="95" r="2.5" fill="var(--text-muted)" opacity="0.3"/>
-          <text x="160" y="215" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="var(--text-muted)">log2 Fold Change</text>
-          <text x="12" y="105" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" fill="var(--text-muted)" transform="rotate(-90, 12, 105)">&minus;log10 p-value</text>
-          <text x="50" y="28" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" font-weight="600" fill="var(--indigo)">Down</text>
-          <text x="260" y="20" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" font-weight="600" fill="var(--blue)">Up</text>
-        </svg>
-    </figure>
-  </div>
-</section>
+    </section>
 
-<section id="ecosystem">
-  <div class="wrap">
-    <h2>Ecosystem</h2>
-    <div class="table-scroll">
-    <table class="data-table">
-      <thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Description</th><th scope="col">Links</th></tr></thead>
-      <tbody>
-        <tr><th scope="row">quantms</th><td><span class="tag t-pipeline">Nextflow pipeline</span></td><td>DDA proteomics: LFQ and TMT/iTRAQ workflows. <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" rel="noopener">Nature Methods 2024</a>.</td><td><a href="https://docs.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/quantms" target="_blank" rel="noopener">GitHub</a></td></tr>
-        <tr><th scope="row">quantmsdiann</th><td><span class="tag t-pipeline">Nextflow pipeline</span></td><td>DIA proteomics powered by DIA-NN. Library-free and spectral library modes.</td><td><a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/quantmsdiann" target="_blank" rel="noopener">GitHub</a></td></tr>
-        <tr><th scope="row">mokume</th><td><span class="tag t-lib">Python library</span></td><td>Protein quantification, normalization, batch correction, DE. Successor to <em>ibaqpy</em>.</td><td><a href="https://mokume.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://pypi.org/project/mokume/" target="_blank" rel="noopener">PyPI</a></td></tr>
-        <tr><th scope="row">qpx</th><td><span class="tag t-lib">Python CLI</span></td><td>Format conversion: DIA-NN, FragPipe, MaxQuant. AnnData export.</td><td><a href="https://qpx.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/qpx" target="_blank" rel="noopener">GitHub</a></td></tr>
-        <tr><th scope="row">pmultiqc</th><td><span class="tag t-plugin">MultiQC plugin</span></td><td>Interactive HTML QC reports for LFQ, TMT, and DIA.</td><td><a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">Docs</a> &middot; <a href="https://github.com/bigbio/pmultiqc" target="_blank" rel="noopener">GitHub</a></td></tr>
-        <tr><th scope="row">quantms-rescoring</th><td><span class="tag t-lib">Python tool</span></td><td>PSM rescoring with MS2PIP, DeepLC, AlphaPeptDeep.</td><td><a href="https://github.com/bigbio/quantms-rescoring" target="_blank" rel="noopener">GitHub</a></td></tr>
-        <tr><th scope="row">sdrf-pipelines</th><td><span class="tag t-lib">Python library</span></td><td>SDRF validation, annotation, and conversion for proteomics metadata.</td><td><a href="https://github.com/bigbio/sdrf-pipelines" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://pypi.org/project/sdrf-pipelines/" target="_blank" rel="noopener">PyPI</a></td></tr>
-        <tr><th scope="row">quantms data portal</th><td><span class="tag t-portal">Web portal</span></td><td>Browse reanalyzed proteomics datasets interactively.</td><td><a href="https://portal.quantms.org" target="_blank" rel="noopener">Visit</a> &middot; <a href="https://github.com/bigbio/quantms-portal" target="_blank" rel="noopener">GitHub</a></td></tr>
-      </tbody>
-    </table>
-    </div>
-    <p class="table-note">Installation, citations and more detail for each tool: <a href="tools.html">Tools</a>.</p>
-  </div>
-</section>
+    <section class="side-box">
+      <h2>How to cite</h2>
+      <p class="small">Dai C, Pfeuffer J, Wang H, et al. quantms: a cloud-based pipeline for quantitative proteomics enables the reanalysis of public proteomics data. <i>Nat Methods</i> 2024;21(9):1603&ndash;1607. <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" rel="noopener">doi:10.1038/s41592-024-02343-1</a></p>
+      <p class="small"><a href="publications.html">All publications</a></p>
+    </section>
 
-<section id="why" class="alt">
-  <div class="wrap">
-    <h2>Design principles</h2>
-    <div class="principles">
-      <div><h3>Standards first</h3><p>SDRF metadata, open file formats, and reproducible workflows ensure every experiment is fully documented and shareable.</p></div>
-      <div><h3>Large scale, cloud ready</h3><p>Reanalyze hundreds of public datasets at cloud scale. Nextflow orchestration with Docker/Singularity runs on laptops, HPC clusters, or AWS/GCP/Azure. Python libraries handle local analysis just as well.</p></div>
-      <div><h3>Works with other tools</h3><p>Use mokume and pmultiqc with data from quantms, quantmsdiann, MaxQuant, FragPipe, Spectronaut, or DIA-NN. Export to AnnData for the scverse ecosystem.</p></div>
-      <div><h3>Reporting</h3><p>Interactive QC reports, volcano plots, PCA, heatmaps, and differential expression tables.</p></div>
-    </div>
-  </div>
-</section>
+    <section class="side-box">
+      <h2>Who develops it</h2>
+      <p class="small">The PRIDE team at EMBL-EBI and the OpenMS team, with contributors from other groups. <a href="about.html">People</a> &middot; <a href="https://github.com/bigbio/quantms/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></p>
+    </section>
 
-<section id="community">
-  <div class="wrap two-col">
-    <div>
-      <h2>Contributors</h2>
-      <p class="people">Yasset Perez-Riverol, Chengxin Dai, Julianus Pfeuffer, Timo Sachsenberg, Fabian Egli, Henry Webel, Mingze Bai &mdash; <a href="about.html">all core contributors</a></p>
-      <p>Join 20+ contributors from EMBL-EBI, OpenMS, and research institutions worldwide. <a href="https://github.com/bigbio" target="_blank" rel="noopener">Contribute on GitHub</a></p>
-    </div>
-    <div>
-      <h2>Selected publications</h2>
-      <ol class="refs">
-        <li>Dai C, Pfeuffer J, Wang H, et al. quantms: a cloud-based pipeline for quantitative proteomics enables the reanalysis of public proteomics data. <i>Nat Methods</i> 2024;21(9):1603&ndash;1607. <a href="https://doi.org/10.1038/s41592-024-02343-1" target="_blank" rel="noopener">doi:10.1038/s41592-024-02343-1</a></li>
-        <li>Zheng P, Audain E, Webel H, et al. Ibaqpy: a scalable Python package for baseline quantification in proteomics leveraging SDRF metadata. <i>J Proteomics</i> 2025;317:105440. <a href="https://doi.org/10.1016/j.jprot.2025.105440" target="_blank" rel="noopener">doi:10.1016/j.jprot.2025.105440</a></li>
-        <li>Wang H, Dai C, Pfeuffer J, et al. Tissue-based absolute quantification using large-scale TMT and LFQ experiments. <i>Proteomics</i> 2023;23(20):2300188. <a href="https://doi.org/10.1002/pmic.202300188" target="_blank" rel="noopener">doi:10.1002/pmic.202300188</a></li>
-      </ol>
-      <p class="links-inline"><a href="publications.html">All publications</a></p>
-    </div>
-  </div>
-</section>
+  </aside>
+
+</div>
 
 </main>
 
@@ -609,33 +385,30 @@
   <div class="wrap footer-grid">
     <div>
       <p class="footer-brand">quantms</p>
-      <p>A complete, open-source ecosystem for quantitative proteomics analysis.</p>
+      <p>Open-source pipelines and libraries for quantitative proteomics.</p>
     </div>
     <div>
       <h2>Tools</h2>
-      <a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms pipeline</a>
+      <a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a>
       <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a>
-      <a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a>
       <a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx</a>
+      <a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a>
       <a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a>
-      <a href="https://github.com/bigbio/quantms-rescoring" target="_blank" rel="noopener">quantms-rescoring</a>
     </div>
     <div>
-      <h2>Resources</h2>
-      <a href="https://docs.quantms.org" target="_blank" rel="noopener">Pipeline docs</a>
-      <a href="https://docs.quantms.org/usage/" target="_blank" rel="noopener">Quick start</a>
-      <a href="https://mokume.quantms.org/reference/python-api/" target="_blank" rel="noopener">Python API</a>
+      <h2>Data</h2>
       <a href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a>
+      <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Statistics</a>
+      <a href="https://portal.quantms.org/models" target="_blank" rel="noopener">Models</a>
     </div>
     <div>
-      <h2>Community</h2>
-      <a href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub organization</a>
-      <a href="https://twitter.com/quantikiwe" target="_blank" rel="noopener">X (Twitter)</a>
-      <a href="https://github.com/bigbio/quantms/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
+      <h2>About</h2>
+      <a href="about.html">People</a>
       <a href="publications.html">Publications</a>
+      <a href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
-  <div class="wrap footer-legal">Website source: <a href="https://github.com/bigbio/quantms.org/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>, Copyright (c) 2023 BigBio Stack. Each tool is distributed under its own license.</div>
+  <div class="wrap footer-legal">Website source: <a href="https://github.com/bigbio/quantms.org/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>, copyright (c) 2023 BigBio Stack. Each tool is distributed under its own license.</div>
 </footer>
 
 <script src="assets/script.js"></script>
