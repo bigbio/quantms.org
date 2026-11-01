@@ -276,43 +276,71 @@
       <div class="tab-panel" role="tabpanel" id="panel-dia" aria-labelledby="tab-dia" hidden>
 <figure class="metro-card fig-card">
       <div class="metro-scroll">
-        <svg class="metro" viewBox="-12 0 1172 300" role="group" aria-labelledby="dia-title" aria-describedby="dia-desc">
+        <svg class="metro" viewBox="-12 0 1172 400" role="group" aria-labelledby="dia-title" aria-describedby="dia-desc">
         <title id="dia-title">quantmsdiann pipeline for DIA data</title>
-        <desc id="dia-desc">Thermo RAW, mzML, Bruker .d and SCIEX .wiff files are prepared per file; DIA-NN predicts a spectral library from the FASTA, runs a preliminary analysis of each file, assembles an empirical library, analyses each file again and quantifies all runs together. Outputs are DIA-NN reports, MSstats input, a pmultiqc report and optionally a QPX dataset. Use the arrow keys to move between steps.</desc>
+        <desc id="dia-desc">Thermo RAW, mzML, Bruker .d and SCIEX .wiff files are prepared per file; DIA-NN predicts a spectral library from the FASTA, or uses a spectral library you give with --speclib, runs a preliminary analysis of each file, assembles an empirical library, analyses each file again and quantifies all runs together. Thermo RAW files are converted to mzML for DIA-NN versions before 2.1 and read directly from 2.1 on. Outputs are DIA-NN reports, MSstats input, a pmultiqc report and optionally a QPX dataset. Use the arrow keys to move between steps.</desc>
+        <g transform="translate(0,40)">
         <g class="metro-lines">
-        <path d="M96,40L210,40C245,40 245,140 280,140" stroke="#1f9e74"/>
-        <path d="M96,90L210,90C240,90 240,140 270,140" stroke="#1f9e74"/>
-        <path d="M96,140L280,140" stroke="#1f9e74"/>
-        <path d="M96,190L210,190C240,190 240,140 270,140" stroke="#1f9e74"/>
-        <path d="M96,255L400,255C440,255 440,140 470,140" stroke="#1f9e74"/>
-        <path d="M270,140L880,140" stroke="#1f9e74"/>
-        <path d="M880,140C910,140 910,40 940,40L1040,40" stroke="#1f9e74"/>
-        <path d="M880,140C910,140 910,90 940,90L1040,90" stroke="#1f9e74"/>
-        <path d="M880,140L1040,140" stroke="#1f9e74"/>
-        <path d="M880,140C910,140 910,190 940,190L1040,190" stroke="#1f9e74"/>
+        <path d="M96,36.5L235,36.5C262,36.5 262,136.5 289,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M96,43.5L235,43.5C262,43.5 262,143.5 289,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M100,36.5C122,36.5 122,-19.5 144,-19.5L193,-19.5C215,-19.5 215,36.5 235,36.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M100,43.5C122,43.5 122,-12.5 144,-12.5L193,-12.5C215,-12.5 215,43.5 235,43.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M96,86.5L210,86.5C240,86.5 240,136.5 270,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M96,93.5L210,93.5C240,93.5 240,143.5 270,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M96,136.5L280,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M96,143.5L280,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M96,186.5L210,186.5C240,186.5 240,136.5 270,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M96,193.5L210,193.5C240,193.5 240,143.5 270,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M270,136.5L880,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M270,143.5L880,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M880,136.5C910,136.5 910,36.5 940,36.5L1040,36.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M880,143.5C910,143.5 910,43.5 940,43.5L1040,43.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M880,136.5C910,136.5 910,86.5 940,86.5L1040,86.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M880,143.5C910,143.5 910,93.5 940,93.5L1040,93.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M880,136.5L1040,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M880,143.5L1040,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M880,136.5C910,136.5 910,186.5 940,186.5L1040,186.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M880,143.5C910,143.5 910,193.5 940,193.5L1040,193.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M96,251.5L400,251.5C440,251.5 440,136.5 470,136.5" stroke="#1f9e74" data-route="free"/>
+        <path d="M96,258.5L200,258.5C230,258.5 230,290 260,290L400,290C440,290 440,143.5 470,143.5" stroke="#8a5cc4" data-route="lib"/>
+        <path d="M96,330L230,330C260,330 260,290 290,290" stroke="#8a5cc4" data-route="lib"/>
         </g>
         <g class="metro-flow" aria-hidden="true">
-        <path d="M96,40L210,40C245,40 245,140 280,140"/>
-        <path d="M96,90L210,90C240,90 240,140 270,140"/>
-        <path d="M96,140L280,140"/>
-        <path d="M96,190L210,190C240,190 240,140 270,140"/>
-        <path d="M96,255L400,255C440,255 440,140 470,140"/>
-        <path d="M270,140L880,140"/>
-        <path d="M880,140C910,140 910,40 940,40L1040,40"/>
-        <path d="M880,140C910,140 910,90 940,90L1040,90"/>
-        <path d="M880,140L1040,140"/>
-        <path d="M880,140C910,140 910,190 940,190L1040,190"/>
+        <path d="M96,36.5L235,36.5C262,36.5 262,136.5 289,136.5" data-route="free"/>
+        <path d="M96,43.5L235,43.5C262,43.5 262,143.5 289,143.5" data-route="lib"/>
+        <path d="M100,36.5C122,36.5 122,-19.5 144,-19.5L193,-19.5C215,-19.5 215,36.5 235,36.5" data-route="free"/>
+        <path d="M100,43.5C122,43.5 122,-12.5 144,-12.5L193,-12.5C215,-12.5 215,43.5 235,43.5" data-route="lib"/>
+        <path d="M96,86.5L210,86.5C240,86.5 240,136.5 270,136.5" data-route="free"/>
+        <path d="M96,93.5L210,93.5C240,93.5 240,143.5 270,143.5" data-route="lib"/>
+        <path d="M96,136.5L280,136.5" data-route="free"/>
+        <path d="M96,143.5L280,143.5" data-route="lib"/>
+        <path d="M96,186.5L210,186.5C240,186.5 240,136.5 270,136.5" data-route="free"/>
+        <path d="M96,193.5L210,193.5C240,193.5 240,143.5 270,143.5" data-route="lib"/>
+        <path d="M270,136.5L880,136.5" data-route="free"/>
+        <path d="M270,143.5L880,143.5" data-route="lib"/>
+        <path d="M880,136.5C910,136.5 910,36.5 940,36.5L1040,36.5" data-route="free"/>
+        <path d="M880,143.5C910,143.5 910,43.5 940,43.5L1040,43.5" data-route="lib"/>
+        <path d="M880,136.5C910,136.5 910,86.5 940,86.5L1040,86.5" data-route="free"/>
+        <path d="M880,143.5C910,143.5 910,93.5 940,93.5L1040,93.5" data-route="lib"/>
+        <path d="M880,136.5L1040,136.5" data-route="free"/>
+        <path d="M880,143.5L1040,143.5" data-route="lib"/>
+        <path d="M880,136.5C910,136.5 910,186.5 940,186.5L1040,186.5" data-route="free"/>
+        <path d="M880,143.5C910,143.5 910,193.5 940,193.5L1040,193.5" data-route="lib"/>
+        <path d="M96,251.5L400,251.5C440,251.5 440,136.5 470,136.5" data-route="free"/>
+        <path d="M96,258.5L200,258.5C230,258.5 230,290 260,290L400,290C440,290 440,143.5 470,143.5" data-route="lib"/>
+        <path d="M96,330L230,330C260,330 260,290 290,290" data-route="lib"/>
         </g>
         <g class="metro-stops">
         <g class="metro-step" role="img" aria-label="Thermo RAW" aria-describedby="dia-tip" data-tip="Thermo Fisher .raw files, listed in the SDRF file."><rect class="metro-hit" x="-8" y="25" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="27" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="44.5" text-anchor="end">Thermo RAW</text></g>
         <g class="metro-step" role="img" aria-label="mzML" aria-describedby="dia-tip" data-tip="Spectra in the open mzML format, listed in the SDRF file."><rect class="metro-hit" x="-8" y="75" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="77" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="94.5" text-anchor="end">mzML</text></g>
         <g class="metro-step" role="img" aria-label="Bruker .d" aria-describedby="dia-tip" data-tip="Bruker timsTOF .d folders, read by DIA-NN directly; compressed archives are unpacked first."><rect class="metro-hit" x="-8" y="125" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="127" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="144.5" text-anchor="end">Bruker .d</text></g>
         <g class="metro-step" role="img" aria-label="SCIEX .wiff" aria-describedby="dia-tip" data-tip="SCIEX .wiff files, listed in the SDRF file."><rect class="metro-hit" x="-8" y="175" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="177" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="194.5" text-anchor="end">SCIEX .wiff</text></g>
-        <g class="metro-step" role="img" aria-label="FASTA" aria-describedby="dia-tip" data-tip="Protein sequence database."><rect class="metro-hit" x="-8" y="240" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="242" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="259.5" text-anchor="end">FASTA</text></g>
-        <g class="metro-step" role="img" aria-label="ThermoRawFileParser" aria-describedby="dia-tip" data-tip="Converts each RAW file to mzML. DIA-NN 2.1 and later read RAW files directly, so with those versions it runs only with --mzml_convert." data-meta="Per file · runs with the default DIA-NN 1.8.1"><rect class="metro-hit" x="148" y="17" width="34" height="46" rx="4"/><rect class="metro-stop par" x="158" y="27" width="14" height="26" rx="7"/><text x="165" y="20" text-anchor="middle"><tspan x="165" dy="0">ThermoRawFileParser</tspan></text></g>
-        <g class="metro-step" role="img" aria-label="mzML indexing" aria-describedby="dia-tip" data-tip="Rewrites each mzML with an up-to-date index." data-meta="Per file · off by default (--reindex_mzml)"><rect class="metro-hit" x="148" y="67" width="34" height="46" rx="4"/><rect class="metro-stop par opt" x="158" y="77" width="14" height="26" rx="7"/><text x="165" y="70" text-anchor="middle"><tspan x="165" dy="0">mzML indexing</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="FASTA" aria-describedby="dia-tip" data-tip="Protein sequence database, required on both routes: it feeds the in-silico library and every DIA-NN search."><rect class="metro-hit" x="-8" y="240" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="242" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="259.5" text-anchor="end">FASTA</text></g>
+        <g class="metro-step" data-route="lib" role="img" aria-label="Spectral library" aria-describedby="dia-tip" data-tip="Your own spectral library, given with --speclib. The in-silico library step is skipped."><rect class="metro-hit" x="-8" y="315" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="317" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="334.5" text-anchor="end">Spectral library</text></g>
+        <g class="metro-step" role="img" aria-label="ThermoRawFileParser" aria-describedby="dia-tip" data-tip="Converts each RAW file to mzML. DIA-NN 2.1 and later read RAW files directly, so with those versions it runs only with --mzml_convert." data-meta="Per file · runs with the default DIA-NN 1.8.1"><rect class="metro-hit" x="148" y="17" width="34" height="46" rx="4"/><rect class="metro-stop par" x="158" y="27" width="14" height="26" rx="7"/><text x="165" y="68" text-anchor="middle"><tspan x="165" dy="0">ThermoRawFileParser</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="mzML indexing" aria-describedby="dia-tip" data-tip="Rewrites each mzML with an up-to-date index." data-meta="Per file · off by default (--reindex_mzml)"><rect class="metro-hit" x="148" y="67" width="34" height="46" rx="4"/><rect class="metro-stop par opt" x="158" y="77" width="14" height="26" rx="7"/><text x="165" y="118" text-anchor="middle"><tspan x="165" dy="0">mzML indexing</tspan></text></g>
         <g class="metro-step" role="img" aria-label="WiffConverter" aria-describedby="dia-tip" data-tip="Converts each .wiff file to mzML." data-meta="Per file"><rect class="metro-hit" x="148" y="167" width="34" height="46" rx="4"/><rect class="metro-stop par" x="158" y="177" width="14" height="26" rx="7"/><text x="165" y="218" text-anchor="middle"><tspan x="165" dy="0">WiffConverter</tspan></text></g>
-        <g class="metro-step" role="img" aria-label="In-silico library" aria-describedby="dia-tip" data-tip="DIA-NN predicts a spectral library from the FASTA with deep learning. Skipped when you give your own library with --speclib." data-meta="Once"><rect class="metro-hit" x="313" y="232" width="34" height="46" rx="4"/><rect class="metro-stop one" x="323" y="242" width="14" height="26" rx="7"/><text x="330" y="283" text-anchor="middle"><tspan x="330" dy="0">In-silico library</tspan></text></g>
+        <g class="metro-step" data-route="free" role="img" aria-label="In-silico library" aria-describedby="dia-tip" data-tip="DIA-NN predicts a spectral library from the FASTA with deep learning. Skipped when you give your own library with --speclib." data-meta="Once"><rect class="metro-hit" x="313" y="232" width="34" height="46" rx="4"/><rect class="metro-stop one" x="323" y="242" width="14" height="26" rx="7"/><text x="330" y="235" text-anchor="middle"><tspan x="330" dy="0">In-silico library</tspan></text></g>
         <g class="metro-step" role="img" aria-label="Preliminary analysis" aria-describedby="dia-tip" data-tip="DIA-NN searches each file against the library to calibrate retention time and estimate mass accuracy and scan window." data-meta="Per file · --random_preanalysis uses a subset of files; --skip_preliminary_analysis skips it"><rect class="metro-hit" x="503" y="117" width="34" height="46" rx="4"/><rect class="metro-stop par" x="513" y="127" width="14" height="26" rx="7"/><text x="520" y="120" text-anchor="middle"><tspan x="520" dy="0">Preliminary analysis</tspan></text></g>
         <g class="metro-step" role="img" aria-label="Assemble empirical library" aria-describedby="dia-tip" data-tip="Builds an empirical spectral library from the preliminary results and averages the recommended mass accuracy and scan window." data-meta="Once"><rect class="metro-hit" x="613" y="117" width="34" height="46" rx="4"/><rect class="metro-stop one" x="623" y="127" width="14" height="26" rx="7"/><text x="630" y="168" text-anchor="middle"><tspan x="630" dy="0">Assemble</tspan><tspan x="630" dy="15">empirical library</tspan></text></g>
         <g class="metro-step" role="img" aria-label="Individual analysis" aria-describedby="dia-tip" data-tip="Searches each file again with the empirical library and the calibrated settings." data-meta="Per file"><rect class="metro-hit" x="723" y="117" width="34" height="46" rx="4"/><rect class="metro-stop par" x="733" y="127" width="14" height="26" rx="7"/><text x="740" y="120" text-anchor="middle"><tspan x="740" dy="0">Individual analysis</tspan></text></g>
@@ -322,11 +350,13 @@
         <g class="metro-step" role="img" aria-label="pmultiqc report" aria-describedby="dia-tip" data-tip="HTML quality-control report on identification and quantification across runs." data-meta="On by default (--enable_pmultiqc)"><rect class="metro-hit" x="1030" y="125" width="128" height="30" rx="4"/><rect class="metro-end" x="1034" y="127" width="12" height="26" rx="6"/><text class="metro-io" x="1054" y="144.5" text-anchor="start">pmultiqc report</text></g>
         <g class="metro-step" role="img" aria-label="QPX dataset" aria-describedby="dia-tip" data-tip="DIA-NN results as QPX Parquet tables with run, sample and provenance metadata, and a MuData (.h5mu) file." data-meta="Off by default (--enable_qpx_export, needs --project_accession)"><rect class="metro-hit" x="1030" y="175" width="128" height="30" rx="4"/><rect class="metro-end" x="1034" y="177" width="12" height="26" rx="6"/><text class="metro-io" x="1054" y="194.5" text-anchor="start">QPX dataset</text></g>
         </g>
+        <text class="metro-note" x="169" y="-27" text-anchor="middle">DIA-NN 2.1 and later read RAW directly</text>
+        </g>
         </svg>
       </div>
       <div class="metro-tip" id="dia-tip" role="tooltip" hidden><b></b><span></span><small></small></div>
       <figcaption>
-        <p class="metro-key"><span><i class="k-dia"></i>DIA: label-free and plexDIA</span><span><i class="k-par"></i>Runs per file, in parallel</span><span><i class="k-one"></i>Runs once</span><span><i class="k-opt"></i>Optional, off by default</span></p>
+        <p class="metro-key"><span><i class="k-dia"></i>In-silico library from the FASTA (default)</span><span><i class="k-speclib"></i>Your spectral library (--speclib)</span><span><i class="k-par"></i>Runs per file, in parallel</span><span><i class="k-one"></i>Runs once</span><span><i class="k-opt"></i>Optional, off by default</span></p>
         <b>quantmsdiann 2.3 for DIA data</b>, with the default DIA-NN 1.8.1; other DIA-NN versions are selected with a profile. See the <a href="https://github.com/bigbio/quantmsdiann#pipeline-summary" target="_blank" rel="noopener">quantmsdiann README</a>.
       </figcaption>
     </figure>
