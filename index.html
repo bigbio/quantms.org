@@ -180,8 +180,13 @@
   <div class="page-main">
 
     <section class="block" id="pipeline">
-      <h2>The quantms pipeline for DDA data</h2>
-    <figure class="metro-card fig-card">
+      <h2>Pipelines</h2>
+      <div class="tabs" role="tablist" aria-label="Pipelines">
+        <button type="button" role="tab" id="tab-dda" aria-controls="panel-dda" aria-selected="true">quantms <small>DDA: label-free, TMT, iTRAQ</small></button>
+        <button type="button" role="tab" id="tab-dia" aria-controls="panel-dia" aria-selected="false" tabindex="-1">quantmsdiann <small>DIA with DIA-NN</small></button>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-dda" aria-labelledby="tab-dda">
+<figure class="metro-card fig-card">
       <div class="metro-scroll">
         <svg class="metro" viewBox="-12 0 1172 300" role="group" aria-labelledby="metro-title" aria-describedby="metro-desc">
         <title id="metro-title">quantms pipeline for DDA data</title>
@@ -274,9 +279,69 @@
       <div class="metro-tip" id="metro-tip" role="tooltip" hidden><b></b><span></span><small></small></div>
       <figcaption>
         <p class="metro-key"><span data-route="lfq"><i class="k-lfq"></i>Label-free (LFQ)</span><span data-route="iso"><i class="k-iso"></i>Isobaric labelling (TMT, iTRAQ)</span><span><i class="k-par"></i>Runs per file, in parallel</span><span><i class="k-one"></i>Runs once</span><span><i class="k-opt"></i>Optional, off by default</span></p>
-        <b>quantms 1.10 for DDA data</b>, redrawn from the metro map in the <a href="https://github.com/bigbio/quantms#functionality-overview" target="_blank" rel="noopener">quantms README</a>. DIA data are processed by <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a>.
+        <b>quantms 1.10 for DDA data</b>, redrawn from the metro map in the <a href="https://github.com/bigbio/quantms#functionality-overview" target="_blank" rel="noopener">quantms README</a>. DIA data are processed by quantmsdiann (second tab).
       </figcaption>
     </figure>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="panel-dia" aria-labelledby="tab-dia" hidden>
+<figure class="metro-card fig-card">
+      <div class="metro-scroll">
+        <svg class="metro" viewBox="-12 0 1172 300" role="group" aria-labelledby="dia-title" aria-describedby="dia-desc">
+        <title id="dia-title">quantmsdiann pipeline for DIA data</title>
+        <desc id="dia-desc">Thermo RAW, mzML, Bruker .d and SCIEX .wiff files are prepared per file; DIA-NN predicts a spectral library from the FASTA, runs a preliminary analysis of each file, assembles an empirical library, analyses each file again and quantifies all runs together. Outputs are DIA-NN reports, MSstats input, a pmultiqc report and optionally a QPX dataset. Use the arrow keys to move between steps.</desc>
+        <g class="metro-lines">
+        <path d="M96,40L210,40C245,40 245,140 280,140" stroke="#1f9e74"/>
+        <path d="M96,90L210,90C240,90 240,140 270,140" stroke="#1f9e74"/>
+        <path d="M96,140L280,140" stroke="#1f9e74"/>
+        <path d="M96,190L210,190C240,190 240,140 270,140" stroke="#1f9e74"/>
+        <path d="M96,255L400,255C440,255 440,140 470,140" stroke="#1f9e74"/>
+        <path d="M270,140L880,140" stroke="#1f9e74"/>
+        <path d="M880,140C910,140 910,40 940,40L1040,40" stroke="#1f9e74"/>
+        <path d="M880,140C910,140 910,90 940,90L1040,90" stroke="#1f9e74"/>
+        <path d="M880,140L1040,140" stroke="#1f9e74"/>
+        <path d="M880,140C910,140 910,190 940,190L1040,190" stroke="#1f9e74"/>
+        </g>
+        <g class="metro-flow" aria-hidden="true">
+        <path d="M96,40L210,40C245,40 245,140 280,140"/>
+        <path d="M96,90L210,90C240,90 240,140 270,140"/>
+        <path d="M96,140L280,140"/>
+        <path d="M96,190L210,190C240,190 240,140 270,140"/>
+        <path d="M96,255L400,255C440,255 440,140 470,140"/>
+        <path d="M270,140L880,140"/>
+        <path d="M880,140C910,140 910,40 940,40L1040,40"/>
+        <path d="M880,140C910,140 910,90 940,90L1040,90"/>
+        <path d="M880,140L1040,140"/>
+        <path d="M880,140C910,140 910,190 940,190L1040,190"/>
+        </g>
+        <g class="metro-stops">
+        <g class="metro-step" role="img" aria-label="Thermo RAW" aria-describedby="dia-tip" data-tip="Thermo Fisher .raw files, listed in the SDRF file."><rect class="metro-hit" x="-8" y="25" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="27" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="44.5" text-anchor="end">Thermo RAW</text></g>
+        <g class="metro-step" role="img" aria-label="mzML" aria-describedby="dia-tip" data-tip="Spectra in the open mzML format, listed in the SDRF file."><rect class="metro-hit" x="-8" y="75" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="77" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="94.5" text-anchor="end">mzML</text></g>
+        <g class="metro-step" role="img" aria-label="Bruker .d" aria-describedby="dia-tip" data-tip="Bruker timsTOF .d folders, read by DIA-NN directly; compressed archives are unpacked first."><rect class="metro-hit" x="-8" y="125" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="127" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="144.5" text-anchor="end">Bruker .d</text></g>
+        <g class="metro-step" role="img" aria-label="SCIEX .wiff" aria-describedby="dia-tip" data-tip="SCIEX .wiff files, listed in the SDRF file."><rect class="metro-hit" x="-8" y="175" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="177" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="194.5" text-anchor="end">SCIEX .wiff</text></g>
+        <g class="metro-step" role="img" aria-label="FASTA" aria-describedby="dia-tip" data-tip="Protein sequence database."><rect class="metro-hit" x="-8" y="240" width="114" height="30" rx="4"/><rect class="metro-end" x="90" y="242" width="12" height="26" rx="6"/><text class="metro-io" x="82" y="259.5" text-anchor="end">FASTA</text></g>
+        <g class="metro-step" role="img" aria-label="ThermoRawFileParser" aria-describedby="dia-tip" data-tip="Converts each RAW file to mzML. DIA-NN 2.1 and later read RAW files directly, so with those versions it runs only with --mzml_convert." data-meta="Per file · runs with the default DIA-NN 1.8.1"><rect class="metro-hit" x="148" y="17" width="34" height="46" rx="4"/><rect class="metro-stop par" x="158" y="27" width="14" height="26" rx="7"/><text x="165" y="20" text-anchor="middle"><tspan x="165" dy="0">ThermoRawFileParser</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="mzML indexing" aria-describedby="dia-tip" data-tip="Rewrites each mzML with an up-to-date index." data-meta="Per file · off by default (--reindex_mzml)"><rect class="metro-hit" x="148" y="67" width="34" height="46" rx="4"/><rect class="metro-stop par opt" x="158" y="77" width="14" height="26" rx="7"/><text x="165" y="70" text-anchor="middle"><tspan x="165" dy="0">mzML indexing</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="WiffConverter" aria-describedby="dia-tip" data-tip="Converts each .wiff file to mzML." data-meta="Per file"><rect class="metro-hit" x="148" y="167" width="34" height="46" rx="4"/><rect class="metro-stop par" x="158" y="177" width="14" height="26" rx="7"/><text x="165" y="218" text-anchor="middle"><tspan x="165" dy="0">WiffConverter</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="In-silico library" aria-describedby="dia-tip" data-tip="DIA-NN predicts a spectral library from the FASTA with deep learning. Skipped when you give your own library with --speclib." data-meta="Once"><rect class="metro-hit" x="313" y="232" width="34" height="46" rx="4"/><rect class="metro-stop one" x="323" y="242" width="14" height="26" rx="7"/><text x="330" y="283" text-anchor="middle"><tspan x="330" dy="0">In-silico library</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="Preliminary analysis" aria-describedby="dia-tip" data-tip="DIA-NN searches each file against the library to calibrate retention time and estimate mass accuracy and scan window." data-meta="Per file · --random_preanalysis uses a subset of files; --skip_preliminary_analysis skips it"><rect class="metro-hit" x="503" y="117" width="34" height="46" rx="4"/><rect class="metro-stop par" x="513" y="127" width="14" height="26" rx="7"/><text x="520" y="120" text-anchor="middle"><tspan x="520" dy="0">Preliminary analysis</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="Assemble empirical library" aria-describedby="dia-tip" data-tip="Builds an empirical spectral library from the preliminary results and averages the recommended mass accuracy and scan window." data-meta="Once"><rect class="metro-hit" x="613" y="117" width="34" height="46" rx="4"/><rect class="metro-stop one" x="623" y="127" width="14" height="26" rx="7"/><text x="630" y="168" text-anchor="middle"><tspan x="630" dy="0">Assemble</tspan><tspan x="630" dy="15">empirical library</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="Individual analysis" aria-describedby="dia-tip" data-tip="Searches each file again with the empirical library and the calibrated settings." data-meta="Per file"><rect class="metro-hit" x="723" y="117" width="34" height="46" rx="4"/><rect class="metro-stop par" x="733" y="127" width="14" height="26" rx="7"/><text x="740" y="120" text-anchor="middle"><tspan x="740" dy="0">Individual analysis</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="Final quantification" aria-describedby="dia-tip" data-tip="Combines all runs: FDR control, protein inference, cross-run normalisation and the precursor, protein-group and gene-group matrices." data-meta="Once"><rect class="metro-hit" x="833" y="117" width="34" height="46" rx="4"/><rect class="metro-stop one" x="843" y="127" width="14" height="26" rx="7"/><text x="850" y="168" text-anchor="middle"><tspan x="850" dy="0">Final</tspan><tspan x="850" dy="15">quantification</tspan></text></g>
+        <g class="metro-step" role="img" aria-label="DIA-NN reports" aria-describedby="dia-tip" data-tip="The DIA-NN main report with the precursor, protein-group and gene-group matrices."><rect class="metro-hit" x="1030" y="25" width="128" height="30" rx="4"/><rect class="metro-end" x="1034" y="27" width="12" height="26" rx="6"/><text class="metro-io" x="1054" y="44.5" text-anchor="start">DIA-NN reports</text></g>
+        <g class="metro-step" role="img" aria-label="MSstats input" aria-describedby="dia-tip" data-tip="The DIA-NN report converted to MSstats input; quantmsdiann does not run MSstats itself."><rect class="metro-hit" x="1030" y="75" width="128" height="30" rx="4"/><rect class="metro-end" x="1034" y="77" width="12" height="26" rx="6"/><text class="metro-io" x="1054" y="94.5" text-anchor="start">MSstats input</text></g>
+        <g class="metro-step" role="img" aria-label="pmultiqc report" aria-describedby="dia-tip" data-tip="HTML quality-control report on identification and quantification across runs." data-meta="On by default (--enable_pmultiqc)"><rect class="metro-hit" x="1030" y="125" width="128" height="30" rx="4"/><rect class="metro-end" x="1034" y="127" width="12" height="26" rx="6"/><text class="metro-io" x="1054" y="144.5" text-anchor="start">pmultiqc report</text></g>
+        <g class="metro-step" role="img" aria-label="QPX dataset" aria-describedby="dia-tip" data-tip="DIA-NN results as QPX Parquet tables with run, sample and provenance metadata, and a MuData (.h5mu) file." data-meta="Off by default (--enable_qpx_export, needs --project_accession)"><rect class="metro-hit" x="1030" y="175" width="128" height="30" rx="4"/><rect class="metro-end" x="1034" y="177" width="12" height="26" rx="6"/><text class="metro-io" x="1054" y="194.5" text-anchor="start">QPX dataset</text></g>
+        </g>
+        </svg>
+      </div>
+      <div class="metro-tip" id="dia-tip" role="tooltip" hidden><b></b><span></span><small></small></div>
+      <figcaption>
+        <p class="metro-key"><span><i class="k-dia"></i>DIA: label-free and plexDIA</span><span><i class="k-par"></i>Runs per file, in parallel</span><span><i class="k-one"></i>Runs once</span><span><i class="k-opt"></i>Optional, off by default</span></p>
+        <b>quantmsdiann 2.3 for DIA data</b>, with the default DIA-NN 1.8.1; other DIA-NN versions are selected with a profile. See the <a href="https://github.com/bigbio/quantmsdiann#pipeline-summary" target="_blank" rel="noopener">quantmsdiann README</a>.
+      </figcaption>
+    </figure>
+
+      </div>
     </section>
 
     <section class="block" id="run">

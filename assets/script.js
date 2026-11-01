@@ -98,10 +98,9 @@ if (modelsBox) {
   loadModels().then(v => show(modelsBox, v)).catch(err => drop(modelsBox, 'models', err));
 }
 
-// Pipeline map in the home intro: hovering, tapping or focusing a step shows what it does,
+// Pipeline maps: hovering, tapping or focusing a step shows what it does,
 // and hovering a line, a legend key or a step of one workflow fades the other workflow.
-const metro = document.querySelector('.metro-card');
-if (metro) {
+document.querySelectorAll('.metro-card').forEach(metro => {
   const tip = metro.querySelector('.metro-tip');
   const steps = [...metro.querySelectorAll('.metro-step')];
   let active = null;
@@ -190,7 +189,7 @@ if (metro) {
     next.tabIndex = 0;
     next.focus();
   });
-}
+});
 
 // Homepage search: sends the query to the matching portal application. "Any" guesses the
 // kind from the text; without JavaScript the form falls back to dataset search.
@@ -229,3 +228,25 @@ if (searchForm) {
     input.focus();
   }));
 }
+
+// Pipeline tabs: one map per pipeline; the arrow keys move between tabs.
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+function selectTab(tab) {
+  tabs.forEach(t => {
+    const on = t === tab;
+    t.setAttribute('aria-selected', String(on));
+    t.tabIndex = on ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+  });
+}
+tabs.forEach((tab, i) => {
+  tab.addEventListener('click', () => selectTab(tab));
+  tab.addEventListener('keydown', e => {
+    const move = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+    if (!move) return;
+    const next = tabs[(i + move + tabs.length) % tabs.length];
+    selectTab(next);
+    next.focus();
+  });
+});
+if (location.hash === '#dia') selectTab(document.getElementById('tab-dia'));

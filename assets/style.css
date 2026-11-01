@@ -342,3 +342,10 @@ main .side-box h2 { font-size: 0.9375rem; margin: 0; padding: 8px 12px; border: 
 }
 main section.side-box { padding: 0; }
 .two-col.tight .code-figure + .code-figure { margin-top: 0; }
+.tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--brand); }
+.tabs button { font: inherit; font-size: 0.9375rem; font-weight: 600; padding: 8px 16px; border: 1px solid var(--border); border-bottom: 0; border-radius: 4px 4px 0 0; background: var(--bg-alt); color: var(--brand-deep); cursor: pointer; text-align: left; }
+.tabs button small { display: block; font-weight: 400; font-size: 0.75rem; color: var(--muted); }
+.tabs button[aria-selected="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+.tabs button[aria-selected="true"] small { color: var(--on-dark); }
+.tab-panel .metro-card { border-top: 0; border-radius: 0 0 6px 6px; }
+.k-dia { width: 18px; height: 5px; border-radius: 3px; background: #1f9e74; }
