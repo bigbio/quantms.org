@@ -86,6 +86,17 @@ if (dataBlock) {
     bars(dataBlock.querySelector('[data-list="tissues"]'), s.tissues, 'tissue', null);
     bars(dataBlock.querySelector('[data-list="instruments"]'), s.instruments, 'instrument', 'instrument');
   }).catch(err => console.warn('portal index:', err));
+  getJSON(`${DATASETS_API}/collections`).then(res => {
+    const box = dataBlock.querySelector('#portal-collections');
+    const items = res.collections.filter(c => c.dataset_count > 0).sort((a, b) => b.dataset_count - a.dataset_count);
+    box.replaceChildren('Collections: ', ...items.flatMap((c, i) => {
+      const link = Object.assign(document.createElement('a'), {
+        href: `${DATASET_SEARCH}?collection=${encodeURIComponent(c.name)}`, textContent: c.title, target: '_blank', rel: 'noopener',
+      });
+      const count = Object.assign(document.createElement('b'), { textContent: c.dataset_count });
+      return i ? [', ', link, ' ', count] : [link, ' ', count];
+    }));
+  }).catch(err => console.warn('portal collections:', err));
   getJSON(CELL_LINES).then(c => show(dataBlock, { lines: c.tiles.lines, lineages: c.tiles.lineages }))
     .catch(err => console.warn('cell lines:', err));
 }

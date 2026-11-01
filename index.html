@@ -212,6 +212,11 @@
           </ol>
         </div>
       </div>
+      <p class="collections" id="portal-collections">Collections:
+        <a href="https://portal.quantms.org/apps/dataset-search?collection=msnet" target="_blank" rel="noopener">MS-Net Peptide Identifications</a> <b>117</b>,
+        <a href="https://portal.quantms.org/apps/dataset-search?collection=celllines" target="_blank" rel="noopener">Human Cancer Cell Lines</a> <b>24</b>,
+        <a href="https://portal.quantms.org/apps/dataset-search?collection=immunopeptidomics" target="_blank" rel="noopener">Immunopeptidomics</a> <b>1</b>
+      </p>
       <p class="figures-note">Number of datasets per organism, tissue and instrument, top five of each. Datasets and accessions: current portal catalogue. Other figures: peptide search index built <span data-num="generated">1 Nov 2026</span>, which also covers retired collections. Cell lines: the cancer cell line collection. <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Full statistics</a></p>
     </section>
 
@@ -467,9 +472,15 @@
       <p class="small"><a href="publications.html">All publications</a></p>
     </section>
 
-    <section class="side-box">
-      <h2>Who develops it</h2>
-      <p class="small">The PRIDE team at EMBL-EBI and the OpenMS team, with contributors from other groups. <a href="about.html">People</a> &middot; <a href="https://github.com/bigbio/quantms/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></p>
+    <section class="side-box spotlight">
+      <h2>Dataset spotlight</h2>
+      <p class="small"><a href="https://portal.quantms.org/apps/dataset-search?q=PXD010154" target="_blank" rel="noopener"><b>PXD010154</b></a> &middot; A deep proteome and transcriptome abundance atlas of 29 healthy human tissues</p>
+      <dl class="spot-figs">
+        <div><dt>Samples</dt><dd>38</dd></div>
+        <div><dt>Proteins</dt><dd>19,892</dd></div>
+        <div><dt>Peptides</dt><dd>480,201</dd></div>
+      </dl>
+      <p class="small">Q Exactive Plus, label-free DDA. Wang et al., <i>Mol Syst Biol</i> 2019. <a href="https://browse.quantms.org/quantms/datasets/PXD010154/cfdbe6ad96ad/" target="_blank" rel="noopener">Download files</a></p>
     </section>
 
   </aside>
@@ -479,31 +490,16 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-grid">
+  <div class="wrap footer-grid footer-two">
     <div>
       <p class="footer-brand">quantms</p>
-      <p>Open-source pipelines and libraries for quantitative proteomics.</p>
+      <p>Open-source pipelines and libraries for quantitative proteomics, developed by the PRIDE team at EMBL-EBI and the OpenMS team with contributors from other groups. <a href="https://github.com/bigbio/quantms/blob/master/.github/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></p>
     </div>
-    <div>
-      <h2>Tools</h2>
-      <a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a>
-      <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a>
-      <a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx</a>
-      <a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a>
-      <a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a>
-    </div>
-    <div>
-      <h2>Data</h2>
-      <a href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a>
-      <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Statistics</a>
-      <a href="https://portal.quantms.org/models" target="_blank" rel="noopener">Models</a>
-    </div>
-    <div>
-      <h2>About</h2>
-      <a href="about.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub</a>
-    </div>
+    <dl class="footer-links">
+      <dt>Tools</dt><dd><a href="https://docs.quantms.org" target="_blank" rel="noopener">quantms</a> <a href="https://quantmsdiann.quantms.org" target="_blank" rel="noopener">quantmsdiann</a> <a href="https://qpx.quantms.org" target="_blank" rel="noopener">qpx</a> <a href="https://mokume.quantms.org" target="_blank" rel="noopener">mokume</a> <a href="https://pmultiqc.quantms.org" target="_blank" rel="noopener">pmultiqc</a></dd>
+      <dt>Data</dt><dd><a href="https://portal.quantms.org" target="_blank" rel="noopener">Data portal</a> <a href="https://portal.quantms.org/statistics" target="_blank" rel="noopener">Statistics</a> <a href="https://portal.quantms.org/models" target="_blank" rel="noopener">Models</a></dd>
+      <dt>About</dt><dd><a href="about.html">People</a> <a href="publications.html">Publications</a> <a href="https://github.com/bigbio" target="_blank" rel="noopener">GitHub</a></dd>
+    </dl>
   </div>
   <div class="wrap footer-legal">Website source: <a href="https://github.com/bigbio/quantms.org/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>, copyright (c) 2023 BigBio Stack. Each tool is distributed under its own license.</div>
 </footer>
