@@ -278,11 +278,6 @@ pre.install code { background: none; padding: 0; }
 
 /* EMBL-EBI service layout (homepage): organisation bar, header, search band, entry boxes,
    main column with a news and help sidebar. */
-.org-bar { background: #222; font-size: 0.8125rem; }
-.org-inner { display: flex; justify-content: space-between; align-items: center; min-height: 30px; gap: 16px; }
-.org-bar a { color: #e6e6e6; text-decoration: none; }
-.org-bar a:hover { color: #fff; text-decoration: underline; }
-.org-inner span { display: flex; gap: 18px; }
 .site-header { background: var(--brand-deep); border-bottom: 0; }
 .header-inner { min-height: 58px; }
 .brand { font-size: 1.6rem; }
@@ -344,8 +339,6 @@ main .side-box h2 { font-size: 0.9375rem; margin: 0; padding: 8px 12px; border: 
   .search-row { flex-wrap: wrap; }
   .search-row select { border-radius: 3px 3px 0 0; border-right: 0; width: 100%; padding: 8px 10px; }
   .search-row input { border-radius: 0; }
-  .org-inner span { gap: 12px; }
-  .org-inner span a:last-child { display: none; }
 }
 main section.side-box { padding: 0; }
 .two-col.tight .code-figure + .code-figure { margin-top: 0; }
