@@ -1,11 +1,11 @@
 // Live data portal numbers (homepage only).
-// Catalogue numbers come from the dataset-search API; protein and peptide counts come from
-// the statistics file of the peptide search index; model and tool counts come from the PRIDE
-// FTP models folder. Placeholders hold each value's place while it loads; a group is removed
-// if its source fails.
+// The page ships the last known values; each source that loads replaces them. Catalogue
+// numbers come from the dataset-search API, index numbers and the breakdown lists from the
+// statistics file of the peptide search index, and cell lines from the cell-lines API.
 const DATASETS_API = 'https://api.quantms.org/dataset-search';
 const INDEX_STATS = 'https://browse.quantms.org/quantms/apps/statistics/stats.json';
-const MODELS_FTP = 'https://ftp.pride.ebi.ac.uk/pub/databases/pride/resources/proteomes/quantms-models/';
+const CELL_LINES = 'https://api.quantms.org/cell-lines/overview';
+const DATASET_SEARCH = 'https://portal.quantms.org/apps/dataset-search';
 
 function getJSON(url) {
   return fetch(url).then(r => {
@@ -15,7 +15,6 @@ function getJSON(url) {
 }
 
 async function loadCatalogue() {
-  const collections = (await getJSON(`${DATASETS_API}/collections`)).collections;
   const datasets = [];
   for (let page = 1; ; page++) {
     const res = await getJSON(`${DATASETS_API}/datasets?page_size=200&page=${page}`);
@@ -23,36 +22,8 @@ async function loadCatalogue() {
     if (page >= res.total_pages) break;
   }
   return {
-    collections: collections.length,
     datasets: new Set(datasets.map(d => d.dataset_ref)).size,
     accessions: new Set(datasets.map(d => d.accession)).size,
-  };
-}
-
-async function loadIndex() {
-  const stats = await getJSON(INDEX_STATS);
-  return {
-    proteins: stats.kpis.proteins,
-    peptides: stats.kpis.peptides,
-    generated: stats.generated_at.slice(0, 10),
-  };
-}
-
-// Paths of the files below an Apache directory index, relative to the root, walking sub-folders.
-async function listFiles(url, prefix = '') {
-  const res = await fetch(url + prefix);
-  if (!res.ok) throw new Error(`${url + prefix}: HTTP ${res.status}`);
-  const names = [...(await res.text()).matchAll(/<a href="([^"?/][^"]*)">/g)].map(m => m[1]);
-  const nested = await Promise.all(names.map(n => n.endsWith('/') ? listFiles(url, prefix + n) : [prefix + n]));
-  return nested.flat();
-}
-
-// Released models are the files of the FTP folder; their folders are <collection>/<tool>/.
-async function loadModels() {
-  const files = await listFiles(MODELS_FTP);
-  return {
-    models: files.length,
-    tools: new Set(files.map(f => f.split('/')[1])).size,
   };
 }
 
@@ -65,37 +36,58 @@ function compact(value) {
 function show(box, values) {
   for (const [key, value] of Object.entries(values)) {
     const el = box.querySelector(`[data-num="${key}"]`);
+    if (!el) continue;
     if (typeof value === 'number') {
       el.textContent = compact(value);
       el.title = value.toLocaleString('en-US');
     } else {
       el.textContent = value;
     }
-    el.classList.add('data-in');
   }
-  box.removeAttribute('aria-busy');
 }
 
-function drop(box, group, err) {
-  console.warn(`portal ${group}:`, err);
-  box.querySelectorAll(`[data-group="${group}"]`).forEach(el => { el.hidden = true; });
-  box.removeAttribute('aria-busy');
+// One list of the breakdown: the top rows of a stats.json list, linked to dataset search
+// when that application has a matching filter.
+function bars(list, rows, label, filter) {
+  const top = rows.slice(0, 5);
+  const max = top[0] ? top[0].datasets : 1;
+  list.replaceChildren(...top.map(row => {
+    const li = document.createElement('li');
+    li.style.setProperty('--n', row.datasets);
+    li.style.setProperty('--max', max);
+    const name = document.createElement(filter ? 'a' : 'span');
+    name.textContent = row[label];
+    if (filter) {
+      name.href = `${DATASET_SEARCH}?${filter}=${encodeURIComponent(row[label])}`;
+      name.target = '_blank';
+      name.rel = 'noopener';
+    }
+    const count = document.createElement('b');
+    count.textContent = row.datasets;
+    li.append(name, document.createElement('i'), count);
+    return li;
+  }));
 }
 
-const numbersBox = document.getElementById('portal-numbers');
-if (numbersBox) {
-  // Shown only when this script runs, so visitors without JavaScript never see placeholders.
-  numbersBox.querySelectorAll('[data-group]').forEach(el => { el.hidden = false; });
-  numbersBox.setAttribute('aria-busy', 'true');
-  loadCatalogue().then(v => show(numbersBox, v)).catch(err => drop(numbersBox, 'catalog', err));
-  loadIndex().then(v => show(numbersBox, v)).catch(err => drop(numbersBox, 'index', err));
-}
-
-const modelsBox = document.getElementById('model-numbers');
-if (modelsBox) {
-  modelsBox.querySelectorAll('[data-group="models"]').forEach(el => { el.hidden = false; });
-  modelsBox.setAttribute('aria-busy', 'true');
-  loadModels().then(v => show(modelsBox, v)).catch(err => drop(modelsBox, 'models', err));
+const dataBlock = document.getElementById('data');
+if (dataBlock) {
+  const date = iso => new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  loadCatalogue().then(v => show(dataBlock, v)).catch(err => console.warn('portal catalogue:', err));
+  getJSON(INDEX_STATS).then(s => {
+    show(dataBlock, {
+      organisms: s.kpis.organisms,
+      proteins: s.kpis.proteins,
+      peptides: s.kpis.peptides,
+      tissues: s.tissues.length,
+      instruments: s.instruments.length,
+      generated: date(s.generated_at),
+    });
+    bars(dataBlock.querySelector('[data-list="species"]'), s.species, 'organism', 'organism');
+    bars(dataBlock.querySelector('[data-list="tissues"]'), s.tissues, 'tissue', null);
+    bars(dataBlock.querySelector('[data-list="instruments"]'), s.instruments, 'instrument', 'instrument');
+  }).catch(err => console.warn('portal index:', err));
+  getJSON(CELL_LINES).then(c => show(dataBlock, { lines: c.tiles.lines, lineages: c.tiles.lineages }))
+    .catch(err => console.warn('cell lines:', err));
 }
 
 // Pipeline maps: hovering, tapping or focusing a step shows what it does,
